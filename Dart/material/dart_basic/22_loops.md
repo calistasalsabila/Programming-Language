@@ -1,4 +1,4 @@
-# 🐋 Dart Loops 
+# 🐋 Dart Loops
 
 ## 🧠 What Are Loops?
 
@@ -7,6 +7,8 @@ Loops are used to execute a block of code **repeatedly** as long as a condition 
 * `for` loop
 * `while` loop
 * `do-while` loop
+* `for-in` loop
+* `forEach()` method
 
 They are essential when you want to perform repetitive tasks such as iterating over a list, running a block multiple times, or creating animations.
 
@@ -47,8 +49,8 @@ Count: 4
 ### 💡 Notes:
 
 * Initialization runs once.
-* Condition checked before each loop.
-* Increment executed after each iteration.
+* Condition is checked before each loop.
+* Increment runs after each iteration.
 
 ---
 
@@ -121,10 +123,105 @@ This will run at least once. i = 0
 This will run at least once. i = 1
 ```
 
-### 🧩 Key Difference from `while`:
+### 🧹 Key Difference from `while`:
 
 * `do-while` guarantees **one execution** of the loop body.
 * `while` might not execute at all if the condition is false from the beginning.
+
+---
+
+## 4️⃣ `for-in` Loop
+
+### 📌 Definition:
+
+Used to iterate over elements of a **collection** like `List`, `Set`, etc.
+
+### 🔤 Syntax:
+
+```dart
+for (var element in collection) {
+  // code using element
+}
+```
+
+### 🧪 Example:
+
+```dart
+List<String> fruits = ['apple', 'banana', 'cherry'];
+
+for (var fruit in fruits) {
+  print("Fruit: \$fruit");
+}
+```
+
+### ✅ Output:
+
+```
+Fruit: apple
+Fruit: banana
+Fruit: cherry
+```
+
+### 🧹 Best Used When:
+
+* You want to read elements sequentially.
+* You don’t need access to the index.
+
+---
+
+## 5️⃣ `forEach()` Method
+
+### 📌 Definition:
+
+A method available to collections like `List` or `Map` that applies a function to each item.
+
+### 🔤 Syntax:
+
+```dart
+collection.forEach((element) {
+  // code using element
+});
+```
+
+### 🧪 Example (List):
+
+```dart
+List<int> numbers = [10, 20, 30];
+
+numbers.forEach((num) {
+  print("Number: \$num");
+});
+```
+
+### ✅ Output:
+
+```
+Number: 10
+Number: 20
+Number: 30
+```
+
+### 🧪 Example (Map):
+
+```dart
+Map<String, int> scores = {'Math': 95, 'English': 88};
+
+scores.forEach((subject, score) {
+  print("\$subject: \$score");
+});
+```
+
+### ✅ Output:
+
+```
+Math: 95
+English: 88
+```
+
+### 💡 Notes:
+
+* Cannot use `break` or `continue` inside `forEach`.
+* Great for concise and functional-style iteration.
 
 ---
 
@@ -183,14 +280,17 @@ i=3, j=2
 
 ## 🧠 Summary
 
-| Loop Type  | Entry Condition? | Use Case                          |
-| ---------- | ---------------- | --------------------------------- |
-| `for`      | ✅ Yes            | Known number of iterations        |
-| `while`    | ✅ Yes            | Unknown iterations (check first)  |
-| `do-while` | ❌ No (runs once) | Run at least once before checking |
+| Loop Type   | Entry Condition? | Use Case                          |
+| ----------- | ---------------- | --------------------------------- |
+| `for`       | ✅ Yes            | Known number of iterations        |
+| `while`     | ✅ Yes            | Unknown iterations (check first)  |
+| `do-while`  | ❌ No (runs once) | Run at least once before checking |
+| `for-in`    | ✅ Yes            | Iterate over collections          |
+| `forEach()` | ✅ Yes            | Functional-style iteration        |
 
 * Always avoid infinite loops.
 * Use `break` to exit, `continue` to skip.
+* Use `for-in` or `forEach()` when working with collections.
 
 ---
 

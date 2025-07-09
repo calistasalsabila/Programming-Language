@@ -46,7 +46,7 @@ void main() {
 
 ---
 
-## 🧩 Types of Functions
+## 🧹 Types of Functions
 
 ### 1. Regular Function
 
@@ -66,7 +66,7 @@ Hello!
 
 ```dart
 void greet(String name) {
-  print("Hi, $name!");
+  print("Hi, \$name!");
 }
 ```
 
@@ -80,7 +80,7 @@ Hi, Dokja!
 
 ```dart
 String greet(String name) {
-  return "Hello, $name!";
+  return "Hello, \$name!";
 }
 ```
 
@@ -92,14 +92,30 @@ Hello, Jeha!
 
 ### 4. Function with Short Expression (Arrow Syntax)
 
+Dart supports **concise function bodies** using the arrow syntax (`=>`). This is useful for short functions with a single return expression.
+
 ```dart
 int square(int x) => x * x;
+```
+
+📌 Equivalent to:
+
+```dart
+int square(int x) {
+  return x * x;
+}
 ```
 
 **Output:**
 
 ```
 print(square(5)); // 25
+```
+
+Arrow syntax can also be used for void functions:
+
+```dart
+void sayHi() => print("Hi!");
 ```
 
 ---
@@ -110,7 +126,7 @@ print(square(5)); // 25
 
 ```dart
 void printSum(int a, int b) {
-  print("Sum is: ${a + b}");
+  print("Sum is: \${a + b}");
 }
 ```
 
@@ -118,7 +134,7 @@ void printSum(int a, int b) {
 
 ```dart
 void greet(String name, [String? title]) {
-  print("Hello, ${title ?? ''} $name");
+  print("Hello, \${title ?? ''} \$name");
 }
 ```
 
@@ -133,7 +149,7 @@ Hello, Dr. Dazai
 
 ```dart
 void describePerson({String? name, int? age}) {
-  print("Name: $name, Age: $age");
+  print("Name: \$name, Age: \$age");
 }
 ```
 
@@ -147,7 +163,7 @@ Name: Dokja, Age: 22
 
 ```dart
 void greetUser({String name = 'Guest'}) {
-  print('Welcome, $name!');
+  print('Welcome, \$name!');
 }
 ```
 
@@ -162,7 +178,7 @@ Welcome, Calista!
 
 ```dart
 void login({required String username, required String password}) {
-  print('Logging in $username');
+  print('Logging in \$username');
 }
 ```
 
@@ -174,9 +190,11 @@ Logging in admin
 
 ---
 
-## 🔙 Function Return Values
+## 🖙 Function Return Values
 
 ### Return a Single Value
+
+A function can return any Dart type, such as `int`, `String`, `bool`, `List`, etc.
 
 ```dart
 int multiply(int a, int b) {
@@ -184,9 +202,15 @@ int multiply(int a, int b) {
 }
 ```
 
+```dart
+String getGreeting() {
+  return "Hello there!";
+}
+```
+
 ### Return Multiple Values
 
-Use **List**, **Map**, or **Custom Class**:
+Since Dart doesn't support returning multiple values directly, we use collections or custom classes.
 
 #### Using List
 
@@ -306,7 +330,7 @@ This is inner function
 
 ---
 
-## 🌀 Recursive Functions
+## 🔀 Recursive Functions
 
 A recursive function calls itself.
 
@@ -321,7 +345,7 @@ print(factorial(5)); // Output: 120
 
 ---
 
-## 🧪 The `main()` Function
+## 🤪 The `main()` Function
 
 The starting point of every Dart program.
 

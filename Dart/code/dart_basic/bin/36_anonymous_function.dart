@@ -4,7 +4,6 @@ void hi(String name, String Function (String) filter){
   print('Hi ${filter(name)}');
 }
 void main(){
-
   var upperFunction = (String name){
   return name.toUpperCase();
 };

@@ -7,6 +7,8 @@ class Mc{
 
   Mc.withDefaultTitle(String name) : this(name, "Main Character");
 
+  Mc.withDefaultName() : this.withDefaultTitle("Kirigaya Kazuto");
+
 }
 
 void main(){
@@ -18,8 +20,12 @@ void main(){
   print(BSD.name);
   print(BSD.title);
 
+  var SaO = Mc.withDefaultName();
+  print(SaO.name);
+
 }
 
 // Dokja
 // Atsushi
 // Main Character
+// Kirigaya Kazuto

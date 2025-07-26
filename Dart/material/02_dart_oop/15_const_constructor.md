@@ -43,7 +43,7 @@ void main() {
 
 ### Explanation:
 - `p1` and `p2` refer to **the same instance** in memory because they are created using a const constructor with the same values.
-- `identical(p1, p2)` returns `true` ✅
+- `identical(p1, p2)` returns `true` 
 
 ---
 

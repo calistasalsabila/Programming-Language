@@ -1,4 +1,4 @@
-# 🌀 Cascade Notation in Dart
+# 🐋 Cascade Notation in Dart
 
 Cascade notation (`..`) in Dart allows you to make a sequence of operations on the same object, saving you from having to refer to that object repeatedly. This improves readability and reduces boilerplate when working with objects.
 

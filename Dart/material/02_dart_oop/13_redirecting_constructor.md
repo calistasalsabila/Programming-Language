@@ -22,7 +22,7 @@ class ClassName {
 
 ---
 
-## 🧪 Simple Example
+## Simple Example
 
 ```dart
 class Person {

@@ -1,97 +1,125 @@
-# 🐋 Method Overriding in Dart
+# 🐋 Inheritance in Dart
 
 ## 📌 Overview
-Method overriding is a feature in object-oriented programming that allows a subclass to provide a specific implementation of a method that is already defined in its superclass. In Dart, method overriding enables polymorphism — a subclass can redefine a method from the parent class to suit its behavior.
+Inheritance is a core concept in Object-Oriented Programming (OOP) that allows a class (child or subclass) to inherit properties and methods from another class (parent or superclass). In Dart, inheritance is implemented using the `extends` keyword.
 
 ---
 
-## 🔧 Key Concepts
-
-### 1. `@override` Annotation
-The `@override` annotation in Dart is used to indicate that a method is intended to override a method in the superclass. Although it is not strictly required, it helps catch errors at compile time if the method signature doesn’t match any superclass method.
-
-### 2. Rules for Overriding
-- The method in the subclass must have the same name and parameter list.
-- Return type must be the same (or subtype).
-- The overridden method should be declared in a superclass.
-- The overridden method can be called using `super.methodName()`.
+## 🌱 Why Use Inheritance?
+- **Code Reusability**: Share common logic across classes.
+- **Hierarchy Representation**: Model real-world relationships.
+- **Polymorphism Support**: Override methods for flexible behavior.
 
 ---
 
-## 📘 Syntax
+## 🛠️ Basic Syntax
 ```dart
 class Parent {
-  void greet() {
-    print("Hello from Parent");
+  void sayHello() {
+    print('Hello from Parent');
   }
 }
 
 class Child extends Parent {
-  @override
-  void greet() {
-    print("Hello from Child");
+  void sayHi() {
+    print('Hi from Child');
   }
 }
 ```
 
 ---
 
-## 🧪 Example
-
+## 🔁 Example
 ```dart
 void main() {
-  Parent p = Parent();
   Child c = Child();
-  Parent pc = Child();
-
-  p.greet();   // Output: Hello from Parent
-  c.greet();   // Output: Hello from Child
-  pc.greet();  // Output: Hello from Child (polymorphism)
-}
-```
-
----
-
-## 📎 Using `super`
-You can call the original method from the parent class using `super`:
-
-```dart
-class Child extends Parent {
-  @override
-  void greet() {
-    super.greet();
-    print("And Hello from Child too!");
-  }
+  c.sayHello();  // Inherited from Parent
+  c.sayHi();     // Defined in Child
 }
 ```
 
 **Output:**
 ```
 Hello from Parent
-And Hello from Child too!
+Hi from Child
 ```
 
 ---
 
-## ❗ When to Use
-- To modify or extend functionality inherited from a superclass.
-- To implement polymorphism — especially when dealing with abstract or interface-based design.
+## 🧩 Key Points
+
+### 1. `extends` Keyword
+Used to define a subclass that inherits from a superclass.
+
+### 2. `super` Keyword
+Used to access members (methods or variables) of the superclass.
+
+```dart
+class Parent {
+  String name = 'Parent';
+
+  void display() {
+    print('Name: $name');
+  }
+}
+
+class Child extends Parent {
+  void showParentName() {
+    print('Calling super: ${super.name}');
+  }
+}
+```
+
+### 3. Constructor Inheritance
+By default, constructors are **not** inherited. You need to call the parent’s constructor explicitly:
+
+```dart
+class Parent {
+  Parent(String message) {
+    print('Parent constructor: $message');
+  }
+}
+
+class Child extends Parent {
+  Child(String msg) : super(msg);
+}
+```
 
 ---
 
-## 🚫 What You Can’t Override
-- Static methods
-- Constructors
-- Private methods from another library (those starting with `_`)
+## 🧱 Types of Inheritance in Dart
+Dart supports **single inheritance** only. A class can only extend **one** class.
+
+```dart
+class A {}
+class B extends A {}  // Valid
+class C extends A, B {}  // ❌ Invalid in Dart
+```
+
+For multiple inheritance-like behavior, Dart uses **mixins** (covered separately).
 
 ---
 
-## 🧩 Summary
-| Concept            | Description                                     |
-|-------------------|-------------------------------------------------|
-| `@override`       | Annotation to denote overriding                |
-| Polymorphism      | Allows treating subclass as superclass         |
-| `super.method()`  | Calls the method from the superclass           |
-| Not Overridable   | Static methods, constructors, private methods  |
+## ❗ Limitations
+- No multiple inheritance.
+- Constructors must be explicitly chained.
+- Private members (`_name`) are not inherited from different libraries.
 
-Method overriding is essential for customizing inherited behavior and writing flexible, reusable, and maintainable Dart code.
+---
+
+## ✅ When to Use
+- When multiple classes share common behavior.
+- When designing a class hierarchy (e.g., `Animal → Dog`, `Animal → Cat`).
+
+---
+
+## 📌 Summary
+| Concept             | Description                                      |
+|--------------------|--------------------------------------------------|
+| `extends`          | Declares inheritance relationship                |
+| `super`            | Accesses superclass members                      |
+| Constructor Chaining | Use `super()` to call parent constructor       |
+| Single Inheritance | Only one parent class can be extended           |
+| Use Cases          | Code reuse, hierarchy, polymorphism              |
+
+Inheritance simplifies your code, promotes reuse, and enables polymorphism — making your Dart programs more maintainable and logical.

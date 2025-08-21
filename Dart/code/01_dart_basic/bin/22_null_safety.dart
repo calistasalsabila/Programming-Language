@@ -1,5 +1,5 @@
 void main() {
-  int? age = null;
+  int? age;
 
   // double ageDouble = age.toDouble(); error
 
@@ -12,7 +12,7 @@ void main() {
   String name = 'Dokja';
   String? nullableName = name;
 
-  int? nullableCount = null;
+  int? nullableCount;
   // int count = nullableCount; error
   if (nullableCount != null) {
     int count = nullableCount;
@@ -22,11 +22,7 @@ void main() {
   String? guest;
   String guestName;
 
-  if (guest != null) {
-    guestName = guest;
-  } else {
-    guestName = 'Guest';
-  }
+  guestName = 'Guest';
 
   print(guestName); // Guest
   // Default Value

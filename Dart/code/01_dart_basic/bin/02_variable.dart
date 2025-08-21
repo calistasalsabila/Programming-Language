@@ -1,4 +1,5 @@
 /// [slash 3x] -> documentatiton comment , digenerate jadi dart doc
+library;
 
 
 // without variable

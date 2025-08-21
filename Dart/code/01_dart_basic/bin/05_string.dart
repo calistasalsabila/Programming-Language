@@ -15,7 +15,7 @@ void main() {
   print("MC: $mc");
 
   // String concatenation
-  String full1 = anime + " " + mc;
+  String full1 = "$anime $mc";
   print(full1);
 
   // String yg pakai tab space sama enter
@@ -40,6 +40,6 @@ void main() {
   ''';
 
   // backslash (\) dipakai kalo mau karakter setelahnya di anggap benar
-  var text = "Halo im \'Otosaka Shunsuke\'";
+  var text = "Halo im 'Otosaka Shunsuke'";
   print(text);
 }

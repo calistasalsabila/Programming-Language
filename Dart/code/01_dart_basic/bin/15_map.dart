@@ -36,7 +36,7 @@ void main(){
   names.remove('Hamin Lee'); // remove Hamin Lee
   print(names); // {Kim Dokja: 1, Cale Henituse: 3, Gilyoung: 4, Han Sooyoung: 5}
 
-  var a = Map<String, int>();
+  var a = <String, int>{};
   a['a'] = 1;
   a['b'] = 2;
 

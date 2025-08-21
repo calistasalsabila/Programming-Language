@@ -3,7 +3,7 @@ void main(){
 
   void hi(String name){
     var hi = 'hi $name';
-    print('$name');
+    print(name);
   }
 
   hi(name);

@@ -20,10 +20,10 @@ class dokjaCompany extends ORV{
 void titleNovel(Novel novel){
   if(novel is dokjaCompany){
     // sebenarnya kalo dah pake is ga perlu dokjaCompany dokjacompany = novel as dokjaCompany;
-    dokjaCompany dokjacompany = novel as dokjaCompany;
+    dokjaCompany dokjacompany = novel;
     print(" dokjaCompany -> ${dokjacompany.title}");
   }else if(novel is ORV){
-    ORV orv = novel as ORV;
+    ORV orv = novel;
     print("ORV -> ${orv.title}");
   }else{
   print("${novel.title}");

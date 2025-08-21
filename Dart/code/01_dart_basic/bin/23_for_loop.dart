@@ -12,12 +12,14 @@ void main() {
   }
 
   // for each
-  names.forEach((name) => print(name));
+  for (var name in names) {
+    print(name);
+  }
 
   // atau bisa gini
-  names.forEach((name) {
+  for (var name in names) {
     print('Halo, $name!');
-  });
+  }
 
   //inf loop
   for (;;) {

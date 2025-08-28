@@ -9,7 +9,7 @@ class Sum {
 
   Sum(this.a, this.b);
 
-  int call(int a, int b) => a + b;
+  int call()=> a + b;
 }
 
 void main() {
@@ -17,7 +17,7 @@ void main() {
   print(bsd("dazai"));
 
   var sum1 = Sum(12, 5);
-  print(sum1(12, 5));
+  print(sum1());
 
   // bukan gini karena ini "call"
   // sum1.call(12, 5);

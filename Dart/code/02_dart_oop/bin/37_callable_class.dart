@@ -19,6 +19,6 @@ void main() {
   var sum1 = Sum(12, 5);
   print(sum1());
 
-  // bukan gini karena ini "call"
+  // bukan gini karena ini "call" tapi tetep bisa 
   // sum1.call(12, 5);
 }

@@ -1,10 +1,10 @@
-# 🐋 Dart Operators
+# Dart Operators
 
 In Dart, operators are special symbols or keywords used to perform operations on variables and values. Dart provides a wide range of operators categorized by their functionality.
 
 ---
 
-## 🧮 Arithmetic Operators
+## 1. Arithmetic Operators
 
 Used to perform basic mathematical operations.
 
@@ -19,7 +19,7 @@ Used to perform basic mathematical operations.
 
 ---
 
-## 🧾 Relational (Comparison) Operators
+## 2. Relational (Comparison) Operators
 
 Used to compare two values.
 
@@ -34,7 +34,7 @@ Used to compare two values.
 
 ---
 
-## 🧠 Logical Operators
+## 3. Logical Operators
 
 Used to combine or invert boolean expressions.
 
@@ -46,7 +46,7 @@ Used to combine or invert boolean expressions.
 
 ---
 
-## 🧰 Assignment Operators
+## 4. Assignment Operators
 
 Used to assign and update the value of variables.
 
@@ -62,7 +62,7 @@ Used to assign and update the value of variables.
 
 ---
 
-## 🔗 Bitwise Operators
+## 5. Bitwise Operators
 
 Used to perform bit-level operations (mostly for advanced use).
 
@@ -83,7 +83,7 @@ print(5 & 3);  // Output: 1
 
 ---
 
-## 🧮 Type Test Operators
+## 6. Type Test Operators
 
 Used to check and cast types.
 
@@ -95,7 +95,7 @@ Used to check and cast types.
 
 ---
 
-## 🌀 Conditional Operators
+## 7. Conditional Operators
 
 Useful for simplifying conditional logic.
 
@@ -122,7 +122,7 @@ String status = (age >= 18) ? 'Adult' : 'Minor';
 
 ---
 
-## 🧪 Cascade Notation Operator `..`
+## 8. Cascade Notation Operator `..`
 
 Allows multiple operations on the same object.
 
@@ -134,9 +134,9 @@ myObject
 
 ---
 
-## 🧰 Operator Methods (Overloading)
+## 9. Operator Methods (Overloading)
 
-In Dart, you can override operators for your custom classes using special method names. This is called **operator overloading**.
+In Dart, you can override operators for your custom classes using special method names. This is called operator overloading.
 
 ### Common Operator Methods
 
@@ -173,7 +173,7 @@ void main() {
 
 ---
 
-## 📌 Example Summary
+## 10. Example Summary
 
 ```dart
 int a = 5;
@@ -185,11 +185,13 @@ b ??= 10; // if b is null, assign 10
 
 ---
 
-## 🧾 Notes
+## 11. Notes
 
-* Dart operators can be **overloaded** using special functions called *operator methods*.
-* Proper use of operators increases code **clarity and efficiency**.
+* Dart operators can be overloaded using special functions called operator methods.
+* Proper use of operators increases code clarity and efficiency.
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-Happy coding with Dart! 🐋✨
+
+

@@ -1,13 +1,13 @@
-# 🐋 Callable Class in Dart
+# Callable Class in Dart
 
-## 📌 Introduction
+## 1. Introduction
 In Dart, a **callable class** is a class that can be invoked as if it were a function. This is possible because Dart allows you to define a special method named `call()` inside any class. When the object of that class is followed by parentheses `()`, Dart automatically triggers the `call()` method.
 
 Callable classes provide a unique way to blend **object-oriented programming (OOP)** with **functional programming (FP)**. You can keep the benefits of encapsulation and state management from classes while enjoying the convenience and expressiveness of function-like behavior.
 
 ---
 
-## ⚙️ Syntax of a Callable Class
+## 2. Syntax of a Callable Class
 ```dart
 class ClassName {
   ReturnType call(Parameters) {
@@ -22,7 +22,7 @@ void main() {
 }
 ```
 
-### 🔎 Explanation of Syntax
+### Explanation of Syntax
 - `call()` is a **special method** in Dart.
 - You can define parameters inside `call()` like any normal method.
 - Invoking the object `obj(arguments)` is equivalent to `obj.call(arguments)`.
@@ -30,7 +30,7 @@ void main() {
 
 ---
 
-## 🧩 Example 1: Simple Callable Class
+## Example 1: Simple Callable Class
 ```dart
 class Adder {
   int call(int a, int b) {
@@ -50,7 +50,7 @@ void main() {
 
 ---
 
-## 🧩 Example 2: Callable Class with State
+## Example 2: Callable Class with State
 ```dart
 class Multiplier {
   final int factor;
@@ -78,7 +78,7 @@ void main() {
 
 ---
 
-## 🧩 Example 3: Callable Class for String Processing
+## Example 3: Callable Class for String Processing
 ```dart
 class Formatter {
   String call(String text) {
@@ -98,7 +98,7 @@ void main() {
 
 ---
 
-## 🧩 Example 4: Callable Class Returning Future (Async)
+## Example 4: Callable Class Returning Future (Async)
 ```dart
 class DelayedPrinter {
   Future<void> call(String message) async {
@@ -119,7 +119,7 @@ void main() async {
 
 ---
 
-## ✅ Advantages of Callable Classes
+## Advantages of Callable Classes
 1. Combine **OOP encapsulation** with **FP-style syntax**.
 2. Create **reusable, stateful functions** in class form.
 3. Improve readability with **cleaner syntax**.
@@ -127,5 +127,8 @@ void main() async {
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 Callable classes in Dart provide a clean and flexible way to design objects that behave like functions. By defining the `call()` method, developers can create stateful or stateless function-like objects, making the language more expressive and powerful. This approach is especially beneficial in scenarios involving **functional programming patterns**, **callbacks**, and **stateful transformations**.
+
+--- 
+> 📚 This is part of the Dart OOP chapter.

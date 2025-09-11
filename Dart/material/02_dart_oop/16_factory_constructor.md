@@ -1,4 +1,4 @@
-# 🐋 Factory Constructor in Dart
+# Factory Constructor in Dart
 
 ## What is a Factory Constructor?
 
@@ -153,5 +153,5 @@ void main() {
 ```
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-Happy coding with factory constructors in Dart! 🐋

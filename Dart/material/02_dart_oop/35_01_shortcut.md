@@ -1,4 +1,4 @@
-# 🐋 Dart: Generating `hashCode` Getter Automatically
+# Dart: Generating `hashCode` Getter Automatically
 
 In Dart, the `hashCode` getter is used to return an integer that
 represents the hash value of an object. It plays an important role when
@@ -10,7 +10,7 @@ Instead of writing the `hashCode` getter manually, Dart (via IDEs like
 IntelliJ IDEA, Android Studio, or VS Code with Dart/Flutter extensions)
 provides a **shortcut** to auto-generate it.
 
-## 🎯 Purpose of `hashCode`
+## Purpose of `hashCode`
 
 -   Provides a unique integer representation of an object.
 -   Used in collections like `HashSet` and `HashMap` to organize and
@@ -38,7 +38,7 @@ provides a **shortcut** to auto-generate it.
 4.  Choose **Generate equality and hashCode**.
 5.  Select the fields you want to include.
 
-## 📝 Example
+## Example
 
 ``` dart
 class Person {
@@ -80,9 +80,12 @@ class Person {
 int get hashCode => Object.hash(name, age);
 ```
 
-## ✅ Conclusion
+## Conclusion
 
 The `hashCode` getter is essential when working with collections that
 depend on hashing. Dart IDEs provide an easy **right-click shortcut** to
 auto-generate both `==` and `hashCode`, ensuring consistency and
 reducing manual work.
+
+---
+> 📚 This is part of the Dart OOP chapter.

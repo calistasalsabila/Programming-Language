@@ -1,4 +1,4 @@
-# 🐋 Initializing Formal Parameters in Dart
+# Initializing Formal Parameters in Dart
 
 ## What is an Initializing Formal Parameter?
 
@@ -130,3 +130,6 @@ class User {
 * Named and Optional Parameters
 * The `this` keyword
 * Inheritance in Dart
+
+---
+> 📚 This is part of the Dart OOP chapter.

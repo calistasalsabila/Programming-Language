@@ -1,10 +1,10 @@
-# 🐋 Dart: Class
+# Dart: Class
 
 In Dart, a **class** is a blueprint for creating objects. It defines the properties (data) and behaviors (functions or methods) that the objects created from the class can have.
 
 ---
 
-## 🎯 Purpose
+## 1. Purpose
 
 * Organize code into reusable and logical units
 * Encapsulate data and behavior
@@ -12,7 +12,7 @@ In Dart, a **class** is a blueprint for creating objects. It defines the propert
 
 ---
 
-## 🧱 Syntax
+## 2. Syntax
 
 ```dart
 class ClassName {
@@ -24,7 +24,7 @@ class ClassName {
 
 ---
 
-## 📦 Example
+## 3. Example
 
 ```dart
 class Person {
@@ -42,11 +42,11 @@ void main() {
 }
 ```
 
-🔍 *This example defines a `Person` class with two properties (`name` and `age`) and one method (`greet`). We create an object `p` from the class and call its method.*
+*This example defines a `Person` class with two properties (`name` and `age`) and one method (`greet`). We create an object `p` from the class and call its method.*
 
 ---
 
-## 🏗️ Properties
+## 4. Properties
 
 Properties (fields or attributes) store the state of an object.
 
@@ -59,7 +59,7 @@ class Car {
 
 ---
 
-## ⚙️ Methods
+## 5. Methods
 
 Methods define behaviors (functions) inside a class.
 
@@ -73,7 +73,7 @@ class Calculator {
 
 ---
 
-## 🧪 Creating Objects
+## 6. Creating Objects
 
 Objects are created using the `new` keyword (optional in modern Dart).
 
@@ -86,7 +86,7 @@ p.greet();
 
 ---
 
-## 🧠 Tips
+## 7. Tips
 
 * Class names should start with an uppercase letter by convention.
 * Use `this` keyword to refer to the current instance.
@@ -107,7 +107,7 @@ class Student {
 
 ---
 
-## 📌 Summary Table
+## 8. Summary Table
 
 | Element  | Description                       |
 | -------- | --------------------------------- |
@@ -118,5 +118,5 @@ class Student {
 | `this`   | Refers to current object instance |
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-Using classes is the foundation of structured and scalable Dart programs, especially when building Flutter apps or APIs. 🧱

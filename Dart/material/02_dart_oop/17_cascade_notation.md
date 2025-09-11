@@ -1,10 +1,10 @@
-# 🐋 Cascade Notation in Dart
+# Cascade Notation in Dart
 
 Cascade notation (`..`) in Dart allows you to make a sequence of operations on the same object, saving you from having to refer to that object repeatedly. This improves readability and reduces boilerplate when working with objects.
 
 ---
 
-## 📌 Why Use Cascade Notation?
+## Why Use Cascade Notation?
 Instead of:
 
 ```dart
@@ -27,7 +27,7 @@ This improves readability, especially when setting multiple properties or callin
 
 ---
 
-## 🧠 Syntax Overview
+## Syntax Overview
 
 ```dart
 object
@@ -71,7 +71,7 @@ Author: SingShong
 
 ---
 
-## 🔄 Using Cascade with Returned Objects
+## Using Cascade with Returned Objects
 You can use cascades on expressions that return objects too:
 
 ```dart
@@ -87,7 +87,7 @@ void main() {
 
 ---
 
-## ⚠️ Things to Remember
+## Things to Remember
 
 - Cascade only works with **non-null** objects.
   - Use null-aware cascade `?..` if the object might be null (Dart 3+ supports this in experimental form).
@@ -96,7 +96,7 @@ void main() {
 
 ---
 
-## 🧰 Real-World Use Case: Flutter Example
+## Real-World Use Case: Flutter Example
 
 ```dart
 final controller = TextEditingController()
@@ -106,7 +106,7 @@ final controller = TextEditingController()
 
 ---
 
-## ✅ When to Use
+## When to Use
 Use cascade notation when:
 - Initializing an object with multiple properties.
 - Calling multiple methods on the same object.
@@ -114,7 +114,7 @@ Use cascade notation when:
 
 ---
 
-## ❌ When Not to Use
+## When Not to Use
 Avoid using cascades when:
 - You're mixing in async/await in the chain.
 - The cascade is too long and hurts readability.
@@ -122,7 +122,7 @@ Avoid using cascades when:
 
 ---
 
-## 🧩 Summary
+## Summary
 | Feature | Description |
 |--------|-------------|
 | Operator | `..` |
@@ -134,8 +134,7 @@ Avoid using cascades when:
 Cascade notation is a powerful syntactic sugar in Dart, especially when you're working with fluent-style object configuration or builders.
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-## 📚 Related Topics
-- [Constructor in Dart](constructor_dart.md)
-- [Object & Class in Dart](object_dart.md)
-- [Null Safety in Dart](null_safety_dart.md)
+
+

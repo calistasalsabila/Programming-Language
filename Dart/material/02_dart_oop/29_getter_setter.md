@@ -1,6 +1,6 @@
-# 🐋 Dart Getter and Setter
+# Dart Getter and Setter
 
-## 📌 Introduction
+## 1. Introduction
 
 In Dart, **getters** and **setters** are special methods that allow you to **access** and **modify** the values of private variables in a controlled way. They are part of Dart's **encapsulation** mechanism in Object-Oriented Programming (OOP). This provides better control over how a variable is accessed and updated, while keeping the implementation details hidden.
 
@@ -11,16 +11,16 @@ Encapsulation ensures that:
 
 ---
 
-## 🔹 Why Use Getter and Setter?
+## 2. Why Use Getter and Setter?
 
-1. **Data Protection** – Prevent direct modification of variables.
-2. **Data Validation** – Ensure only valid data is assigned.
-3. **Read-Only or Write-Only Properties** – Control which parts of code can read or write data.
-4. **Cleaner Code** – Makes code more readable and maintainable.
+1. Data Protection – Prevent direct modification of variables.
+2. Data Validation – Ensure only valid data is assigned.
+3. Read-Only or Write-Only Properties – Control which parts of code can read or write data.
+4. Cleaner Code – Makes code more readable and maintainable.
 
 ---
 
-## 📜 Syntax
+## 3. Syntax
 
 ### Getter Syntax
 
@@ -46,7 +46,7 @@ set propertyName(Type value) {
 
 ---
 
-## 🛠 Example 1: Basic Getter and Setter
+## 4. Example 1: Basic Getter and Setter
 
 ```dart
 class Person {
@@ -68,7 +68,7 @@ void main() {
 }
 ```
 
-### 🔍 Explanation
+### Explanation
 
 * `_name` is private to the class.
 * `name` getter returns `_name`'s value.
@@ -76,7 +76,7 @@ void main() {
 
 ---
 
-## 🛠 Example 2: Getter with Validation
+## 5. Example 2: Getter with Validation
 
 ```dart
 class BankAccount {
@@ -105,14 +105,14 @@ void main() {
 }
 ```
 
-### 🔍 Key Points
+### Key Points
 
 * We protect `_balance` from becoming negative.
 * Attempting to set an invalid value triggers a custom message.
 
 ---
 
-## 🛠 Example 3: Read-Only and Write-Only
+## 6. Example 3: Read-Only and Write-Only
 
 ### Read-Only Property
 
@@ -153,7 +153,7 @@ class Password {
 void main() {
   var pass = Password();
   pass.password = "mySecret123"; // Allowed
-  // print(pass.password); // ❌ Error: No getter defined
+  // print(pass.password); // Error: No getter defined
 }
 ```
 
@@ -163,9 +163,9 @@ void main() {
 
 ---
 
-## ⚡ Short-Hand Getter and Setter
+## 7. Short-Hand Getter and Setter
 
-Dart allows you to define getters and setters in a short and clean way using **arrow syntax**:
+Dart allows you to define getters and setters in a short and clean way using arrow syntax:
 
 ```dart
 class Temperature {
@@ -184,21 +184,23 @@ void main() {
 
 ---
 
-## 📚 Best Practices
+## 8. Best Practices
 
-* **Always use getters and setters** for private variables to maintain flexibility.
-* **Perform validation** in setters to prevent invalid state.
-* Use **read-only getters** for calculated properties.
-* Use **write-only setters** when data should be hidden after being set.
+* Always use getters and setters for private variables to maintain flexibility.
+* Perform validation in setters to prevent invalid state.
+* Use read-only getters for calculated properties.
+* Use write-only setters when data should be hidden after being set.
 
 ---
 
-## 🎯 Summary
+## 9. Summary
 
-* Getters and setters in Dart allow **controlled access** to an object's properties.
-* **Getter** → Returns a value.
-* **Setter** → Assigns a value.
-* They help in **data validation**, **encapsulation**, and **code cleanliness**.
-* You can have **read-only**, **write-only**, or both for a property.
+* Getters and setters in Dart allow controlled access to an object's properties.
+* Getter → Returns a value.
+* Setter → Assigns a value.
+* They help in data validation, encapsulation, and code cleanliness.
+* You can have read-only, write-only, or both for a property.
 
-With proper use of getters and setters, your Dart code will be **more secure, readable, and maintainable**.
+---
+> 📚 This is part of the Dart OOP chapter.
+

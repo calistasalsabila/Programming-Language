@@ -1,10 +1,10 @@
-# 📦 Importing in Dart
+# Importing in Dart
 
 In Dart, importing is the process of making code from one file available in another. This enables modular programming, code reuse, and better project organization.
 
 ---
 
-## 📚 Why Use Imports?
+## 1. Why Use Imports
 
 * Reuse functions, classes, constants, or variables defined in other files.
 * Split a large codebase into smaller, manageable parts.
@@ -12,7 +12,7 @@ In Dart, importing is the process of making code from one file available in anot
 
 ---
 
-## 🔹 Basic Import Syntax
+## 2. Basic Import Syntax
 
 ```dart
 import 'path/to/file.dart';
@@ -36,9 +36,9 @@ void main() {
 
 ---
 
-## 🧭 Types of Imports
+## 3. Types of Imports
 
-### 1. **Relative Import**
+### 3.1 Relative Import
 
 Used for files within the same project.
 
@@ -46,7 +46,7 @@ Used for files within the same project.
 import 'utils/helper.dart';
 ```
 
-### 2. **Absolute Import**
+### 3.2 Absolute Import
 
 Common in packages. Starts with `package:` prefix.
 
@@ -54,7 +54,7 @@ Common in packages. Starts with `package:` prefix.
 import 'package:my_app/utils/helper.dart';
 ```
 
-### 3. **Dart SDK Import**
+### 3.3 Dart SDK Import
 
 For core Dart libraries.
 
@@ -63,7 +63,7 @@ import 'dart:math';
 import 'dart:io';
 ```
 
-### 4. **External Package Import**
+### 3.4 External Package Import
 
 From `pub.dev` packages.
 
@@ -74,17 +74,17 @@ import 'package:flutter/material.dart';
 
 ---
 
-## ✳️ Show and Hide Members
+## 4. Show and Hide Members
 
 To control what members are visible from the imported file:
 
-### 🔸 Show Specific Members
+### 4.1 Show Specific Members
 
 ```dart
 import 'math_utils.dart' show add;
 ```
 
-### 🔸 Hide Specific Members
+### 4.2 Hide Specific Members
 
 ```dart
 import 'math_utils.dart' hide subtract;
@@ -92,7 +92,7 @@ import 'math_utils.dart' hide subtract;
 
 ---
 
-## 🆔 Using Aliases
+## 5. Using Aliases
 
 If two files have conflicting class or function names, use an alias:
 
@@ -108,7 +108,7 @@ void main() {
 
 ---
 
-## 🌀 Deferred Imports
+## 6. Deferred Imports
 
 Used for lazy loading. Improves startup performance by loading the library only when needed.
 
@@ -123,18 +123,18 @@ Future<void> main() async {
 
 ---
 
-## ❗ Common Mistakes
+## 7. Common Mistakes
 
-1. **Incorrect file path**
+1. Incorrect file path  
    *Check whether the relative or absolute path is valid.*
-2. **Forgetting `pubspec.yaml` dependencies**
+2. Forgetting `pubspec.yaml` dependencies  
    *External packages must be declared in `pubspec.yaml`.*
-3. **Import cycles**
+3. Import cycles  
    *Avoid circular imports which can lead to runtime issues.*
 
 ---
 
-## ✅ Best Practices
+## 8. Best Practices
 
 * Prefer `package:` imports over relative paths for larger projects.
 * Use `as` to avoid naming collisions.
@@ -143,7 +143,7 @@ Future<void> main() async {
 
 ---
 
-## 🧪 Example: Organized Imports
+## 9. Example: Organized Imports
 
 ```dart
 // Built-in Dart libraries
@@ -160,5 +160,5 @@ import 'models/user.dart';
 ```
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-By mastering Dart imports, you’ll write cleaner, more efficient, and more scalable applications. Organize your project wisely and use each import type as needed.

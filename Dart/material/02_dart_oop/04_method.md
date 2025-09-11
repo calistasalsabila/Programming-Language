@@ -1,10 +1,10 @@
-# 🐋 Dart: Methods
+# Dart: Methods
 
 In Dart, **methods** are functions associated with an object or a class. They allow objects to perform actions, access or modify their state, and provide a structured way to organize functionality within classes.
 
 ---
 
-## ✅ Purpose
+## 1. Purpose
 
 * To define behaviors that an object can perform.
 * To encapsulate reusable logic inside a class.
@@ -12,7 +12,7 @@ In Dart, **methods** are functions associated with an object or a class. They al
 
 ---
 
-## 📚 Syntax
+## 2. Syntax
 
 ```dart
 class ClassName {
@@ -45,7 +45,7 @@ void main() {
 
 ---
 
-## 🔍 Notes
+## 3. Notes
 
 * **Return type**: Can be any type like `int`, `String`, `void`, etc.
 * **Method overloading** is not supported in Dart. Instead, use optional or named parameters.
@@ -53,9 +53,9 @@ void main() {
 
 ---
 
-## 🔁 Types of Methods
+## 4. Types of Methods
 
-### 1. **Instance Method**
+### 1. Instance Method
 
 * Operates on an instance of the class and can access instance variables.
 
@@ -70,7 +70,7 @@ class Person {
 }
 ```
 
-### 2. **Static Method**
+### 2. Static Method
 
 * Belongs to the class rather than instances. Can't access instance variables directly.
 
@@ -86,7 +86,7 @@ void main() {
 }
 ```
 
-### 3. **Getter and Setter Methods**
+### 3. Getter and Setter Methods
 
 * Special methods to access and modify private fields.
 
@@ -101,7 +101,7 @@ class BankAccount {
 
 ---
 
-## 🧪 Example: Named & Optional Parameters
+## 5. Example: Named & Optional Parameters
 
 ```dart
 class Greeting {
@@ -119,7 +119,7 @@ void main() {
 
 ---
 
-## 📦 Summary
+## 6. Summary
 
 | Feature               | Description                       |
 | --------------------- | --------------------------------- |
@@ -130,5 +130,4 @@ void main() {
 | Named/Optional Params | Flexible method calling           |
 
 ---
-
-✅ Use methods in Dart to make your code **modular**, **reusable**, and **organized** within classes.
+> 📚 This is part of the Dart OOP chapter.

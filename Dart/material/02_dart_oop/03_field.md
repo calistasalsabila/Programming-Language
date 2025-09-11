@@ -1,18 +1,18 @@
-# 🐋 Dart Fields
+# Dart Fields
 
 In Dart, **fields** are variables that belong to a class. They represent the data or state of an object and are sometimes referred to as **instance variables**. Fields can be public, private, static, or final, and are usually declared inside a class but outside any method or constructor.
 
 ---
 
-## 📌 What is a Field?
+## 1. What is a Field?
 
 A **field** is a property of an object. Each object can have its own values for these fields, which store the state of that object.
 
-> 💡 Fields are declared within the class body but outside of any methods.
+> Fields are declared within the class body but outside of any methods.
 
 ---
 
-## 🧪 Basic Example
+## 2. Basic Example
 
 ```dart
 class Student {
@@ -32,7 +32,7 @@ void main() {
 }
 ```
 
-### 🖥️ Output
+### Output
 
 ```
 Hi, I’m Hamin and I’m 20 years old.
@@ -40,7 +40,7 @@ Hi, I’m Hamin and I’m 20 years old.
 
 ---
 
-## 🔐 Public vs Private Fields
+## 3. Public vs Private Fields
 
 * **Public** fields can be accessed from outside the class.
 * **Private** fields are prefixed with `_` and can only be accessed within the same file.
@@ -59,9 +59,9 @@ class BankAccount {
 
 ---
 
-## 🧱 Field Types
+## 4. Field Types
 
-### 1. ✅ Instance Fields
+### 1. Instance Fields
 
 Each object has its own copy.
 
@@ -71,7 +71,7 @@ class Person {
 }
 ```
 
-### 2. 🧲 Static Fields
+### 2. Static Fields
 
 Shared across all instances of the class.
 
@@ -81,7 +81,7 @@ class Counter {
 }
 ```
 
-### 3. 🧊 Final Fields
+### 3. Final Fields
 
 Can be set only once.
 
@@ -91,7 +91,7 @@ class Circle {
 }
 ```
 
-### 4. ❌ Late Initialization
+### 4. Late Initialization
 
 You can declare a field and initialize it later (especially useful for `final` or non-nullable fields).
 
@@ -103,7 +103,7 @@ class Config {
 
 ---
 
-## 🔄 Initialize Fields with Constructor
+## 5. Initialize Fields with Constructor
 
 Fields can be initialized when an object is created.
 
@@ -118,7 +118,7 @@ class Book {
 
 ---
 
-## 🧠 Best Practices
+## 6. Best Practices
 
 * Use **`_`** to make fields private.
 * Use **getters/setters** for controlled access.
@@ -127,7 +127,7 @@ class Book {
 
 ---
 
-## 🧼 Summary
+## 7. Summary
 
 * Fields store the state of a class.
 * Types: instance, static, final, and late fields.
@@ -135,5 +135,5 @@ class Book {
 * Fields can be initialized via constructors or default values.
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-Fields are the core of maintaining state in Dart classes and are used heavily in Flutter for managing widget properties and application logic. 🐋

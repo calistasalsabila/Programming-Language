@@ -1,18 +1,18 @@
-# 🐋 Introduction to OOP in Dart
+# Introduction to OOP in Dart
 
 Dart is an **object-oriented language** with support for classes, objects, inheritance, polymorphism, abstraction, and encapsulation. This file introduces the core concepts of Object-Oriented Programming (OOP) in Dart and how they can be applied to write modular, maintainable, and reusable code.
 
 ---
 
-## 🎯 What is OOP?
+## What is OOP?
 
 **Object-Oriented Programming (OOP)** is a programming paradigm based on the concept of "objects," which are instances of classes. OOP helps organize code by grouping related properties and behaviors into units (objects).
 
 ---
 
-## 🧩 Key Principles of OOP in Dart
+## Key Principles of OOP in Dart
 
-### 1. 🔹 Class & Object
+1. Class & Object
 
 * **Class** is a blueprint or template.
 * **Object** is an instance of a class.
@@ -30,7 +30,7 @@ void main() {
 }
 ```
 
-### 2. 🔐 Encapsulation
+2. Encapsulation
 
 Encapsulation is the bundling of data (variables) and methods (functions) that operate on the data within one unit.
 
@@ -46,7 +46,7 @@ class BankAccount {
 }
 ```
 
-### 3. 👪 Inheritance
+3. Inheritance
 
 Inheritance allows a class (child) to inherit fields and methods from another class (parent).
 
@@ -66,7 +66,7 @@ void main() {
 }
 ```
 
-### 4. 🎭 Polymorphism
+4. Polymorphism
 
 Polymorphism allows methods to behave differently based on the object that is calling them.
 
@@ -90,7 +90,7 @@ void main() {
 }
 ```
 
-### 5. 📦 Abstraction
+5. Abstraction
 
 Abstraction means hiding internal details and showing only the functionality. Dart uses **abstract classes** to define abstract behavior.
 
@@ -107,7 +107,7 @@ class Car extends Vehicle {
 
 ---
 
-## 🧠 Benefits of OOP
+## Benefits of OOP
 
 * Modular code structure
 * Easier to test, debug, and maintain
@@ -116,13 +116,13 @@ class Car extends Vehicle {
 
 ---
 
-## 🛠️ Real-World Analogy
+## Real-World Analogy
 
 Imagine a **blueprint (class)** for a house: it defines the layout but isn't a real house yet. When you use the blueprint to build a **real house (object)**, that’s an instance. Multiple houses can be built using the same blueprint.
 
 ---
 
-## 📌 Summary
+## Summary
 
 * Dart supports full object-oriented programming.
 * You can define classes and create objects.
@@ -130,5 +130,6 @@ Imagine a **blueprint (class)** for a house: it defines the layout but isn't a r
 * Understanding these concepts is essential for writing Flutter apps and structuring scalable Dart programs.
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-Keep exploring OOP in Dart to build robust and reusable applications! 🐋
+

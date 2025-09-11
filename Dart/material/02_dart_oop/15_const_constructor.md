@@ -1,4 +1,4 @@
-# 🐋 Const Constructor in Dart
+# Const Constructor in Dart
 
 In Dart, a `const` constructor allows you to create **compile-time constant objects**, which improves performance and memory efficiency when the object is immutable (its fields do not change).
 
@@ -132,5 +132,4 @@ void main() {
 - Dart optimizes identical `const` objects by using the same instance in memory.
 
 ---
-
-> Using `const` constructor helps write **efficient, clean, and bug-free Dart code** 🧊🚀
+> 📚 This is part of the Dart OOP chapter.

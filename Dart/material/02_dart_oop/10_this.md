@@ -1,4 +1,4 @@
-# 🐋 The `this` Keyword in Dart
+# The `this` Keyword in Dart
 
 ## What is `this`?
 
@@ -147,3 +147,7 @@ class Example {
 * Constructor in Dart
 * Static Methods
 * Scope & Context
+
+---
+> 📚 This is part of the Dart OOP chapter.
+

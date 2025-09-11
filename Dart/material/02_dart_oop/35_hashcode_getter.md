@@ -1,8 +1,8 @@
-# 🐋 HashCode Getter in Dart
+# HashCode Getter in Dart
 
 In Dart, every object has a **`hashCode`** property, which returns an integer representing the object's hash value. The `hashCode` is primarily used in **hash-based collections**, such as `HashSet` and `HashMap`, to quickly locate and manage objects. ⚡
 
-## 🎯 Purpose of `hashCode`
+## Purpose of `hashCode`
 
 The `hashCode` property provides a numeric identifier for an object that helps improve the performance of collections. Two main principles govern its usage:
 
@@ -15,7 +15,7 @@ The `hashCode` property provides a numeric identifier for an object that helps i
 
    * `hashCode` makes searching, inserting, and deleting elements faster in hash-based data structures.
 
-## 🔍 Default Behavior
+## Default Behavior
 
 By default, the `hashCode` is derived from the object's identity (its memory address). This means different instances of a class will likely produce different hash codes even if their properties are the same.
 
@@ -71,7 +71,7 @@ void main() {
 
 Here, we use the **bitwise XOR (`^`)** operator to combine the hash codes of multiple fields.
 
-## 📦 Practical Example with Collections
+## Practical Example with Collections
 
 ```dart
 void main() {
@@ -80,15 +80,18 @@ void main() {
   set.add(Person("Hamin", 20));
   set.add(Person("Hamin", 20)); // Won't be added again due to equal hashCode & ==
 
-  print(set.length); // 1 🎉
+  print(set.length); // 1 
 }
 ```
 
 Without overriding `hashCode` and `==`, the set would incorrectly contain duplicates.
 
-## 📝 Summary
+## Summary
 
 * Every Dart object has a `hashCode` property. 
 * Objects that are equal must have the same hash code.
 * Always override `hashCode` when overriding `==` for consistency.
 * `hashCode` ensures efficient performance in hash-based collections like `HashMap` and `HashSet`. ⚡
+
+---
+> 📚 This is part of the Dart OOP chapter.

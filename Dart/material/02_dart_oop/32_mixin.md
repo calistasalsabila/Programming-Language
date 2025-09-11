@@ -1,4 +1,4 @@
-# 🐋 Dart Mixin Guide
+# Dart Mixin Guide
 
 ## 1. Introduction
 
@@ -199,3 +199,6 @@ void main() {
 * Combine multiple mixins for richer functionality.
 * Restrict mixins with `on` for better type safety.
 * Follow best practices for clean and maintainable code.
+
+---
+> 📚 This is part of the Dart OOP chapter.

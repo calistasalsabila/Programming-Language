@@ -1,29 +1,29 @@
-# 🐋 Polymorphism in Dart
+# Polymorphism in Dart
 
-## 📌 Definition
+## 1. Definition
 Polymorphism is a core concept in Object-Oriented Programming (OOP) that allows objects of different classes to be treated as objects of a common superclass. In Dart, polymorphism enables you to write more flexible and reusable code by allowing a single method or class to operate on many types of objects.
 
 ---
 
-## 🎯 Purpose
+## 2. Purpose
 The primary goals of polymorphism are:
 
-- **Code reusability**
-- **Interface generalization**
-- **Flexibility and scalability**
+- Code reusability
+- Interface generalization
+- Flexibility and scalability
 
 Polymorphism allows a method to behave differently based on the object that invokes it.
 
 ---
 
-## 🧠 Types of Polymorphism in Dart
+## 3. Types of Polymorphism in Dart
 
-### 1. **Compile-time Polymorphism (Method Overloading)** ❌
-Dart **does not support traditional method overloading** (same method name with different parameters).
+### 3.1 Compile-time Polymorphism (Method Overloading)
+Dart does not support traditional method overloading (same method name with different parameters).
 
 However, it provides alternative techniques using:
-- **Optional positional parameters**
-- **Named parameters**
+- Optional positional parameters
+- Named parameters
 
 ```dart
 class Calculator {
@@ -40,8 +40,8 @@ void main() {
 }
 ```
 
-### 2. **Runtime Polymorphism (Method Overriding)** ✅
-Achieved via **inheritance** and **method overriding** using `@override` keyword.
+### 3.2 Runtime Polymorphism (Method Overriding)
+Achieved via inheritance and method overriding using `@override` keyword.
 
 ```dart
 class Animal {
@@ -81,7 +81,7 @@ Here, both `Dog` and `Cat` override the `speak()` method of their superclass `An
 
 ---
 
-## 📂 Real-world Example: Payment System
+## 4. Real-world Example: Payment System
 
 ```dart
 abstract class PaymentMethod {
@@ -119,14 +119,14 @@ In this example, `PaymentMethod` is an interface. Both `CreditCard` and `PayPal`
 
 ---
 
-## 🧪 Why Use Polymorphism?
+## 5. Why Use Polymorphism?
 - Makes code extensible and maintainable
 - Simplifies complex conditional logic using dynamic dispatch
 - Enables programming to an interface rather than an implementation
 
 ---
 
-## 🔄 Summary Table
+## 6. Summary Table
 
 | Type                | Description                           | Supported in Dart? |
 |---------------------|---------------------------------------|---------------------|
@@ -136,14 +136,17 @@ In this example, `PaymentMethod` is an interface. Both `CreditCard` and `PayPal`
 
 ---
 
-## ✅ Best Practices
+## 7. Best Practices
 - Use polymorphism to eliminate redundant code and promote reuse
 - Favor interfaces or abstract classes for flexibility
 - Always use `@override` for clarity and compiler checks
 
 ---
 
-## 📎 Conclusion
+## 8. Conclusion
 Polymorphism in Dart allows objects of different types to be treated uniformly through shared interfaces or superclasses. Even without native method overloading, Dart enables expressive and flexible OOP design through runtime polymorphism and alternative parameter techniques.
 
-Continue practicing polymorphism to deepen your understanding of OOP in Dart!
+---
+> 📚 This is part of the Dart OOP chapter.
+
+

@@ -1,4 +1,4 @@
-# 🐋 Redirecting Constructor in Dart
+# Redirecting Constructor in Dart
 
 In Dart, a **redirecting constructor** is a constructor that redirects its call to another constructor in the same class. This is useful when you want to reuse logic from an existing constructor and avoid code duplication.
 
@@ -99,3 +99,5 @@ void main() {
 | Limitation              | No body allowed, must redirect to same class constructor |
 
 Redirecting constructors are a clean way to reuse initialization logic in Dart and are widely used in both simple classes and Flutter widgets.
+
+> 📚 This is part of the Dart OOP chapter.

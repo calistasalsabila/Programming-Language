@@ -1,4 +1,4 @@
-# 🐋 Initializer List in Dart
+# Initializer List in Dart
 
 In Dart, the **initializer list** is a special syntax used in constructors to initialize instance variables **before the constructor body runs**. It is especially useful when initializing `final` fields or calling a superclass constructor with parameters.
 
@@ -101,3 +101,5 @@ class Employee extends Person {
 | `this` keyword reference | ❌ No (in general)             |
 
 Initializer lists are powerful for setting up class state early, particularly with immutable design and superclass coordination.
+
+> 📚 This is part of the Dart OOP chapter.

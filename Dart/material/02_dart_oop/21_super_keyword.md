@@ -1,18 +1,18 @@
-# 🐋 `super` Keyword in Dart
+# `super` Keyword in Dart
 
-## 📌 Overview
+## 1. Overview
 The `super` keyword in Dart is used to refer to the **parent class** (also called the superclass). It allows access to the methods, properties, and constructors of the superclass from a subclass.
 
 ---
 
-## 🎯 Use Cases of `super`
-1. **Accessing superclass methods** from a subclass method.
-2. **Accessing superclass properties** if they're not overridden.
-3. **Calling superclass constructor** from a subclass constructor.
+## 2. Use Cases of `super`
+1. Accessing superclass methods from a subclass method.
+2. Accessing superclass properties if they're not overridden.
+3. Calling superclass constructor from a subclass constructor.
 
 ---
 
-## 🧠 Syntax and Explanation
+## 3. Syntax and Explanation
 ```dart
 class Parent {
   String message = 'Hello from Parent';
@@ -44,7 +44,7 @@ void main() {
 }
 ```
 
-### ✅ Output:
+### Output:
 ```
 Hello from Child
 Hello from Parent
@@ -54,7 +54,7 @@ Child adds: Hello!
 
 ---
 
-## 🏗️ Using `super` in Constructor
+## 4. Using `super` in Constructor
 You can use `super` to call a parent class constructor from the subclass constructor.
 
 ```dart
@@ -76,21 +76,21 @@ void main() {
 }
 ```
 
-### ✅ Output:
+### Output:
 ```
 Dokja is in grade 10
 ```
 
 ---
 
-## ❗Important Notes
+## 5. Important Notes
 - You can only use `super` in a subclass.
-- If a method or property is **overridden** in the subclass, you need `super` to access the original one.
-- `super` can only access **public** members of the superclass.
+- If a method or property is overridden in the subclass, you need `super` to access the original one.
+- `super` can only access public members of the superclass.
 
 ---
 
-## 🔚 Summary
+## 6. Summary
 | Use | Example |
 |-----|---------|
 | Access superclass method | `super.methodName()` |
@@ -100,3 +100,5 @@ Dokja is in grade 10
 The `super` keyword is essential when you want to extend or modify functionality while still utilizing what the parent class offers.
 
 ---
+> 📚 This is part of the Dart OOP chapter.
+

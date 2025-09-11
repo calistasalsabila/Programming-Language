@@ -1,4 +1,4 @@
-# 🐋 Dart `==` (Equals Operator)
+# Dart `==` (Equals Operator)
 
 ## 1. Introduction
 
@@ -151,3 +151,6 @@ But with overriding:
 ## 8. Summary
 
 The `==` operator in Dart provides a way to check equality. Without overriding, it checks if two references point to the same object. To compare values meaningfully, override both `==` and `hashCode`. This ensures your objects behave correctly in equality checks, collections, and debugging.
+
+---
+> 📚 This is part of the Dart OOP chapter.

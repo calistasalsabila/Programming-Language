@@ -1,10 +1,10 @@
-# 🐋 Dart Constructors
+# Dart Constructors
 
 In Dart, **constructors** are special methods used to create and initialize objects from a class. They allow you to set up an object’s initial state when it's instantiated.
 
 ---
 
-## 🧱 Default Constructor
+## 1. Default Constructor
 
 If no constructor is defined, Dart automatically provides a default constructor with no arguments.
 
@@ -21,7 +21,7 @@ void main() {
 
 ---
 
-## 🔧 Custom Constructor
+## 2. Custom Constructor
 
 You can create your own constructors by defining them inside the class.
 
@@ -44,7 +44,7 @@ void main() {
 
 ---
 
-## 🧹 Shorthand Constructor (Using `this`)
+## 3. Shorthand Constructor (Using `this`)
 
 A cleaner and more concise way to define constructors.
 
@@ -64,7 +64,7 @@ void main() {
 
 ---
 
-## 🧰 Named Constructors
+## 4. Named Constructors
 
 You can define multiple constructors with different names to offer various ways of creating objects.
 
@@ -90,7 +90,7 @@ void main() {
 
 ---
 
-## 🔁 Redirecting Constructors
+## 5. Redirecting Constructors
 
 Used to call another constructor in the same class.
 
@@ -111,7 +111,7 @@ void main() {
 
 ---
 
-## 🔒 Const Constructor
+## 6. Const Constructor
 
 If the object is immutable, you can define a `const` constructor to enable compile-time constant objects.
 
@@ -132,7 +132,7 @@ void main() {
 
 ---
 
-## ❓ Factory Constructor
+## 7. Factory Constructor
 
 Used when:
 
@@ -161,7 +161,7 @@ void main() {
 
 ---
 
-## 📌 Summary Table
+## Summary Table
 
 | Constructor Type | Keyword / Feature      | Purpose                                     |
 | ---------------- | ---------------------- | ------------------------------------------- |
@@ -174,5 +174,5 @@ void main() {
 | Factory          | `factory`              | Flexible instance control                   |
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-Happy building objects in Dart! 🐋🏗️

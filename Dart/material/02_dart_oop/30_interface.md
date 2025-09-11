@@ -1,20 +1,20 @@
-# 🐋 Dart Interfaces — Complete Guide
+# Dart Interfaces — Complete Guide
 
 ## 1. Introduction
 
 In Dart, **interfaces** are used to define a contract that a class can implement. Unlike some languages (like Java) where you have a specific `interface` keyword, Dart uses its **class** system to define interfaces implicitly. This means **every class in Dart defines an interface automatically**, and other classes can implement that interface.
 
-Think of interfaces as **"promises"** 📜 — when a class implements an interface, it is promising to provide concrete implementations for all the methods and properties defined in that interface.
+Think of interfaces as **"promises"** — when a class implements an interface, it is promising to provide concrete implementations for all the methods and properties defined in that interface.
 
 ---
 
 ## 2. Key Concepts
 
-### ✨ 2.1 Interface Definition in Dart
+### 2.1 Interface Definition in Dart
 
-* In Dart, **every class is an interface**.
-* To "create" an interface, you simply define a class without necessarily providing its implementation.
-* Another class can then **`implement`** this interface.
+1. In Dart, **every class is an interface**.
+2. To "create" an interface, you simply define a class without necessarily providing its implementation.
+3. Another class can then **`implement`** this interface.
 
 Example:
 
@@ -28,12 +28,12 @@ Here, `Animal` is **both** a class and an interface.
 
 ---
 
-### ✨ 2.2 Implementing an Interface
+### 2.2 Implementing an Interface
 
 To implement an interface in Dart:
 
-* Use the `implements` keyword.
-* Provide concrete implementations for **all** the methods and properties from the interface.
+1. Use the `implements` keyword.
+2. Provide concrete implementations for **all** the methods and properties from the interface.
 
 Example:
 
@@ -41,14 +41,14 @@ Example:
 class Dog implements Animal {
   @override
   void makeSound() {
-    print("Bark! 🐶");
+    print("Bark!");
   }
 }
 ```
 
 ---
 
-### ✨ 2.3 Multiple Interfaces
+### 2.3 Multiple Interfaces
 
 Dart supports implementing **multiple interfaces** using a comma-separated list.
 
@@ -66,12 +66,12 @@ class CanSwim {
 class Dolphin implements CanRun, CanSwim {
   @override
   void run() {
-    print("Dolphins don't run, but they can move fast in water! 🐬");
+    print("Dolphins don't run, but they can move fast in water!");
   }
 
   @override
   void swim() {
-    print("Swimming gracefully... 🌊");
+    print("Swimming gracefully...");
   }
 }
 ```
@@ -91,7 +91,7 @@ Example:
 ```dart
 class Parent {
   void sayHello() {
-    print("Hello from Parent 👋");
+    print("Hello from Parent");
   }
 }
 
@@ -102,7 +102,7 @@ class Child extends Parent {
 class AnotherChild implements Parent {
   @override
   void sayHello() {
-    print("Hello from AnotherChild 🌟");
+    print("Hello from AnotherChild");
   }
 }
 ```
@@ -128,7 +128,7 @@ class Car implements Vehicle {
   @override
   void accelerate() {
     speed += 10;
-    print("Accelerating... Current speed: $speed km/h 🚗");
+    print("Accelerating... Current speed: $speed km/h");
   }
 }
 ```
@@ -158,7 +158,7 @@ class Circle implements Shape {
 
 ---
 
-## 6. Real-World Example — Payment System 💳
+## 6. Real-World Example — Payment System
 
 ```dart
 abstract class PaymentProcessor {
@@ -168,14 +168,14 @@ abstract class PaymentProcessor {
 class PayPalPayment implements PaymentProcessor {
   @override
   void processPayment(double amount) {
-    print("Processing payment of \$$amount via PayPal 🅿️");
+    print("Processing payment of \$$amount via PayPal");
   }
 }
 
 class CreditCardPayment implements PaymentProcessor {
   @override
   void processPayment(double amount) {
-    print("Processing payment of \$$amount via Credit Card 💳");
+    print("Processing payment of \$$amount via Credit Card");
   }
 }
 
@@ -191,29 +191,32 @@ void main() {
 Output:
 
 ```
-Processing payment of $50.0 via PayPal 🅿️
-Processing payment of $100.0 via Credit Card 💳
+Processing payment of $50.0 via PayPal
+Processing payment of $100.0 via Credit Card
 ```
 
 ---
 
 ## 7. Advantages of Using Interfaces
 
-✅ **Code Consistency** — Forces consistent method naming and structure.
-✅ **Loose Coupling** — Encourages dependency on contracts instead of concrete implementations.
-✅ **Testability** — Makes mocking and testing easier.
-✅ **Multiple Behavior Composition** — Combine multiple interfaces without worrying about single inheritance limitations.
+1. **Code Consistency** — Forces consistent method naming and structure.
+2. **Loose Coupling** — Encourages dependency on contracts instead of concrete implementations.
+3. **Testability** — Makes mocking and testing easier.
+4. **Multiple Behavior Composition** — Combine multiple interfaces without worrying about single inheritance limitations.
 
 ---
 
 ## 8. Summary
 
-* **All Dart classes are interfaces**.
-* Use `implements` to define a contract a class must follow.
-* Must override **all methods and properties**.
-* Can implement **multiple interfaces**.
-* Abstract classes are commonly used for defining interfaces.
+1. **All Dart classes are interfaces**.
+2. Use `implements` to define a contract a class must follow.
+3. Must override **all methods and properties**.
+4. Can implement **multiple interfaces**.
+5. Abstract classes are commonly used for defining interfaces.
 
 ---
 
-🎯 **Key Takeaway:** Interfaces in Dart help you write **clean, modular, and testable code** by separating **what** a class should do from **how** it does it.
+**Key Takeaway:** Interfaces in Dart help you write **clean, modular, and testable code** by separating **what** a class should do from **how** it does it.
+
+---
+> 📚 This is part of the Dart OOP chapter.

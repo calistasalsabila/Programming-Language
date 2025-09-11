@@ -1,10 +1,10 @@
-# 🐋 Dart: Extension Methods
+# Dart: Extension Methods
 
-**Extension methods** in Dart allow you to add new functionality to existing classes **without modifying the original class** or creating a subclass. This feature is especially helpful when you want to enhance built-in types like `String`, `int`, `List`, etc.
+Extension methods in Dart allow you to add new functionality to existing classes **without modifying the original class** or creating a subclass. This feature is especially helpful when you want to enhance built-in types like `String`, `int`, `List`, etc.
 
 ---
 
-## ✅ Purpose
+## 1. Purpose
 
 * Extend the capabilities of existing types.
 * Keep the original class untouched.
@@ -12,7 +12,7 @@
 
 ---
 
-## 📚 Syntax
+## 2. Syntax
 
 ```dart
 extension ExtensionName on Type {
@@ -24,7 +24,7 @@ extension ExtensionName on Type {
 
 ---
 
-## 🔸 Example 1: Extending `String`
+## 3. Example 1: Extending `String`
 
 ```dart
 extension StringExtension on String {
@@ -42,7 +42,7 @@ void main() {
 
 ---
 
-## 🔸 Example 2: Extending `int`
+## 4. Example 2: Extending `int`
 
 ```dart
 extension IntExtension on int {
@@ -57,7 +57,7 @@ void main() {
 
 ---
 
-## 🔸 Example 3: Extension with Parameters
+## 5. Example 3: Extension with Parameters
 
 ```dart
 extension RepeatString on String {
@@ -71,7 +71,7 @@ void main() {
 
 ---
 
-## 🔍 Notes
+## 6. Notes
 
 * You can name the extension (recommended) to avoid naming conflicts.
 * If two extensions have the same method name on the same type, Dart uses the one that’s **imported last**.
@@ -79,7 +79,7 @@ void main() {
 
 ---
 
-## 📦 Summary
+## 7. Summary
 
 | Feature          | Description                             |
 | ---------------- | --------------------------------------- |
@@ -90,5 +90,4 @@ void main() {
 | Limitation       | No access to private members            |
 
 ---
-
-✨ Use extension methods to make your Dart code **cleaner**, **modular**, and **more expressive**, especially when working with built-in types or utility methods!
+> 📚 This is part of the Dart OOP chapter.

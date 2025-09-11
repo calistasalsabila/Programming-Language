@@ -1,14 +1,14 @@
-# 🐋 Object Class and Superclass in Dart
+# Object Class and Superclass in Dart
 
-## 📌 Overview
+## 1. Overview
 
 In Dart, **`Object`** is the root of the class hierarchy. Every class in Dart **implicitly or explicitly** inherits from `Object`, making it the **universal superclass**. This is a core concept in Object-Oriented Programming (OOP) and is essential to understand inheritance, method overriding, and type safety.
 
 ---
 
-## 1. 🔹 The `Object` Class
+## 2. The `Object` Class
 
-### 🔍 Definition
+### 2.1 Definition
 
 The `Object` class is the superclass of all Dart classes. If you create a class and do not explicitly extend another class, Dart automatically makes it extend `Object`.
 
@@ -22,7 +22,7 @@ This is equivalent to:
 class Example extends Object {}
 ```
 
-### ✅ Key Methods from `Object`
+### 2.2 Key Methods from `Object`
 
 | Method           | Description                                                 |
 | ---------------- | ----------------------------------------------------------- |
@@ -34,9 +34,9 @@ class Example extends Object {}
 
 ---
 
-## 2. 🔹 What is a Superclass?
+## 3. What is a Superclass?
 
-### 📖 Definition
+### 3.1 Definition
 
 A **superclass** is the class from which another class (called a subclass) inherits properties and methods. Dart supports single inheritance, meaning a class can extend only one superclass.
 
@@ -56,7 +56,7 @@ class Dog extends Animal {
 
 Here, `Animal` is the **superclass**, and `Dog` is the **subclass**.
 
-### 🧠 Inheritance Behavior
+### 3.2 Inheritance Behavior
 
 * Subclass inherits **all accessible** members (fields and methods) of the superclass.
 * Subclass can **override** methods from the superclass.
@@ -64,9 +64,9 @@ Here, `Animal` is the **superclass**, and `Dog` is the **subclass**.
 
 ---
 
-## 3. 🔹 The `super` Keyword
+## 4. The `super` Keyword
 
-### 📍 Purpose
+### 4.1 Purpose
 
 The `super` keyword is used inside a subclass to **refer to**:
 
@@ -76,7 +76,7 @@ The `super` keyword is used inside a subclass to **refer to**:
 
 of its immediate superclass.
 
-### 📘 Example: Method Access with `super`
+### 4.2 Example: Method Access with `super`
 
 ```dart
 class Parent {
@@ -93,7 +93,7 @@ class Child extends Parent {
 }
 ```
 
-### 📘 Example: Constructor Access with `super`
+### 4.3 Example: Constructor Access with `super`
 
 ```dart
 class Person {
@@ -108,7 +108,7 @@ class Student extends Person {
 
 ---
 
-## 4. 🔹 Real Example: Understanding `Object` and Superclass
+## 5. Real Example: Understanding `Object` and Superclass
 
 ```dart
 class A {
@@ -135,7 +135,7 @@ void main() {
 
 ---
 
-## 5. 🔹 Summary
+## 6. Summary
 
 * `Object` is the **root class** of all Dart classes.
 * A **superclass** is a class from which a subclass inherits.
@@ -144,7 +144,7 @@ void main() {
 
 ---
 
-## 📌 Bonus Tip
+## 7. Bonus Tip
 
 You can override `toString()` or `==` in your classes to customize how they behave when printed or compared:
 
@@ -166,3 +166,6 @@ class User {
 ```
 
 Understanding these concepts is foundational for mastering Dart OOP and writing clean, reusable code.
+---
+> 📚 This is part of the Dart OOP chapter.
+

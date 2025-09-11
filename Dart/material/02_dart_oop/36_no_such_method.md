@@ -1,4 +1,4 @@
-# 🐋 Dart `noSuchMethod`
+# Dart `noSuchMethod`
 
 ## Introduction
 
@@ -101,3 +101,6 @@ The `noSuchMethod` in Dart provides a mechanism for intercepting invalid
 or missing method calls. It is especially helpful in testing and dynamic
 programming scenarios. However, it is recommended to use it with caution
 to maintain clean and predictable code.
+
+---
+> 📚 This is part of the Dart OOP chapter.

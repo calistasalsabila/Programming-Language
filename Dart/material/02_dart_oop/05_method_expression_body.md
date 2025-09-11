@@ -1,17 +1,17 @@
-# 🐋 Dart: Expression Body Methods
+# Dart: Expression Body Methods
 
 In Dart, **expression body methods** provide a concise syntax for writing methods (or functions) that contain only a single expression. This is useful when the method simply returns the result of an expression or performs a one-liner action.
 
 ---
 
-## ✅ Purpose
+## 1. Purpose
 
 * To simplify methods that only return a value or execute a single statement.
 * To make the code more readable and expressive.
 
 ---
 
-## 📚 Syntax
+## 2. Syntax
 
 ```dart
 returnType methodName(parameters) => expression;
@@ -27,7 +27,7 @@ returnType methodName(parameters) {
 
 ---
 
-## 🔸 Example
+## 3. Example
 
 ```dart
 class Math {
@@ -46,7 +46,7 @@ void main() {
 
 ---
 
-## 🔍 Notes
+## 4. Notes
 
 * The `=>` is known as **fat arrow** and can only be used for single-expression methods.
 * It is often used in short methods, especially in Flutter widgets and functional-style code.
@@ -59,7 +59,7 @@ void main() {
 
 ---
 
-## 🛠️ Getter Example with Expression Body
+## 5. Getter Example with Expression Body
 
 ```dart
 class Circle {
@@ -77,7 +77,7 @@ void main() {
 
 ---
 
-## 🛠️ Setter Example with Expression Body
+## 6. Setter Example with Expression Body
 
 ```dart
 class Counter {
@@ -90,7 +90,7 @@ class Counter {
 
 ---
 
-## 🧠 Summary
+## 7. Summary
 
 | Concept     | Description                             |
 | ----------- | --------------------------------------- |
@@ -100,5 +100,4 @@ class Counter {
 | Benefit     | Cleaner and more concise code           |
 
 ---
-
-✨ Expression body methods help make Dart code **short**, **clear**, and **maintainable**, especially when dealing with simple logic.
+> 📚 This is part of the Dart OOP chapter.

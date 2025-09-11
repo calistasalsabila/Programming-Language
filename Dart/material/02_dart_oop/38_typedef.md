@@ -1,6 +1,6 @@
-# 🐋 Dart `typedef`
+#  Dart `typedef`
 
-## 📌 Introduction
+##  Introduction
 
 In Dart, **`typedef`** is a keyword used to create an alias for function signatures or complex function types. It allows developers to give a name to a specific function type, making the code more **readable, reusable, and easier to maintain**.
 
@@ -8,17 +8,17 @@ This feature is particularly useful when working with **higher-order functions**
 
 ---
 
-## 🎯 Purpose of `typedef`
+##  Purpose of `typedef`
 
 The main goals of using `typedef` in Dart are:
 
-1. ✅ **Readability**: Instead of writing long function signatures repeatedly, you can assign them a short and descriptive name.
-2. ✅ **Reusability**: Once defined, the function type can be reused across different parts of the code.
-3. ✅ **Maintainability**: If the function signature changes, you only need to update the `typedef` definition instead of every usage.
+1. **Readability**: Instead of writing long function signatures repeatedly, you can assign them a short and descriptive name.
+2. **Reusability**: Once defined, the function type can be reused across different parts of the code.
+3. **Maintainability**: If the function signature changes, you only need to update the `typedef` definition instead of every usage.
 
 ---
 
-## 📝 Syntax
+## Syntax
 
 ```dart
 typedef FunctionName = ReturnType Function(ParameterType1, ParameterType2, ...);
@@ -49,7 +49,7 @@ void main() {
 }
 ```
 
-### ✨ Explanation
+### Explanation
 
 * We defined a `typedef` named **`IntOperation`**, which represents any function taking two integers and returning an integer.
 * We assigned both `add` and `subtract` functions to the same variable type `IntOperation`.
@@ -75,7 +75,7 @@ void main() {
 }
 ```
 
-### ✨ Explanation
+### Explanation
 
 * The `typedef Callback` defines a function type that takes a `String` and returns `void`.
 * The `processMessage` function accepts a callback parameter of type `Callback`.
@@ -101,7 +101,7 @@ void main() {
 }
 ```
 
-### ✨ Explanation
+### Explanation
 
 * Instead of repeating `double Function(double, double)` every time, we use `MathOperation`.
 * This makes the code **simpler, consistent, and readable**.
@@ -143,11 +143,11 @@ In Dart, you can use either `Function` or `typedef` to declare function types. H
   * Example: `typedef Callback = void Function(String message);`
   * This makes it clear that the callback must accept a `String`.
 
-👉 Best practice: Use `typedef` when possible for **clarity and type safety**.
+Best practice: Use `typedef` when possible for **clarity and type safety**.
 
 ---
 
-## 📚 Summary
+## Summary
 
 * `typedef` in Dart creates an alias for function types.
 * It improves **readability, reusability, and maintainability**.
@@ -159,4 +159,6 @@ In Dart, you can use either `Function` or `typedef` to declare function types. H
 ## 🔗 Sources
 
 * [Dart Language Tour - Typedefs](https://dart.dev/language/typedefs)
-* Dart documentation and examples
+
+---
+> 📚 This is part of the Dart OOP chapter.

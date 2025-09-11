@@ -1,34 +1,34 @@
-# 🐋 Dart Object
+# Dart Object
 
 In Dart, **objects** are the foundation of Object-Oriented Programming (OOP). Every value in Dart is an object—even numbers, functions, and `null`—and all objects are instances of a class. This file explains what objects are, how to create and use them, and how they interact in Dart.
 
 ---
 
-## 📌 What is an Object?
+## 1. What is an Object?
 
 An **object** is an instance of a class. It is a combination of **state** (data/properties) and **behavior** (methods/functions). When a class is instantiated, it creates an object.
 
-> 💡 Think of a class as a blueprint and the object as the actual house built using that blueprint.
+> Think of a class as a blueprint and the object as the actual house built using that blueprint.
 
 ---
 
-## 🎯 Purpose of Using Objects
+## 2. Purpose of Using Objects
 
-* To **encapsulate** data and behavior in a single unit
-* To **reuse code** through classes
-* To create **modular** and **maintainable** applications
+1. To **encapsulate** data and behavior in a single unit
+2. To **reuse code** through classes
+3. To create **modular** and **maintainable** applications
 
 ---
 
-## 🛠️ How to Create an Object
+## 3. How to Create an Object
 
-### ✅ Syntax
+### Syntax
 
 ```dart
 ClassName objectName = ClassName();
 ```
 
-### 🧪 Example
+### Example
 
 ```dart
 class Student {
@@ -48,7 +48,7 @@ void main() {
 }
 ```
 
-### 🖥️ Output
+### Output
 
 ```
 Hi, my name is Hamin and I am 20 years old.
@@ -56,11 +56,11 @@ Hi, my name is Hamin and I am 20 years old.
 
 ---
 
-## 🧱 Using Constructors to Create Objects
+## 4. Using Constructors to Create Objects
 
 Constructors are special methods used to initialize objects.
 
-### 🧪 Example
+### Example
 
 ```dart
 class Book {
@@ -81,7 +81,7 @@ void main() {
 }
 ```
 
-### 🖥️ Output
+### Output
 
 ```
 Book: Dart Guide, Pages: 150
@@ -89,7 +89,7 @@ Book: Dart Guide, Pages: 150
 
 ---
 
-## 📎 Object Properties and Methods
+## 5. Object Properties and Methods
 
 You can access an object's properties and methods using the dot `.` operator.
 
@@ -100,7 +100,7 @@ objectName.methodName();
 
 ---
 
-## 🧠 Object with Default and Named Parameters
+## 6. Object with Default and Named Parameters
 
 ```dart
 class Car {
@@ -121,7 +121,7 @@ void main() {
 }
 ```
 
-### 🖥️ Output
+### Output
 
 ```
 Toyota - 2020
@@ -130,7 +130,7 @@ BMW - 2023
 
 ---
 
-## 🧩 Object Interaction Example
+## 7. Object Interaction Example
 
 ```dart
 class Person {
@@ -162,7 +162,7 @@ void main() {
 }
 ```
 
-### 🖥️ Output
+### Output
 
 ```
 Jeha works as a Software Engineer.
@@ -170,22 +170,24 @@ Jeha works as a Software Engineer.
 
 ---
 
-## 🧼 Summary
+## 8. Summary
 
-* Dart treats **everything as an object**, and every object is an instance of a **class**.
-* You create an object using the `new` keyword (optional) or directly using `ClassName()`.
-* Objects can have properties (state) and methods (behavior).
-* Objects are created with constructors, which can be default, positional, or named.
-* Objects can interact with each other by passing one object as a field or parameter to another.
-
----
-
-## ✅ Common Use Cases
-
-* Modeling real-world entities: Student, Book, Car, etc.
-* Managing state in Flutter widgets
-* Reusability and abstraction in larger applications
+1. Dart treats **everything as an object**, and every object is an instance of a **class**.
+2. You create an object using the `new` keyword (optional) or directly using `ClassName()`.
+3. Objects can have properties (state) and methods (behavior).
+4. Objects are created with constructors, which can be default, positional, or named.
+5. Objects can interact with each other by passing one object as a field or parameter to another.
 
 ---
 
-Happy coding with Dart! 🐋
+## 9. Common Use Cases
+
+1. Modeling real-world entities: Student, Book, Car, etc.
+2. Managing state in Flutter widgets
+3. Reusability and abstraction in larger applications
+
+---
+> 📚 This is part of the Dart OOP chapter.
+
+
+

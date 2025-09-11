@@ -161,8 +161,11 @@ Hi, I'm Dokja, a student.
 
 ---
 
-## 🔚 Conclusion
+## Conclusion
 
 Abstract classes are powerful for creating consistent APIs across multiple implementations. In Dart, they enforce a contract that all subclasses must follow, promoting organized and scalable code design.
 
-Mastering abstract classes is essential in writing flexible, reusable, and clean object-oriented Dart code. 🐋
+---
+> 📚 This is part of the Dart OOP chapter.
+
+

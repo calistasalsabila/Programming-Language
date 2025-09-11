@@ -1,20 +1,20 @@
-# 🐋 Field Overriding in Dart
+# Field Overriding in Dart
 
-## 📌 What is Field Overriding?
+## 1. What is Field Overriding?
 Field overriding in Dart happens when a subclass **declares a field with the same name** as one in its superclass. This allows the subclass to **hide** or **replace** the superclass field.
 
 > Note: Unlike methods, Dart allows field overriding, but it's considered *shadowing* rather than true polymorphic override.
 
 ---
 
-## 🧠 Key Concepts
+## 2. Key Concepts
 - Fields in Dart can be overridden by defining a new field with the **same name** in a subclass.
 - Dart does **not support late binding** for fields, so field references are resolved at compile time.
 - Use of `@override` is **not allowed for fields** (only for methods/getters/setters).
 
 ---
 
-## 🧱 Syntax
+## 3. Syntax
 ```dart
 class Parent {
   String name = "Parent";
@@ -35,14 +35,14 @@ void main() {
 
 ---
 
-## 📍 Explanation
+## 4. Explanation
 - The field `name` exists in both `Parent` and `Child`.
 - When accessed using a `Parent` reference, the `Parent` field is used (static typing).
 - When accessed using a `Child` reference, the `Child` field is used.
 
 ---
 
-## 🧪 Another Example
+## 5. Another Example
 ```dart
 class Animal {
   String type = "Animal";
@@ -63,12 +63,12 @@ void main() {
 
 ---
 
-## ✅ Key Takeaways
+## 6. Key Takeaways
 - Field overriding in Dart is **field shadowing**.
 - It does **not support dynamic dispatch** like methods.
 - Always use **getters/setters** if you want polymorphic behavior on fields.
 
-### ✅ Using Getters for Polymorphism
+### Using Getters for Polymorphism
 ```dart
 class Animal {
   String get type => "Animal";
@@ -87,7 +87,7 @@ void main() {
 
 ---
 
-## 🧾 Summary
+## 7. Summary
 | Concept | Description |
 |--------|-------------|
 | Field Overriding | Subclass defines field with same name |
@@ -95,5 +95,6 @@ void main() {
 | Polymorphic alternative | Use getters/setters |
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-That's all about field overriding in Dart! 🧬
+

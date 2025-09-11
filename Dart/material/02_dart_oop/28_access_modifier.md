@@ -1,4 +1,4 @@
-# 🐋 Dart Access Modifiers
+# Dart Access Modifiers
 
 In Dart, access control is relatively simpler than in languages like Java or C++. Dart does **not** have traditional access modifiers like `public`, `private`, or `protected`. Instead, Dart uses a **library-based visibility** system.
 
@@ -6,18 +6,18 @@ This document explains how access control works in Dart, including visibility ru
 
 ---
 
-## 📘 Table of Contents
+## 1. Table of Contents
 
-1. [Overview of Access Modifiers](#1-overview-of-access-modifiers)
-2. [Library-Based Privacy in Dart](#2-library-based-privacy-in-dart)
-3. [Using the Underscore (`_`) Prefix](#3-using-the-underscore-_-prefix)
-4. [Access Modifiers Comparison (Dart vs Java)](#4-access-modifiers-comparison-dart-vs-java)
-5. [Examples](#5-examples)
-6. [Best Practices](#6-best-practices)
+1. Overview of Access Modifiers
+2. Library-Based Privacy in Dart
+3. Using the Underscore (`_`) Prefix
+4. Access Modifiers Comparison (Dart vs Java)
+5. Examples
+6. Best Practices
 
 ---
 
-## 1. Overview of Access Modifiers
+## 2. Overview of Access Modifiers
 
 In many programming languages, access modifiers like `public`, `private`, and `protected` are used to control the visibility of classes, methods, and variables. For example:
 
@@ -29,11 +29,11 @@ However, Dart takes a simpler and more consistent approach.
 
 ---
 
-## 2. Library-Based Privacy in Dart
+## 3. Library-Based Privacy in Dart
 
 In Dart, **everything is public by default** unless explicitly marked as private.
 
-### ✅ Public
+### Public
 
 All top-level functions, variables, classes, and class members are **public** by default and can be accessed from anywhere, as long as they are in the same package or imported properly.
 
@@ -47,7 +47,7 @@ class Animal {
 }
 ```
 
-### 🚫 Private (Using `_` Prefix)
+### Private (Using `_` Prefix)
 
 To make a member private in Dart, you prefix its name with an underscore (`_`). This makes it **private to the library** (not the class).
 
@@ -65,7 +65,7 @@ Note: Even if another class inherits from `Animal`, it **cannot access** `_secre
 
 ---
 
-## 3. Using the Underscore (`_`) Prefix
+## 4. Using the Underscore (`_`) Prefix
 
 Dart does **not** use `private` keyword. Instead, it uses `_` as a convention **and enforcement** to restrict access **within the same library/file**.
 
@@ -92,7 +92,7 @@ In another file that imports `animal.dart`, `_Lion`, `_growl()`, and `_hiddenFun
 
 ---
 
-## 4. Access Modifiers Comparison (Dart vs Java)
+## 5. Access Modifiers Comparison (Dart vs Java)
 
 | Feature         | Dart Syntax   | Java Equivalent  |
 | --------------- | ------------- | ---------------- |
@@ -105,9 +105,9 @@ Dart's philosophy: **libraries are the unit of privacy**, not classes.
 
 ---
 
-## 5. Examples
+## 6. Examples
 
-### 🧪 Example 1: Private Variable in Class
+### 1. Example: Private Variable in Class
 
 ```dart
 // file: lib/creature.dart
@@ -126,12 +126,12 @@ import 'lib/creature.dart';
 
 void main() {
   final c = Creature();
-  c.reveal();          // ✅ Allowed
-  // print(c._dna);     // ❌ Error: '_dna' isn't defined in main.dart
+  c.reveal();          // Allowed
+  // print(c._dna);     // Error: '_dna' isn't defined in main.dart
 }
 ```
 
-### 🧪 Example 2: Private Class
+### 2. Example: Private Class
 
 ```dart
 // file: lib/secret.dart
@@ -145,28 +145,29 @@ class _Agent {
 import 'lib/secret.dart';
 
 void main() {
-  // final agent = _Agent(); // ❌ Error: '_Agent' isn't defined in main.dart
+  // final agent = _Agent(); // Error: '_Agent' isn't defined in main.dart
 }
 ```
 
 ---
 
-## 6. Best Practices
+## 7. Best Practices
 
-* ✅ Use `_` for internal variables/methods not intended for public use
-* ✅ Group related classes and functions in a **single Dart file** (library)
-* ✅ Avoid unnecessary privacy; expose what’s needed for use
-* ✅ Use `part` and `part of` to split libraries cleanly if needed
-* ⚠️ Don’t assume `_` makes members private to class—it’s scoped to file
+* Use `_` for internal variables/methods not intended for public use
+* Group related classes and functions in a **single Dart file** (library)
+* Avoid unnecessary privacy; expose what’s needed for use
+* Use `part` and `part of` to split libraries cleanly if needed
+* Don’t assume `_` makes members private to class—it’s scoped to file
 
 ---
 
-## 🔚 Conclusion
+## 8. Conclusion
 
 Dart's access modifier system is simple but effective. Instead of granular control with multiple keywords, Dart relies on the `_` prefix and **library-level privacy** to manage access. Understanding this concept is crucial when designing reusable components or packages.
 
 By organizing code into meaningful libraries and respecting privacy boundaries using `_`, you can write clean and maintainable Dart code.
 
 ---
+> 📚 This is part of the Dart OOP chapter.
 
-Happy coding with Dart! 🐋
+

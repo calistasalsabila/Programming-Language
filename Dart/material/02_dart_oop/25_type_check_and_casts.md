@@ -1,11 +1,11 @@
-# 🐋 Type, Type Checking, and Casting in Dart
+# Type, Type Checking, and Casting in Dart
 
-## 📌 Definition
+## 1. Definition
 Dart is a statically typed language, meaning every variable has a type known at compile time. Type checking ensures variables are used in ways that align with their declared types. Casting allows converting one type into another when it makes sense logically and structurally.
 
 ---
 
-## 🎯 Type System in Dart
+## 2. Type System in Dart
 
 Dart supports both **static typing** and **dynamic typing**:
 
@@ -24,7 +24,7 @@ flexible = 100;         // allowed
 
 ---
 
-## ✅ Type Checking with `is` and `is!`
+## 3. Type Checking with `is` and `is!`
 
 The `is` keyword checks whether a variable is of a certain type.
 
@@ -54,12 +54,12 @@ if (value is! double) {
 
 ---
 
-## 🔄 Type Casting in Dart
+## 4. Type Casting in Dart
 
-### 1. **Implicit Casting** (only in subtype relationships)
+### 1. Implicit Casting (only in subtype relationships)
 Not allowed automatically — you must cast explicitly.
 
-### 2. **Explicit Casting with `as`**
+### 2. Explicit Casting with `as`
 Use `as` to cast from a parent type to a more specific subtype:
 
 ```dart
@@ -80,7 +80,7 @@ void main() {
 }
 ```
 
-### ❗ Runtime Error Example
+### Runtime Error Example
 ```dart
 Animal a = Animal();
 Bird b = a as Bird; // Error: type 'Animal' is not subtype of type 'Bird'
@@ -94,7 +94,7 @@ if (a is Bird) {
 
 ---
 
-## 🧪 Example with `Object` and `dynamic`
+## 5. Example with `Object` and `dynamic`
 
 ```dart
 void handle(Object input) {
@@ -119,7 +119,7 @@ void dynamicExample(dynamic x) {
 
 ---
 
-## 📎 Summary Table
+## 6. Summary Table
 
 | Concept       | Description                                | Example                    |
 |---------------|--------------------------------------------|----------------------------|
@@ -131,12 +131,15 @@ void dynamicExample(dynamic x) {
 
 ---
 
-## ✅ Best Practices
+## 7. Best Practices
 - Prefer using `is` before `as` to avoid runtime exceptions
 - Avoid overusing `dynamic`; use specific types where possible
 - Use `Object` for general but type-safe variable declarations
 
 ---
 
-## 📌 Conclusion
+## 8. Conclusion
 Understanding Dart’s type system and how to safely perform type checks and casts is essential for writing reliable and bug-free code. Use `is` for safe type checking, and `as` for explicit casting when you're certain of the type relationship.
+
+---
+> 📚 This is part of the Dart OOP chapter.

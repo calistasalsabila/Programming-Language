@@ -1,16 +1,16 @@
-# 🐋 Method Overriding in Dart
+# Method Overriding in Dart
 
-## 📌 Overview
+## 1. Overview
 Method overriding is a feature in object-oriented programming that allows a subclass to provide a specific implementation of a method that is already defined in its superclass. In Dart, method overriding enables polymorphism — a subclass can redefine a method from the parent class to suit its behavior.
 
 ---
 
-## 🔧 Key Concepts
+## 2. Key Concepts
 
-### 1. `@override` Annotation
+### 2.1 `@override` Annotation
 The `@override` annotation in Dart is used to indicate that a method is intended to override a method in the superclass. Although it is not strictly required, it helps catch errors at compile time if the method signature doesn’t match any superclass method.
 
-### 2. Rules for Overriding
+### 2.2 Rules for Overriding
 - The method in the subclass must have the same name and parameter list.
 - Return type must be the same (or subtype).
 - The overridden method should be declared in a superclass.
@@ -18,7 +18,7 @@ The `@override` annotation in Dart is used to indicate that a method is intended
 
 ---
 
-## 📘 Syntax
+## 3. Syntax
 ```dart
 class Parent {
   void greet() {
@@ -36,7 +36,7 @@ class Child extends Parent {
 
 ---
 
-## 🧪 Example
+## 4. Example
 
 ```dart
 void main() {
@@ -52,7 +52,7 @@ void main() {
 
 ---
 
-## 📎 Using `super`
+## 5. Using `super`
 You can call the original method from the parent class using `super`:
 
 ```dart
@@ -73,20 +73,20 @@ And Hello from Child too!
 
 ---
 
-## ❗ When to Use
+## 6. When to Use
 - To modify or extend functionality inherited from a superclass.
 - To implement polymorphism — especially when dealing with abstract or interface-based design.
 
 ---
 
-## 🚫 What You Can’t Override
+## 7. What You Can’t Override
 - Static methods
 - Constructors
 - Private methods from another library (those starting with `_`)
 
 ---
 
-## 🧩 Summary
+## 8. Summary
 | Concept            | Description                                     |
 |-------------------|-------------------------------------------------|
 | `@override`       | Annotation to denote overriding                |
@@ -95,3 +95,6 @@ And Hello from Child too!
 | Not Overridable   | Static methods, constructors, private methods  |
 
 Method overriding is essential for customizing inherited behavior and writing flexible, reusable, and maintainable Dart code.
+---
+> 📚 This is part of the Dart OOP chapter.
+

@@ -1,4 +1,4 @@
-# 🐋 Dart `toString()` Method
+# Dart `toString()` Method
 
 ## 1. Introduction
 
@@ -186,3 +186,6 @@ void main() {
 ## 9. Summary
 
 The `toString()` method in Dart provides a string representation of objects. While the default implementation is minimal, overriding it allows developers to create meaningful and readable outputs for debugging and logging. Using best practices ensures that your code is more maintainable, easier to debug, and user-friendly.
+
+---
+> 📚 This is part of the Dart OOP chapter.

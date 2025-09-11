@@ -30,7 +30,7 @@ typedef FunctionName = ReturnType Function(ParameterType1, ParameterType2, ...);
 
 ---
 
-## 🔎 Example 1: Simple Typedef
+## Example 1: Simple Typedef
 
 ```dart
 typedef IntOperation = int Function(int a, int b);
@@ -128,7 +128,7 @@ void main() {
 
 ---
 
-## ⚖️ `typedef` vs `Function`
+## `typedef` vs `Function`
 
 In Dart, you can use either `Function` or `typedef` to declare function types. However, there are differences:
 

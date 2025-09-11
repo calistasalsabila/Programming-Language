@@ -4,7 +4,7 @@ This document explains the purpose of each folder in this Python learning reposi
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ### 1. `material/`
 
@@ -26,7 +26,7 @@ This document explains the purpose of each folder in this Python learning reposi
 
 ---
 
-## ✅ TL;DR Summary
+## TL;DR Summary
 
 | Folder       | Description                                   |
 | ------------ | --------------------------------------------- |
@@ -38,4 +38,4 @@ This document explains the purpose of each folder in this Python learning reposi
 
 If you're browsing this repository and wondering how everything is organized, this file should give you a clear overview of what each folder is for.
 
-> Learning Python with clarity and structure! 🐍🚀
+> Learning Python with clarity and structure! 

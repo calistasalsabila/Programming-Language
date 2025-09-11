@@ -1,4 +1,4 @@
-# Python Learning Repository Structure 🐍
+# Python Learning Repository Structure 
 
 This document explains the purpose of each folder in this Python learning repository. The structure is designed to separate different kinds of learning content and coding activities.
 

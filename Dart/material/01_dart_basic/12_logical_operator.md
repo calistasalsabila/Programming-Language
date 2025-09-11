@@ -1,10 +1,10 @@
-# 🐋 Dart Logical Operators
+# Dart Logical Operators
 
 Logical operators are used to combine multiple boolean expressions or values and return a boolean result. In Dart, they are mainly used in conditional expressions like `if`, `while`, or ternary statements.
 
 ---
 
-## ✅ Purpose
+## 1. Purpose
 
 Logical operators allow us to:
 
@@ -14,7 +14,7 @@ Logical operators allow us to:
 
 ---
 
-## 🧠 List of Logical Operators
+## 2. List of Logical Operators
 
 | Operator | Name         | Description                                         |
 |----------|--------------|-----------------------------------------------------|
@@ -26,7 +26,7 @@ Logical operators allow us to:
 
 ---
 
-## ✨ Syntax & Examples
+## 3. Syntax & Examples
 
 ### 1. `&&` (Logical AND)
 
@@ -38,7 +38,7 @@ void main() {
 }
 ```
 
-🔎 *Explanation:*
+*Explanation:*
 
 * `a && b` means: `true AND false` → result is `false`.
 * Only returns `true` if **both** `a` and `b` are `true`.
@@ -55,7 +55,7 @@ void main() {
 }
 ```
 
-🔎 *Explanation:*
+*Explanation:*
 
 * `a || b` means: `true OR false` → result is `true`.
 * Returns `true` if **either** `a` or `b` is `true`.
@@ -71,14 +71,14 @@ void main() {
 }
 ```
 
-🔎 *Explanation:*
+*Explanation:*
 
 * `!a` negates the value: `!false` → `true`.
 * Only works with a **single** boolean value.
 
 ---
 
-## 🔁 Real-world Example
+## 4. Real-world Example
 
 ```dart
 void main() {
@@ -93,7 +93,7 @@ void main() {
 }
 ```
 
-👀 *Explanation:* The program checks if both conditions are met:
+*Explanation:* The program checks if both conditions are met:
 
 * `age >= 18` is `true`
 * `hasID` is `true`
@@ -101,7 +101,7 @@ void main() {
 
 ---
 
-## ⚠️ Notes
+## 5. Notes
 
 * Logical operators are **short-circuit**:
 
@@ -111,7 +111,7 @@ void main() {
 
 ---
 
-## 🏁 Summary
+## 6. Summary
 
 | Operator | Meaning | Result is `true` when... |    |                              |
 | -------- | ------- | ------------------------ | -- | ---------------------------- |
@@ -119,4 +119,6 @@ void main() {
 | \`       |         | \`                       | OR | at least one operand is true |
 | `!`      | NOT     | operand is false         |    |                              |
 
-Use logical operators to make smarter decisions in your Dart programs! 🐋
+
+> 📚 This is part of the Dart basic chapter.
+

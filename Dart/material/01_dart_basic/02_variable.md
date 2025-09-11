@@ -1,12 +1,12 @@
-# 🐋 Dart Notes: Variables
+# Dart Notes: Variables
 
-## 📌 What is a Variable?
+## What is a Variable?
 
 A **variable** is like a container that stores data which can be changed later. In Dart, every variable has a **type**, and Dart is a **statically typed** language. That means the type of a variable is known at compile time.
 
 ---
 
-## 🎯 Declaring Variables
+## Declaring Variables
 
 There are multiple ways to declare variables in Dart:
 
@@ -48,7 +48,7 @@ final currentDate = DateTime.now();
 const pi = 3.14159;
 ```
 
-🧐 **Note:** `const` variables are implicitly `final`.
+ **Note:** `const` variables are implicitly `final`.
 
 ### 5. `late`
 
@@ -65,7 +65,7 @@ print(emperor); // Works fine because it's assigned before use
 
 ---
 
-## 🧾 Variable Naming Convention
+## Variable Naming Convention
 
 * Dart uses **camelCase** for variable names.
 
@@ -74,16 +74,16 @@ String playerName = 'Dokja';
 int playerScore = 100;
 ```
 
-* ❌ Avoid using **snake\_case** for variable names.
+* Avoid using **snake\_case** for variable names.
 
-✅ **Camel Case** means:
+**Camel Case** means:
 
 * The first word starts in lowercase.
 * Each new word starts with a capital letter.
 
 ---
 
-## 🔁 Changing Variable Values
+## Changing Variable Values
 
 * Only mutable variables (declared with `var`, `dynamic`, or a non-final/const type) can be updated.
 
@@ -97,7 +97,7 @@ emperor = 'Akutagawa'; // ❌ Error: final variable can't be reassigned
 
 ---
 
-## 🔄 Default Values
+## Default Values
 
 * Uninitialized variables have a default value of `null`.
 
@@ -110,7 +110,7 @@ Use `?` for nullable types.
 
 ---
 
-## 💡 Best Practices
+## Best Practices
 
 * Prefer `var` or explicit types for clarity.
 * Use `final` as a default unless mutation is required.
@@ -120,7 +120,7 @@ Use `?` for nullable types.
 
 ---
 
-## 📦 Variable Scope
+## Variable Scope
 
 * **Global**: Declared outside any function.
 * **Local**: Declared inside a function or block.
@@ -136,7 +136,7 @@ void greet() {
 
 ---
 
-## 📚 Example: Combining All
+## Example: Combining All
 
 ```dart
 const game = 'Royal Showdown';
@@ -147,7 +147,7 @@ bool hasWon = true;
 print('$player scored $score in $game. Victory: $hasWon');
 ```
 
-🧾 **Output:**
+**Output:**
 
 ```
 Dokja scored 95 in Royal Showdown. Victory: true
@@ -155,7 +155,7 @@ Dokja scored 95 in Royal Showdown. Victory: true
 
 ---
 
-## ✅ Summary Table
+## Summary Table
 
 | Keyword   | Type Inferred | Mutable | Compile-Time Const | Notes                                 |
 | --------- | ------------- | ------- | ------------------ | ------------------------------------- |
@@ -167,6 +167,5 @@ Dokja scored 95 in Royal Showdown. Victory: true
 
 ---
 
-Keep experimenting with 🐋 Dart and enjoy coding!
+> 📚 This is part of the Dart basic chapter.
 
-> "Variables aren’t just data. They’re the actors in your code’s story!" 💙

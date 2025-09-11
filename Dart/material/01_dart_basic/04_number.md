@@ -1,17 +1,17 @@
-# 🐋 Dart Numbers Data Type
+# Dart Numbers Data Type
 
-## 📌 Overview
+## Overview
 
 In Dart, numbers are used to represent numeric values like integers and decimals. Dart provides a single base type for numbers called `num`, which has two subtypes:
 
-* `int`: For **integer** values (whole numbers)
-* `double`: For **floating-point** numbers (decimal numbers)
+* `int`: For integer values (whole numbers)
+* `double`: For floating-point numbers (decimal numbers)
 
 All number types in Dart are objects, so you can call methods on them too.
 
 ---
 
-## 🎯 Goals
+## Goals
 
 * Understand the `num`, `int`, and `double` types.
 * Learn how to use number literals and methods.
@@ -19,7 +19,7 @@ All number types in Dart are objects, so you can call methods on them too.
 
 ---
 
-## 🧱 Number Types
+## Number Types
 
 | Type     | Description                        | Example                 |
 | -------- | ---------------------------------- | ----------------------- |
@@ -29,9 +29,9 @@ All number types in Dart are objects, so you can call methods on them too.
 
 ---
 
-## 🧪 Example Usage
+## Example Usage
 
-### ✅ Integers (`int`)
+### Integers (`int`)
 
 ```dart
 void main() {
@@ -40,7 +40,7 @@ void main() {
 }
 ```
 
-### ✅ Doubles (`double`)
+### Doubles (`double`)
 
 ```dart
 void main() {
@@ -49,7 +49,7 @@ void main() {
 }
 ```
 
-### ✅ Num (Generic Number Type)
+### Num (Generic Number Type)
 
 ```dart
 void main() {
@@ -63,7 +63,7 @@ void main() {
 
 ---
 
-## ➕ Arithmetic Operations
+## Arithmetic Operations
 
 ```dart
 void main() {
@@ -81,23 +81,23 @@ void main() {
 
 ---
 
-## 🔁 Type Conversion
+## Type Conversion
 
-### 🎯 Convert int to double
+### Convert int to double
 
 ```dart
 int x = 5;
 double y = x.toDouble();
 ```
 
-### 🎯 Convert double to int
+### Convert double to int
 
 ```dart
 double pi = 3.14;
 int rounded = pi.toInt(); // Rounds toward zero: 3
 ```
 
-### 🎯 Parse from String
+### Parse from String
 
 ```dart
 String numStr = "42";
@@ -106,7 +106,7 @@ int number = int.parse(numStr);
 double decimal = double.parse("3.14");
 ```
 
-### ⚠ Safe Parsing
+### Safe Parsing
 
 ```dart
 int? safeInt = int.tryParse("not a number");
@@ -115,7 +115,7 @@ print(safeInt); // null
 
 ---
 
-## 🧠 Number Methods
+## Number Methods
 
 ```dart
 void main() {
@@ -131,16 +131,17 @@ void main() {
 
 ---
 
-## 🚨 Notes
+## Notes
 
-* Dart supports **arbitrary-precision integers**.
+* Dart supports arbitrary-precision integers.
 * Dart doesn’t support `NaN`, `Infinity`, or `-Infinity` as constants, but they can still occur in computations.
 * Always check for null when parsing with `tryParse()`.
 
 ---
 
-## 📚 Resources
+## Resources
 
 * [Dart Language Tour – Numbers](https://dart.dev/language#numbers)
 * [Dart API Docs – num](https://api.dart.dev/stable/dart-core/num-class.html)
 
+> 📚 This is part of the Dart basic chapter.

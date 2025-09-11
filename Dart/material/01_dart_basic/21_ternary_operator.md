@@ -1,10 +1,10 @@
-# 🐋 Dart: Ternary Operator (`?:`)
+# Dart: Ternary Operator (`?:`)
 
-## 🎯 Purpose
+## 1. Purpose
 
 The ternary operator provides a short, concise way to evaluate a condition and choose between two expressions. It's a shorthand for simple `if-else` statements.
 
-## 🧠 Syntax
+## 2. Syntax
 
 ```dart
 condition ? expr1 : expr2;
@@ -13,13 +13,13 @@ condition ? expr1 : expr2;
 * If `condition` is true → returns `expr1`
 * If `condition` is false → returns `expr2`
 
-## 📦 Notes
+## 3. Notes
 
 * Always returns a value
-* Best used for **simple conditions**, not for complex logic
-* Can be **nested**, but readability suffers — avoid deeply nested ternaries
+* Best used for simple conditions, not for complex logic
+* Can be nested, but readability suffers — avoid deeply nested ternaries
 
-## 🔍 Example 1: Basic usage
+## 4. Example 1: Basic usage
 
 ```dart
 void main() {
@@ -31,20 +31,20 @@ void main() {
 }
 ```
 
-## 🧪 Output
+## 5. Output
 
 ```
 B is greater
 ```
 
-## 📚 Explanation
+## 6. Explanation
 
 * Checks if `a > b` → false
 * So it evaluates and returns `'B is greater'`
 
 ---
 
-## 🔍 Example 2: Assigning with ternary
+## 7. Example 2: Assigning with ternary
 
 ```dart
 void main() {
@@ -54,7 +54,7 @@ void main() {
 }
 ```
 
-## 🧪 Output
+## 8. Output
 
 ```
 Status: Pass
@@ -62,7 +62,7 @@ Status: Pass
 
 ---
 
-## 🔍 Example 3: Nested ternary (⚠️ use with care)
+## 9. Example 3: Nested ternary (use with care)
 
 ```dart
 void main() {
@@ -78,13 +78,13 @@ void main() {
 }
 ```
 
-## 🧪 Output
+## 10. Output
 
 ```
 Zero
 ```
 
-## 📚 Explanation
+## 11. Explanation
 
 * Checks `number > 0` → false
 * Checks `number < 0` → false
@@ -92,10 +92,11 @@ Zero
 
 ---
 
-## ✅ Best Practices
+## 12. Best Practices
 
-* Use ternary for **simple**, **readable** conditions
+* Use ternary for simple, readable conditions
 * Prefer `if-else` when logic gets complex
 * Avoid ternary if readability suffers due to too much nesting
 
-Ternary operators help make your code shorter and cleaner — but like any sharp tool, use them wisely! ✂️
+> 📚 This is part of the Dart basic chapter.
+

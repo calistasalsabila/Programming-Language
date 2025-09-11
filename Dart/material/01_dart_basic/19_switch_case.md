@@ -1,10 +1,10 @@
-# 🐋 Dart: `switch` & `case`
+# Dart: `switch` & `case`
 
-## 🎯 Purpose
+## 1. Purpose
 
 Use the `switch` statement when you want to execute different blocks of code based on the value of a single variable. It's an alternative to long chains of `if-else` statements.
 
-## 🧠 Syntax
+## 2. Syntax
 
 ```dart
 switch (expression) {
@@ -20,14 +20,14 @@ switch (expression) {
 }
 ```
 
-## 📦 Notes
+## 3. Notes
 
 * `break` is necessary to exit each `case`, or it will continue to the next case (fall-through is not allowed unless explicitly using `continue caseName:`).
 * The `default` case is optional but recommended to catch unmatched values.
 * `switch` works with values that are `int`, `String`, or enums.
 * You **cannot** use relational operators (like `<`, `>`) directly in `case` conditions.
 
-## 🔍 Example
+## 4. Example
 
 ```dart
 void main() {
@@ -55,13 +55,13 @@ void main() {
 }
 ```
 
-## 🧪 Output
+## 5. Output
 
 ```
 Good job!
 ```
 
-## 📚 Explanation
+## 6. Explanation
 
 * `grade` is set to `'B'`
 * The `switch` compares `grade` with each `case`
@@ -70,7 +70,7 @@ Good job!
 
 ---
 
-## 🔍 Example with `int`
+## 7. Example with `int`
 
 ```dart
 void main() {
@@ -92,13 +92,13 @@ void main() {
 }
 ```
 
-## 🧪 Output
+## 8. Output
 
 ```
 Three
 ```
 
-## 📚 Explanation
+## 9. Explanation
 
 * Matches `case 3` and executes `print('Three')`
 * Skips the rest of the cases due to `break`
@@ -106,7 +106,7 @@ Three
 
 ---
 
-## 🚫 Common Mistakes
+## 10. Common Mistakes
 
 * Forgetting `break` → leads to compiler error (Dart doesn't allow fall-through like some other languages)
 * Using `case x > 5` → ❌ invalid in Dart
@@ -114,4 +114,5 @@ Three
 
 ---
 
-Switch statements help make code cleaner and more readable when handling multiple fixed conditions on a single variable. 🧼
+> 📚 This is part of the Dart basic chapter.
+

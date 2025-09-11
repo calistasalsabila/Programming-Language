@@ -1,8 +1,8 @@
-# 🐋 Dart Arithmetic Operations
+# Dart Arithmetic Operations
 
 In Dart, arithmetic operations are used to perform mathematical calculations. These operations can be used with integers (`int`) and floating-point numbers (`double`).
 
-## ✨ Basic Arithmetic Operators
+## 1. Basic Arithmetic Operators
 
 | Operator | Description        | Example   | Result |
 | -------- | ------------------ | --------- | ------ |
@@ -13,13 +13,13 @@ In Dart, arithmetic operations are used to perform mathematical calculations. Th
 | `~/`     | Integer Division   | `10 ~/ 3` | `3`    |
 | `%`      | Modulo (remainder) | `10 % 3`  | `1`    |
 
-### 📌 Notes:
+### Notes:
 
 * `/` returns a `double`.
 * `~/` returns an `int` by discarding the remainder.
 * `%` returns the remainder of the division.
 
-## 💡 Example Code
+## 2. Example Code
 
 ```dart
 void main() {
@@ -35,7 +35,7 @@ void main() {
 }
 ```
 
-### 🔍 Output:
+### Output:
 
 ```
 Addition: a + b = 13
@@ -46,7 +46,7 @@ Integer Division: a ~/ b = 3
 Modulo: a % b = 1
 ```
 
-## 📎 Type Promotion in Dart
+## 3. Type Promotion in Dart
 
 If either operand is a `double`, the result will also be a `double` for operations like `+`, `-`, `*`, and `/`.
 
@@ -58,7 +58,9 @@ void main() {
 }
 ```
 
-## 🧠 Conclusion
+## 4. Conclusion
 
 Dart supports all standard arithmetic operators and also provides integer division (`~/`) and modulo (`%`) for precise control over integer math. Be mindful of the types (`int` vs `double`) to avoid unexpected results.
+
+> 📚 This is part of the Dart basic chapter.
 

@@ -1,18 +1,18 @@
-# 🐋 Dart Assignment Operators
+# Dart Assignment Operators
 
 Assignment operators are used to assign values to variables. In Dart, they can also perform an operation and assign the result at the same time.
 
 ---
 
-## ✨ Purpose
+## 1. Purpose
 
 To assign values to variables, and in some cases, combine operations with assignment (like `+=`, `*=`, etc).
 
 ---
 
-## 🧠 Syntax & Description
+## 2. Syntax & Description
 
-### 🔗 Basic Assignment Operators
+### 2.1 Basic Assignment Operators
 
 | Operator | Description               | Example             |
 | -------- | ------------------------- | ------------------- |
@@ -24,7 +24,7 @@ To assign values to variables, and in some cases, combine operations with assign
 | `~/=`    | Integer divide and assign | `a ~/= 2`           |
 | `%=`     | Modulo and assign         | `a %= 3` (a = a%3)  |
 
-### 🔼 Increment & Decrement Operators
+### 2.2 Increment & Decrement Operators
 
 | Operator | Description    | Example                                     |
 | -------- | -------------- | ------------------------------------------- |
@@ -37,7 +37,7 @@ These operators increase or decrease a value by 1.
 
 ---
 
-## 🧪 Examples with Explanation
+## 3. Examples with Explanation
 
 ```dart
 void main() {
@@ -78,7 +78,7 @@ void main() {
 
 ---
 
-## 🔍 Use Cases
+## 4. Use Cases
 
 * Updating counters and scores
 * Modifying variables in loops
@@ -87,7 +87,7 @@ void main() {
 
 ---
 
-## 📌 Notes
+## 5. Notes
 
 * `/=` returns `double`, while `~/=` returns `int`.
 * These operators simplify code and reduce redundancy.
@@ -104,11 +104,12 @@ void main() {
 
 ---
 
-## ✅ Summary
+## 6. Summary
 
 * Assignment operators simplify variable value updates.
 * Dart supports combined arithmetic-assignment operators.
 * Use `~/=` for integer division and `/=` for floating-point division.
 * Use `++` and `--` to quickly increment or decrement values by 1.
 
-> 🐋 Mastering assignment operators helps you write concise and efficient Dart code!
+> 📚 This is part of the Dart basic chapter.
+

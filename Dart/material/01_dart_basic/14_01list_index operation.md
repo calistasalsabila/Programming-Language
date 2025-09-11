@@ -1,6 +1,6 @@
-# 🐋 Dart List Index Operations
+# Dart List Index Operations
 
-## 📌 Objective
+## 1. Objective
 
 To understand and master how to work with **list elements using their index** in Dart. This includes:
 
@@ -11,7 +11,7 @@ To understand and master how to work with **list elements using their index** in
 
 ---
 
-## 📚 Accessing Elements by Index
+## 2. Accessing Elements by Index
 
 In Dart, you can access an element in a `List` using bracket notation (`[]`) just like in many other languages.
 
@@ -23,11 +23,11 @@ void main() {
 }
 ```
 
-> ⚠️ Indexing starts from 0.
+> Indexing starts from 0.
 
 ---
 
-## ✏️ Modifying Values by Index
+## 3. Modifying Values by Index
 
 You can **update** a value at a certain position using the same bracket syntax.
 
@@ -39,24 +39,24 @@ void main() {
 }
 ```
 
-> ✅ This is valid as long as the index exists in the list.
+> This is valid as long as the index exists in the list.
 
 ---
 
-## ❌ Common Mistake: Index Out of Range
+## 4. Common Mistake: Index Out of Range
 
 Trying to access or modify an index that doesn't exist causes a runtime error.
 
 ```dart
 void main() {
   List<int> scores = [80, 90];
-  print(scores[5]); // ❌ Error: RangeError
+  print(scores[5]); // Error: RangeError
 }
 ```
 
 ---
 
-## 🗑️ Removing Elements by Index
+## 5. Removing Elements by Index
 
 Use `removeAt(index)` to remove an element at a specific position.
 
@@ -68,11 +68,11 @@ void main() {
 }
 ```
 
-> 🧠 After removal, all items **shift** one index to the left.
+> After removal, all items **shift** one index to the left.
 
 ---
 
-## 🔍 Checking List Length Before Access
+## 6. Checking List Length Before Access
 
 To avoid errors, always check the list's length:
 
@@ -87,7 +87,7 @@ void main() {
 
 ---
 
-## 🔄 Looping by Index
+## 7. Looping by Index
 
 Accessing list items in a `for` loop using indices is common and useful.
 
@@ -102,7 +102,7 @@ void main() {
 
 ---
 
-## ✅ Best Practices
+## 8. Best Practices
 
 * Prefer checking `index < list.length` before accessing.
 * Avoid hardcoding indexes unless necessary.
@@ -110,7 +110,7 @@ void main() {
 
 ---
 
-## 📌 Summary
+## 9. Summary
 
 * `list[index]` to access or modify values
 * `list.removeAt(index)` to delete an element
@@ -118,11 +118,12 @@ void main() {
 
 ---
 
-## 📎 References
+## 10. References
 
 * Dart List Docs: [https://api.dart.dev/stable/dart-core/List-class.html](https://api.dart.dev/stable/dart-core/List-class.html)
 * RangeError Handling: [https://dart.dev/guides/language/language-tour#exceptions](https://dart.dev/guides/language/language-tour#exceptions)
 
 ---
 
-> keep coding smart and safely! 🚀
+> 📚 This is part of the Dart basic chapter.
+

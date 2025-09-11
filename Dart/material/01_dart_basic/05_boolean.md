@@ -1,12 +1,12 @@
-# 🐋 Dart Boolean Data Type
+# Dart Boolean Data Type
 
-## 📌 Overview
+## Overview
 
 In Dart, the `bool` type is used to represent Boolean values — either `true` or `false`. Boolean expressions are essential in conditional logic, such as `if` statements, loops, and comparisons.
 
 ---
 
-## 🎯 Goals
+## Goals
 
 * Understand the `bool` type in Dart.
 * Learn how to use Boolean literals and expressions.
@@ -14,7 +14,7 @@ In Dart, the `bool` type is used to represent Boolean values — either `true` o
 
 ---
 
-## 🔑 Boolean Type
+## Boolean Type
 
 | Type   | Description                     | Values          |
 | ------ | ------------------------------- | --------------- |
@@ -22,7 +22,7 @@ In Dart, the `bool` type is used to represent Boolean values — either `true` o
 
 ---
 
-## 🧪 Boolean Literals
+## Boolean Literals
 
 ```dart
 void main() {
@@ -36,7 +36,7 @@ void main() {
 
 ---
 
-## 🧠 Comparison Expressions
+## Comparison Expressions
 
 Comparison operators return Boolean values:
 
@@ -56,7 +56,7 @@ void main() {
 
 ---
 
-## ⚙ Logical Operators
+## Logical Operators
 
 | Operator | Name | Example         | Result  |        |   |         |        |
 | -------- | ---- | --------------- | ------- | ------ | - | ------- | ------ |
@@ -77,9 +77,9 @@ void main() {
 
 ---
 
-## 🔁 Using Booleans in Control Flow
+## Using Booleans in Control Flow
 
-### ✅ If-Else
+### If-Else
 
 ```dart
 void main() {
@@ -93,7 +93,7 @@ void main() {
 }
 ```
 
-### 🔁 While Loop
+### While Loop
 
 ```dart
 void main() {
@@ -108,7 +108,7 @@ void main() {
 
 ---
 
-## 🚨 Notes
+## Notes
 
 * Only `true` is considered truthy in Dart. Everything else (like `0`, `""`, `null`) is **not** truthy like in some other languages.
 * `bool` is a primitive type but still behaves like an object.
@@ -116,7 +116,9 @@ void main() {
 
 ---
 
-## 📚 Resources
+## Resources
 
 * [Dart Language Tour – Booleans](https://dart.dev/language#booleans)
 * [Dart API Docs – bool](https://api.dart.dev/stable/dart-core/bool-class.html)
+
+> 📚 This is part of the Dart basic chapter.

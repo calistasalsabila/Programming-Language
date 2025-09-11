@@ -1,10 +1,10 @@
-# 🐋 Dart Set
+# Dart Set
 
 In Dart, a `Set` is an **unordered collection of unique items**. This means that every element can appear only once in a set, and their position is not fixed.
 
 ---
 
-## 📌 Why Use a Set?
+## 1. Why Use a Set?
 
 * To store **non-duplicate** values.
 * Ideal when you care only about **membership**, not order or frequency.
@@ -12,15 +12,15 @@ In Dart, a `Set` is an **unordered collection of unique items**. This means that
 
 ---
 
-## 🧠 Declaration & Initialization
+## 2. Declaration & Initialization
 
-### 🔹 Using curly braces
+### 2.1 Using curly braces
 
 ```dart
 Set<String> fruits = {'apple', 'banana', 'orange'};
 ```
 
-### 🔹 Using Set constructor
+### 2.2 Using Set constructor
 
 ```dart
 Set<int> numbers = Set();
@@ -28,26 +28,26 @@ numbers.add(1);
 numbers.add(2);
 ```
 
-### 🔹 Using Set.from() constructor
+### 2.3 Using Set.from() constructor
 
 ```dart
 List<String> items = ['pen', 'pencil', 'pen'];
 Set<String> uniqueItems = Set.from(items); // {'pen', 'pencil'}
 ```
 
-### 🔹 Using Set.of()
+### 2.4 Using Set.of()
 
 ```dart
 Set<double> prices = Set.of([1.2, 3.4, 5.6]);
 ```
 
-> ⚠️ If you use `{}` without specifying a type, Dart treats it as a `Map`, not a `Set`.
+> If you use `{}` without specifying a type, Dart treats it as a `Map`, not a `Set`.
 
 ---
 
-## 📥 Adding Elements
+## 3. Adding Elements
 
-### 🔹 `add()`
+### 3.1 `add()`
 
 ```dart
 Set<int> nums = {};
@@ -55,7 +55,7 @@ nums.add(10);
 nums.add(10); // no effect (duplicate)
 ```
 
-### 🔹 `addAll()`
+### 3.2 `addAll()`
 
 ```dart
 nums.addAll([20, 30, 10]); // adds 20, 30 only
@@ -63,21 +63,21 @@ nums.addAll([20, 30, 10]); // adds 20, 30 only
 
 ---
 
-## 🗑️ Removing Elements
+## 4. Removing Elements
 
-### 🔹 `remove()`
+### 4.1 `remove()`
 
 ```dart
 nums.remove(20); // removes 20 if present
 ```
 
-### 🔹 `removeAll()`
+### 4.2 `removeAll()`
 
 ```dart
 nums.removeAll([10, 30]);
 ```
 
-### 🔹 `clear()`
+### 4.3 `clear()`
 
 ```dart
 nums.clear(); // removes all elements
@@ -85,15 +85,15 @@ nums.clear(); // removes all elements
 
 ---
 
-## 🔍 Checking Contents
+## 5. Checking Contents
 
-### 🔹 `contains()`
+### 5.1 `contains()`
 
 ```dart
 fruits.contains('banana'); // true
 ```
 
-### 🔹 `containsAll()`
+### 5.2 `containsAll()`
 
 ```dart
 fruits.containsAll(['apple', 'orange']); // true
@@ -101,7 +101,7 @@ fruits.containsAll(['apple', 'orange']); // true
 
 ---
 
-## 📊 Properties
+## 6. Properties
 
 | Property     | Description                    |
 | ------------ | ------------------------------ |
@@ -111,9 +111,9 @@ fruits.containsAll(['apple', 'orange']); // true
 
 ---
 
-## 🔁 Iterating Over a Set
+## 7. Iterating Over a Set
 
-### 🔹 Using `for` loop
+### 7.1 Using `for` loop
 
 ```dart
 for (var fruit in fruits) {
@@ -121,7 +121,7 @@ for (var fruit in fruits) {
 }
 ```
 
-### 🔹 Using `forEach()`
+### 7.2 Using `forEach()`
 
 ```dart
 fruits.forEach((fruit) => print(fruit));
@@ -129,9 +129,9 @@ fruits.forEach((fruit) => print(fruit));
 
 ---
 
-## 🔄 Set Operations
+## 8. Set Operations
 
-### 🔹 Union (A ∪ B)
+### 8.1 Union (A ∪ B)
 
 ```dart
 var a = {1, 2, 3};
@@ -139,13 +139,13 @@ var b = {3, 4, 5};
 var union = a.union(b); // {1, 2, 3, 4, 5}
 ```
 
-### 🔹 Intersection (A ∩ B)
+### 8.2 Intersection (A ∩ B)
 
 ```dart
 var inter = a.intersection(b); // {3}
 ```
 
-### 🔹 Difference (A \ B)
+### 8.3 Difference (A \ B)
 
 ```dart
 a.difference(b); // {1, 2}
@@ -154,15 +154,15 @@ b.difference(a); // {4, 5}
 
 ---
 
-## 📎 Converting Sets
+## 9. Converting Sets
 
-### 🔹 Set to List
+### 9.1 Set to List
 
 ```dart
 List<String> fruitList = fruits.toList();
 ```
 
-### 🔹 List to Set (removing duplicates)
+### 9.2 List to Set (removing duplicates)
 
 ```dart
 Set<String> uniqueList = Set.from(fruitList);
@@ -170,9 +170,9 @@ Set<String> uniqueList = Set.from(fruitList);
 
 ---
 
-## 🛡️ Type Safety
+## 10. Type Safety
 
-### 🔹 Generic Type Declaration
+### 10.1 Generic Type Declaration
 
 ```dart
 Set<int> numbers = {1, 2, 3};
@@ -182,17 +182,17 @@ Set<int> numbers = {1, 2, 3};
 
 ---
 
-## 🧪 Example Use Case: Unique Usernames
+## 11. Example Use Case: Unique Usernames
 
 ```dart
 Set<String> usernames = {};
 
 void registerUser(String name) {
   if (usernames.contains(name)) {
-    print("❌ Username already taken.");
+    print("Username already taken.");
   } else {
     usernames.add(name);
-    print("✅ Registered: $name");
+    print("Registered: $name");
   }
 }
 
@@ -203,23 +203,24 @@ registerUser("dokja"); // duplicate
 
 ---
 
-## 🧹 Tips & Pitfalls
+## 12. Tips & Pitfalls
 
-* 🔸 **No indexing**: Sets are unordered. You can't do `set[0]`.
-* 🔸 Use `List` if order or duplicates matter.
-* 🔸 Use `Set` for fast membership checks and uniqueness.
+* No indexing: Sets are unordered. You can't do `set[0]`.
+* Use `List` if order or duplicates matter.
+* Use `Set` for fast membership checks and uniqueness.
 
 ---
 
-## 🧾 Summary
+## 13. Summary
 
 | Feature         | List         | Set           |
 | --------------- | ------------ | ------------- |
-| Duplicates      | ✅ Allowed    | ❌ Not Allowed |
-| Order matters   | ✅ Yes        | ❌ No          |
-| Access by index | ✅ Yes        | ❌ No          |
+| Duplicates      | Allowed      | Not Allowed   |
+| Order matters   | Yes          | No            |
+| Access by index | Yes          | No            |
 | Use case        | Ordered data | Unique values |
 
 ---
 
-> Happy coding with 🐋 Dart!
+> 📚 This is part of the Dart basic chapter.
+

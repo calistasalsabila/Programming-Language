@@ -1,31 +1,31 @@
-# 🐋 How to Create a Dart Project
+# How to Create a Dart Project
 
-## 🎯 Purpose
+## Purpose
 This document explains how to properly create a new Dart project using the `dart create` command, including naming rules, project structure, and common issues.
 
 ---
 
-## 🧱 Requirements for Project Names
+## Requirements for Project Names
 
-### ✅ Allowed:
+### Allowed:
 - Lowercase letters (`a-z`)
 - Numbers (`0-9`) — not at the beginning
 - Underscores (`_`) to separate words
 
-### ❌ Not Allowed:
+### Not Allowed:
 - Uppercase letters (`A-Z`)
 - Spaces
 - Hyphens (`-`)
 - Special characters or symbols
 - Dart reserved keywords (e.g. `try`, `if`, `else`, etc)
 
-### ℹ️ Important Notes:
+### Important Notes:
 - The project name must contain at least two words separated by underscores (`_`).
 - Single-word names like `try`, `app`, or `myproject` may be rejected for being too generic or reserved.
 
 ---
 
-## 🧪 Examples of Valid and Invalid Names
+## Examples of Valid and Invalid Names
 
 | Project Name   | Valid? | Reason |
 |----------------|--------|--------|
@@ -39,7 +39,7 @@ This document explains how to properly create a new Dart project using the `dart
 
 ---
 
-## 🛠️ How to Create a Dart Project
+## How to Create a Dart Project
 
 Use the following command in your terminal:
 
@@ -47,13 +47,13 @@ Use the following command in your terminal:
 $ dart create your_project_name
 ```
 
-### ✅ Valid Examples:
+### Valid Examples:
 ```bash
 $ dart create hello_world
 $ dart create flutter_scanner
 ```
 
-### ❌ Invalid Examples:
+### Invalid Examples:
 ```bash
 $ dart create myproject     # ❌ Rejected for being one word
 $ dart create try           # ❌ Rejected as a keyword
@@ -69,7 +69,7 @@ Project names should be all lowercase, with underscores to separate words.
 
 ---
 
-## 🗂️ Default Project Structure (Console Project)
+## Default Project Structure (Console Project)
 
 When you run `dart create` (console project), the folder structure looks like this:
 
@@ -88,7 +88,7 @@ your_project_name/
 └── README.md                 # Project overview
 ```
 
-### 🔍 File/Folder Descriptions:
+### File/Folder Descriptions:
 - **`.dart_tool/`**: Internal Dart tooling info, auto-managed.
 - **`bin/`**: Contains the main executable Dart file (`your_project_name.dart`).
 - **`lib/`**: Place for shared libraries or reusable logic (may be empty).
@@ -102,16 +102,17 @@ your_project_name/
 
 ---
 
-## 🔍 Official References
+## Official References
 - [Dart Package Layout & Naming](https://dart.dev/tools/pub/package-layout#name)
 - [Flutter CLI `create` Command](https://docs.flutter.dev/development/tools/sdk/releases)
 
 ---
 
-## 📝 Summary
+## Summary
 - Use a project name with at least two lowercase words separated by underscores.
 - Avoid using Dart keywords and capital letters.
 - Follow the official naming conventions for full compatibility with Dart and Flutter tools.
 - Understand the default folder structure to navigate your project confidently.
 
-> "A clean project name is the first step to a clean project. 🐋"
+> 📚 This is part of the Dart basic chapter.
+

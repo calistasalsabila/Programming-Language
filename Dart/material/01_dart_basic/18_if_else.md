@@ -1,16 +1,16 @@
-# 🐋 Dart: `if` / `else` Statement
+# Dart: `if` / `else` Statement
 
 Control flow in Dart often uses conditional statements to execute different code based on specific conditions. One of the most fundamental constructs is the `if` / `else` statement.
 
 ---
 
-## 🧠 Purpose
+## 1. Purpose
 
 The `if` / `else` statement allows a program to make decisions and execute certain blocks of code only if specific conditions are met.
 
 ---
 
-## 🧩 Syntax
+## 2. Syntax
 
 ```dart
 if (condition) {
@@ -20,7 +20,7 @@ if (condition) {
 }
 ```
 
-### 🧾 Explanation
+### Explanation
 
 * `condition`: A boolean expression (returns `true` or `false`).
 * `{}`: Denotes the block of code.
@@ -29,7 +29,7 @@ if (condition) {
 
 ---
 
-## 🧮 Example 1: Basic `if` / `else`
+## 3. Example 1: Basic `if` / `else`
 
 ```dart
 void main() {
@@ -44,7 +44,7 @@ void main() {
 }
 ```
 
-### 💡 Output
+### Output
 
 ```
 a is not greater than b
@@ -52,11 +52,11 @@ a is not greater than b
 
 ---
 
-## 🔀 `if` / `else if` / `else`
+## 4. `if` / `else if` / `else`
 
 This allows multiple conditions to be checked in sequence.
 
-### 🧩 Syntax
+### Syntax
 
 ```dart
 if (condition1) {
@@ -68,7 +68,7 @@ if (condition1) {
 }
 ```
 
-### 🧮 Example 2: Grading System
+### Example 2: Grading System
 
 ```dart
 void main() {
@@ -86,7 +86,7 @@ void main() {
 }
 ```
 
-### 💡 Output
+### Output
 
 ```
 Grade: B
@@ -94,11 +94,11 @@ Grade: B
 
 ---
 
-## 🎯 Nested `if` / `else`
+## 5. Nested `if` / `else`
 
 An `if` / `else` statement can be placed inside another `if` / `else` block.
 
-### 🧮 Example 3: Nested Condition
+### Example 3: Nested Condition
 
 ```dart
 void main() {
@@ -116,7 +116,7 @@ void main() {
 }
 ```
 
-### 💡 Output
+### Output
 
 ```
 Number is zero
@@ -124,7 +124,7 @@ Number is zero
 
 ---
 
-## ⚠️ Notes
+## 6. Notes
 
 * Always use boolean expressions in `if` conditions.
 * You can omit `{}` for one-line code blocks, but it's best practice to keep them for readability.
@@ -135,7 +135,7 @@ if (a < b) print('a is smaller'); // valid, but not recommended for multiple lin
 
 ---
 
-## ✅ Use Cases
+## 7. Use Cases
 
 * Decision-making logic
 * Form validation
@@ -144,12 +144,12 @@ if (a < b) print('a is smaller'); // valid, but not recommended for multiple lin
 
 ---
 
-## 🧼 Best Practices
+## 8. Best Practices
 
 * Use `else if` instead of multiple `if` when only one condition can be true.
 * Keep conditionals readable and avoid complex nested logic if possible.
 * Use proper indentation.
 
 ---
+> 📚 This is part of the Dart basic chapter.
 
-> 📚 The `if` / `else` structure is the building block of decision-making in Dart, useful across logic, UI conditions, and algorithms.

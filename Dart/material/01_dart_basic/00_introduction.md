@@ -1,58 +1,58 @@
-# 🐋 Introduction to Dart Programming Language
+# Introduction to Dart Programming Language
 
 Welcome to your journey with **Dart**, a modern programming language optimized for building fast apps on any platform. Dart is the primary language used for Flutter, but it also works well for server, desktop, and web development.
 
 ---
 
-## 📌 What is Dart?
+## What is Dart?
 
 **Dart** is an object-oriented, class-based programming language developed by Google. It’s designed for:
 
-* 🧑‍💻 **Client-side development** (web, mobile, desktop)
-* 🚀 **Fast performance** with Ahead-of-Time (AOT) compilation
-* 💡 **Productivity** with features like hot reload (in Flutter)
-* 🌐 **Cross-platform capabilities**
+**Client-side development** (web, mobile, desktop)
+**Fast performance** with Ahead-of-Time (AOT) compilation
+**Productivity** with features like hot reload (in Flutter)
+**Cross-platform capabilities**
 
 ---
 
-## 🧠 Why Learn Dart?
+## Why Learn Dart?
 
-* 💖 Used in Flutter — one of the most popular frameworks for building mobile apps
-* 🧹 Clean and familiar syntax (similar to Java, JavaScript, and C#)
-* 🛠 Strongly typed with null safety
-* 📦 Great tooling support with IDEs like VS Code and Android Studio
-* 🌱 Easy to learn for beginners
+* Used in Flutter — one of the most popular frameworks for building mobile apps
+* Clean and familiar syntax (similar to Java, JavaScript, and C#)
+* Strongly typed with null safety
+* Great tooling support with IDEs like VS Code and Android Studio
+* Easy to learn for beginners
 
 ---
 
-## ⚙️ Installation Guide
+## Installation Guide
 
-### ✅ Prerequisites
+### Prerequisites
 
 * OS: Windows, macOS, or Linux
 * Internet connection
 
-### 📥 Install Dart SDK
+### Install Dart SDK
 
-#### 🔸 **Using Dart’s Official Installer**
+#### **Using Dart’s Official Installer**
 
 1. Visit: [https://dart.dev/get-dart](https://dart.dev/get-dart)
 2. Choose your OS and follow the installation steps.
 
-#### 🔸 **Using Homebrew (macOS)**
+#### **Using Homebrew (macOS)**
 
 ```bash
 brew tap dart-lang/dart
 brew install dart
 ```
 
-#### 🔸 **Using Chocolatey (Windows)**
+#### **Using Chocolatey (Windows)**
 
 ```bash
 choco install dart-sdk
 ```
 
-#### 🔸 **Using APT (Ubuntu/Linux)**
+#### **Using APT (Ubuntu/Linux)**
 
 ```bash
 sudo apt update -y
@@ -65,7 +65,7 @@ sudo apt install dart
 
 ---
 
-## 🧪 Verifying Installation
+## Verifying Installation
 
 ```bash
 dart --version
@@ -79,9 +79,9 @@ Dart SDK version: 3.x.x (stable) on "windows_x64"
 
 ---
 
-## 🧰 Creating Your First Dart File
+## Creating Your First Dart File
 
-### 1️⃣ Create a new Dart file
+### 1. Create a new Dart file
 
 Create a file named `hello.dart`:
 
@@ -91,13 +91,13 @@ void main() {
 }
 ```
 
-### 2️⃣ Run the Dart file
+### 2. Run the Dart file
 
 ```bash
 dart hello.dart
 ```
 
-### 🖨 Output:
+### Output:
 
 ```
 Hello, world!
@@ -105,9 +105,9 @@ Hello, world!
 
 ---
 
-## 🧱 Basic Syntax Overview
+## Basic Syntax Overview
 
-### 🔹 Variables
+### Variables
 
 ```dart
 var name = 'Dokja';
@@ -117,7 +117,7 @@ double height = 170.5;
 bool isSmart = true;
 ```
 
-### 🔹 Functions
+### Functions
 
 ```dart
 void greet(String name) {
@@ -129,7 +129,7 @@ void main() {
 }
 ```
 
-### 🔹 Conditionals
+### Conditionals
 
 ```dart
 if (age >= 18) {
@@ -139,7 +139,7 @@ if (age >= 18) {
 }
 ```
 
-### 🔹 Loops
+### Loops
 
 ```dart
 for (int i = 0; i < 5; i++) {
@@ -147,7 +147,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### 🔹 Classes
+### Classes
 
 ```dart
 class Character {
@@ -169,7 +169,7 @@ void main() {
 
 ---
 
-## 📚 Resources
+## Resources
 
 * [Official Dart Website](https://dart.dev)
 * [Dart Language Tour](https://dart.dev/guides/language/language-tour)
@@ -177,8 +177,5 @@ void main() {
 
 ---
 
-## 🎯 Summary
+> 📚 This is part of the Dart basic chapter.
 
-Dart is a powerful yet beginner-friendly language. With its modern syntax, robust typing, and seamless Flutter integration, it's an excellent choice for app developers. Whether you’re building for Android, iOS, web, or desktop — Dart has you covered.
-
-✨ Happy Coding!

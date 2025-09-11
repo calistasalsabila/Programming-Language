@@ -1,25 +1,25 @@
-# 🐋 Dart: `break` and `continue`
+# Dart: `break` and `continue`
 
 This documentation explains how the `break` and `continue` statements work in Dart. These statements are control flow tools used inside loops and switch-case statements to control the execution path.
 
 ---
 
-## 🔹 `break` Statement
+## 1. `break` Statement
 
 The `break` statement is used to **immediately terminate a loop** or a `switch` statement. Once `break` is encountered, the program exits the loop or switch and continues with the next statement after it.
 
-### 🔸 Syntax
+### 1.1 Syntax
 
 ```dart
 break;
 ```
 
-### 🔸 Use Cases
+### 1.2 Use Cases
 
 * Exit from a `for`, `while`, or `do-while` loop.
 * Exit from a `switch-case` block.
 
-### 🔸 Example 1: Using `break` in a loop
+### 1.3 Example 1: Using `break` in a loop
 
 ```dart
 void main() {
@@ -32,14 +32,14 @@ void main() {
 }
 ```
 
-🟢 **Output:**
+**Output:**
 
 ```
 1
 2
 ```
 
-### 🔸 Example 2: Using `break` in `switch`
+### 1.4 Example 2: Using `break` in `switch`
 
 ```dart
 void main() {
@@ -57,7 +57,7 @@ void main() {
 }
 ```
 
-🟢 **Output:**
+**Output:**
 
 ```
 Two
@@ -65,21 +65,21 @@ Two
 
 ---
 
-## 🔹 `continue` Statement
+## 2. `continue` Statement
 
 The `continue` statement **skips the rest of the current loop iteration** and proceeds to the next one.
 
-### 🔸 Syntax
+### 2.1 Syntax
 
 ```dart
 continue;
 ```
 
-### 🔸 Use Cases
+### 2.2 Use Cases
 
 * Skip certain iterations in `for`, `while`, or `do-while` loops.
 
-### 🔸 Example: Using `continue`
+### 2.3 Example: Using `continue`
 
 ```dart
 void main() {
@@ -92,7 +92,7 @@ void main() {
 }
 ```
 
-🟢 **Output:**
+**Output:**
 
 ```
 1
@@ -103,7 +103,7 @@ void main() {
 
 ---
 
-## 📝 Summary Table
+## 3. Summary Table
 
 | Statement  | Description                        | Common Use                    |
 | ---------- | ---------------------------------- | ----------------------------- |
@@ -112,7 +112,7 @@ void main() {
 
 ---
 
-## 📌 Notes
+## 4. Notes
 
 * `break` can be used in both loops and switch-case.
 * `continue` only applies to loops.
@@ -120,7 +120,7 @@ void main() {
 
 ---
 
-## 📚 Example Use in Nested Loops
+## 5. Example Use in Nested Loops
 
 ```dart
 void main() {
@@ -135,7 +135,7 @@ void main() {
 }
 ```
 
-🟢 **Output:**
+**Output:**
 
 ```
 i = 1, j = 1
@@ -148,4 +148,5 @@ i = 3, j = 3
 
 ---
 
-✅ That’s it! With `break` and `continue`, you can control loops more precisely in Dart.
+> 📚 This is part of the Dart basic chapter.
+

@@ -1,12 +1,12 @@
-# 🐋 Dart String Data Type
+# Dart String Data Type
 
-## 📌 Overview
+## Overview
 
 In Dart, the `String` type represents a sequence of UTF-16 code units. Strings are commonly used for textual data, and Dart provides a variety of features and methods to manipulate them effectively.
 
 ---
 
-## 🎯 Goals
+## Goals
 
 * Understand how to declare and manipulate strings in Dart.
 * Explore string interpolation, concatenation, and multiline syntax.
@@ -14,7 +14,7 @@ In Dart, the `String` type represents a sequence of UTF-16 code units. Strings a
 
 ---
 
-## 🔤 Basic String Declaration
+## Basic String Declaration
 
 ```dart
 void main() {
@@ -35,7 +35,7 @@ Hello, world!
 
 ---
 
-## 🧩 String Interpolation
+## String Interpolation
 
 You can embed variables and expressions inside strings using `$variable` or `${expression}`.
 
@@ -58,7 +58,7 @@ Next year, I will be 21 years old.
 
 ---
 
-## ➕ String Concatenation
+## String Concatenation
 
 Strings can be joined using the `+` operator or by placing string literals next to each other.
 
@@ -81,7 +81,7 @@ Hello World
 
 ---
 
-## 📜 Multiline Strings
+## Multiline Strings
 
 Use triple quotes (`'''` or `"""`) for multiline strings.
 
@@ -109,7 +109,7 @@ void main() {
 
 ---
 
-## 🛠 Useful String Methods
+## Useful String Methods
 
 | Method                    | Description                                    | Example                         | Output      |
 | ------------------------- | ---------------------------------------------- | ------------------------------- | ----------- |
@@ -130,7 +130,7 @@ void main() {
 
 ---
 
-## 🔁 Using Strings with Whitespace
+## Using Strings with Whitespace
 
 Dart allows the use of tabs (`\t`), spaces, and line breaks within strings.
 
@@ -145,13 +145,13 @@ void main() {
 
 ```
 Line1
-	Line2
-		Line3
+  Line2
+    Line3
 ```
 
 ---
 
-## 📦 Raw Strings
+## Raw Strings
 
 To treat backslashes (`\`) and variables literally, use a raw string prefix `r`.
 
@@ -170,7 +170,7 @@ C:\Users\Dokja
 
 ---
 
-## 🔙 Escape Sequences in Dart
+## Escape Sequences in Dart
 
 Escape sequences allow you to insert special characters:
 
@@ -205,7 +205,9 @@ Path: C:\Windows\System32
 
 ---
 
-## 📚 Resources
+## Resources
 
 * [Dart Language Tour – Strings](https://dart.dev/language#strings)
 * [Dart API Docs – String](https://api.dart.dev/stable/dart-core/String-class.html)
+
+> 📚 This is part of the Dart basic chapter.

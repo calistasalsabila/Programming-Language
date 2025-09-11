@@ -1,21 +1,21 @@
-# 🐋 Dart Type Conversion
+# Dart Type Conversion
 
-Understanding type conversion in Dart is essential when working with different data types like `String`, `int`, `double`, and `bool`. Dart supports both **implicit** and **explicit** conversions.
+Understanding type conversion in Dart is essential when working with different data types like `String`, `int`, `double`, and `bool`. Dart supports both implicit and explicit conversions.
 
 ---
 
-## 🎯 What is Type Conversion?
+## 1. What is Type Conversion?
 
-Type conversion is the process of changing a value from one data type to another. In Dart, this is often **explicit**, meaning you have to do it manually.
+Type conversion is the process of changing a value from one data type to another. In Dart, this is often explicit, meaning you have to do it manually.
 
 There are two main types:
 
-* **Type casting** (changing the *type* of a variable)
-* **Type parsing** (converting *string values* to other types and vice versa)
+* Type casting (changing the *type* of a variable)
+* Type parsing (converting *string values* to other types and vice versa)
 
 ---
 
-## 🔁 Conversion Summary Table
+## 2. Conversion Summary Table
 
 | From → To               | Syntax                   | Example                           |
 | ----------------------- | ------------------------ | --------------------------------- |
@@ -31,9 +31,9 @@ There are two main types:
 
 ---
 
-## 🧪 Detailed Examples
+## 3. Detailed Examples
 
-### 🔢 `int` ↔ `double`
+### 3.1 `int` ↔ `double`
 
 ```dart
 int a = 5;
@@ -45,7 +45,7 @@ a = b.toInt();
 print(a); // 6
 ```
 
-### 🔤 Numbers ↔ Strings
+### 3.2 Numbers ↔ Strings
 
 ```dart
 int x = 123;
@@ -57,7 +57,7 @@ String sy = y.toString();
 print(sy); // '4.56'
 ```
 
-### 🔁 Strings → Numbers
+### 3.3 Strings → Numbers
 
 ```dart
 String s1 = '42';
@@ -69,7 +69,7 @@ double n2 = double.parse(s2);
 print(n2); // 3.14
 ```
 
-> ⚠️ If the string cannot be parsed, Dart will throw a `FormatException`:
+> If the string cannot be parsed, Dart will throw a `FormatException`:
 
 ```dart
 int.parse('abc'); // Error!
@@ -82,7 +82,7 @@ int? maybeInt = int.tryParse('abc');
 print(maybeInt); // null
 ```
 
-### 🔁 Boolean ↔ String
+### 3.4 Boolean ↔ String
 
 Dart doesn't have a built-in `bool.parse()`, so you usually use custom logic:
 
@@ -102,7 +102,7 @@ print(sb); // 'false'
 
 ---
 
-## 🧠 Type Inference vs Type Conversion
+## 4. Type Inference vs Type Conversion
 
 ```dart
 var x = 5; // x is inferred as int
@@ -110,11 +110,11 @@ dynamic y = x; // y is dynamic
 y = 5.5;       // OK, y can be double now
 ```
 
-Type inference assigns a type, **not converts it**. You still need to explicitly convert when needed.
+Type inference assigns a type, not converts it. You still need to explicitly convert when needed.
 
 ---
 
-## ✅ Best Practices
+## 5. Best Practices
 
 * Use `tryParse()` when dealing with user input.
 * Always check the type before converting.
@@ -122,7 +122,7 @@ Type inference assigns a type, **not converts it**. You still need to explicitly
 
 ---
 
-## 📚 Resources
+## 6. Resources
 
 * [Dart Language Tour: Numbers](https://dart.dev/guides/language/language-tour#numbers)
 * [Dart Language Tour: Strings](https://dart.dev/guides/language/language-tour#strings)
@@ -130,4 +130,5 @@ Type inference assigns a type, **not converts it**. You still need to explicitly
 
 ---
 
-> Mastering type conversion is key to writing safe and efficient Dart code. 🐬
+> 📚 This is part of the Dart basic chapter.
+

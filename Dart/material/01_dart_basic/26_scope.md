@@ -1,14 +1,14 @@
-# 🐋 Understanding Scope in Dart
+# Understanding Scope in Dart
 
-## 📌 What is Scope?
+## 1. What is Scope?
 
 Scope refers to **the region of the Dart program where a variable can be accessed or used**. It defines the visibility and lifespan of variables. Understanding scope is essential for writing clean, efficient, and bug-free Dart applications.
 
 ---
 
-## 🧠 Types of Scope in Dart
+## 2. Types of Scope in Dart
 
-### 1. **Global Scope** 🌍
+### 2.1 Global Scope
 
 * Variables declared **outside any function or class**.
 * Can be accessed anywhere within the file (if not private).
@@ -26,7 +26,7 @@ void main() {
 }
 ```
 
-### 2. **Local Scope** 🧩
+### 2.2 Local Scope
 
 * Variables declared **inside a function**.
 * Only accessible within that function.
@@ -42,7 +42,7 @@ void greet() {
 }
 ```
 
-### 3. **Block Scope** 📦
+### 2.3 Block Scope
 
 * Variables declared inside **`{}`** (such as in `if`, `for`, or `while` blocks).
 
@@ -56,7 +56,7 @@ void main() {
 }
 ```
 
-### 4. **Lexical Scope** 📚
+### 2.4 Lexical Scope
 
 * Inner functions have access to variables defined in **their outer functions**.
 * Dart follows **lexical scoping** rules.
@@ -79,7 +79,7 @@ void main() {
 
 ---
 
-## 🎯 Why Scope Matters in Dart
+## 3. Why Scope Matters in Dart
 
 * Prevents **variable name conflicts**.
 * Promotes **memory efficiency**.
@@ -87,7 +87,7 @@ void main() {
 
 ---
 
-## 🚫 Common Scope Mistakes
+## 4. Common Scope Mistakes
 
 * ❌ Trying to use a variable outside its scope.
 * ❌ Shadowing a variable unintentionally.
@@ -103,7 +103,7 @@ void main() {
 
 ---
 
-## ✅ Best Practices
+## 5. Best Practices
 
 * Use the **smallest scope necessary** for each variable.
 * Avoid excessive use of **global variables**.
@@ -111,7 +111,7 @@ void main() {
 
 ---
 
-## 📎 Scope Summary in Dart
+## 6. Scope Summary in Dart
 
 | Scope Type | Declared In                  | Accessible From                  |
 | ---------- | ---------------------------- | -------------------------------- |
@@ -122,4 +122,5 @@ void main() {
 
 ---
 
-Understanding scope in Dart will help you create safer, clearer, and more efficient Flutter applications. Use scope intentionally and mindfully! 💡
+> 📚 This is part of the Dart basic chapter.
+

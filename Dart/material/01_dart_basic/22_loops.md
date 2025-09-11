@@ -1,6 +1,6 @@
-# 🐋 Dart Loops
+# Dart Loops
 
-## 🧠 What Are Loops?
+## 1. What Are Loops?
 
 Loops are used to execute a block of code **repeatedly** as long as a condition is true. Dart provides several looping mechanisms:
 
@@ -14,13 +14,13 @@ They are essential when you want to perform repetitive tasks such as iterating o
 
 ---
 
-## 1️⃣ `for` Loop
+## 2. `for` Loop
 
-### 📌 Definition:
+### Definition:
 
 Used when the **number of iterations is known**.
 
-### 🔤 Syntax:
+### Syntax:
 
 ```dart
 for (initialization; condition; increment) {
@@ -28,7 +28,7 @@ for (initialization; condition; increment) {
 }
 ```
 
-### 🧪 Example:
+### Example:
 
 ```dart
 for (int i = 0; i < 5; i++) {
@@ -36,7 +36,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 Count: 0
@@ -46,7 +46,7 @@ Count: 3
 Count: 4
 ```
 
-### 💡 Notes:
+### Notes:
 
 * Initialization runs once.
 * Condition is checked before each loop.
@@ -54,13 +54,13 @@ Count: 4
 
 ---
 
-## 2️⃣ `while` Loop
+## 3. `while` Loop
 
-### 📌 Definition:
+### Definition:
 
 Used when the **number of iterations is unknown**, and you want to repeat something **while a condition is true**.
 
-### 🔤 Syntax:
+### Syntax:
 
 ```dart
 while (condition) {
@@ -68,7 +68,7 @@ while (condition) {
 }
 ```
 
-### 🧪 Example:
+### Example:
 
 ```dart
 int i = 0;
@@ -78,7 +78,7 @@ while (i < 3) {
 }
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 Dart is awesome! Count: 0
@@ -86,19 +86,19 @@ Dart is awesome! Count: 1
 Dart is awesome! Count: 2
 ```
 
-### ⚠️ Be careful:
+### Be careful:
 
 Always make sure the condition will eventually become false. Otherwise, it will become an infinite loop.
 
 ---
 
-## 3️⃣ `do-while` Loop
+## 4. `do-while` Loop
 
-### 📌 Definition:
+### Definition:
 
 A variation of `while`, but the **code is executed at least once**, even if the condition is false.
 
-### 🔤 Syntax:
+### Syntax:
 
 ```dart
 do {
@@ -106,7 +106,7 @@ do {
 } while (condition);
 ```
 
-### 🧪 Example:
+### Example:
 
 ```dart
 int i = 0;
@@ -116,27 +116,27 @@ do {
 } while (i < 2);
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 This will run at least once. i = 0
 This will run at least once. i = 1
 ```
 
-### 🧹 Key Difference from `while`:
+### Key Difference from `while`:
 
 * `do-while` guarantees **one execution** of the loop body.
 * `while` might not execute at all if the condition is false from the beginning.
 
 ---
 
-## 4️⃣ `for-in` Loop
+## 5. `for-in` Loop
 
-### 📌 Definition:
+### Definition:
 
 Used to iterate over elements of a **collection** like `List`, `Set`, etc.
 
-### 🔤 Syntax:
+### Syntax:
 
 ```dart
 for (var element in collection) {
@@ -144,7 +144,7 @@ for (var element in collection) {
 }
 ```
 
-### 🧪 Example:
+### Example:
 
 ```dart
 List<String> fruits = ['apple', 'banana', 'cherry'];
@@ -154,7 +154,7 @@ for (var fruit in fruits) {
 }
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 Fruit: apple
@@ -162,20 +162,20 @@ Fruit: banana
 Fruit: cherry
 ```
 
-### 🧹 Best Used When:
+### Best Used When:
 
 * You want to read elements sequentially.
 * You don’t need access to the index.
 
 ---
 
-## 5️⃣ `forEach()` Method
+## 6. `forEach()` Method
 
-### 📌 Definition:
+### Definition:
 
 A method available to collections like `List` or `Map` that applies a function to each item.
 
-### 🔤 Syntax:
+### Syntax:
 
 ```dart
 collection.forEach((element) {
@@ -183,7 +183,7 @@ collection.forEach((element) {
 });
 ```
 
-### 🧪 Example (List):
+### Example (List):
 
 ```dart
 List<int> numbers = [10, 20, 30];
@@ -193,7 +193,7 @@ numbers.forEach((num) {
 });
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 Number: 10
@@ -201,7 +201,7 @@ Number: 20
 Number: 30
 ```
 
-### 🧪 Example (Map):
+### Example (Map):
 
 ```dart
 Map<String, int> scores = {'Math': 95, 'English': 88};
@@ -211,23 +211,23 @@ scores.forEach((subject, score) {
 });
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 Math: 95
 English: 88
 ```
 
-### 💡 Notes:
+### Notes:
 
 * Cannot use `break` or `continue` inside `forEach`.
 * Great for concise and functional-style iteration.
 
 ---
 
-## 🔁 Loop Control Statements
+## 7. Loop Control Statements
 
-### 🔹 `break`:
+### `break`:
 
 Stops the loop immediately.
 
@@ -239,7 +239,7 @@ for (int i = 0; i < 5; i++) {
 // Output: 0 1 2
 ```
 
-### 🔹 `continue`:
+### `continue`:
 
 Skips the current iteration.
 
@@ -253,7 +253,7 @@ for (int i = 0; i < 5; i++) {
 
 ---
 
-## 🧪 Nested Loops
+## 8. Nested Loops
 
 You can use loops inside loops.
 
@@ -265,7 +265,7 @@ for (int i = 1; i <= 3; i++) {
 }
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 i=1, j=1
@@ -278,15 +278,15 @@ i=3, j=2
 
 ---
 
-## 🧠 Summary
+## 9. Summary
 
 | Loop Type   | Entry Condition? | Use Case                          |
 | ----------- | ---------------- | --------------------------------- |
-| `for`       | ✅ Yes            | Known number of iterations        |
-| `while`     | ✅ Yes            | Unknown iterations (check first)  |
-| `do-while`  | ❌ No (runs once) | Run at least once before checking |
-| `for-in`    | ✅ Yes            | Iterate over collections          |
-| `forEach()` | ✅ Yes            | Functional-style iteration        |
+| `for`       | Yes              | Known number of iterations        |
+| `while`     | Yes              | Unknown iterations (check first)  |
+| `do-while`  | No (runs once)   | Run at least once before checking |
+| `for-in`    | Yes              | Iterate over collections          |
+| `forEach()` | Yes              | Functional-style iteration        |
 
 * Always avoid infinite loops.
 * Use `break` to exit, `continue` to skip.
@@ -294,4 +294,5 @@ i=3, j=2
 
 ---
 
-> 📚 Dart Docs: [https://dart.dev/guides/language/language-tour#loops](https://dart.dev/guides/language/language-tour#loops)
+> 📚 This is part of the Dart basic chapter.
+

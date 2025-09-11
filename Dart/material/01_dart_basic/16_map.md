@@ -1,10 +1,10 @@
-# 🐋 Dart Map
+# Dart Map
 
 In Dart, a `Map` is an **unordered collection of key-value pairs**. Each key is unique, and each key maps to a specific value.
 
 ---
 
-## 📌 Why Use a Map?
+## 1. Why Use a Map?
 
 * Store data with a **unique identifier (key)**.
 * Ideal for **fast lookup, insertion, and deletion**.
@@ -12,9 +12,9 @@ In Dart, a `Map` is an **unordered collection of key-value pairs**. Each key is 
 
 ---
 
-## 🧠 Declaration & Initialization
+## 2. Declaration & Initialization
 
-### 🔹 Using curly braces
+### 2.1 Using curly braces
 
 ```dart
 Map<String, int> ages = {
@@ -23,7 +23,7 @@ Map<String, int> ages = {
 };
 ```
 
-### 🔹 Using Map constructor
+### 2.2 Using Map constructor
 
 ```dart
 Map<String, String> capitals = Map();
@@ -31,13 +31,13 @@ capitals['Japan'] = 'Tokyo';
 capitals['France'] = 'Paris';
 ```
 
-### 🔹 Using Map.from()
+### 2.3 Using Map.from()
 
 ```dart
 Map<String, int> scores = Map.from({'Math': 90, 'English': 85});
 ```
 
-### 🔹 Using Map.of()
+### 2.4 Using Map.of()
 
 ```dart
 Map<String, int> prices = Map.of({'apple': 10, 'banana': 15});
@@ -45,16 +45,16 @@ Map<String, int> prices = Map.of({'apple': 10, 'banana': 15});
 
 ---
 
-## 📥 Adding & Updating Entries
+## 3. Adding & Updating Entries
 
-### 🔹 Using bracket notation
+### 3.1 Using bracket notation
 
 ```dart
 ages['Hamin'] = 22; // add
 ages['Jeha'] = 26;   // update
 ```
 
-### 🔹 Using `addAll()`
+### 3.2 Using `addAll()`
 
 ```dart
 ages.addAll({'Dazai': 28, 'Kunikida': 30});
@@ -62,15 +62,15 @@ ages.addAll({'Dazai': 28, 'Kunikida': 30});
 
 ---
 
-## 🗑️ Removing Entries
+## 4. Removing Entries
 
-### 🔹 `remove()`
+### 4.1 `remove()`
 
 ```dart
 ages.remove('Jeha');
 ```
 
-### 🔹 `clear()`
+### 4.2 `clear()`
 
 ```dart
 ages.clear(); // removes all entries
@@ -78,15 +78,15 @@ ages.clear(); // removes all entries
 
 ---
 
-## 🔍 Accessing Elements
+## 5. Accessing Elements
 
-### 🔹 Using key
+### 5.1 Using key
 
 ```dart
 print(ages['Dokja']); // 27
 ```
 
-### 🔹 Checking existence
+### 5.2 Checking existence
 
 ```dart
 ages.containsKey('Dokja'); // true
@@ -95,7 +95,7 @@ ages.containsValue(27);    // true
 
 ---
 
-## 📊 Properties
+## 6. Properties
 
 | Property     | Description                          |
 | ------------ | ------------------------------------ |
@@ -108,9 +108,9 @@ ages.containsValue(27);    // true
 
 ---
 
-## 🔁 Iterating Over a Map
+## 7. Iterating Over a Map
 
-### 🔹 Using `forEach()`
+### 7.1 Using `forEach()`
 
 ```dart
 ages.forEach((key, value) {
@@ -118,7 +118,7 @@ ages.forEach((key, value) {
 });
 ```
 
-### 🔹 Using `for-in` with entries
+### 7.2 Using `for-in` with entries
 
 ```dart
 for (var entry in ages.entries) {
@@ -128,7 +128,7 @@ for (var entry in ages.entries) {
 
 ---
 
-## 🧪 Example Use Case: User Email Lookup
+## 8. Example Use Case: User Email Lookup
 
 ```dart
 Map<String, String> emails = {
@@ -138,9 +138,9 @@ Map<String, String> emails = {
 
 void findEmail(String username) {
   if (emails.containsKey(username)) {
-    print("📧 ${emails[username]}");
+    print("${emails[username]}");
   } else {
-    print("❌ Username not found.");
+    print("Username not found.");
   }
 }
 
@@ -150,21 +150,21 @@ findEmail('dazai');
 
 ---
 
-## 🛠️ Modifying Maps
+## 9. Modifying Maps
 
-### 🔹 Updating all values
+### 9.1 Updating all values
 
 ```dart
 ages.updateAll((key, value) => value + 1);
 ```
 
-### 🔹 Updating specific value
+### 9.2 Updating specific value
 
 ```dart
 ages.update('Dokja', (value) => value + 1);
 ```
 
-### 🔹 Adding if key absent
+### 9.3 Adding if key absent
 
 ```dart
 ages.putIfAbsent('Dazai', () => 29);
@@ -172,16 +172,16 @@ ages.putIfAbsent('Dazai', () => 29);
 
 ---
 
-## 🔄 Converting Maps
+## 10. Converting Maps
 
-### 🔹 Map to List
+### 10.1 Map to List
 
 ```dart
 List<String> keysList = ages.keys.toList();
 List<int> valuesList = ages.values.toList();
 ```
 
-### 🔹 List of pairs to Map
+### 10.2 List of pairs to Map
 
 ```dart
 var pairList = [
@@ -193,17 +193,17 @@ var mapFromPairs = Map.fromEntries(pairList);
 
 ---
 
-## 🧹 Tips & Pitfalls
+## 11. Tips & Pitfalls
 
-* 🔸 Keys must be **unique**.
-* 🔸 Keys and values can be **any object**.
-* 🔸 Use type annotations like `Map<String, int>` for safety.
-* 🔸 Trying to access a non-existing key returns `null`.
-* 🔸 Avoid mutating a map while iterating.
+* Keys must be **unique**.
+* Keys and values can be **any object**.
+* Use type annotations like `Map<String, int>` for safety.
+* Trying to access a non-existing key returns `null`.
+* Avoid mutating a map while iterating.
 
 ---
 
-## 🧾 Summary
+## 12. Summary
 
 | Feature          | Description                       |
 | ---------------- | --------------------------------- |
@@ -215,6 +215,7 @@ var mapFromPairs = Map.fromEntries(pairList);
 
 ---
 
-✅ With this guide, you’re ready to master `Map` in Dart confidently.
+With this guide, you’re ready to master `Map` in Dart confidently.
 
-> Happy coding with 🐋 Dart!
+> 📚 This is part of the Dart basic chapter.
+

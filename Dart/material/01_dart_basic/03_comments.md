@@ -1,10 +1,10 @@
-# 🐋 Dart Comments Guide
+# Dart Comments Guide
 
-📘 This guide explains how to use comments in Dart programming language.
+This guide explains how to use comments in Dart programming language.
 
 ---
 
-## ✨ Purpose of Comments
+## Purpose of Comments
 
 Comments are used to:
 
@@ -15,7 +15,7 @@ Comments are used to:
 
 ---
 
-## 📝 Types of Comments in Dart
+## Types of Comments in Dart
 
 Dart supports three types of comments:
 
@@ -56,7 +56,7 @@ int add(int a, int b) => a + b;
 
 ---
 
-## 🛠️ Tips for Writing Good Comments
+## Tips for Writing Good Comments
 
 * Keep comments concise and relevant
 * Avoid stating the obvious (e.g., `// Adds a + b` for `a + b` is redundant)
@@ -65,7 +65,7 @@ int add(int a, int b) => a + b;
 
 ---
 
-## 📌 Example Summary
+## Example Summary
 
 ```dart
 // Single-line
@@ -81,10 +81,12 @@ double multiply(double x, double y) => x * y;
 
 ---
 
-## 📚 Reference
+## Reference
 
 * [Dart Language Tour - Comments](https://dart.dev/guides/language/language-tour#comments)
 
 ---
 
-Happy coding with Dart 🐋!
+> 📚 This is part of the Dart basic chapter.
+
+

@@ -1,17 +1,17 @@
-# 🐋 Dart Comparison Operators
+# Dart Comparison Operators
 
 Comparison operators are used to compare two values. These operations return a `bool` result: `true` or `false`.
 They are often used in conditional expressions such as `if`, `while`, and logical operations.
 
 ---
 
-## ✨ Purpose
+## 1. Purpose
 
 To evaluate the relationship between two operands (e.g., equal, not equal, greater than, less than).
 
 ---
 
-## 🧠 Syntax & Description
+## 2. Syntax & Description
 
 | Operator | Description              | Example  |
 | -------- | ------------------------ | -------- |
@@ -26,7 +26,7 @@ All these expressions evaluate to a boolean value (`true` or `false`).
 
 ---
 
-## 🧪 Examples with Explanation
+## 3. Examples with Explanation
 
 ```dart
 void main() {
@@ -44,7 +44,7 @@ void main() {
 
 ---
 
-## 🔍 Use Cases
+## 4. Use Cases
 
 * Decision-making (`if`, `else if`, `else`)
 * Loop conditions (`while`, `for`)
@@ -52,7 +52,7 @@ void main() {
 
 ---
 
-## 📌 Notes
+## 5. Notes
 
 * Comparison can also be used for `String` and `double`, not just `int`.
 * Dart comparison is **type-safe**: you can only compare values of compatible types.
@@ -69,10 +69,11 @@ void main() {
 
 ---
 
-## ✅ Summary
+## 6. Summary
 
 * Dart comparison operators return boolean values.
 * They are used for equality and relational checks.
 * Useful in conditional and logical programming structures.
 
-> 🐋 Keep practicing comparisons in real-world conditionals to master Dart control flow!
+> 📚 This is part of the Dart basic chapter.
+

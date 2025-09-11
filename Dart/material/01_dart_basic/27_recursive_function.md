@@ -1,6 +1,6 @@
-## 🐋 Dart - Recursive Function
+## Dart - Recursive Function
 
-### 📌 What is Recursion?
+### 1. What is Recursion?
 Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller subproblems.
 
 A recursive function has two main parts:
@@ -9,15 +9,15 @@ A recursive function has two main parts:
 
 ---
 
-### 🔁 Why Use Recursion?
+### 2. Why Use Recursion?
 - To solve problems that can be broken down into similar subproblems (e.g. factorial, Fibonacci, tree traversal).
 - Makes code more readable and elegant in some cases.
 
-> ⚠️ Recursive functions must always have a base case to avoid infinite loops and stack overflow.
+> Recursive functions must always have a base case to avoid infinite loops and stack overflow.
 
 ---
 
-### 📘 Syntax
+### 3. Syntax
 ```dart
 returnType functionName(parameters) {
   if (baseCondition) {
@@ -30,7 +30,7 @@ returnType functionName(parameters) {
 
 ---
 
-### 🧮 Example: Factorial
+### 4. Example: Factorial
 Calculate `n! = n * (n - 1) * ... * 1`
 
 ```dart
@@ -49,7 +49,7 @@ void main() {
 
 ---
 
-### 🐢 Example: Fibonacci
+### 5. Example: Fibonacci
 Generate `n-th` Fibonacci number: `F(n) = F(n - 1) + F(n - 2)` with base cases `F(0) = 0`, `F(1) = 1`
 
 ```dart
@@ -66,7 +66,7 @@ void main() {
 
 ---
 
-### 🔍 Tracing Example: factorial(3)
+### 6. Tracing Example: factorial(3)
 ```
 factorial(3)
 => 3 * factorial(2)
@@ -77,30 +77,30 @@ factorial(3)
 
 ---
 
-### ⚙️ Pros and Cons
+### 7. Pros and Cons
 | Pros                         | Cons                          |
 |------------------------------|-------------------------------|
 | Simplifies code logic        | Can be less efficient         |
-| Elegant for tree-based tasks| Risk of stack overflow        |
-| Matches divide-and-conquer  | Harder to debug than loop     |
+| Elegant for tree-based tasks | Risk of stack overflow        |
+| Matches divide-and-conquer   | Harder to debug than loop     |
 
 ---
 
-### ✅ Use Case Checklist
+### 8. Use Case Checklist
 - [x] Problem can be divided into subproblems of same nature
 - [x] You can clearly define a base case
 - [x] You ensure the problem size reduces in each call
 
 ---
 
-### 📎 Tips
+### 9. Tips
 - Prefer recursion when it matches the natural structure of the problem.
 - For performance, use **memoization** or convert to **iteration** if needed.
 - Use debugging or print statements to understand the recursive flow.
 
 ---
 
-### 📚 Summary
+### 10. Summary
 | Concept        | Meaning                              |
 |----------------|---------------------------------------|
 | Base Case      | Stops recursion                      |
@@ -109,19 +109,22 @@ factorial(3)
 
 ---
 
-### ✨ Practice Ideas
+### 11. Practice Ideas
 - Reverse a string using recursion
 - Sum of digits of a number recursively
 - Binary search using recursion
 
 ---
 
-> 🧠 Recursion is like looking into a mirror that reflects another mirror. Make sure there's a wall (base case) to stop the reflection!
+> Recursion is like looking into a mirror that reflects another mirror. Make sure there's a wall (base case) to stop the reflection!
 
 ---
 
-### 🛠️ Related Topics
+### 12. Related Topics
 - Iteration vs Recursion
 - Stack memory
 - Tail recursion optimization
 - Memoization
+
+> 📚 This is part of the Dart basic chapter.
+

@@ -1,10 +1,10 @@
-# 🐋 Dart Functions Documentation
+# Dart Functions Documentation
 
 This file provides a **complete and detailed** explanation of **functions in Dart**, including syntax, types, parameters, return values, and all relevant concepts like inner functions, higher-order functions, and anonymous functions. This is structured to be a comprehensive GitHub learning note.
 
 ---
 
-## 🧠 What is a Function?
+## 1. What is a Function?
 
 A **function** is a named block of code that performs a specific task. Functions help in structuring code, avoiding repetition, and making code reusable.
 
@@ -19,7 +19,7 @@ Functions in Dart can:
 
 ---
 
-## 📝 Syntax of a Function
+## 2. Syntax of a Function
 
 ```dart
 returnType functionName(parameterList) {
@@ -36,7 +36,7 @@ int add(int a, int b) {
 }
 ```
 
-📌 **Output:**
+**Output:**
 
 ```dart
 void main() {
@@ -46,9 +46,9 @@ void main() {
 
 ---
 
-## 🧹 Types of Functions
+## 3. Types of Functions
 
-### 1. Regular Function
+### 3.1 Regular Function
 
 ```dart
 void sayHello() {
@@ -62,7 +62,7 @@ void sayHello() {
 Hello!
 ```
 
-### 2. Function with Parameters
+### 3.2 Function with Parameters
 
 ```dart
 void greet(String name) {
@@ -76,7 +76,7 @@ void greet(String name) {
 Hi, Dokja!
 ```
 
-### 3. Function with Return Value
+### 3.3 Function with Return Value
 
 ```dart
 String greet(String name) {
@@ -90,7 +90,7 @@ String greet(String name) {
 Hello, Jeha!
 ```
 
-### 4. Function with Short Expression (Arrow Syntax)
+### 3.4 Function with Short Expression (Arrow Syntax)
 
 Dart supports **concise function bodies** using the arrow syntax (`=>`). This is useful for short functions with a single return expression.
 
@@ -98,7 +98,7 @@ Dart supports **concise function bodies** using the arrow syntax (`=>`). This is
 int square(int x) => x * x;
 ```
 
-📌 Equivalent to:
+Equivalent to:
 
 ```dart
 int square(int x) {
@@ -120,9 +120,9 @@ void sayHi() => print("Hi!");
 
 ---
 
-## 🎯 Function Parameters
+## 4. Function Parameters
 
-### 1. Positional Parameters
+### 4.1 Positional Parameters
 
 ```dart
 void printSum(int a, int b) {
@@ -130,7 +130,7 @@ void printSum(int a, int b) {
 }
 ```
 
-### 2. Optional Positional Parameters
+### 4.2 Optional Positional Parameters
 
 ```dart
 void greet(String name, [String? title]) {
@@ -145,7 +145,7 @@ Hello,  Hamin
 Hello, Dr. Dazai
 ```
 
-### 3. Named Parameters
+### 4.3 Named Parameters
 
 ```dart
 void describePerson({String? name, int? age}) {
@@ -159,7 +159,7 @@ void describePerson({String? name, int? age}) {
 Name: Dokja, Age: 22
 ```
 
-### 4. Named Parameters with Default Value
+### 4.4 Named Parameters with Default Value
 
 ```dart
 void greetUser({String name = 'Guest'}) {
@@ -174,7 +174,7 @@ Welcome, Guest!
 Welcome, Calista!
 ```
 
-### 5. Required Named Parameters
+### 4.5 Required Named Parameters
 
 ```dart
 void login({required String username, required String password}) {
@@ -190,9 +190,9 @@ Logging in admin
 
 ---
 
-## 🖙 Function Return Values
+## 5. Function Return Values
 
-### Return a Single Value
+### 5.1 Return a Single Value
 
 A function can return any Dart type, such as `int`, `String`, `bool`, `List`, etc.
 
@@ -208,7 +208,7 @@ String getGreeting() {
 }
 ```
 
-### Return Multiple Values
+### 5.2 Return Multiple Values
 
 Since Dart doesn't support returning multiple values directly, we use collections or custom classes.
 
@@ -245,7 +245,7 @@ User getUser() {
 
 ---
 
-## ➰ Anonymous Functions
+## 6. Anonymous Functions
 
 Functions without a name, often used as arguments.
 
@@ -272,7 +272,7 @@ items.forEach((item) => print(item));
 
 ---
 
-## 🔁 Higher-Order Functions
+## 7. Higher-Order Functions
 
 A **higher-order function** is a function that takes another function as a parameter or returns a function.
 
@@ -303,7 +303,7 @@ print(triple(4)); // Output: 12
 
 ---
 
-## 🧱 Inner (Nested) Functions
+## 8. Inner (Nested) Functions
 
 You can define a function inside another function.
 
@@ -330,7 +330,7 @@ This is inner function
 
 ---
 
-## 🔀 Recursive Functions
+## 9. Recursive Functions
 
 A recursive function calls itself.
 
@@ -345,7 +345,7 @@ print(factorial(5)); // Output: 120
 
 ---
 
-## 🤪 The `main()` Function
+## 10. The `main()` Function
 
 The starting point of every Dart program.
 
@@ -375,17 +375,17 @@ void main() {
 
 ---
 
-## 🧼 Best Practices
+## 11. Best Practices
 
-* ✅ Name functions clearly based on their purpose
-* ✅ Keep functions short and specific
-* ✅ Use parameters with default values for flexibility
-* ✅ Avoid side effects where possible
-* ✅ Reuse logic using functions instead of repeating code
+* Name functions clearly based on their purpose
+* Keep functions short and specific
+* Use parameters with default values for flexibility
+* Avoid side effects where possible
+* Reuse logic using functions instead of repeating code
 
 ---
 
-## 📚 Summary Table
+## 12. Summary Table
 
 | Feature                   | Example                                         |
 | ------------------------- | ----------------------------------------------- |
@@ -405,4 +405,5 @@ void main() {
 
 ---
 
-> 📌 Mastering functions in Dart is essential for becoming an effective Flutter developer. Functions allow clean, reusable, and efficient code design.
+> 📚 This is part of the Dart basic chapter.
+

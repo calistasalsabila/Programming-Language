@@ -1,4 +1,4 @@
-# 📌 Structures in C
+# Structures in C
 
 ## 1. Introduction to Structures
 A **structure** (`struct`) in C is a user-defined data type that allows grouping variables of different types under one name. It helps organize complex data efficiently.
@@ -153,3 +153,4 @@ int main() {
 - **Can be accessed using dot (`.`) and arrow (`->`) operators.**
 - **Supports nesting, function arguments, and dynamic allocation.**
 
+> 📚 This is part of the C chapter.

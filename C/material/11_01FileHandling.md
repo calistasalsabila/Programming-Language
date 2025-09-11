@@ -1,8 +1,8 @@
-# 📂 File Handling in C - Part 1
+# File Handling in C 
 
-File handling is an essential feature in the C programming language that allows us to read, write, and manipulate files in the system. Below is a detailed explanation of file handling in C. 🚀
+File handling is an essential feature in the C programming language that allows us to read, write, and manipulate files in the system. Below is a detailed explanation of file handling in C. 
 
-## 1️⃣ Opening a File (`fopen`)
+## 1. Opening a File (`fopen`)
 
 The `fopen()` function is used to open a file in a specific mode. General syntax:
 
@@ -13,7 +13,7 @@ fp = fopen("filename.txt", "mode");
 
 If the file cannot be opened, `fopen()` returns `NULL`.
 
-### 🔍 Modes in `fopen()`
+### Modes in `fopen()`
 | Mode  | Description |
 |-------|------------|
 | `r`   | Opens a file for reading. The file must exist. |
@@ -23,7 +23,7 @@ If the file cannot be opened, `fopen()` returns `NULL`.
 | `w+`  | Opens a file for both reading and writing. If the file exists, its contents will be erased. |
 | `a+`  | Opens a file for both reading and writing. Adds data at the end of the file. |
 
-### 📝 Example: Using `fopen()`
+###  Example: Using `fopen()`
 ```c
 #include <stdio.h>
 
@@ -41,7 +41,7 @@ int main() {
 
 ---
 
-## 2️⃣ Closing a File (`fclose`)
+## 2. Closing a File (`fclose`)
 Every opened file must be closed using `fclose()` to prevent memory leaks. 💾
 ```c
 fclose(fp);
@@ -49,7 +49,7 @@ fclose(fp);
 
 ---
 
-## 3️⃣ Deleting a File (`remove`)
+## 3. Deleting a File (`remove`)
 The `remove()` function is used to delete a file from the system. ❌
 ```c
 #include <stdio.h>
@@ -66,7 +66,7 @@ int main() {
 
 ---
 
-## 4️⃣ Writing to a File (`fprintf` & `fputs`)
+## 4. Writing to a File (`fprintf` & `fputs`)
 
 - `fprintf(fp, "format", data)` writes formatted data to a file.
 - `fputs("text", fp)` writes a string without formatting.
@@ -90,7 +90,7 @@ int main() {
 
 ---
 
-## 5️⃣ Reading from a File (`fscanf` & `fgets`)
+## 5. Reading from a File (`fscanf` & `fgets`)
 
 - `fscanf(fp, "format", &var)` reads formatted data from a file.
 - `fgets(var, length, fp)` reads a string from a file.
@@ -116,7 +116,7 @@ int main() {
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 - Use `fopen()` to open a file in the appropriate mode.
 - Always close a file with `fclose()` after using it.
 - Use `remove()` to delete a file if necessary.
@@ -124,3 +124,5 @@ int main() {
 - Use `fscanf()` or `fgets()` to read from a file.
 
 This is the first part of file handling in C. In the next section, we will discuss binary files and advanced functions like `fseek()`, `ftell()`, and `rewind()`. Stay tuned! 🚀
+
+> 📚 This is part of the C chapter.

@@ -1,4 +1,4 @@
-# 📌 Variables and Data Types in C
+# Variables and Data Types in C
 
 ## 1. Variables in C
 A **variable** in C is a name given to a memory location where data is stored. Each variable has a **data type** that determines the type of value it can store.
@@ -112,3 +112,5 @@ Argument 2: arg2
 - **Data types define what kind of data a variable can hold**
 - **Format specifiers are used in `printf()` and `scanf()` to specify data types**
 - **Command line arguments allow passing input during execution**
+
+> 📚 This is part of the C chapter.

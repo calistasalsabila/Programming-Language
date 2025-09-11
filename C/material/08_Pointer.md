@@ -1,4 +1,4 @@
-# 📌 Pointers in C
+# Pointers in C
 
 ## 1. Introduction to Pointers
 A **pointer** in C is a variable that stores the memory address of another variable. Pointers allow efficient memory management and manipulation.
@@ -166,3 +166,5 @@ int main() {
 - **Pointer arithmetic allows efficient memory navigation.**
 - **Function pointers enable dynamic function calls.**
 - **Dynamic memory allocation is done using `malloc()`, `calloc()`, and `free()`.**
+
+> 📚 This is part of the C chapter.

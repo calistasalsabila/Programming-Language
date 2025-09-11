@@ -1,4 +1,4 @@
-# 📌 Arrays in C
+# Arrays in C
 
 ## 1. Introduction to Arrays
 An **array** in C is a collection of elements of the same data type stored in contiguous memory locations. Arrays allow efficient data manipulation and indexing.
@@ -108,3 +108,5 @@ Enter array size: 5
 - **They can be one-dimensional or multi-dimensional.**
 - **Variable Length Arrays (VLA) allow runtime-determined sizes.**
 - **Efficient indexing makes arrays useful for data manipulation.**
+
+> 📚 This is part of the C chapter.

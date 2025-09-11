@@ -1,4 +1,4 @@
-# 📌 Basic Concepts in C
+# Basic Concepts in C
 
 ## 1. Comments in C
 Comments in C are used to explain code and make it more readable. They are ignored by the compiler.
@@ -90,4 +90,5 @@ You are 21 years old.
 - **`printf`** prints output to the screen.
 - **`scanf`** reads input from the user.
 
-📌 *This document will be updated as needed!* 🚀
+> 📚 This is part of the C chapter.
+ 

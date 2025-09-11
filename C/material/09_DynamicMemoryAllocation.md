@@ -1,4 +1,4 @@
-# 📌 Dynamic Memory Allocation in C
+# Dynamic Memory Allocation in C
 
 ## 1. Introduction
 Dynamic memory allocation (DMA) allows us to allocate memory at **runtime** using pointers. This is useful when the exact memory size needed is **not known beforehand**.
@@ -153,11 +153,11 @@ int main() {
 ---
 
 ## 6. Common Mistakes & Best Practices
-✅ Always check if memory allocation is successful (i.e., `ptr != NULL`).  
-✅ Use `free()` to avoid memory leaks.  
-✅ Avoid using uninitialized pointers.  
-✅ Be careful with `realloc()`, as it may return a new pointer.  
-✅ After freeing memory, set the pointer to `NULL` to avoid dangling pointers.
+Always check if memory allocation is successful (i.e., `ptr != NULL`).  
+Use `free()` to avoid memory leaks.  
+Avoid using uninitialized pointers.  
+Be careful with `realloc()`, as it may return a new pointer.  
+After freeing memory, set the pointer to `NULL` to avoid dangling pointers.
 
 ---
 
@@ -166,4 +166,4 @@ int main() {
 - `malloc()`, `calloc()`, `realloc()`, and `free()` are key functions for memory management.
 - Proper use of `free()` prevents memory leaks and ensures efficient memory usage.
 
-🚀 **Practice and experiment with different scenarios to master dynamic memory allocation in C!**
+> 📚 This is part of the C chapter.

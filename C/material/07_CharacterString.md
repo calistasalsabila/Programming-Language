@@ -1,4 +1,4 @@
-# 📌 Character and Strings in C
+# Character and Strings in C
 
 ## 1. Characters in C
 In C, characters are represented using the `char` data type and are enclosed in single quotes (`'A'`). Each character is stored as an integer value based on the ASCII table.
@@ -141,3 +141,5 @@ Comparison Result: -1
 - **Strings** are arrays of characters terminated by `\0`.
 - Use `string.h` functions for common string operations.
 - Always ensure proper memory allocation for strings in C.
+
+> 📚 This is part of the C chapter.

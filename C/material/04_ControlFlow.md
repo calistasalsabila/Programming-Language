@@ -1,4 +1,4 @@
-# 📌 Control Flow in C
+# Control Flow in C
 
 Control flow in C determines the order in which statements are executed. It includes decision-making structures, loops, and jump statements.
 
@@ -206,3 +206,5 @@ Jumped to label
 - `for`, `while`, `do-while` are used for loops.
 - `break`, `continue`, `goto` alter control flow.
 - Loops help in repetitive execution efficiently.
+
+> 📚 This is part of the C chapter.

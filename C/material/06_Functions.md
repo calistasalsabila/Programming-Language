@@ -1,4 +1,4 @@
-# 📌 Functions in C
+# Functions in C
 
 ## 1. Introduction to Functions
 A **function** in C is a block of code that performs a specific task. Functions help in **code reusability**, **modularity**, and **readability**.
@@ -166,8 +166,10 @@ Factorial of 5: 120
 ---
 
 ## 8. Conclusion
-📌 Functions help **break down complex programs** into smaller, manageable parts.
-📌 They support **parameters**, **return values**, **local/global variables**, and **recursion**.
-📌 Function **prototypes** improve code organization and readability.
+Functions help **break down complex programs** into smaller, manageable parts.
+They support **parameters**, **return values**, **local/global variables**, and **recursion**.
+Function **prototypes** improve code organization and readability.
 
 ---
+
+> 📚 This is part of the C chapter.

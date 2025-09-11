@@ -1,4 +1,4 @@
-# 📌 Operators in C
+# Operators in C
 
 ## 1. Arithmetic Operators
 Arithmetic operators are used to perform mathematical calculations.
@@ -139,3 +139,5 @@ Result: 11
 - Operators in C are used for arithmetic, logical, bitwise, and assignment operations.
 - The `sizeof` operator determines memory size, and type casting converts data types.
 - Operator precedence determines the order of execution in expressions.
+
+> 📚 This is part of the C chapter.

@@ -1,6 +1,6 @@
-## 🔗 Interface Inheritance in Java 
+## Interface Inheritance in Java 
 
-### 📘 Definition
+### Definition
 
 In Java, interfaces can **inherit from other interfaces** using the `extends` keyword. This allows you to create a **hierarchy of interfaces**, where one interface can inherit the abstract methods (and default/static methods) of another.
 
@@ -8,7 +8,7 @@ In Java, interfaces can **inherit from other interfaces** using the `extends` ke
 
 ---
 
-### 🧠 Syntax: Interface Inheriting Interface
+### Syntax: Interface Inheriting Interface
 
 ```java
 interface BaseInterface {
@@ -38,7 +38,7 @@ public class Main {
 }
 ```
 
-### 💡 Output
+### Output
 
 ```
 Base method from interface
@@ -47,7 +47,7 @@ Derived method from interface
 
 ---
 
-### 🔁 Multiple Inheritance in Interfaces
+### Multiple Inheritance in Interfaces
 
 Interfaces in Java can **extend multiple interfaces** at once. This is useful when you want to combine behaviors.
 
@@ -79,7 +79,7 @@ class Jeha implements Amphibious {
 }
 ```
 
-### 💬 Output
+### Output
 
 ```
 Flying
@@ -89,7 +89,7 @@ Transforming!
 
 ---
 
-### 🧩 Use Case Example: Modular Abstraction
+### Use Case Example: Modular Abstraction
 
 ```java
 interface Engine {
@@ -117,7 +117,7 @@ class Hamin implements Autonomous {
 }
 ```
 
-### 📦 Output
+### Output
 
 ```
 Engine started
@@ -127,7 +127,7 @@ Autopilot engaged
 
 ---
 
-### 🛠️ Key Notes
+### Key Notes
 
 * Interface inheritance helps in designing scalable architecture
 * You can use **multi-level inheritance** (an interface extends an interface which extends another...)
@@ -136,7 +136,7 @@ Autopilot engaged
 
 ---
 
-### ✅ Conclusion
+### Conclusion
 
 Java interface inheritance is a powerful way to create layered and modular behavior. It's especially useful when building systems where abstraction and separation of concerns are priorities.
 
@@ -151,3 +151,4 @@ Java interface inheritance is a powerful way to create layered and modular behav
 * *Effective Java* by Joshua Bloch
 
 ---
+> 📚 This is part of the Java OOP chapter.

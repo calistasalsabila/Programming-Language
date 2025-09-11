@@ -1,12 +1,12 @@
-# 🌟 Java Enum Class
+# Java Enum Class
 
-## 📘 Definition
+## Definition
 
 In Java, an `enum` (short for *enumeration*) is a special data type used to define a fixed set of constants. Enums provide a type-safe way to represent predefined values and are commonly used when you have a limited set of options, such as days of the week, user roles, directions, etc.
 
 ---
 
-## 🎯 Why Use Enums?
+## Why Use Enums?
 
 Enums are beneficial because they:
 
@@ -17,19 +17,19 @@ Enums are beneficial because they:
 
 ---
 
-## 📚 Built-in Methods of Enum
+## Built-in Methods of Enum
 
-| 🔧 Built-in Method | 📌 Description |
+| Built-in Method | Description |
 |--------------------|----------------|
-| `name()`           | 🔁 Returns the **exact name** of the enum constant as a `String`. |
-| `ordinal()`        | 🔢 Returns the **position/index** of the enum (starts from `0`). |
-| `values()`         | 📋 Returns an **array** of all enum constants. |
-| `valueOf(String)`  | 🔍 Converts a `String` to the matching enum constant (case-sensitive). |
+| `name()`           | Returns the **exact name** of the enum constant as a `String`. |
+| `ordinal()`        | Returns the **position/index** of the enum (starts from `0`). |
+| `values()`         | Returns an **array** of all enum constants. |
+| `valueOf(String)`  | Converts a `String` to the matching enum constant (case-sensitive). |
 
 ---
 
 
-## 🧠 Basic Enum Syntax
+## Basic Enum Syntax
 
 ```java
 public enum Role {
@@ -37,15 +37,15 @@ public enum Role {
 }
 ```
 
-> ✅ Enum constants are written in UPPERCASE by convention.
+> Enum constants are written in UPPERCASE by convention.
 
 ---
 
-## 👑 Case Study: Royal Character Roles
+## Case Study: Royal Character Roles
 
 We’ll create an enum `Role` to define character roles within a kingdom. Then, we’ll use this enum inside a `Character` class.
 
-### 📄 Full Example:
+### Full Example:
 
 ```java
 // Defining an enum
@@ -81,7 +81,7 @@ public class Character {
 }
 ```
 
-### 📸 Output:
+### Output:
 
 ```
 Hello, I'm Dokja and my role is KING
@@ -92,7 +92,7 @@ Hello, I'm Dazai and my role is COMMONER
 
 ---
 
-## 🔍 Explanation
+## Explanation
 
 * `enum Role`: defines a set of named constants.
 * `Character` class: holds a `name` and a `role` of type `Role`.
@@ -101,7 +101,7 @@ Hello, I'm Dazai and my role is COMMONER
 
 ---
 
-## 💡 Advanced Enum Features
+## Advanced Enum Features
 
 Java enums can:
 
@@ -109,7 +109,7 @@ Java enums can:
 * Be used in **switch** statements.
 * Implement **interfaces** (though not extend classes).
 
-### ✅ Enum with Descriptions
+### Enum with Descriptions
 
 ```java
 enum Role {
@@ -129,14 +129,14 @@ enum Role {
         return description;
     }
 
-    // ✨ Enum Method Example
+    // Enum Method Example
     public boolean isNoble() {
         return this == KING || this == PRINCE || this == DUKE;
     }
 }
 ```
 
-### 🔄 Using Descriptions & Methods
+### Using Descriptions & Methods
 
 ```java
 public class Main {
@@ -150,7 +150,7 @@ public class Main {
 }
 ```
 
-### 📸 Output:
+### Output:
 
 ```
 KING: Ruler of the kingdom
@@ -169,7 +169,7 @@ Is noble? false
 
 ---
 
-## 🔀 Enum in Switch Statement
+## Enum in Switch Statement
 
 ```java
 Role currentRole = Role.KING;
@@ -192,9 +192,9 @@ switch (currentRole) {
 
 ---
 
-## 🔁 Converting Between Strings and Enums
+## Converting Between Strings and Enums
 
-### 1⃣ String to Enum (Using `valueOf()`)
+### 1. String to Enum (Using `valueOf()`)
 
 ```java
 String input = "DUKE";
@@ -202,7 +202,7 @@ Role role = Role.valueOf(input);
 System.out.println("Converted role: " + role);
 ```
 
-> ⚠️ Throws `IllegalArgumentException` if input doesn't match any enum constant.
+> Throws `IllegalArgumentException` if input doesn't match any enum constant.
 
 To avoid exception:
 
@@ -217,7 +217,7 @@ public static Role safeValueOf(String input) {
 }
 ```
 
-### 2⃣ Enum to String
+### 2. Enum to String
 
 ```java
 Role role = Role.PRINCE;
@@ -227,14 +227,14 @@ System.out.println("Role as String: " + roleString);
 
 > `name()` returns the exact name of the enum constant.
 
-### 3⃣ Enum to Description (Custom Output)
+### 3. Enum to Description (Custom Output)
 
 ```java
 Role role = Role.COMMONER;
 System.out.println("Description: " + role.getDescription());
 ```
 
-### 🧪 Combined Example
+### Combined Example
 
 ```java
 public class EnumConversionDemo {
@@ -261,7 +261,7 @@ public class EnumConversionDemo {
 }
 ```
 
-### 📸 Output:
+### Output:
 
 ```
 Enum: KING
@@ -275,13 +275,13 @@ Is noble? true
 
 | Feature              | Enum Support                |
 | -------------------- | --------------------------- |
-| Constants            | ✅ Yes                       |
-| Constructor          | ✅ Private only              |
-| Fields & Methods     | ✅ Yes                       |
-| Implements Interface | ✅ Yes                       |
-| Inheritance          | ❌ Cannot extend classes     |
-| String Conversion    | ✅ With valueOf() and name() |
-| Custom Methods       | ✅ Yes (e.g. `isNoble()`)    |
+| Constants            |  Yes                       |
+| Constructor          |  Private only              |
+| Fields & Methods     |  Yes                       |
+| Implements Interface |  Yes                       |
+| Inheritance          |  Cannot extend classes     |
+| String Conversion    |  With valueOf() and name() |
+| Custom Methods       |  Yes (e.g. `isNoble()`)    |
 
 ---
 
@@ -291,5 +291,5 @@ Is noble? true
 * [Baeldung - Guide to Java Enums](https://www.baeldung.com/java-enum)
 
 ---
+> 📚 This is part of the Java OOP chapter.
 
-Keep experimenting and using enums to write cleaner and safer code! 🚀

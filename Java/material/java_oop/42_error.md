@@ -1,6 +1,6 @@
-# ❗ Java Errors Explained
+# Java Errors Explained
 
-## 📘 Definition
+## Definition
 
 In Java, an **error** is a serious problem that occurs either at **compile-time** or **runtime**, and it usually indicates issues that are **not intended to be handled** by normal application code. Unlike exceptions, errors often represent **system-level problems** or **critical failures** that the application should not try to recover from.
 
@@ -8,11 +8,11 @@ Errors are subclasses of the class `java.lang.Error`, which is a subclass of `ja
 
 ---
 
-## 🧩 Types of Errors in Java
+## Types of Errors in Java
 
 Errors can generally be categorized into two main types:
 
-### 1. 🧠 Compile-Time Errors
+### 1. Compile-Time Errors
 
 These are detected by the Java compiler before the program runs. They include:
 
@@ -20,9 +20,9 @@ These are detected by the Java compiler before the program runs. They include:
 * **Type Errors**: Assigning incompatible types
 * **Missing Classes or Methods**: Using undefined variables, classes, or methods
 
-💡 *These must be fixed before the program can run.*
+*These must be fixed before the program can run.*
 
-### 2. 💥 Run-Time Errors (Unchecked Errors)
+### 2. Run-Time Errors (Unchecked Errors)
 
 These occur during program execution and are usually represented by objects of type `Error`. Common subtypes include:
 
@@ -36,7 +36,7 @@ These occur during program execution and are usually represented by objects of t
 
 ---
 
-## 🚫 Example 1: StackOverflowError
+## Example 1: StackOverflowError
 
 ```java
 public class Dokja {
@@ -57,7 +57,7 @@ Exception in thread "main" java.lang.StackOverflowError
 
 ---
 
-## 🚫 Example 2: OutOfMemoryError
+## Example 2: OutOfMemoryError
 
 ```java
 import java.util.*;
@@ -80,13 +80,13 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 ---
 
-## 🚫 Example 3: NoClassDefFoundError
+## Example 3: NoClassDefFoundError
 
 ```java
 // Let's say the compiled class file of Jeha.class is missing at runtime
 public class Dazai {
     public static void main(String[] args) {
-        Jeha j = new Jeha(); // ❌ JVM can't find Jeha class
+        Jeha j = new Jeha(); // JVM can't find Jeha class
     }
 }
 ```
@@ -99,7 +99,7 @@ Exception in thread "main" java.lang.NoClassDefFoundError: Jeha
 
 ---
 
-## 🚀 Can Errors be Caught?
+## Can Errors be Caught?
 
 Technically, yes—you can catch `Error` objects using `try-catch`, but it's **not recommended** in most cases because:
 
@@ -110,13 +110,13 @@ Technically, yes—you can catch `Error` objects using `try-catch`, but it's **n
 try {
     // risky code
 } catch (Error e) {
-    System.out.println("Caught an error (not recommended) ⚠️");
+    System.out.println("Caught an error (not recommended)");
 }
 ```
 
 ---
 
-## 🧠 Difference Between Error and Exception
+## Difference Between Error and Exception
 
 | Feature   | Error                | Exception                  |
 | --------- | -------------------- | -------------------------- |
@@ -127,20 +127,21 @@ try {
 
 ---
 
-## 🔐 Best Practices
+## Best Practices
 
-* Avoid recursive calls unless necessary ➿
-* Monitor memory usage in large applications 🧠
-* Don’t catch `Error` unless there's a **very specific** reason 🔒
-* Use JVM options (like `-Xmx`) to manage heap size 🛠️
+* Avoid recursive calls unless necessary 
+* Monitor memory usage in large applications 
+* Don’t catch `Error` unless there's a **very specific** reason 
+* Use JVM options (like `-Xmx`) to manage heap size 
 
 ---
 
-## 📌 Summary
+## Summary
 
 * **Errors** indicate **serious problems** in Java programs, especially related to system or environment failures ❗
 * Not meant to be handled in application logic
 * Common errors: `OutOfMemoryError`, `StackOverflowError`, `NoClassDefFoundError`
 * Focus on **prevention**, not catching
 
-> 🚨 Errors are warnings from the JVM: "Something is really wrong here!"
+> 📚 This is part of the Java OOP chapter.
+

@@ -1,20 +1,20 @@
-# ☕ `toString()` Method in Java
+# `toString()` Method in Java
 
 Understand how to customize object representation in Java using the powerful `toString()` method. Essential for debugging, logging, and readable outputs! 🧾🔍
 
 ---
 
-## 🧠 What is `toString()`?
+## What is `toString()`?
 
 The `toString()` method is defined in the `Object` class and is meant to return a **string representation** of an object.
 
-> 📌 By default, it returns something like: `ClassName@Hashcode`
+> By default, it returns something like: `ClassName@Hashcode`
 
 To make it meaningful, we **override** it in our custom classes.
 
 ---
 
-## 🎯 Purpose of Overriding `toString()`
+## Purpose of Overriding `toString()`
 
 * Print object data in a readable format
 * Useful for debugging/logging
@@ -22,7 +22,7 @@ To make it meaningful, we **override** it in our custom classes.
 
 ---
 
-## 🛠️ Syntax
+## Syntax
 
 ```java
 @Override
@@ -33,9 +33,9 @@ public String toString() {
 
 ---
 
-## 🧪 Example 
+## Example 
 
-### 🔧 Without `toString()`
+### Without `toString()`
 
 ```java
 class Dokja {
@@ -51,7 +51,7 @@ public class Main {
 }
 ```
 
-### ✅ With Overridden `toString()`
+### With Overridden `toString()`
 
 ```java
 class Hamin {
@@ -74,7 +74,7 @@ public class Main {
 
 ---
 
-## 🔁 Key Points
+## Key Points
 
 * `toString()` is called automatically in `System.out.println(object)`.
 * It is a good practice to override it for custom classes.
@@ -82,7 +82,7 @@ public class Main {
 
 ---
 
-## 🧠 Mini Summary
+## Mini Summary
 
 | Feature             | Default Behavior     | Customizable | Auto-invoked |
 | ------------------- | -------------------- | ------------ | ------------ |
@@ -90,7 +90,7 @@ public class Main {
 
 ---
 
-## 🌟 Pro Tips
+## Pro Tips
 
 * Use `@Override` to avoid typos when overriding.
 * You can include all relevant object fields in `toString()`.
@@ -98,6 +98,9 @@ public class Main {
 
 ---
 
-## 🌟 Conclusion
+## Conclusion
 
-Customizing `toString()` is a simple but powerful way to improve your Java class usability, especially when working with logs or debugging complex systems. Always override it for better clarity! ✅📘
+Customizing `toString()` is a simple but powerful way to improve your Java class usability, especially when working with logs or debugging complex systems. Always override it for better clarity! 
+
+> 📚 This is part of the Java OOP chapter.
+

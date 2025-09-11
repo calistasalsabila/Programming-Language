@@ -1,9 +1,9 @@
-# 🌟 Java Variable Shadowing
+# Java Variable Shadowing
 
 ## 🔹 What is Variable Shadowing?
 Variable shadowing in Java occurs when a variable in a subclass or method hides (or "shadows") a variable of the same name in the superclass or enclosing scope. This can lead to confusion if not handled properly.
 
-📌 **Key Characteristics:**
+ **Key Characteristics:**
 - Happens when a local variable has the same name as an instance or class variable.
 - The local variable temporarily hides the original variable.
 - Can occur in methods, constructors, or subclasses.
@@ -20,7 +20,7 @@ Variable shadowing can be used to:
 ---
 
 ## 🔹 Syntax of Variable Shadowing
-### 1️⃣ **Shadowing Instance Variables in a Method**
+### 1. **Shadowing Instance Variables in a Method**
 ```java
 class Example {
     int number = 10; // Instance variable
@@ -39,7 +39,7 @@ public class Main {
     }
 }
 ```
-✅ **Output:**
+**Output:**
 ```
 Local number: 20
 Instance number: 10
@@ -47,7 +47,7 @@ Instance number: 10
 
 ---
 
-### 2️⃣ **Shadowing a Superclass Variable in a Subclass**
+### 2. **Shadowing a Superclass Variable in a Subclass**
 ```java
 class Parent {
     String name = "Parent";
@@ -69,7 +69,7 @@ public class Main {
     }
 }
 ```
-✅ **Output:**
+**Output:**
 ```
 Child name: Child
 Parent name: Parent
@@ -77,7 +77,7 @@ Parent name: Parent
 
 ---
 
-### 3️⃣ **Shadowing Static Variables**
+### 3. **Shadowing Static Variables**
 ```java
 class Parent {
     static String message = "Hello from Parent";
@@ -94,7 +94,7 @@ public class Main {
     }
 }
 ```
-✅ **Output:**
+ **Output:**
 ```
 Hello from Child
 Hello from Parent
@@ -109,6 +109,9 @@ Hello from Parent
 
 ---
 
-## 🌟 Conclusion
-Variable shadowing is an important concept in Java that helps differentiate between variables in different scopes. While useful in certain cases, it should be used carefully to avoid confusion and maintain readability in your code. Happy coding! 🚀
+## Conclusion
+Variable shadowing is an important concept in Java that helps differentiate between variables in different scopes. While useful in certain cases, it should be used carefully to avoid confusion and maintain readability in your code. Happy coding! 
+
+> 📚 This is part of the Java OOP chapter.
+
 

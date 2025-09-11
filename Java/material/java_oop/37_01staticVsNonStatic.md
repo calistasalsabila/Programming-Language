@@ -1,10 +1,10 @@
-# 📘 Comparison: Static vs Non-Static Inner Classes in Java
+# Comparison: Static vs Non-Static Inner Classes in Java
 
 This document provides a comprehensive comparison between **static** and **non-static inner classes** in Java. It includes detailed definitions, complete code examples, practical use cases, and feature comparisons.
 
 ---
 
-## 🔍 What Are Inner Classes?
+## What Are Inner Classes?
 
 In Java, an **inner class** is a class declared within another class. Java supports two main types of inner classes:
 
@@ -15,21 +15,21 @@ Each has distinct characteristics and use cases.
 
 ---
 
-## 🔧 Static Inner Class
+## Static Inner Class
 
-### ✅ Characteristics:
+### Characteristics:
 
 * Declared with the `static` keyword.
 * Does **not** have a reference to an instance of the outer class.
 * Can only access **static members** of the outer class.
 * Can be instantiated without an object of the outer class.
 
-### 💡 Use Cases:
+### Use Cases:
 
 * Utility classes that logically belong inside another class.
 * Helper classes that do not need access to the outer class instance.
 
-### 📄 Example:
+### Example:
 
 ```java
 class Outer {
@@ -59,21 +59,21 @@ public class MainStatic {
 
 ---
 
-## 🔄 Non-Static Inner Class
+## Non-Static Inner Class
 
-### ✅ Characteristics:
+### Characteristics:
 
 * Declared without the `static` keyword.
 * Has an implicit reference to an instance of the outer class.
 * Can access both **instance and static members** of the outer class.
 * Requires an instance of the outer class to be instantiated.
 
-### 💡 Use Cases:
+### Use Cases:
 
 * When the inner class needs access to instance variables or methods of the outer class.
 * For tightly coupled classes.
 
-### 📄 Example:
+### Example:
 
 ```java
 class Outer {
@@ -108,16 +108,16 @@ public class MainNonStatic {
 
 | Feature                            | Static Inner Class     | Non-Static Inner Class        |
 | ---------------------------------- | ---------------------- | ----------------------------- |
-| Requires outer class instance?     | ❌ No                   | ✅ Yes                         |
-| Access outer class instance?       | ❌ No                   | ✅ Yes                         |
-| Can access static outer members?   | ✅ Yes                  | ✅ Yes                         |
-| Can access instance outer members? | ❌ No                   | ✅ Yes                         |
+| Requires outer class instance?     |  No                   |  Yes                         |
+| Access outer class instance?       |  No                   |  Yes                         |
+| Can access static outer members?   |  Yes                  |  Yes                         |
+| Can access instance outer members? |  No                   |  Yes                         |
 | Instantiation Syntax               | `new Outer.Inner()`    | `outerInstance.new Inner()`   |
 | Use Case                           | Utility/helper classes | Classes needing outer context |
 
 ---
 
-## 🎯 When to Use Each?
+## When to Use Each?
 
 ### Use **Static Inner Class** if:
 
@@ -132,14 +132,14 @@ public class MainNonStatic {
 
 ---
 
-## 🧠 Additional Notes
+## Additional Notes
 
 * Java also supports other types of inner classes: **local classes** (defined inside methods) and **anonymous classes** (for one-time use).
 * Inner classes are a powerful way to logically group classes that are only used in one place.
 
 ---
 
-## ✅ Summary
+##  Summary
 
 Inner classes allow better encapsulation and organization of code. Understanding the difference between static and non-static inner classes helps in designing robust, memory-efficient, and maintainable Java applications.
 
@@ -149,3 +149,5 @@ Inner classes allow better encapsulation and organization of code. Understanding
 // Non-Static:    Outer outer = new Outer();
 //                Outer.Inner obj = outer.new Inner();
 ```
+
+> 📚 This is part of the Java OOP chapter.

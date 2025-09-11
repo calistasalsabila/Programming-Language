@@ -1,8 +1,8 @@
-# 🔐 Java Access Modifiers
+# Java Access Modifiers
 
 ---
 
-## 📘 What Are Access Modifiers?
+## What Are Access Modifiers?
 
 > **Access modifiers** in Java define the **visibility** or **access level** of classes, constructors, methods, and variables.
 
@@ -10,7 +10,7 @@ They control **where** a class member can be accessed **from other parts of your
 
 ---
 
-## 🧱 Types of Access Modifiers
+## Types of Access Modifiers
 
 Java provides **four** types of access modifiers:
 
@@ -25,12 +25,12 @@ Java provides **four** types of access modifiers:
 
 ---
 
-## 🔓 `public`
+## `public`
 
-### ✅ Access Level:
+### Access Level:
 - Accessible **from anywhere** in the program.
 
-### 💡 Example:
+### Example:
 ```java
 public class Dokja {
     public int age = 25;
@@ -44,12 +44,12 @@ You can access `age` and `greet()` from any other class in any package.
 
 ---
 
-## 🛡️ `protected`
+## `protected`
 
-### ✅ Access Level:
+### Access Level:
 - Accessible within the **same package** and by **subclasses** in other packages.
 
-### 💡 Example:
+### Example:
 ```java
 public class Jeha {
     protected String name = "Jeha";
@@ -63,12 +63,12 @@ A subclass outside the package can access `name` using inheritance.
 
 ---
 
-## 🚪 (No Modifier) - *Default / Package-private*
+## (No Modifier) - *Default / Package-private*
 
-### ✅ Access Level:
+### Access Level:
 - Accessible **only within the same package**.
 
-### 💡 Example:
+### Example:
 ```java
 class Hamin {
     int score = 90;  // default access
@@ -82,12 +82,12 @@ class Hamin {
 
 ---
 
-## 🔒 `private`
+## `private`
 
-### ✅ Access Level:
+### Access Level:
 - Accessible **only within the class** where it is declared.
 
-### 💡 Example:
+### Example:
 ```java
 public class Dazai {
     private String secret = "I'm not okay.";
@@ -99,13 +99,13 @@ public class Dazai {
 ```
 No other class (even in the same package) can access `secret` or call `whisper()`.
 
-> ✅ Use `getter` and `setter` methods to access `private` data safely.
+>  Use `getter` and `setter` methods to access `private` data safely.
 
 ---
 
-## 📌 Access Modifiers in Different Contexts
+##  Access Modifiers in Different Contexts
 
-### ✅ For Classes
+### For Classes
 - Only `public` and *default* are allowed.
 ```java
 public class Main {}     // OK
@@ -113,10 +113,10 @@ class Helper {}          // OK
 private class Test {}    // ❌ Compilation Error
 ```
 
-### ✅ For Variables & Methods
+### For Variables & Methods
 - All four access levels (`public`, `protected`, `default`, `private`) are allowed.
 
-### ✅ For Constructors
+### For Constructors
 - Use `private` to implement singleton patterns or restrict instantiation.
 
 ```java
@@ -136,7 +136,7 @@ public class Singleton {
 
 ---
 
-## ✅ Summary Table
+## Summary Table
 
 | Modifier     | Class | Same Package | Subclass | Other Packages |
 |--------------|--------|--------------|----------|----------------|
@@ -147,5 +147,6 @@ public class Singleton {
 
 ---
 
-> 📘 Mastering access modifiers is essential for writing **clean**, **secure**, and **well-structured** Java code!
+> 📚 This is part of the Java OOP chapter.
+
 

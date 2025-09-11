@@ -1,19 +1,19 @@
-# 🏷️ Java Annotations
+# Java Annotations
 
-## 📘 Definition
+## Definition
 
 Annotations in Java are **metadata** that provide data about a program but are **not part of the program logic**. They can be used by the compiler or at runtime to generate code, perform checks, or affect the behavior of the program.
 
 Introduced in Java 5, annotations are widely used in frameworks (like Spring, JUnit) and for configuration purposes.
 
-## 🎯 Purpose
+## Purpose
 
 * Provide metadata
 * Reduce boilerplate code
 * Assist in compile-time or runtime processing
 * Enable declarative programming
 
-## 🧱 Basic Syntax
+## Basic Syntax
 
 ```java
 @AnnotationName(parameter1 = value1, parameter2 = value2)
@@ -33,9 +33,9 @@ You can apply annotations to:
 * Parameters
 * Local variables
 
-## 🧪 Built-in Annotations
+## Built-in Annotations
 
-### ✅ @Override
+### @Override
 
 Indicates that a method **overrides** a method from its superclass.
 
@@ -46,7 +46,7 @@ public String toString() {
 }
 ```
 
-### 🚫 @Deprecated
+### @Deprecated
 
 Marks a method/class as **deprecated** and should not be used.
 
@@ -57,7 +57,7 @@ public void oldMethod() {
 }
 ```
 
-### 🛡️ @SuppressWarnings
+### @SuppressWarnings
 
 Tells the compiler to **ignore specific warnings**.
 
@@ -66,7 +66,7 @@ Tells the compiler to **ignore specific warnings**.
 List rawList = new ArrayList();
 ```
 
-## ✍️ Custom Annotations
+## Custom Annotations
 
 You can define your own annotations using `@interface` keyword:
 
@@ -82,7 +82,7 @@ public class MyClass {
 }
 ```
 
-## 🧪 Example: Custom Annotation with Reflection
+## Example: Custom Annotation with Reflection
 
 ```java
 import java.lang.annotation.*;
@@ -111,14 +111,14 @@ public class Main {
 }
 ```
 
-### 📤 Output
+### Output
 
 ```
 Author: Hamin
 Version: 2
 ```
 
-## 🎯 Annotation Meta-Annotations
+## Annotation Meta-Annotations
 
 These are annotations used **to define annotations**:
 
@@ -129,7 +129,7 @@ These are annotations used **to define annotations**:
 | `@Inherited`    | Indicates that the annotation can be inherited by subclasses.                      |
 | `@Documented`   | Indicates that the annotation should be included in the JavaDoc.                   |
 
-### 📌 Example
+### Example
 
 ```java
 @Retention(RetentionPolicy.RUNTIME)
@@ -139,7 +139,7 @@ These are annotations used **to define annotations**:
 }
 ```
 
-## 🏁 Summary
+## Summary
 
 | Annotation          | Use Case                                                        |
 | ------------------- | --------------------------------------------------------------- |
@@ -148,10 +148,12 @@ These are annotations used **to define annotations**:
 | `@SuppressWarnings` | To avoid compiler warnings                                      |
 | Custom Annotations  | To define your own metadata and use it with tools or reflection |
 
-## 💡 Tips
+## Tips
 
 * Always use `@Override` when overriding — it catches mistakes early!
 * Custom annotations + reflection = powerful tool for frameworks ⚙️
 * Annotations do nothing by themselves — they need to be processed!
 
 ---
+> 📚 This is part of the Java OOP chapter.
+

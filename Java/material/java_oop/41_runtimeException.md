@@ -1,6 +1,6 @@
-# 🧨 RunTime Exception in Java
+# RunTime Exception in Java
 
-## 📘 Definition
+## Definition
 
 A **RunTime Exception** is a type of exception that occurs during the execution of a program (i.e., at *runtime*). These exceptions are **unchecked**, meaning the Java compiler does not require the programmer to handle them explicitly using `try-catch` blocks or declare them with the `throws` keyword.
 
@@ -8,7 +8,7 @@ RunTime Exceptions are subclasses of `java.lang.RuntimeException`, which itself 
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 The main goal of understanding and handling RunTime Exceptions is to:
 
@@ -18,7 +18,7 @@ The main goal of understanding and handling RunTime Exceptions is to:
 
 ---
 
-## 📂 Common RunTime Exceptions
+## Common RunTime Exceptions
 
 Here are some commonly encountered RunTime Exceptions:
 
@@ -32,15 +32,15 @@ Here are some commonly encountered RunTime Exceptions:
 
 ---
 
-## 💡 Example Code
+## Example Code
 
 Let's look at some examples to understand RunTime Exceptions:
 
-### 🚫 Example 1: NullPointerException
+### Example 1: NullPointerException
 
 ```java
 String name = null;
-System.out.println(name.length()); // ❌ This throws NullPointerException
+System.out.println(name.length()); //  This throws NullPointerException
 ```
 
 **Output:**
@@ -51,11 +51,11 @@ Exception in thread "main" java.lang.NullPointerException
 
 ---
 
-### 🚫 Example 2: ArrayIndexOutOfBoundsException
+### Example 2: ArrayIndexOutOfBoundsException
 
 ```java
 int[] numbers = {10, 20, 30};
-System.out.println(numbers[5]); // ❌ Index 5 does not exist
+System.out.println(numbers[5]); //  Index 5 does not exist
 ```
 
 **Output:**
@@ -66,12 +66,12 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out
 
 ---
 
-### 🚫 Example 3: ArithmeticException
+### Example 3: ArithmeticException
 
 ```java
 int x = 10;
 int y = 0;
-System.out.println(x / y); // ❌ Cannot divide by zero
+System.out.println(x / y); //  Cannot divide by zero
 ```
 
 **Output:**
@@ -103,22 +103,24 @@ Cannot divide by zero!
 
 ---
 
-## 🧠 Tips to Avoid RunTime Exceptions
+## Tips to Avoid RunTime Exceptions
 
-* Always **check for null** before accessing object methods or variables ✅
-* Use **`try-catch`**\*\* blocks\*\* for operations prone to failure 💡
-* **Validate user input** and arguments before using them 🛡️
-* Use modern Java features like `Optional` when dealing with potentially null values 🌿
+* Always **check for null** before accessing object methods or variables
+* Use **`try-catch`**\*\* blocks\*\* for operations prone to failure 
+* **Validate user input** and arguments before using them 
+* Use modern Java features like `Optional` when dealing with potentially null values 
 
 ---
 
-## 📌 Summary
+## Summary
 
 * RunTime Exceptions happen during execution and are **unchecked**
 * They point to programming bugs or unexpected states
 * Java does not require them to be caught, but handling them can improve program stability ⚙️
 * Common examples: `NullPointerException`, `ArithmeticException`, etc.
 
-> ⚠️ Always write clean and defensive code to minimize RunTime Exceptions!
+> Always write clean and defensive code to minimize RunTime Exceptions!
 
 ---
+> 📚 This is part of the Java OOP chapter.
+

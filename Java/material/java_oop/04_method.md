@@ -1,4 +1,4 @@
-# 📌 Java Methods
+# Java Methods
 
 ## 🔹 What is a Method?
 A method in Java is a block of code that performs a specific task. It helps in code reusability and modular programming. Methods are defined within a class and can be invoked when needed.
@@ -12,7 +12,7 @@ returnType methodName(parameters) {
 ```
 
 ## 🔹 Types of Methods
-### 1️⃣ **Predefined Methods**
+### 1. **Predefined Methods**
 Java provides built-in methods that can be used directly. Example:
 ```java
 public class Example {
@@ -23,7 +23,7 @@ public class Example {
 }
 ```
 
-### 2️⃣ **User-defined Methods**
+### 2. **User-defined Methods**
 These are custom methods created by the programmer.
 ```java
 public class Example {
@@ -101,7 +101,10 @@ public class Example {
 ```
 
 ## 🔹 Conclusion
-- Methods make code reusable and organized. 🎯
-- They can take parameters and return values. 🔄
-- Overloading and recursion enhance method capabilities. 🚀
+- Methods make code reusable and organized. 
+- They can take parameters and return values. 
+- Overloading and recursion enhance method capabilities. 
+
+> 📚 This is part of the Java OOP chapter.
+
 

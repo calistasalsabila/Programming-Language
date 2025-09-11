@@ -1,6 +1,6 @@
-## 🌟 Interface in Java
+## Interface in Java
 
-### 📘 Definition
+### Definition
 
 An **interface** in Java is a **blueprint of a class** that can only contain *abstract methods* (before Java 8) and *constants*. Interfaces are used to achieve *abstraction* and *multiple inheritance* in Java.
 
@@ -13,7 +13,7 @@ Starting from Java 8, interfaces  can also have:
 
 ---
 
-### 🎯 Purpose of Using Interfaces
+### Purpose of Using Interfaces
 
 * Support **polymorphism** and **abstraction**
 * Enable **multiple inheritance** (not supported in regular classes)
@@ -22,7 +22,7 @@ Starting from Java 8, interfaces  can also have:
 
 ---
 
-### 🧠 Basic Interface Syntax
+### Basic Interface Syntax
 
 ```java
 interface InterfaceName {
@@ -44,7 +44,7 @@ interface InterfaceName {
 }
 ```
 
-### 🧩 Example: Class Implementing Interface
+### Example: Class Implementing Interface
 
 ```java
 interface Character {
@@ -74,7 +74,7 @@ public class Main {
 }
 ```
 
-### 💡 Output
+### Output
 
 ```
 Dokja: I’m the last reader.
@@ -83,7 +83,7 @@ Jeha: I’m a UI developer.
 
 ---
 
-### 🔄 Multiple Interfaces
+### Multiple Interfaces
 
 ```java
 interface A {
@@ -112,13 +112,13 @@ class Hamin implements A, B {
 | Keyword          | `interface`               | `abstract class`   |
 | Inheritance      | Multiple                  | Single             |
 | Method type      | abstract, default, static | abstract, concrete |
-| Constructor      | ❌ Not available           | ✅ Available        |
+| Constructor      | Not available             | Available        |
 | Field            | Final & static only       | Can be non-final   |
 | Implement/Extend | `implements`              | `extends`          |
 
 ---
 
-### 🛠️ Important Tips
+### Important Tips
 
 * Use interfaces when you want to **enforce behaviors** without enforcing structure.
 * Always use `@Override` when implementing methods to prevent typos.
@@ -126,7 +126,7 @@ class Hamin implements A, B {
 
 ---
 
-### 🧪 Example: Anonymous Class
+### Example: Anonymous Class
 
 ```java
 Character dazai = new Character() {
@@ -138,7 +138,7 @@ Character dazai = new Character() {
 dazai.speak();
 ```
 
-### 💬 Output
+### Output
 
 ```
 Dazai: I’m full of mysteries.
@@ -146,7 +146,7 @@ Dazai: I’m full of mysteries.
 
 ---
 
-### ✅ Conclusion
+### Conclusion
 
 Java interfaces are powerful tools for creating flexible, modular, and testable code. Use them when you need:
 
@@ -154,7 +154,7 @@ Java interfaces are powerful tools for creating flexible, modular, and testable 
 * Multiple inheritance
 * Polymorphism
 
-> Use interfaces wisely to make your system more scalable and maintainable 💡
+> Use interfaces wisely to make your system more scalable and maintainable 
 
 ---
 
@@ -164,3 +164,4 @@ Java interfaces are powerful tools for creating flexible, modular, and testable 
 * Book: *Effective Java* by Joshua Bloch (Items on Interfaces)
 
 ---
+> 📚 This is part of the Java OOP chapter.

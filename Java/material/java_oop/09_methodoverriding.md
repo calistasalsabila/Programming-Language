@@ -1,4 +1,4 @@
-# 📝 Method Overriding in Java
+# Method Overriding in Java
 
 ## 🔍 What is Method Overriding?
 
@@ -8,7 +8,7 @@ This concept follows the **"Runtime Polymorphism"** principle in Object-Oriented
 
 ---
 
-## 🎯 Purpose of Method Overriding
+## Purpose of Method Overriding
 
 ✅ To achieve **Runtime Polymorphism** in Java.\
 ✅ To provide a **specific implementation** of a method that is already defined in a superclass.\
@@ -17,7 +17,7 @@ This concept follows the **"Runtime Polymorphism"** principle in Object-Oriented
 
 ---
 
-## 📌 Syntax of Method Overriding
+## Syntax of Method Overriding
 
 The method in the child class must have:
 
@@ -50,7 +50,7 @@ public class Main {
 
 ---
 
-## 🎯 Rules for Method Overriding
+## Rules for Method Overriding
 
 🔹 The method **must have the same name** and **same parameters** as the parent class.\
 🔹 The method **cannot have a lower access modifier** (e.g., if it is `public` in the parent class, it cannot be `private` in the child class).\
@@ -60,7 +60,7 @@ public class Main {
 
 ---
 
-## 🛠 Example of Method Overriding with Input & Output
+## Example of Method Overriding with Input & Output
 
 ```java
 class Animal {
@@ -84,7 +84,7 @@ public class Main {
 }
 ```
 
-### ✅ **Expected Output:**
+### **Expected Output:**
 
 ```
 Dog barks
@@ -92,7 +92,7 @@ Dog barks
 
 ---
 
-## 🔥 Super Keyword in Method Overriding
+## Super Keyword in Method Overriding
 
 The `super` keyword is used to call the **parent class method** from the child class.
 
@@ -121,7 +121,7 @@ public class Main {
 }
 ```
 
-### ✅ **Expected Output:**
+### **Expected Output:**
 
 ```
 This is Parent class
@@ -142,7 +142,9 @@ This is Child class
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 
-Method Overriding is a powerful feature in Java that allows a subclass to modify the behavior of its parent class. It supports **runtime polymorphism** and makes Java more flexible and reusable. Understanding its rules and best practices is crucial for mastering **Object-Oriented Programming (OOP) in Java**. 💡✨
+Method Overriding is a powerful feature in Java that allows a subclass to modify the behavior of its parent class. It supports **runtime polymorphism** and makes Java more flexible and reusable. Understanding its rules and best practices is crucial for mastering **Object-Oriented Programming (OOP) in Java**.
+
+> 📚 This is part of the Java OOP chapter.
 

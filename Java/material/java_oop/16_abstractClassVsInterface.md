@@ -1,23 +1,23 @@
 # Abstract Class vs Interface in Java
 
-## 🔥 Overview
+## Overview
 In Java, **abstract classes (`extends`)** and **interfaces (`implements`)** are two different ways to achieve abstraction and inheritance. This document explains their differences, multiple interface implementation, and design patterns.
 
 ---
 
-## 📌 Key Differences
+## Key Differences
 
 | **Feature**                 | **Abstract Class (`extends`)** | **Interface (`implements`)** |
 |-----------------------------|--------------------------------|------------------------------|
-| **Can have attributes?**    | ✅ Yes (instance variables)    | ✅ Yes, but only `final static` (constants) |
-| **Can have method body?**   | ✅ Yes (both abstract & normal methods) | ❌ No (only declarations, unless using `default`) |
-| **Can have constructors?**  | ✅ Yes                        | ❌ No |
-| **Supports multiple inheritance?** | ❌ No (only one superclass) | ✅ Yes (can implement multiple interfaces) |
+| **Can have attributes?**    |  Yes (instance variables)    |  Yes, but only `final static` (constants) |
+| **Can have method body?**   |  Yes (both abstract & normal methods) |  No (only declarations, unless using `default`) |
+| **Can have constructors?**  |  Yes                        |  No |
+| **Supports multiple inheritance?** |  No (only one superclass) |  Yes (can implement multiple interfaces) |
 | **Purpose**                 | Shared behavior & properties  | Blueprint for implementation |
 
 ---
 
-## ✅ Abstract Class Example
+##  Abstract Class Example
 ```java
 // ABSTRACT CLASS
 abstract class Animal {
@@ -33,7 +33,7 @@ abstract class Animal {
 
     // Regular method
     void sleep() {
-        System.out.println(name + " is sleeping... 😴");
+        System.out.println(name + " is sleeping... ");
     }
 }
 
@@ -45,7 +45,7 @@ class Cat extends Animal {
 
     @Override
     void makeSound() {
-        System.out.println(name + " says: Meow! 😺");
+        System.out.println(name + " says: Meow! ");
     }
 }
 
@@ -58,16 +58,16 @@ public class Main {
     }
 }
 ```
-**📝 Output:**
+**Output:**
 ```
-Mochi says: Meow! 😺
-Mochi is sleeping... 😴
+Mochi says: Meow! 
+Mochi is sleeping... 
 ```
-✅ **Abstract class can have attributes, constructors, and method implementations.**
+ **Abstract class can have attributes, constructors, and method implementations.**
 
 ---
 
-## ✅ Interface Example
+##  Interface Example
 ```java
 // INTERFACE
 interface Animal {
@@ -84,7 +84,7 @@ class Cat implements Animal {
 
     @Override
     public void makeSound() {
-        System.out.println(name + " says: Meow! 😺");
+        System.out.println(name + " says: Meow! ");
     }
 }
 
@@ -98,13 +98,13 @@ public class Main {
 ```
 **📝 Output:**
 ```
-Mochi says: Meow! 😺
+Mochi says: Meow! 
 ```
-✅ **Interface only declares methods, which must be implemented in `Cat`.**
+ **Interface only declares methods, which must be implemented in `Cat`.**
 
 ---
 
-## ✅ Multiple Interface Implementation
+##  Multiple Interface Implementation
 Java **does not support multiple inheritance** with classes, but it **supports multiple interface implementation**.
 
 ### **Example: Implementing Multiple Interfaces**
@@ -129,12 +129,12 @@ class Dog implements Animal, Pet {
 
     @Override
     public void makeSound() {
-        System.out.println(name + " says: Woof! 🐶");
+        System.out.println(name + " says: Woof! ");
     }
 
     @Override
     public void play() {
-        System.out.println(name + " is playing fetch! 🎾");
+        System.out.println(name + " is playing fetch");
     }
 }
 
@@ -149,14 +149,14 @@ public class Main {
 ```
 **📝 Output:**
 ```
-Buddy says: Woof! 🐶
-Buddy is playing fetch! 🎾
+Buddy says: Woof! 
+Buddy is playing fetch!
 ```
-✅ **`Dog` can implement both `Animal` and `Pet` without any issues!**
+ **`Dog` can implement both `Animal` and `Pet` without any issues!**
 
 ---
 
-## ✅ Design Patterns: Singleton Pattern
+##  Design Patterns: Singleton Pattern
 **Design patterns** are reusable solutions for common problems in software design. One of them is the **Singleton Pattern**, which ensures **only one instance** of a class exists.
 
 ### **Example: Singleton Pattern**
@@ -192,26 +192,29 @@ public class Main {
     }
 }
 ```
-**📝 Output:**
+**Output:**
 ```
-Connected to database! 🔗
+Connected to database! 
 true
 ```
-✅ **Ensures only one `Database` instance is used throughout the application.**
+ **Ensures only one `Database` instance is used throughout the application.**
 
 ---
 
-## 🎯 Summary
-1️⃣ **Abstract Class vs Interface**
+## Summary
+1. **Abstract Class vs Interface**
    - **Abstract Class** → Can have attributes, constructors, and method implementations.
    - **Interface** → Defines only method signatures (implementations must be provided in classes).
 
-2️⃣ **Multiple Interface Implementation**
+2. **Multiple Interface Implementation**
    - Java **does not support multiple inheritance** with classes, but **supports multiple interface implementation**.
 
-3️⃣ **Design Patterns**
+3. **Design Patterns**
    - **Singleton Pattern** ensures that only **one instance** of a class exists.
    - Other patterns include **Factory, Observer, Strategy**, etc.
 
-🚀 **Use `extends` for inheritance, `implements` for multiple behaviors!** 🔥
+**Use `extends` for inheritance, `implements` for multiple behaviors!** 
+
+> 📚 This is part of the Java OOP chapter.
+
 

@@ -1,22 +1,22 @@
-## 🔍 Comparison: `extends` in Interface vs Class in Java
+## Comparison: `extends` in Interface vs Class in Java
 
-### 📘 Purpose
+### Purpose
 
 In Java, the keyword `extends` is used in different ways depending on the context:
 
 * When **an interface extends another interface**, it's used to **inherit contracts**.
 * When **a class extends another class or abstract class**, it's used to **inherit behavior and structure**.
 
-Let's break down the differences, use cases, and examples 👇
+Let's break down the differences, use cases, and examples 
 
 ---
 
-### 🧱 1. `interface extends interface`
+### 1. `interface extends interface`
 
-* ✅ Used for: Inheriting abstract method declarations from one or more interfaces
-* 🔄 Supports **multiple inheritance**
-* 🧠 Cannot have constructors
-* 📦 Can have: abstract, default, and static methods
+* Used for: Inheriting abstract method declarations from one or more interfaces
+* Supports **multiple inheritance**
+* Cannot have constructors
+* Can have: abstract, default, and static methods
 
 ```java
 interface Movable {
@@ -39,11 +39,11 @@ class Dokja implements Flyable {
 
 ---
 
-### 🧱 2. `class extends class`
+### 2. `class extends class`
 
-* ✅ Used for: Inheriting **methods, variables, and constructors** from another concrete class
-* ❌ Cannot extend multiple classes
-* 🔧 All inherited methods can be overridden (unless `final`)
+* Used for: Inheriting **methods, variables, and constructors** from another concrete class
+* Cannot extend multiple classes
+* All inherited methods can be overridden (unless `final`)
 
 ```java
 class Jeha {
@@ -65,10 +65,10 @@ h.greet(); // Output: Hi from Hamin
 
 ---
 
-### 🧱 3. `class extends abstract class`
+### 3. `class extends abstract class`
 
-* ✅ Used for: Inheriting both abstract (must implement) and concrete methods (can use directly)
-* 🔄 Supports **partial implementation reuse**
+* Used for: Inheriting both abstract (must implement) and concrete methods (can use directly)
+* Supports **partial implementation reuse**
 
 ```java
 abstract class Character {
@@ -87,7 +87,7 @@ class Dazai extends Character {
 
 ---
 
-### 📊 Summary Table
+### Summary Table
 
 | Feature / Behavior              | `interface extends interface`    | `class extends class`             | `class extends abstract class`    |
 | ------------------------------- | -------------------------------- | --------------------------------- | --------------------------------- |
@@ -100,7 +100,7 @@ class Dazai extends Character {
 
 ---
 
-### 🧩 Analogy
+### Analogy
 
 | Type           | Analogy                                                        |
 | -------------- | -------------------------------------------------------------- |
@@ -110,21 +110,22 @@ class Dazai extends Character {
 
 ---
 
-### ✅ Conclusion
+### Conclusion
 
 * Use `interface extends interface` when you're designing **capabilities or roles** (what something *can* do)
 * Use `class extends abstract class` when you want to provide a **base template** with partial implementation
 * Use `class extends class` for **real-world inheritance** where one class is a true subtype of another
 
-> Design tip: Favor **interface inheritance** for flexibility. Use **abstract classes** when you want to share reusable logic. Use **concrete classes** when behavior is fully defined. 💡
+> Design tip: Favor **interface inheritance** for flexibility. Use **abstract classes** when you want to share reusable logic. Use **concrete classes** when behavior is fully defined.
 
 ---
 
-### 🧠 Quick Mnemonic 
+### Quick Mnemonic 
 
-> 🔗 `interface extends interface`: Like blueprint stacking 📐
-> 🧱 `class extends abstract class`: Like building on a foundation 🏗️
-> 🧬 `class extends class`: Like child inherits parent DNA 🧬
-
+>  `interface extends interface`: Like blueprint stacking 
+> `class extends abstract class`: Like building on a foundation 
+>  `class extends class`: Like child inherits parent DNA 
 
 ---
+> 📚 This is part of the Java OOP chapter.
+

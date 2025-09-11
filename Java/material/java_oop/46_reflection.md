@@ -1,17 +1,17 @@
-# 🔍 Java Reflection
+# Java Reflection
 
-## 📘 Definition
+## Definition
 
 Reflection in Java is a powerful feature that allows a program to **inspect and manipulate classes, methods, fields, and constructors at runtime**, even if they are private. It is part of the `java.lang.reflect` package.
 
-## 🎯 Purpose
+## Purpose
 
-* Analyze class information at runtime 🕵️‍♀️
-* Call methods dynamically ⚙️
-* Access private fields 🔓
+* Analyze class information at runtime 
+* Call methods dynamically 
+* Access private fields 
 * Useful for frameworks, debugging tools, testing libraries, etc.
 
-## 🧱 Key Classes in Reflection API
+## Key Classes in Reflection API
 
 | Class         | Description                                                   |
 | ------------- | ------------------------------------------------------------- |
@@ -20,7 +20,7 @@ Reflection in Java is a powerful feature that allows a program to **inspect and 
 | `Field`       | Represents a field (variable) of a class                      |
 | `Constructor` | Represents a constructor of a class                           |
 
-## 🔧 Getting Class Object
+## Getting Class Object
 
 There are several ways to get a `Class` object:
 
@@ -30,7 +30,7 @@ Class<?> cls2 = new MyClass().getClass();        // From object
 Class<?> cls3 = Class.forName("MyClass");       // Using fully-qualified name
 ```
 
-## 📦 Example Class
+## Example Class
 
 ```java
 public class Dokja {
@@ -46,7 +46,7 @@ public class Dokja {
 }
 ```
 
-## 🧪 Example: Access Methods and Fields
+## Example: Access Methods and Fields
 
 ```java
 import java.lang.reflect.*;
@@ -57,21 +57,21 @@ public class ReflectionExample {
 
         Object obj = cls.getDeclaredConstructor().newInstance();
 
-        // 🔍 List all methods
+        // List all methods
         for (Method method : cls.getDeclaredMethods()) {
             System.out.println("Method: " + method.getName());
         }
 
-        // ⚙️ Call public method
+        // Call public method
         Method greetMethod = cls.getMethod("greet");
         greetMethod.invoke(obj);
 
-        // 🔓 Call private method
+        // Call private method
         Method whisperMethod = cls.getDeclaredMethod("whisper");
         whisperMethod.setAccessible(true);
         whisperMethod.invoke(obj);
 
-        // 🧪 Access private field
+        // Access private field
         Field field = cls.getDeclaredField("secret");
         field.setAccessible(true);
         System.out.println("Secret: " + field.get(obj));
@@ -79,7 +79,7 @@ public class ReflectionExample {
 }
 ```
 
-### 📤 Output
+### Output
 
 ```
 Method: greet
@@ -89,28 +89,28 @@ You shouldn't see this...
 Secret: Omniscient Reader
 ```
 
-## 🎯 Use Cases
+## Use Cases
 
-* 📚 Frameworks (like Spring, Hibernate)
-* 🔍 IDEs and debuggers
-* 🧪 Unit testing (e.g., JUnit)
-* 🛠️ Code analysis tools
-* 📦 Serialization libraries
+* Frameworks (like Spring, Hibernate)
+* IDEs and debuggers
+* Unit testing (e.g., JUnit)
+* Code analysis tools
+* Serialization libraries
 
-## ⚠️ Pros and Cons
+## Pros and Cons
 
-### ✅ Pros
+### Pros
 
 * Extremely powerful
 * Enables flexible and dynamic applications
 
-### ❌ Cons
+### Cons
 
 * Slower than regular code (due to runtime checks)
 * Breaks encapsulation (can access private members)
 * May cause security issues
 
-## 🛡️ Tips
+## Tips
 
 * Use reflection only when absolutely necessary.
 * Prefer standard method access whenever possible.
@@ -118,4 +118,5 @@ Secret: Omniscient Reader
 
 ---
 
-Java Reflection: A mirror to your code’s soul 🪞✨
+> 📚 This is part of the Java OOP chapter.
+

@@ -1,12 +1,12 @@
-# 🌱 Java Fields
+# Java Fields
 
-## 📌 Introduction
+## Introduction
 Fields in Java are variables that belong to a class or an object. They store data that defines the state of an object.
 
-## 🏗️ Defining Fields
+## Defining Fields
 Fields are declared inside a class but outside any methods, constructors, or blocks.
 
-### 📝 Syntax
+### Syntax
 ```java
 class Car {
     // Fields (Instance Variables)
@@ -15,17 +15,17 @@ class Car {
 }
 ```
 
-## 🔍 Types of Fields
+## Types of Fields
 Java fields can be categorized into three main types:
 
 1. **Instance Variables** - Belong to an instance of a class.
 2. **Static Variables** - Shared among all instances of a class.
 3. **Final Variables** - Immutable values that cannot be changed once assigned.
 
-## 🎯 Instance Variables
+## Instance Variables
 Instance variables are unique to each object of a class.
 
-### 📌 Example:
+### Example:
 ```java
 class Car {
     String brand;
@@ -52,7 +52,7 @@ public class Main {
 ## 🔗 Static Fields
 Static fields belong to the class itself and are shared by all objects.
 
-### 📌 Example:
+### Example:
 ```java
 class Car {
     static int totalCars = 0; // Static field
@@ -71,15 +71,18 @@ public class Main {
 }
 ```
 
-## ⛔ Final Fields
+## Final Fields
 Final fields cannot be modified after assignment.
 
-### 📌 Example:
+### Example:
 ```java
 class Car {
     final int maxSpeed = 200; // Cannot be changed
 }
 ```
 
-## 🎯 Conclusion
-Fields define the state of an object. Understanding their types and behavior is crucial for effective Java programming. 🚀
+## Conclusion
+Fields define the state of an object. Understanding their types and behavior is crucial for effective Java programming.
+
+> 📚 This is part of the Java OOP chapter.
+

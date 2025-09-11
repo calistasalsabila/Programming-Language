@@ -1,6 +1,6 @@
-# 🧠 Hiding Variable vs Method Overriding in Java
+# Hiding Variable vs Method Overriding in Java
 
-## ✨ Definition
+## Definition
 
 In Java, **Hiding Variable** and **Method Overriding** are two different concepts related to inheritance.
 
@@ -10,7 +10,7 @@ In Java, **Hiding Variable** and **Method Overriding** are two different concept
 
 ---
 
-## 🌟 Purpose
+## Purpose
 
 | Concept           | Purpose                                                                 |
 |------------------|-------------------------------------------------------------------------|
@@ -19,7 +19,7 @@ In Java, **Hiding Variable** and **Method Overriding** are two different concept
 
 ---
 
-## 🧠 Common Syntax in Inheritance
+## Common Syntax in Inheritance
 
 ```java
 Parent parent = child;
@@ -29,12 +29,12 @@ Parent parent = child;
 - `parent` → the **reference variable**
 - `child` → the **actual object** (instance of subclass)
 
-🧩 This allows **polymorphism** — where the reference is of type `Parent`, but the actual object is a `Child`. 
+This allows **polymorphism** — where the reference is of type `Parent`, but the actual object is a `Child`. 
 This is key to understanding how method overriding works vs. variable hiding.
 
 ---
 
-## 👨‍💻 Example Code
+## Example Code
 
 ```java
 class Person {
@@ -66,7 +66,7 @@ public class Main {
 
 ---
 
-## 📄 Output
+## Output
 
 ```
 Accessing variable: Dokja
@@ -95,7 +95,7 @@ Let's break it down:
 
 ---
 
-## 📌 Conclusion
+## Conclusion
 
 | Feature             | Hiding Variable                         | Method Overriding                            |
 |---------------------|------------------------------------------|----------------------------------------------|
@@ -104,18 +104,19 @@ Let's break it down:
 | Polymorphism        | ❌ No                                    | ✅ Yes                                         |
 | Use case            | Declaring same-named field (not advised)| Extending or customizing superclass behavior |
 
-🔀 In practice, method overriding is a key part of polymorphism and is widely used in Java OOP design.  
-⛔ Variable hiding, on the other hand, can be confusing and is usually **discouraged**.
+In practice, method overriding is a key part of polymorphism and is widely used in Java OOP design.  
+Variable hiding, on the other hand, can be confusing and is usually **discouraged**.
 
 ---
 
-## 🧹 Bonus Tips
+## Bonus Tips
 
-- ✅ Always prefer method overriding for customizing behavior.
-- ❌ Avoid variable hiding as it reduces code clarity.
-- 🧪 Try printing `((Student)p).name` and see how it accesses the hidden variable.
+- Always prefer method overriding for customizing behavior.
+- Avoid variable hiding as it reduces code clarity.
+- Try printing `((Student)p).name` and see how it accesses the hidden variable.
 
 ---
 
-Hope this helps you understand the difference between Hiding Variables and Method Overriding clearly! 🚀
+> 📚 This is part of the Java OOP chapter.
+
 

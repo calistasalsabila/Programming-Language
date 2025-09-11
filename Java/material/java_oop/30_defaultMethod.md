@@ -1,18 +1,18 @@
-# ☕ Default Methods in Interfaces in Java
+# Default Methods in Interfaces in Java
 
-Learn how Java's default methods bring flexibility and backward compatibility to interfaces. Super useful when evolving APIs or providing reusable logic! 💡📄
+Learn how Java's default methods bring flexibility and backward compatibility to interfaces. Super useful when evolving APIs or providing reusable logic! 
 
 ---
 
-## 🧠 What is a Default Method?
+## What is a Default Method?
 
 A **default method** is a method defined in an interface with a **default implementation**. This allows an interface to provide method behavior without forcing all implementing classes to override it.
 
-➡️ Introduced in **Java 8** to support **interface evolution** without breaking existing code.
+Introduced in **Java 8** to support **interface evolution** without breaking existing code.
 
 ---
 
-## 🎯 Purpose of Default Methods
+## Purpose of Default Methods
 
 * Avoid breaking code when interfaces are extended.
 * Enable code reuse in interfaces.
@@ -20,7 +20,7 @@ A **default method** is a method defined in an interface with a **default implem
 
 ---
 
-## 🛠️ Syntax
+## Syntax
 
 ```java
 public interface InterfaceName {
@@ -32,9 +32,9 @@ public interface InterfaceName {
 
 ---
 
-## 🧪 Example with Characters: Dokja, Jeha, and Hamin
+## Example with Characters: Dokja, Jeha, and Hamin
 
-### 🔧 Interface with Default Method:
+### Interface with Default Method:
 
 ```java
 interface Greeting {
@@ -44,7 +44,7 @@ interface Greeting {
 }
 ```
 
-### ✅ Class Implementing the Interface:
+### Class Implementing the Interface:
 
 ```java
 class Dokja implements Greeting {
@@ -59,7 +59,7 @@ class Jeha implements Greeting {
 }
 ```
 
-### 🚀 Main Method:
+### Main Method:
 
 ```java
 public class Main {
@@ -75,7 +75,7 @@ public class Main {
 
 ---
 
-## 🔁 Key Points
+## Key Points
 
 * You **can override** default methods in implementing classes.
 * Default methods help evolve interfaces without affecting old implementations.
@@ -83,7 +83,7 @@ public class Main {
 
 ---
 
-## ⚠️ Multiple Inheritance Conflict
+## Multiple Inheritance Conflict
 
 ```java
 interface A {
@@ -108,7 +108,7 @@ class Hamin implements A, B {
 
 ---
 
-## 🧠 Mini Summary
+## Mini Summary
 
 | Feature          | Available Since | Overridable | Supports Super Call |
 | ---------------- | --------------- | ----------- | ------------------- |
@@ -116,6 +116,9 @@ class Hamin implements A, B {
 
 ---
 
-## 🌟 Conclusion
+## Conclusion
 
-Default methods make interfaces more powerful by combining the flexibility of abstract classes with the multiple inheritance of interfaces. Use them wisely to write cleaner, more maintainable Java code! 💪📘
+Default methods make interfaces more powerful by combining the flexibility of abstract classes with the multiple inheritance of interfaces. Use them wisely to write cleaner, more maintainable Java code! 
+
+> 📚 This is part of the Java OOP chapter.
+

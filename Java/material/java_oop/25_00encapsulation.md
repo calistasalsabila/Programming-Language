@@ -1,10 +1,10 @@
-# 🧱 Encapsulation & Getter Setter in Java
+# Encapsulation & Getter Setter in Java
 
-📚 **Encapsulation** is one of the fundamental principles in OOP (Object-Oriented Programming). It is the practice of hiding internal data of a class and only allowing access to it through public methods. This makes the class more secure, maintainable, and easier to manage.
+**Encapsulation** is one of the fundamental principles in OOP (Object-Oriented Programming). It is the practice of hiding internal data of a class and only allowing access to it through public methods. This makes the class more secure, maintainable, and easier to manage.
 
 ---
 
-## 🔐 What is Encapsulation?
+## What is Encapsulation?
 
 Encapsulation = Wrapping data + hiding it from outside access.
 
@@ -16,7 +16,7 @@ Encapsulation = Wrapping data + hiding it from outside access.
 
 ---
 
-## ⚙️ How to Implement Encapsulation in Java
+## How to Implement Encapsulation in Java
 
 Steps:
 
@@ -64,14 +64,14 @@ System.out.println(d.getAge());  // 27
 
 ---
 
-## 🔄 Getter vs Setter
+## Getter vs Setter
 
 | Method Type | Description            |
 | ----------- | ---------------------- |
 | Getter      | Used to read a value   |
 | Setter      | Used to update a value |
 
-### 🧾 Getter & Setter Naming Conventions
+### Getter & Setter Naming Conventions
 
 | Data Type | Getter Method | Setter Method             |
 | --------- | ------------- | ------------------------- |
@@ -95,7 +95,7 @@ public void setActive(boolean active) {
 
 ---
 
-## 💊 Benefits of Encapsulation
+## Benefits of Encapsulation
 
 * ✅ Keeps internal data safe
 * ✅ Adds validation before changing values
@@ -104,13 +104,13 @@ public void setActive(boolean active) {
 
 ---
 
-## 💡 Easy Analogy
+## Easy Analogy
 
 Think of a **capsule medicine**. You cannot see or access what's inside directly. You just consume it and trust that it works. In the same way, the class hides the internal logic and exposes only the necessary parts.
 
 ---
 
-## 📌 Important Notes
+## Important Notes
 
 * You can create **getter only** → making the variable **read-only**.
 * You can create **setter only** → making the variable **write-only**.
@@ -118,7 +118,7 @@ Think of a **capsule medicine**. You cannot see or access what's inside directly
 
 ---
 
-🧠 **Additional Example:**
+ **Additional Example:**
 
 ```java
 public class Jeha {
@@ -138,5 +138,6 @@ public class Jeha {
 }
 ```
 ---
+> 📚 This is part of the Java OOP chapter.
 
 

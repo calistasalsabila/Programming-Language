@@ -1,23 +1,23 @@
 # Superclass vs Interface in Java
 
-## 🔥 Overview
+## Overview
 In Java, **superclass (`extends`)** and **interface (`implements`)** are used for inheritance, but they work differently. This document explains their differences, usage, and examples.
 
 ---
 
-## 📌 Key Differences
+## Key Differences
 
 | Feature | Superclass (`extends`) | Interface (`implements`) |
 |---------|-----------------------|--------------------------|
 | **Usage** | `class Child extends Parent {}` | `class Child implements Interface {}` |
-| **Multiple Inheritance?** | ❌ No (only one superclass) | ✅ Yes (can implement multiple interfaces) |
-| **Method Implementation?** | ✅ Can have method implementations | ❌ Only method declarations (must be overridden) |
-| **Has Constructors?** | ✅ Yes | ❌ No |
-| **Attributes** | ✅ Can have instance variables | ✅ Can have variables, but they are `final static` (constants) |
+| **Multiple Inheritance?** | ❌ No (only one superclass) |  Yes (can implement multiple interfaces) |
+| **Method Implementation?** |  Can have method implementations | ❌ Only method declarations (must be overridden) |
+| **Has Constructors?** |  Yes | ❌ No |
+| **Attributes** |  Can have instance variables |  Can have variables, but they are `final static` (constants) |
 
 ---
 
-## ✅ Superclass (`extends`) Example
+## Superclass (`extends`) Example
 ```java
 // SUPERCLASS
 class Animal {
@@ -41,7 +41,7 @@ class Cat extends Animal {
     
     @Override
     void makeSound() {
-        System.out.println(name + " says: Meow! 😺");
+        System.out.println(name + " says: Meow! ");
     }
 }
 
@@ -55,13 +55,13 @@ public class Main {
 ```
 **📝 Output:**
 ```
-Mochi says: Meow! 😺
+Mochi says: Meow! 
 ```
-✅ **Superclass (`Animal`) provides a constructor and method that can be inherited and modified by `Cat`.**
+ **Superclass (`Animal`) provides a constructor and method that can be inherited and modified by `Cat`.**
 
 ---
 
-## ✅ Interface (`implements`) Example
+##  Interface (`implements`) Example
 ```java
 // INTERFACE
 interface Animal {
@@ -90,22 +90,23 @@ public class Main {
     }
 }
 ```
-**📝 Output:**
+**Output:**
 ```
-Mochi says: Meow! 😺
+Mochi says: Meow!
 ```
-✅ **Interface (`Animal`) only declares the method, which must be implemented in `Cat`.**
+ **Interface (`Animal`) only declares the method, which must be implemented in `Cat`.**
 
 ---
 
-## 🎯 When to Use?
-1️⃣ **Use Superclass (`extends`)** when:
+## When to Use?
+1. **Use Superclass (`extends`)** when:
    - You need to share **attributes, methods, and constructors**.
    - You want **single inheritance** (one parent class).
    
-2️⃣ **Use Interface (`implements`)** when:
+2.  **Use Interface (`implements`)** when:
    - You need a **contract/blueprint** for multiple classes.
    - You want **multiple inheritance** (a class can implement multiple interfaces).
    
-🔥 **Conclusion: Use `extends` for shared behavior, `implements` for enforcing rules!** 🚀
+> 📚 This is part of the Java OOP chapter.
+
 

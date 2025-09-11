@@ -1,12 +1,12 @@
-## ☕ Java Exception Handling - Complete Guide
+## Java Exception Handling 
 
-### 📌 What is an Exception?
+### What is an Exception?
 
 An **exception** is an event that disrupts the normal flow of a program during execution. It represents an error or unexpected behavior that occurs while a program is running.
 
 > "Think of an exception as a red flag that tells the program: 'Hey! Something went wrong here!'"
 
-### 🎯 Purpose of Exception Handling
+### Purpose of Exception Handling
 
 * Prevents program crash by handling unexpected errors gracefully.
 * Helps identify bugs or faults in code.
@@ -14,13 +14,13 @@ An **exception** is an event that disrupts the normal flow of a program during e
 
 ---
 
-### 📚 Types of Exceptions in Java
+### Types of Exceptions in Java
 
 #### 1. **Checked Exceptions**
 
 Exceptions that are checked at **compile time**.
 
-📝 *Examples:* `IOException`, `SQLException`, `FileNotFoundException`
+*Examples:* `IOException`, `SQLException`, `FileNotFoundException`
 
 You must either handle them using `try-catch` or declare them using `throws`.
 
@@ -38,7 +38,7 @@ public class CheckedExample {
 
 Exceptions that occur at **runtime**.
 
-📝 *Examples:* `ArithmeticException`, `NullPointerException`, `ArrayIndexOutOfBoundsException`
+*Examples:* `ArithmeticException`, `NullPointerException`, `ArrayIndexOutOfBoundsException`
 
 ```java
 public class UncheckedExample {
@@ -52,11 +52,11 @@ public class UncheckedExample {
 
 Serious issues that a typical application should not try to handle.
 
-📝 *Examples:* `OutOfMemoryError`, `StackOverflowError`
+*Examples:* `OutOfMemoryError`, `StackOverflowError`
 
 ---
 
-### 🧰 Exception Handling Keywords
+### Exception Handling Keywords
 
 | Keyword   | Description                                              |
 | --------- | -------------------------------------------------------- |
@@ -68,7 +68,7 @@ Serious issues that a typical application should not try to handle.
 
 ---
 
-### 📦 Syntax Example: Try-Catch-Finally
+### Syntax Example: Try-Catch-Finally
 
 ```java
 public class TryCatchExample {
@@ -77,9 +77,9 @@ public class TryCatchExample {
             int[] arr = {1, 2, 3};
             System.out.println(arr[5]);  // Throws ArrayIndexOutOfBoundsException
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("⚠️ Error: Index out of bounds!");
+            System.out.println("Error: Index out of bounds!");
         } finally {
-            System.out.println("✅ Finally block executed.");
+            System.out.println("Finally block executed.");
         }
     }
 }
@@ -87,7 +87,7 @@ public class TryCatchExample {
 
 ---
 
-### 🧨 Throwing Custom Exceptions
+### Throwing Custom Exceptions
 
 You can define your own exception by extending `Exception` or `RuntimeException`.
 
@@ -117,17 +117,17 @@ public class CustomExceptionDemo {
 
 ---
 
-### ✅ Best Practices
+### Best Practices
 
 * Always catch specific exceptions first.
 * Avoid catching `Exception` unless necessary.
 * Use `finally` to release resources like files, DB connections, etc.
-* Never ignore exceptions (empty catch blocks ❌).
+* Never ignore exceptions (empty catch blocks).
 * Create meaningful custom exceptions for clarity.
 
 ---
 
-### 🧠 Summary
+### Summary
 
 | Topic               | Details                                            |
 | ------------------- | -------------------------------------------------- |
@@ -140,7 +140,7 @@ public class CustomExceptionDemo {
 
 ---
 
-### 📦 Example Real Case: Login System
+### Example Real Case: Login System
 
 ```java
 class WrongPasswordException extends Exception {
@@ -154,19 +154,19 @@ public class LoginSystem {
         if (!password.equals("12345")) {
             throw new WrongPasswordException("Invalid password for user: " + username);
         }
-        System.out.println("✅ Welcome, " + username + "!");
+        System.out.println("Welcome, " + username + "!");
     }
 
     public static void main(String[] args) {
         try {
             login("Dokja", "wrongpass");
         } catch (WrongPasswordException e) {
-            System.out.println("❌ Login failed: " + e.getMessage());
+            System.out.println("Login failed: " + e.getMessage());
         }
     }
 }
 ```
 
 ---
+> 📚 This is part of the Java OOP chapter.
 
-> "With great power comes great responsibility — handle your exceptions wisely!" 💡

@@ -1,23 +1,23 @@
-# 🧠 Java Inner Class
+# Java Inner Class
 
-## 📘 Definition
+## Definition
 
 An **Inner Class** is a class defined inside another class. It's used to logically group classes that are only used in one place, enhancing encapsulation and readability.
 
-> Inner class = class inside another class 😲
+> Inner class = class inside another class 
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
-* Organize code more effectively 🗂️
-* Simplify access to members of the outer class 🔑
-* Enhance encapsulation and hide logic 🔒
-* Ideal for logic that's not reused elsewhere 🧹
+* Organize code more effectively 
+* Simplify access to members of the outer class 
+* Enhance encapsulation and hide logic 
+* Ideal for logic that's not reused elsewhere 
 
 ---
 
-## 🧩 Types of Inner Classes
+## Types of Inner Classes
 
 1. **Non-static (Regular Inner Class)**
 2. **Static Nested Class**
@@ -26,9 +26,9 @@ An **Inner Class** is a class defined inside another class. It's used to logical
 
 ---
 
-## 🧪 Examples and Explanations
+## Examples and Explanations
 
-### 1. 👨‍👧 Non-static Inner Class
+### 1. Non-static Inner Class
 
 ```java
 public class Dokja {
@@ -48,7 +48,7 @@ public class Dokja {
 }
 ```
 
-📌 *Explanation:*
+*Explanation:*
 
 * `Jeha` is a non-static inner class.
 * Can directly access the outer class's field `name`.
@@ -56,7 +56,7 @@ public class Dokja {
 
 ---
 
-### 2. 🦨 Static Nested Class
+### 2. Static Nested Class
 
 ```java
 public class Dokja {
@@ -75,7 +75,7 @@ public class Dokja {
 }
 ```
 
-📌 *Explanation:*
+ *Explanation:*
 
 * `Jeha` is a static nested class.
 * Can only access static members of the outer class.
@@ -83,7 +83,7 @@ public class Dokja {
 
 ---
 
-### 3. 🧪 Local Class (inside method)
+### 3. Local Class (inside method)
 
 ```java
 public class Dokja {
@@ -104,7 +104,7 @@ public class Dokja {
 }
 ```
 
-📌 *Explanation:*
+ *Explanation:*
 
 * `Hamin` is a local class within the `greet` method.
 * Only accessible within the method.
@@ -112,7 +112,7 @@ public class Dokja {
 
 ---
 
-### 4. 👻 Anonymous Class
+### 4. Anonymous Class
 
 ```java
 interface Greeting {
@@ -132,7 +132,7 @@ public class Dokja {
 }
 ```
 
-📌 *Explanation:*
+*Explanation:*
 
 * An instance of `Greeting` is implemented anonymously.
 * Commonly used for short logic, callbacks, or listeners.
@@ -140,18 +140,20 @@ public class Dokja {
 
 ---
 
-## ✅ Summary
+## Summary
 
 | Type            | Can Access Outer Class | Needs Outer Instance? | When to Use       |
 | --------------- | ---------------------- | --------------------- | ----------------- |
-| Non-static      | ✅ Yes                  | ✅ Yes                 | Regular logic     |
-| Static Nested   | ❌ Static only          | ❌ No                  | Utility/helper    |
-| Local Class     | ✅ Yes (in method)      | ✅ Yes                 | Scoped to method  |
-| Anonymous Class | ✅ Yes                  | ✅ Yes                 | Short logic block |
+| Non-static      |  Yes                  |  Yes                 | Regular logic     |
+| Static Nested   |  Static only          |  No                  | Utility/helper    |
+| Local Class     |  Yes (in method)      |  Yes                 | Scoped to method  |
+| Anonymous Class |  Yes                  |  Yes                 | Short logic block |
 
 ---
 
-## 🚀 Tips
+## Tips
 
 * Use inner classes when the relationship is tightly coupled with the outer class.
 * Avoid overusing them — prefer standalone classes for reusable logic.
+
+> 📚 This is part of the Java OOP chapter.

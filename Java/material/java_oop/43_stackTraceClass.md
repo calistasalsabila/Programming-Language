@@ -1,6 +1,6 @@
-# 🔍 StackTraceElement Class in Java
+# StackTraceElement Class in Java
 
-## 📘 Definition
+## Definition
 
 The `StackTraceElement` class in Java is part of the `java.lang` package. It represents a single **stack frame**, which is an element of the **call stack** displayed when an exception is thrown.
 
@@ -13,7 +13,7 @@ Each `StackTraceElement` gives detailed information about the **location** in th
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 * Help **debug** exceptions and errors
 * Provide **traceability** of how the program reached a certain point
@@ -23,7 +23,7 @@ It is especially useful when combined with exception handling via `Throwable.get
 
 ---
 
-## 🏗️ Constructor
+## Constructor
 
 ```java
 StackTraceElement(String declaringClass, String methodName, String fileName, int lineNumber)
@@ -33,7 +33,7 @@ Creates a new `StackTraceElement` manually (mostly used for advanced logging or 
 
 ---
 
-## 📂 Methods Overview
+## Methods Overview
 
 Here are the common methods provided by `StackTraceElement`:
 
@@ -48,7 +48,7 @@ Here are the common methods provided by `StackTraceElement`:
 
 ---
 
-## 💡 Example: Getting Stack Trace
+## Example: Getting Stack Trace
 
 ```java
 public class Dokja {
@@ -57,7 +57,7 @@ public class Dokja {
     }
 
     public static void methodB() {
-        throw new RuntimeException("Something went wrong 😵");
+        throw new RuntimeException("Something went wrong");
     }
 
     public static void main(String[] args) {
@@ -79,7 +79,7 @@ public class Dokja {
 
 ---
 
-## 🧾 Sample Output
+## Sample Output
 
 ```
 Class: Dokja
@@ -104,7 +104,7 @@ Native? false
 
 ---
 
-## 🛠️ Practical Usage
+## Practical Usage
 
 You can use StackTraceElement to:
 
@@ -120,20 +120,20 @@ System.out.println("Called from: " + caller);
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 * Stack traces are printed from **most recent call (top)** to **oldest (bottom)**
 * `getStackTrace()` returns an array of `StackTraceElement`
-* A single exception can give you a **complete trail** of method calls 📜
+* A single exception can give you a **complete trail** of method calls 
 
 ---
 
-## 📌 Summary
+## Summary
 
-* `StackTraceElement` gives detailed info on each method call in the stack 📦
+* `StackTraceElement` gives detailed info on each method call in the stack 
 * It’s vital for debugging and logging
 * Can be used programmatically to trace code execution
 
-> 🧠 Pro tip: Always check stack traces first when debugging exceptions—they are your breadcrumbs to the bug!
-
 ---
+> 📚 This is part of the Java OOP chapter.
+

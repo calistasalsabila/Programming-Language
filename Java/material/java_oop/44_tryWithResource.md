@@ -1,18 +1,18 @@
-# 🧪 Try-With-Resources in Java
+# Try-With-Resources in Java
 
-## 📘 Definition
+## Definition
 
 `try-with-resources` is a feature in Java that allows you to automatically close resources (like files, streams, etc.) after they are used. This avoids resource leaks and makes code cleaner and safer. It was introduced in Java 7.
 
 Resources must implement the `AutoCloseable` interface (or its subinterface `Closeable`).
 
-## 🎯 Purpose
+## Purpose
 
 * Automatically close resources
 * Eliminate the need for explicit `finally` blocks
 * Make code more readable and less error-prone
 
-## 🧱 Syntax
+## Syntax
 
 ```java
 try (ResourceType name = new ResourceType()) {
@@ -22,7 +22,7 @@ try (ResourceType name = new ResourceType()) {
 }
 ```
 
-### 📝 Explanation
+### Explanation
 
 | Part                                       | Description                                    |
 | ------------------------------------------ | ---------------------------------------------- |
@@ -39,9 +39,9 @@ try (Resource1 r1 = new Resource1(); Resource2 r2 = new Resource2()) {
 }
 ```
 
-## 🧪 Example
+## Example
 
-### 📁 Example using `BufferedReader`
+### Example using `BufferedReader`
 
 ```java
 import java.io.BufferedReader;
@@ -62,7 +62,7 @@ public class ReadFileExample {
 }
 ```
 
-### 📤 Output
+### Output
 
 If `example.txt` contains:
 
@@ -78,7 +78,7 @@ Hello, Dokja!
 Welcome to the world of Java!
 ```
 
-## 🧹 Without Try-With-Resources (Manual Close)
+## Without Try-With-Resources (Manual Close)
 
 ```java
 BufferedReader reader = null;
@@ -99,9 +99,9 @@ try {
 }
 ```
 
-✅ **As you can see**, `try-with-resources` removes the need for `finally` and makes the code shorter and safer.
+**As you can see**, `try-with-resources` removes the need for `finally` and makes the code shorter and safer.
 
-## 🔄 Custom Resource (Implementing AutoCloseable)
+## Custom Resource (Implementing AutoCloseable)
 
 ```java
 class MyResource implements AutoCloseable {
@@ -124,14 +124,14 @@ public class Main {
 }
 ```
 
-### 📤 Output
+### Output
 
 ```
 Doing something with MyResource
 MyResource is now closed
 ```
 
-## ⚠️ Notes
+## Notes
 
 * Resources are closed in **reverse order** of their creation.
 * Each resource must be **effectively final** (not reassigned after initialization).
@@ -141,12 +141,10 @@ MyResource is now closed
 
 | Feature            | With Try-With-Resources | Without        |
 | ------------------ | ----------------------- | -------------- |
-| Auto Close         | ✅ Yes                   | ❌ No           |
-| Requires `finally` | ❌ No                    | ✅ Yes          |
-| Readable           | ✅ Cleaner               | ❌ More verbose |
-
-## 🧠 Remember
-
-> "Use try-with-resources whenever you're working with files, streams, or sockets to write safer Java code." 🧑‍💻
+| Auto Close         |  Yes                   |  No           |
+| Requires `finally` |  No                    |  Yes          |
+| Readable           |  Cleaner               |  More verbose |
 
 ---
+> 📚 This is part of the Java OOP chapter.
+

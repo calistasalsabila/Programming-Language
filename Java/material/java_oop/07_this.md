@@ -1,10 +1,10 @@
 # `this` Keyword in Java
 
-## 📌 What is `this` Keyword?
+## What is `this` Keyword?
 In Java, `this` is a reference variable that refers to the **current object** of a class. It is mainly used to eliminate confusion between instance variables and parameters, and to access members of the current object.
 
 ---
-## 🎯 Purpose of `this` Keyword
+## Purpose of `this` Keyword
 `this` keyword is used for:
 1. **Referring to instance variables** when shadowed by method or constructor parameters.
 2. **Invoking current class methods**.
@@ -27,7 +27,7 @@ class ClassName {
 ```
 
 ---
-## 🔥 Example 1: `this` for Instance Variable
+## Example 1: `this` for Instance Variable
 **Avoiding variable shadowing**
 
 ```java
@@ -51,12 +51,12 @@ public class Main {
 }
 ```
 
-🔍 **Explanation:**
+**Explanation:**
 - `this.name` refers to the instance variable `name`.
 - Without `this`, `name = name;` would assign the parameter to itself, causing no change.
 
 ---
-## 🔥 Example 2: `this` for Calling a Constructor
+## Example 2: `this` for Calling a Constructor
 A constructor can call another constructor using `this()` to avoid redundant code.
 
 ```java
@@ -93,7 +93,7 @@ public class Main {
 - `this("Toyota", 2023);` calls the parameterized constructor from the default constructor.
 
 ---
-## 🔥 Example 3: Returning the Current Object
+## Example 3: Returning the Current Object
 `this` can be returned from a method to allow method chaining.
 
 ```java
@@ -118,11 +118,11 @@ public class Main {
 }
 ```
 
-🔍 **Explanation:**
+**Explanation:**
 - `return this;` returns the current instance, enabling method chaining.
 
 ---
-## 🌟 Key Takeaways
+## Key Takeaways
 ✅ `this` refers to the **current object**.  
 ✅ It helps **resolve variable shadowing** between instance and local variables.  
 ✅ Used to **call another constructor** in the same class.  
@@ -130,6 +130,7 @@ public class Main {
 ✅ Helps **pass the current instance** to another method.
 
 ---
-## 🏁 Conclusion
+## Conclusion
 The `this` keyword is an essential part of Java OOP, ensuring clarity in code by properly referencing instance variables, calling constructors, and supporting method chaining. Mastering `this` improves Java programming efficiency! 🚀
 
+> 📚 This is part of the Java OOP chapter.

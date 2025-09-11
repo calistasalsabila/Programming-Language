@@ -1,12 +1,12 @@
-# ☕ Reference vs Object in Java
+# Reference vs Object in Java
 
-## 🎯 Purpose
+## Purpose
 
 This markdown serves as a complete guide to deeply understand the critical concepts in Java Object-Oriented Programming (OOP), focusing on the differences between **reference types** and **actual objects**, how **inheritance**, **method overriding**, and **casting (upcasting/downcasting)** behave, and **how the JVM resolves method calls at runtime**.
 
 ---
 
-## 📖 Theoretical Explanation
+## Theoretical Explanation
 
 ### 1. **Reference vs Object**
 
@@ -17,7 +17,7 @@ This markdown serves as a complete guide to deeply understand the critical conce
 Dokja dokjaRef = new Jeha();
 ```
 
-📌 Here, the reference type is `Dokja`, but the actual object is `Jeha`. So:
+Here, the reference type is `Dokja`, but the actual object is `Jeha`. So:
 
 - At **compile time**, only methods defined in `Dokja` can be accessed.
 - At **runtime**, if a method is **overridden** in `Jeha`, the `Jeha` version is executed.
@@ -32,7 +32,7 @@ Jeha jeha = new Jeha();
 Dokja dokjaRef = jeha; // Upcasting
 ```
 
-✅ Safe, always allowed.
+Safe, always allowed.
 
 ### 3. **Downcasting (Parent → Child)**
 
@@ -95,8 +95,8 @@ public class Main {
 }
 ```
 
-🧠 Variable hiding uses reference type.
-🧠 Method overriding uses object type.
+Variable hiding uses reference type.
+Method overriding uses object type.
 
 ### 6. **Static Methods Are Not Overridden**
 
@@ -123,11 +123,11 @@ public class Main {
 }
 ```
 
-✅ Even though the object is `Jeha`, because `method()` is static, the reference type `Dokja` determines which method is executed.
+Even though the object is `Jeha`, because `method()` is static, the reference type `Dokja` determines which method is executed.
 
 ---
 
-## 🧪 Code Example and Output
+## Code Example and Output
 
 ```java
 class Dokja {
@@ -156,7 +156,7 @@ public class Main {
 }
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 I'm Dokja.
@@ -176,19 +176,19 @@ You can treat a `Student` as a `Person` (upcasting), but not every `Person` is a
 
 ---
 
-## 🧠 JVM Method Dispatch Table (V-Table)
+## JVM Method Dispatch Table (V-Table)
 
-### 🔧 Deep Dive: How JVM Uses the Method Dispatch Table
+### Deep Dive: How JVM Uses the Method Dispatch Table
 
 To deeply understand how **dynamic dispatch** works in Java, especially when dealing with inheritance and overriding, we need to explore how the **JVM internally organizes method calls** using structures like the **method table** or **vtable (virtual method table)**.
 
-### 🧩 V-Table Structure in JVM
+### V-Table Structure in JVM
 
 Each **class** (not object) in Java that has non-static methods will have a **vtable**, which is an internal array-like structure maintained by the JVM:
 
-1. ✅ For every instance method, a pointer is stored in the vtable that refers to the actual compiled implementation (machine code).
-2. ✅ If the method is **inherited**, the child’s vtable inherits the parent's entry.
-3. 🔁 If the method is **overridden**, the child’s vtable **replaces the pointer** at that slot with its own method implementation.
+1. For every instance method, a pointer is stored in the vtable that refers to the actual compiled implementation (machine code).
+2. If the method is **inherited**, the child’s vtable inherits the parent's entry.
+3. If the method is **overridden**, the child’s vtable **replaces the pointer** at that slot with its own method implementation.
 
 So when you write:
 
@@ -203,16 +203,16 @@ Here's what the JVM does:
 
 1. **Compile Time**:
    - The compiler checks if `speak()` is declared in the reference type `Dokja`.
-   - If found, the code compiles ✅.
+   - If found, the code compiles.
 
 2. **Runtime**:
    - The JVM checks the actual object type → `Jeha`.
    - It finds the `vtable` associated with class `Jeha`.
    - In the vtable, it finds the `speak()` method pointer → calls `Jeha.speak()`.
 
-📌 That’s why even if your reference is `Dokja`, the version that’s executed is from `Jeha`.
+That’s why even if your reference is `Dokja`, the version that’s executed is from `Jeha`.
 
-### 📊 Visualization Example
+### Visualization Example
 
 ```java
 class Dokja {
@@ -226,20 +226,20 @@ class Jeha extends Dokja {
 }
 ```
 
-#### 🧾 Corresponding V-Table:
+#### Corresponding V-Table:
 
 | Slot | Dokja vtable         | Jeha vtable          |
 |------|----------------------|-----------------------|
 | 0    | Dokja.speak()        | Jeha.speak() ✅       |
 | 1    | Dokja.walk()         | Dokja.walk() (inherited) |
 
-### ⚠️ Static Methods are Not Included
+### Static Methods are Not Included
 
 Static methods are resolved **statically** (at compile-time), so they are not stored in the vtable. They are accessed based on reference type.
 
 ---
 
-## 🧠 Conclusion
+## Conclusion
 
 - The **reference type** limits what the compiler allows you to call.
 - The **object type** determines what happens at runtime.
@@ -250,4 +250,5 @@ Static methods are resolved **statically** (at compile-time), so they are not st
 - JVM uses **V-Table** to support polymorphism by maintaining per-class method dispatch tables.
 
 ---
+> 📚 This is part of the Java OOP chapter.
 

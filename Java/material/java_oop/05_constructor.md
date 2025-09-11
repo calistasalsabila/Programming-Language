@@ -1,4 +1,4 @@
-# 🚀 Java Constructor
+# Java Constructor
 
 ## 🔹 What is a Constructor?
 A **constructor** in Java is a special method used to initialize objects. It is called when an instance of a class is created. Constructors have the same name as the class and do not have a return type (not even `void`).
@@ -16,7 +16,7 @@ class ClassName {
 
 ---
 ## 🔹 Types of Constructors
-### 1⃣ **Default Constructor** 🏷️
+### 1⃣ **Default Constructor** 
 A constructor that does not take any parameters and initializes the object with default values.
 
 ```java
@@ -42,7 +42,7 @@ public class Main {
 ```
 
 ---
-### 2⃣ **Parameterized Constructor** 🎯
+### 2. **Parameterized Constructor** 
 A constructor that takes arguments to initialize object properties with user-defined values.
 
 ```java
@@ -68,7 +68,7 @@ public class Main {
 ```
 
 ---
-### 3⃣ **Constructor Overloading** 🔀
+### 3. **Constructor Overloading** 
 Having multiple constructors with different parameters in the same class.
 
 ```java
@@ -105,7 +105,7 @@ public class Main {
 ```
 
 ---
-### 4⃣ **Copy Constructor** 📋
+### 4. **Copy Constructor** 
 A constructor that creates a copy of another object.
 
 ```java
@@ -139,7 +139,7 @@ public class Main {
 ```
 
 ---
-### 5⃣ **Calling Another Constructor from a Constructor** 🛠️
+### 5⃣ **Calling Another Constructor from a Constructor** 
 We can call another constructor from within a constructor using the `this()` keyword. This helps in reducing redundant code and maintaining consistency.
 
 ```java
@@ -178,7 +178,7 @@ public class Main {
 - Ini berguna untuk menghindari pengulangan kode jika kita ingin mengatur default values.
 
 ---
-## 🔹 Key Points 📌
+## 🔹 Key Points 
 ✅ A constructor has the **same name** as the class.  
 ✅ It **does not have a return type**.  
 ✅ If no constructor is defined, Java provides a **default constructor**.  
@@ -187,6 +187,8 @@ public class Main {
 ✅ `this()` can be used to **call another constructor** within the same class.  
 
 ---
-## 🌟 Conclusion
-Constructors play a crucial role in **object initialization**. By understanding **default, parameterized, overloaded, copy constructors, and constructor chaining**, you can effectively manage object creation in Java! 🚀🔥
+## Conclusion
+Constructors play a crucial role in **object initialization**. By understanding **default, parameterized, overloaded, copy constructors, and constructor chaining**, you can effectively manage object creation in Java! 
+
+> 📚 This is part of the Java OOP chapter.
 

@@ -1,6 +1,6 @@
-# 📘 Java Record Class
+# Java Record Class
 
-## ✨ Definition
+## Definition
 
 A `record` in Java is a special type of class introduced as a preview feature in Java 14 and officially added in Java 16. It is a concise way to create data-carrying classes that are immutable by default. Records are ideal for simple data aggregation where behavior is less important than data itself.
 
@@ -13,7 +13,7 @@ When you define a record, Java automatically provides:
 
 ---
 
-## 🎯 Purpose of Using Record
+## Purpose of Using Record
 
 * To store immutable data
 * To reduce boilerplate code in data classes
@@ -22,13 +22,13 @@ When you define a record, Java automatically provides:
 
 ---
 
-## 🔧 Basic Syntax
+## Basic Syntax
 
 ```java
 public record RecordName(Type1 field1, Type2 field2) {}
 ```
 
-### ✅ Example
+### Example
 
 ```java
 public record Student(String name, int age) {}
@@ -43,7 +43,7 @@ This single line automatically generates the following:
 
 ---
 
-## 📦 Example Usage
+## Example Usage
 
 ```java
 public class Main {
@@ -58,7 +58,7 @@ public class Main {
 
 ---
 
-## 🧠 Key Characteristics of Records
+## Key Characteristics of Records
 
 * Fields declared in the header are **private and final** by default.
 * No need (or possibility) to write setters — data is immutable.
@@ -68,7 +68,7 @@ public class Main {
 
 ---
 
-## 🛠 Example with Custom Method and Interface
+## Example with Custom Method and Interface
 
 ```java
 public interface Introducible {
@@ -98,7 +98,7 @@ Hi, I'm Dazai from Armed Detective Agency.
 
 ---
 
-## 🔒 Immutability and Restrictions
+## Immutability and Restrictions
 
 * You cannot reassign values of a record's field after creation.
 * You cannot have instance fields outside of the parameter list.
@@ -119,7 +119,7 @@ public record User(String username, String email) {
 
 ---
 
-## 🚫 When *Not* to Use Records
+## When *Not* to Use Records
 
 * When your class needs to be mutable
 * When behavior and logic outweigh simple data-holding
@@ -128,7 +128,7 @@ public record User(String username, String email) {
 
 ---
 
-## 📚 Use Cases
+## Use Cases
 
 * DTO (Data Transfer Object)
 * API response wrappers
@@ -138,7 +138,7 @@ public record User(String username, String email) {
 
 ---
 
-## ✅ Comparison: Class vs Record
+## Comparison: Class vs Record
 
 | Feature          | Class                | Record                        |
 | ---------------- | -------------------- | ----------------------------- |
@@ -151,7 +151,7 @@ public record User(String username, String email) {
 
 ---
 
-## 🧾 References
+## References
 
 * [Oracle Docs - Record](https://docs.oracle.com/en/java/javase/17/language/records.html)
 * [Baeldung - Java Records](https://www.baeldung.com/java-record-keyword)
@@ -159,4 +159,5 @@ public record User(String username, String email) {
 
 ---
 
-*Suitable for clean, concise, and immutable data modeling in modern Java.* 🚀
+> 📚 This is part of the Java OOP chapter.
+

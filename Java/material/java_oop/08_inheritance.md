@@ -1,6 +1,6 @@
 # Java Inheritance
 
-## 1️⃣ What is Inheritance?
+## 1. What is Inheritance?
 Inheritance is a fundamental concept in Object-Oriented Programming (OOP) that allows one class (child class) to inherit properties and behaviors (methods) from another class (parent class). It enables code reusability and establishes a hierarchy between classes.
 
 ### 🔹 Key Points
@@ -9,7 +9,7 @@ Inheritance is a fundamental concept in Object-Oriented Programming (OOP) that a
 - **Extensibility**: Child classes can add their own properties and methods.
 - **Polymorphism support**: Allows overriding parent methods in child classes.
 
-## 2️⃣ Syntax of Inheritance in Java
+## 2. Syntax of Inheritance in Java
 To implement inheritance, use the `extends` keyword.
 
 ```java
@@ -43,14 +43,14 @@ public class Main {
 }
 ```
 
-## 3️⃣ Output
+## 3. Output
 ```
 I am from ParentClass
 This is a method from ParentClass
 This is a method from ChildClass
 ```
 
-## 4️⃣ Overriding Methods in Inheritance
+## 4. Overriding Methods in Inheritance
 A subclass can override methods from the parent class using the `@Override` annotation.
 
 ```java
@@ -80,7 +80,7 @@ public class Main {
 }
 ```
 
-## 5️⃣ Using `super` Keyword
+## 5. Using `super` Keyword
 The `super` keyword is used to refer to the parent class's methods and constructors.
 
 ```java
@@ -112,15 +112,15 @@ Vehicle is created
 Car is created
 ```
 
-## 6️⃣ Types of Inheritance in Java
-### 1️⃣ Single Inheritance
+## 6. Types of Inheritance in Java
+### 1.  Single Inheritance
 A subclass inherits from a single parent class.
 ```java
 class A { }
 class B extends A { }
 ```
 
-### 2️⃣ Multilevel Inheritance
+### 2. Multilevel Inheritance
 A subclass inherits from another subclass.
 ```java
 class A { }
@@ -128,7 +128,7 @@ class B extends A { }
 class C extends B { }
 ```
 
-### 3️⃣ Hierarchical Inheritance
+### 3. Hierarchical Inheritance
 Multiple subclasses inherit from a single parent class.
 ```java
 class A { }
@@ -136,26 +136,27 @@ class B extends A { }
 class C extends A { }
 ```
 
-### 🚫 Java **does not support multiple inheritance** (one child class cannot inherit from multiple parent classes).
+### Java **does not support multiple inheritance** (one child class cannot inherit from multiple parent classes).
 
-## 7️⃣ Advantages of Inheritance
+## 7. Advantages of Inheritance
 ✔ Code reusability
 ✔ Less code duplication
 ✔ Better maintainability
 ✔ Improved readability
 ✔ Establishes relationships between classes
 
-## 8️⃣ When to Use Inheritance?
+## 8. When to Use Inheritance?
 ✅ When multiple classes share common attributes and methods.
 ✅ When you need a structured hierarchy.
 ✅ When code reusability is a priority.
 
 ---
 
-### ✅ Summary
+### Summary
 - `extends` is used to implement inheritance.
 - Methods can be overridden using `@Override`.
 - `super` is used to call parent methods or constructors.
 - Java supports **Single, Multilevel, and Hierarchical Inheritance**, but not Multiple Inheritance.
 
-💡 Inheritance makes Java code **more efficient and maintainable**! 🚀
+> 📚 This is part of the Java OOP chapter.
+

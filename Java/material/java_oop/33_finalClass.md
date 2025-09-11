@@ -1,20 +1,20 @@
-# 📘 `final class` in Java
+# `final class` in Java
 
-## 📌 Definition
+## Definition
 
 In Java, a `final class` is a class that **cannot be extended or inherited**. This means no other class can be a subclass of a final class.
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
-* 🔒 To **prevent inheritance** for security or design reasons.
-* ✅ To create **immutable classes**, like `String`, by restricting modification via inheritance.
-* 📦 Often used in **utility or helper classes** to avoid unintended behavior from subclassing.
+* To **prevent inheritance** for security or design reasons.
+* To create **immutable classes**, like `String`, by restricting modification via inheritance.
+* Often used in **utility or helper classes** to avoid unintended behavior from subclassing.
 
 ---
 
-## 🧠 Syntax
+## Syntax
 
 ```java
 final class ClassName {
@@ -26,7 +26,7 @@ final class ClassName {
 
 ---
 
-## 👀 Example
+## Example
 
 ```java
 final class Dokja {
@@ -42,7 +42,7 @@ class Jeha extends Dokja { // ❌ Error!
 }
 ```
 
-### ❗ Output / Compilation
+### Output / Compilation
 
 ```
 Error: cannot inherit from final 'Dokja'
@@ -50,7 +50,7 @@ Error: cannot inherit from final 'Dokja'
 
 ---
 
-## ✅ Valid Use Case Example
+## Valid Use Case Example
 
 ```java
 final class Hamin {
@@ -67,7 +67,7 @@ public class Main {
 }
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 This class is final and secure.
@@ -75,7 +75,7 @@ This class is final and secure.
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 * `final class` != `final variable`
 * Even if a class is `final`, **its methods can still be overridden within the class**, but not through inheritance.
@@ -83,21 +83,22 @@ This class is final and secure.
 
 ---
 
-## 🧩 Summary
+## Summary
 
 | Feature           | Description                             |
 | ----------------- | --------------------------------------- |
-| Can be inherited? | ❌ No                                    |
+| Can be inherited? |  No                                    |
 | Typical usage     | Security, immutability, utility classes |
 | Java Examples     | `String`, `Math`, `System`              |
 
 ---
 
-## 📝 Tips
+## Tips
 
 * Use `final` when you want to create a class that's "complete" and shouldn't be altered via inheritance.
 * Combine with `final` methods and variables for strong encapsulation.
 
 ---
 
-Happy coding! 💻✨
+> 📚 This is part of the Java OOP chapter.
+

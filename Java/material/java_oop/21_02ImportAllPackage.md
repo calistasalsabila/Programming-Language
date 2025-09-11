@@ -2,12 +2,12 @@
 
 ---
 
-### 🌟 Purpose
+### Purpose
 To understand how to import all classes from a package in Java using the wildcard symbol (`*`), how it works behind the scenes, and when it's useful.
 
 ---
 
-### 📖 Theory Explanation
+### Theory Explanation
 In Java, when working with multiple classes that belong to the same package, we can simplify our import statements using the `*` wildcard:
 
 ```java
@@ -16,7 +16,7 @@ import namaPackage.*;
 
 This tells the compiler to import **all** public classes and interfaces from the specified package. However, this does **not** include sub-packages.
 
-#### ⚡️ Key Notes:
+#### Key Notes:
 - Only **public** classes are accessible via `import`.
 - Wildcard `*` only works at **class-level**, **not** package-level.
 - Java **does not actually import everything**, it just makes them available for reference; unused classes won't be loaded.
@@ -24,9 +24,9 @@ This tells the compiler to import **all** public classes and interfaces from the
 
 ---
 
-### 📚 Example Code & Output
+### Example Code & Output
 
-#### 📂 Folder Structure:
+#### Folder Structure:
 ```
 project-folder/
 ├── app/
@@ -36,7 +36,7 @@ project-folder/
     └── B.java
 ```
 
-#### 📄 File: `data/A.java`
+#### File: `data/A.java`
 ```java
 package data;
 
@@ -47,7 +47,7 @@ public class A {
 }
 ```
 
-#### 📄 File: `data/B.java`
+#### File: `data/B.java`
 ```java
 package data;
 
@@ -58,11 +58,11 @@ public class B {
 }
 ```
 
-#### 📄 File: `app/MainApp.java`
+#### File: `app/MainApp.java`
 ```java
 package app;
 
-import data.*; // ✨ Import all public classes in 'data'
+import data.*; // Import all public classes in 'data'
 
 public class MainApp {
     public static void main(String[] args) {
@@ -77,7 +77,7 @@ public class MainApp {
 
 ---
 
-### 🌐 Real-World Use Case
+### Real-World Use Case
 Wildcard imports are useful when:
 - You're working with many utility/helper classes from the same package
 - In rapid prototyping or beginner projects
@@ -87,13 +87,11 @@ Wildcard imports are useful when:
 
 ---
 
-### 📊 Conclusion
+### Conclusion
 
 - `import package.*` makes all public classes in that package accessible.
 - Sub-packages require separate import.
 - Use wildcard for convenience, but explicit imports for clarity.
-
-Happy coding, Dokja and friends! 🚀
 
 ---
 
@@ -101,4 +99,7 @@ Happy coding, Dokja and friends! 🚀
 - [Oracle Java Docs](https://docs.oracle.com/javase/tutorial/java/package/usepkgs.html)
 - [GeeksForGeeks Java Packages](https://www.geeksforgeeks.org/packages-in-java/)
 - [Java Wildcard Import Best Practice](https://stackoverflow.com/questions/147454/why-is-using-a-wild-card-with-a-java-import-statement-bad)
+
+> 📚 This is part of the Java OOP chapter.
+
 

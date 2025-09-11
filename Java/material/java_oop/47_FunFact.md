@@ -99,10 +99,10 @@ Java is evolving fast — no more 90s vibes only!
 
 ---
 
-## 🧑‍🏫 Java's Personality
+## Java's Personality
 
 > "I may be verbose, but I'm clear. I may be strict, but I'm safe. I may be old, but I'm reliable."
 
-That’s Java — the dependable, stylish grandpa of the programming world ☕👴
+That’s Java — the dependable, stylish grandpa of the programming world 
 
 ###

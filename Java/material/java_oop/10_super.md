@@ -1,21 +1,21 @@
-# Super Keyword in Java 🚀
+# Super Keyword in Java 
 
-## 📌 Introduction
+## Introduction
 The `super` keyword in Java is a reference variable used to refer to the **immediate parent class**. It is commonly used in **inheritance** to call the **parent class methods, constructors, and variables**. This keyword helps avoid naming conflicts between parent and child class members.
 
-## 🎯 Purpose of `super`
+## Purpose of `super`
 1. **Access parent class methods** when they are overridden in the child class.
 2. **Call parent class constructors** from the child class constructor.
 3. **Access parent class fields** when they are shadowed by child class fields.
 
-## 🛠 Syntax
+## Syntax
 ```java
 super.memberName; // Access parent class variable
 super.methodName(); // Call parent class method
 super(); // Call parent class constructor
 ```
 
-## 📌 Example 1: Using `super` to Call Parent Class Method
+## Example 1: Using `super` to Call Parent Class Method
 ```java
 class Parent {
     void display() {
@@ -40,12 +40,12 @@ public class Main {
     }
 }
 ```
-**🟢 Output:**
+**Output:**
 ```
 Hello from Parent class
 ```
 
-## 📌 Example 2: Using `super` to Call Parent Class Constructor
+## Example 2: Using `super` to Call Parent Class Constructor
 ```java
 class Parent {
     Parent() {
@@ -66,13 +66,13 @@ public class Main {
     }
 }
 ```
-**🟢 Output:**
+**Output:**
 ```
 Parent Constructor Called
 Child Constructor Called
 ```
 
-## 📌 Example 3: Using `super` to Access Parent Class Variable
+## Example 3: Using `super` to Access Parent Class Variable
 ```java
 class Parent {
     String name = "Parent";
@@ -94,17 +94,20 @@ public class Main {
     }
 }
 ```
-**🟢 Output:**
+**Output:**
 ```
 Child Name: Child
 Parent Name: Parent
 ```
 
-## ⚠️ Important Notes
+## Important Notes
 - `super()` must **always be the first statement** in a constructor if used.
 - If a method is overridden in the child class, **`super.methodName()` explicitly calls the parent’s version**.
 - `super` cannot be used in a **static** context since it belongs to an instance.
 
-## 🎯 Conclusion
-The `super` keyword is a powerful feature in Java that allows child classes to **access parent class members**, **avoid redundancy**, and **maintain clear code structure**. Mastering `super` ensures better understanding and application of **inheritance** in Java. 🚀
+## Conclusion
+The `super` keyword is a powerful feature in Java that allows child classes to **access parent class members**, **avoid redundancy**, and **maintain clear code structure**. Mastering `super` ensures better understanding and application of **inheritance** in Java.
+
+> 📚 This is part of the Java OOP chapter.
+
 

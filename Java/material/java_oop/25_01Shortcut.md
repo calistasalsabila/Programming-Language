@@ -1,19 +1,19 @@
 # Auto-Generate Getter and Setter in VS Code in Java
 
-## 🎯 Purpose
+## Purpose
 
 This guide helps Java learners understand how to **auto-generate getters and setters** in Visual Studio Code, similar to full-featured IDEs like IntelliJ IDEA or NetBeans. This method is efficient, avoids repetitive code, and supports clean object-oriented programming.
 
 ---
 
-## 🧠 Theory Explanation
+## Theory Explanation
 
 In Java, variables are often declared `private` to follow the principle of **Encapsulation**. To access and modify these private variables, we use:
 
 * **Getter methods** to retrieve values.
 * **Setter methods** to modify values.
 
-### ✍️ Example:
+### Example:
 
 ```java
 private String name;
@@ -31,9 +31,9 @@ Manually writing these methods for every field can be tedious and error-prone. V
 
 ---
 
-## 🛠️ Steps to Enable Getter/Setter Generation in VS Code
+## Steps to Enable Getter/Setter Generation in VS Code
 
-### ✅ Step 1: Install Java Extension Pack
+### Step 1: Install Java Extension Pack
 
 Install "Java Extension Pack" to enable language features for Java in VS Code:
 
@@ -46,7 +46,7 @@ Install "Java Extension Pack" to enable language features for Java in VS Code:
 
 ---
 
-### ✅ Step 2: Create a Java Class
+### Step 2: Create a Java Class
 
 ```java
 public class Mahasiswa {
@@ -57,7 +57,7 @@ public class Mahasiswa {
 
 ---
 
-### ✅ Step 3: Generate Getter and Setter Automatically
+### Step 3: Generate Getter and Setter Automatically
 
 1. Right-click anywhere inside the class body.
 2. Select `Source Action...`
@@ -86,26 +86,27 @@ public void setUmur(int umur) {
 
 ---
 
-## 📦 Bonus Tips
+## Bonus Tips
 
 * If you want something more powerful, consider using **Project Lombok** to auto-generate getters/setters with annotations like `@Getter` and `@Setter`.
 * You can also generate `constructor`, `equals()`, and `hashCode()` with similar steps via **Source Action**.
 
 ---
 
-## 🧾 Summary
+## Summary
 
 | Feature               | Available in VS Code      |
 | --------------------- | ------------------------- |
-| Auto Getter/Setter    | ✅ Yes (via Source Action) |
-| Requires Extension    | ✅ Java Extension Pack     |
-| Manual typing needed? | ❌ No                      |
-| Shortcut available?   | 🔧 Only via context menu  |
+| Auto Getter/Setter    | Yes (via Source Action) |
+| Requires Extension    | Java Extension Pack     |
+| Manual typing needed? | No                      |
+| Shortcut available?   | Only via context menu  |
 
 ---
 
-## 🔚 Conclusion
+## Conclusion
 
 With the right extensions, VS Code can function like a lightweight Java IDE. By generating boilerplate code like getters and setters, you can focus more on logic and architecture — not syntax repetition.
 
-Use tools smartly, code cleanly 💻✨
+> 📚 This is part of the Java OOP chapter.
+

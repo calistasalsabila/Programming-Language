@@ -1,10 +1,10 @@
-# 📦 Java Package 
+# Java Package 
 
-## 🎯 Goal
+## Goal
 
 To understand how to use and implement packages in Java, including how to organize classes across different files and folders, and how to access them properly.
 
-## 🧠 Theory Explanation
+## Theory Explanation
 
 ### What is a Package?
 
@@ -81,28 +81,29 @@ public class App {
 }
 ```
 
-### ✅ Output
+### Output
 
 ```
 Name: Dokja, NIM: 120001
 ```
 
-## 💡 Real-World Analogy
+## Real-World Analogy
 
 Imagine you have different folders for organizing subjects in a binder: `Math`, `Science`, `English`. Inside each folder, there are notes (classes). Packages in Java work exactly like that! It helps avoid mixing up "notes" that might have the same title but different contents.
 
-## 🔍 Tips
+## Tips
 
 - Use consistent naming like `com.yourname.projectname`.
 - Match folder names to package names!
 - Use IDE features to auto-generate package structure and fix imports.
 
-## 🧾 Summary
+## Summary
 
 - A **package** is a folder-like system to organize Java classes.
 - You can **import** classes from another package using `import`.
 - Classes in the **same package** can access each other (with default/protected/public modifiers).
 - Use packages to make your code clean, scalable, and professional!
 
-✨ Now you’re ready to structure your Java projects like a pro! 💪
+> 📚 This is part of the Java OOP chapter.
+
 

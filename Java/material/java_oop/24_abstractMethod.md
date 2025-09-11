@@ -1,6 +1,6 @@
-# 🧠 Abstract Method in Java
+# Abstract Method in Java
 
-## 📝 Definition
+## Definition
 An **abstract method** in Java is a method that is declared **without an implementation**. That means it only has the method signature, and **no body** (no curly braces `{}` with code inside).
 
 ```java
@@ -11,12 +11,12 @@ Such methods are meant to be **overridden** in subclasses, and they **must be de
 
 ---
 
-## 🎯 Purpose
+## Purpose
 Abstract methods allow us to define a method that **must be implemented** by any subclass. This is useful when you want to create a **template or blueprint** that enforces subclasses to provide specific functionality.
 
 ---
 
-## 🏗️ Syntax Structure
+## Syntax Structure
 ```java
 abstract class ClassName {
     abstract returnType methodName(parameters);
@@ -29,7 +29,7 @@ abstract class ClassName {
 
 ---
 
-## 👩‍💻 Example
+## Example
 ### Abstract Class and Abstract Method
 ```java
 abstract class Animal {
@@ -69,38 +69,39 @@ public class Main {
 
 ---
 
-## 🔒 Rules & Restrictions
-- ❌ Cannot instantiate abstract classes.
-- ✅ Can have constructors, fields, and concrete methods.
-- ✅ Subclass **must** override abstract methods.
-- ❌ Abstract methods **cannot** be private, static, or final.
+## Rules & Restrictions
+- Cannot instantiate abstract classes.
+- Can have constructors, fields, and concrete methods.
+- Subclass **must** override abstract methods.
+- Abstract methods **cannot** be private, static, or final.
 
 ---
 
-## 📌 Use Cases
+## Use Cases
 - Designing a base class for subclasses to follow a specific method structure.
 - Enforcing a contract for subclasses.
 - Helpful in large-scale applications with polymorphism and inheritance.
 
 ---
 
-## 🧩 Real-World Analogy
+## Real-World Analogy
 Imagine an **abstract class** `Vehicle` with an **abstract method** `move()`. A `Car` moves differently than a `Bicycle`, but every vehicle **must** implement how it moves. `move()` is just a rule in the abstract class, and each vehicle defines it in its own way.
 
 ---
 
-## ✅ Summary
+## Summary
 | Feature                | Abstract Method        |
 |------------------------|-------------------------|
-| Implementation         | ❌ Not provided         |
-| Must be overridden     | ✅ Yes                  |
-| Belongs to class type  | 🧱 Abstract class only  |
-| Access Modifiers       | 🚫 Not private/static/final |
-| Object Creation        | ❌ Cannot instantiate abstract class |
+| Implementation         | Not provided         |
+| Must be overridden     | Yes                  |
+| Belongs to class type  | Abstract class only  |
+| Access Modifiers       | Not private/static/final |
+| Object Creation        | Cannot instantiate abstract class |
 
-Abstract methods are like **incomplete instructions** that **force subclasses to fill in the blanks**. Use them when you want subclasses to follow a strict design contract. 💡
+Abstract methods are like **incomplete instructions** that **force subclasses to fill in the blanks**. Use them when you want subclasses to follow a strict design contract. 
 
 ---
+> 📚 This is part of the Java OOP chapter.
 
-Happy Coding! 💻✨
+
 

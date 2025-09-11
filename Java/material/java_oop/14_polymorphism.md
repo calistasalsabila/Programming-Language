@@ -1,9 +1,9 @@
-# 📌 Polymorphism in Java
+# Polymorphism in Java
 
 ## 🔍 What is Polymorphism?
 Polymorphism is one of the core concepts of Object-Oriented Programming (OOP) in Java. It allows a single interface to be used for different data types or objects. The word "Polymorphism" means "many forms," enabling a method, function, or operator to behave differently based on the context.
 
-### 🎯 Why Use Polymorphism?
+### Why Use Polymorphism?
 - Improves **code reusability**
 - Enhances **scalability and maintainability**
 - Enables **method overriding and method overloading**
@@ -11,9 +11,9 @@ Polymorphism is one of the core concepts of Object-Oriented Programming (OOP) in
 
 ---
 
-## 🛠️ Types of Polymorphism in Java
+## Types of Polymorphism in Java
 
-### 1️⃣ **Compile-time Polymorphism (Method Overloading)**
+### 1. **Compile-time Polymorphism (Method Overloading)**
 Compile-time polymorphism is achieved using **method overloading**, where multiple methods in the same class have the same name but different parameter lists.
 
 ```java
@@ -44,13 +44,13 @@ public class Main {
 }
 ```
 
-### 🔍 Explanation
+### Explanation
 - The `add()` method is **overloaded** with different parameter lists.
 - The compiler determines which method to call **at compile time** based on arguments passed.
 
 ---
 
-### 2️⃣ **Runtime Polymorphism (Method Overriding)**
+### 2. **Runtime Polymorphism (Method Overriding)**
 Runtime polymorphism is achieved using **method overriding**, where a subclass provides a specific implementation of a method already defined in the parent class.
 
 ```java
@@ -85,14 +85,14 @@ public class Main {
 }
 ```
 
-### 🔍 Explanation
+### Explanation
 - `Person` is the **parent class**.
 - `Dokja` and `Jeha` **override** the `introduce()` method.
 - Even though `p1` and `p2` are declared as `Person`, the method that gets executed is determined **at runtime**.
 
 ---
 
-## 🎯 Key Differences Between Overloading and Overriding
+## Key Differences Between Overloading and Overriding
 
 | Feature            | Method Overloading | Method Overriding |
 |--------------------|-------------------|-------------------|
@@ -104,10 +104,11 @@ public class Main {
 
 ---
 
-## 🏆 Conclusion
+## Conclusion
 - **Polymorphism** allows methods to take different forms, improving code reusability and flexibility.
 - **Method Overloading** happens **at compile-time** and allows multiple methods with the same name but different parameters.
 - **Method Overriding** happens **at runtime** and allows subclasses to provide specific implementations of inherited methods.
 - **Dynamic method dispatch** ensures that the method called is determined based on the object's actual type, not the reference type.
 
-Polymorphism is a crucial concept in Java and is widely used in frameworks like **Spring, Hibernate, and Java Collections API**! 🚀
+> 📚 This is part of the Java OOP chapter.
+

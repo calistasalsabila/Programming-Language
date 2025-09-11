@@ -1,14 +1,14 @@
-# ☕ Anonymous Class in Java
+# Anonymous Class in Java
 
-## 📌 What is an Anonymous Class?
+## What is an Anonymous Class?
 
 An **anonymous class** in Java is a local class **without a name**. It is used to make your code **more concise and readable**, especially when you need to create a one-time-use class, typically for overriding methods of interfaces or abstract classes.
 
-➡️ It's declared and instantiated **in one expression**.
+It's declared and instantiated **in one expression**.
 
 ---
 
-## 🎯 Why Use Anonymous Class?
+## Why Use Anonymous Class?
 
 * To create a **quick implementation** of an interface or abstract class.
 * To avoid writing **extra lines of code** for one-time-use classes.
@@ -16,7 +16,7 @@ An **anonymous class** in Java is a local class **without a name**. It is used t
 
 ---
 
-## 🧠 Syntax of Anonymous Class
+## Syntax of Anonymous Class
 
 ```java
 InterfaceOrClassName obj = new InterfaceOrClassName() {
@@ -24,7 +24,7 @@ InterfaceOrClassName obj = new InterfaceOrClassName() {
 };
 ```
 
-### ✅ Explanation:
+### Explanation:
 
 | Syntax Part              | Meaning                                                            |
 | ------------------------ | ------------------------------------------------------------------ |
@@ -36,7 +36,7 @@ InterfaceOrClassName obj = new InterfaceOrClassName() {
 
 ---
 
-## 👩‍💻 Example: Implementing Interface using Anonymous Class
+## Example: Implementing Interface using Anonymous Class
 
 ```java
 interface Greeting {
@@ -48,7 +48,7 @@ public class Main {
         Greeting dokja = new Greeting() {
             @Override
             public void sayHello() {
-                System.out.println("Hello, I'm Dokja 👋");
+                System.out.println("Hello, I'm Dokja ");
             }
         };
 
@@ -60,12 +60,12 @@ public class Main {
 ### 🧾 Output:
 
 ```
-Hello, I'm Dokja 👋
+Hello, I'm Dokja 
 ```
 
 ---
 
-## 👨‍🏫 Example: Extending Abstract Class using Anonymous Class
+## Example: Extending Abstract Class using Anonymous Class
 
 ```java
 abstract class Hero {
@@ -77,7 +77,7 @@ public class Main {
         Hero jeha = new Hero() {
             @Override
             void useSkill() {
-                System.out.println("Jeha uses Shadow Dash 🌀");
+                System.out.println("Jeha uses Shadow Dash");
             }
         };
 
@@ -86,15 +86,15 @@ public class Main {
 }
 ```
 
-### 🧾 Output:
+### Output:
 
 ```
-Jeha uses Shadow Dash 🌀
+Jeha uses Shadow Dash 
 ```
 
 ---
 
-## 🎭 Anonymous Class with Method Parameters
+## Anonymous Class with Method Parameters
 
 You can even pass an anonymous class as a method argument!
 
@@ -112,42 +112,42 @@ public class Main {
         sayGoodbye(new Farewell() {
             @Override
             public void sayBye() {
-                System.out.println("Goodbye from Hamin 👋");
+                System.out.println("Goodbye from Hamin");
             }
         });
     }
 }
 ```
 
-### 🧾 Output:
+### Output:
 
 ```
-Goodbye from Hamin 👋
+Goodbye from Hamin
 ```
 
 ---
 
-## 🧩 Anonymous Class vs Lambda Expression
+## Anonymous Class vs Lambda Expression
 
 | Feature               | Anonymous Class                         | Lambda Expression             |
 | --------------------- | --------------------------------------- | ----------------------------- |
 | Applicable to         | Interfaces and abstract classes         | Functional interfaces only    |
-| Can have constructor? | ❌ No                                    | ❌ No                          |
+| Can have constructor? | No                                      |  No                          |
 | Syntax                | Verbose                                 | Concise                       |
 | Readability           | Sometimes less readable for short logic | More readable for short logic |
 
 ---
 
-## 🧠 Notes:
+## Notes:
 
 * Anonymous class can **access final or effectively final variables** from the enclosing scope.
 * Use it wisely — don't overuse for large logic blocks. It's meant for **lightweight and quick implementations**.
 
 ---
 
-## 🏁 Summary
+## Summary
 
-✨ Anonymous classes are useful when:
+Anonymous classes are useful when:
 
 * You need a quick implementation of an interface or abstract class
 * You don’t want to create a full class file for it
@@ -156,4 +156,5 @@ They help make Java code **shorter and clearer**, especially in UI handling, eve
 
 ---
 
-##
+> 📚 This is part of the Java OOP chapter.
+

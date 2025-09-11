@@ -1,4 +1,4 @@
-## 🧭 Using `super` in Java: Class vs Interface
+## Using `super` in Java: Class vs Interface
 
 In Java, the `super` keyword is commonly used to refer to the **parent class or interface**. But its **usage varies** depending on whether you're working with classes or interfaces.
 
@@ -6,14 +6,14 @@ This doc breaks down how `super` works in both contexts: 📦
 
 ---
 
-### 🧱 1. `super` in Classes
+### 1. `super` in Classes
 
-#### ✅ Purpose:
+#### Purpose:
 
 * To call **parent class methods**
 * To access **parent class constructor** (via `super()`)
 
-#### 📌 Example 1: Call parent constructor
+#### Example 1: Call parent constructor
 
 ```java
 class Jeha {
@@ -34,7 +34,7 @@ class Dokja extends Jeha {
 // Dokja constructor
 ```
 
-#### 📌 Example 2: Access overridden method
+#### Example 2: Access overridden method
 
 ```java
 class Jeha {
@@ -53,7 +53,7 @@ class Dokja extends Jeha {
 
 ---
 
-### 🧩 2. `super` in Interfaces (Java 8+)
+### 2. `super` in Interfaces (Java 8+)
 
 > You **cannot** use `super()` in interfaces because **interfaces do not have constructors**. ❌
 
@@ -63,11 +63,11 @@ But you **can** call a default method from a specific interface like this:
 InterfaceName.super.methodName();
 ```
 
-#### ✅ Purpose:
+#### Purpose:
 
 * To resolve **default method conflicts** when multiple interfaces define the same method
 
-#### 📌 Example:
+#### Example:
 
 ```java
 interface A {
@@ -94,7 +94,7 @@ class Hamin implements A, B {
 
 ---
 
-### 📊 Comparison Summary
+### Comparison Summary
 
 | Usage                           | Class              | Interface                        |
 | ------------------------------- | ------------------ | -------------------------------- |
@@ -105,19 +105,20 @@ class Hamin implements A, B {
 
 ---
 
-### 🧠 Mnemonic:
+### Mnemonic:
 
 > **Class:** `super()` = go to parent constructor 🏗️
 > **Interface:** `InterfaceName.super.method()` = pick method from blueprint set 🧩
 
 ---
 
-### ✅ Conclusion:
+### Conclusion:
 
 * Use `super()` in constructors to initialize parent class.
 * Use `super.method()` in classes to access overridden behavior.
 * Use `InterfaceName.super.method()` only when handling **default method conflicts** between interfaces.
 
-> 🔐 Reminder: Interface inheritance is about **contracts**, not construction.
+> Reminder: Interface inheritance is about **contracts**, not construction.
 
 ---
+> 📚 This is part of the Java OOP chapter.

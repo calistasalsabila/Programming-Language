@@ -1,9 +1,9 @@
 # Superclass vs Abstract Class in Java
 
-## 📌 What is a Superclass?
+## What is a Superclass?
 A **superclass** is a parent class from which other classes (subclasses) inherit using the `extends` keyword. A regular superclass can be instantiated, and its methods are not necessarily required to be overridden by subclasses.
 
-### ✅ Example of a Regular Superclass
+###  Example of a Regular Superclass
 ```java
 // Regular superclass
 class Animal {
@@ -14,7 +14,7 @@ class Animal {
     }
 
     void makeSound() { // Can be used directly without overriding
-        System.out.println(name + " makes a sound! 🔊");
+        System.out.println(name + " makes a sound! ");
     }
 }
 
@@ -29,22 +29,22 @@ class Cat extends Animal {
 public class Main {
     public static void main(String[] args) {
         Cat myCat = new Cat("Mochi");
-        myCat.makeSound(); // Mochi makes a sound! 🔊
+        myCat.makeSound(); // Mochi makes a sound! 
     }
 }
 ```
 
-### 🔍 Explanation:
+### Explanation:
 - `Animal` is a **regular superclass**.
 - The `makeSound()` method already has an implementation, so `Cat` **does not need to override it**.
 - You can create an instance of `Animal` directly.
 
 ---
 
-## 📌 What is an Abstract Class?
+## What is an Abstract Class?
 An **abstract class** is a superclass that serves as a blueprint but **cannot be instantiated directly**. Any `abstract` method declared in it **must** be implemented by subclasses.
 
-### ✅ Example of an Abstract Class
+###  Example of an Abstract Class
 ```java
 // Abstract superclass
 abstract class Animal {
@@ -65,7 +65,7 @@ class Cat extends Animal {
 
     @Override
     void makeSound() {
-        System.out.println(name + " says: Meow! 😺");
+        System.out.println(name + " says: Meow! ");
     }
 }
 
@@ -74,7 +74,7 @@ public class Main {
     public static void main(String[] args) {
         // Animal myAnimal = new Animal("Mochi"); ❌ ERROR: Cannot instantiate an abstract class!
         Cat myCat = new Cat("Mochi");
-        myCat.makeSound(); // Mochi says: Meow! 😺
+        myCat.makeSound(); // Mochi says: Meow! 
     }
 }
 ```
@@ -90,16 +90,19 @@ public class Main {
 
 | **Feature**               | **Regular Superclass (`extends`)** | **Abstract Class (`extends`)** |
 |---------------------------|----------------------------------|----------------------------------|
-| **Can be instantiated?**  | ✅ Yes | ❌ No (must have a subclass) |
-| **Must have abstract methods?** | ❌ No | ✅ Yes (at least one) |
-| **Methods must be overridden?** | ❌ No | ✅ Yes, for abstract methods |
+| **Can be instantiated?**  |  Yes | ❌ No (must have a subclass) |
+| **Must have abstract methods?** | ❌ No |  Yes (at least one) |
+| **Methods must be overridden?** | ❌ No |  Yes, for abstract methods |
 | **Usage**                 | Can be used directly | Acts as a blueprint for subclasses |
 
 ---
 
-## 🎯 **Conclusion:**
+## **Conclusion:**
 - A **regular superclass** can be used directly, and its methods can be inherited without being overridden.
 - An **abstract class** is still a superclass but is meant to serve as a blueprint, requiring subclasses to implement its abstract methods.
 
-Thus, **an abstract class is still a superclass**, but it enforces method implementation rules! 🚀
+Thus, **an abstract class is still a superclass**, but it enforces method implementation rules! 
+
+> 📚 This is part of the Java OOP chapter.
+
 

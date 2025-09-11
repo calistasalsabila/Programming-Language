@@ -1,20 +1,20 @@
-# 📘 `final method` in Java
+# `final method` in Java
 
-## 📌 Definition
+## Definition
 
 A `final method` in Java is a method that **cannot be overridden** by any subclass. It is declared using the `final` keyword.
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
-* 🔒 To **prevent modification** of core behavior in subclasses.
-* ✅ To ensure **consistent implementation** of a method in inheritance chains.
-* 🛡️ Used when a method provides **essential logic** that should not be changed.
+* To **prevent modification** of core behavior in subclasses.
+* To ensure **consistent implementation** of a method in inheritance chains.
+* Used when a method provides **essential logic** that should not be changed.
 
 ---
 
-## 🧠 Syntax
+## Syntax
 
 ```java
 class ClassName {
@@ -28,7 +28,7 @@ class ClassName {
 
 ---
 
-## 👀 Example
+## Example
 
 ```java
 class Dokja {
@@ -44,7 +44,7 @@ class Jeha extends Dokja {
 }
 ```
 
-### ❗ Output / Compilation
+### Output / Compilation
 
 ```
 Error: cannot override the final method from Dokja
@@ -52,7 +52,7 @@ Error: cannot override the final method from Dokja
 
 ---
 
-## ✅ Valid Use Case Example
+## Valid Use Case Example
 
 ```java
 class Hamin {
@@ -82,7 +82,7 @@ public class Main {
 }
 ```
 
-### ✅ Output:
+### Output:
 
 ```
 This must not be changed.
@@ -91,7 +91,7 @@ Overridden rule.
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 * A `final method` cannot be overridden, **but it can be overloaded**.
 * Constructors **cannot** be `final` (they are not inherited anyway).
@@ -99,7 +99,7 @@ Overridden rule.
 
 ---
 
-## 🧩 Summary
+## Summary
 
 | Feature            | Description                                   |
 | ------------------ | --------------------------------------------- |
@@ -110,11 +110,12 @@ Overridden rule.
 
 ---
 
-## 📝 Tips
+## Tips
 
 * Combine with `final class` or `abstract class` depending on your design needs.
 * Helpful in large-scale applications to **avoid accidental overrides**.
 
 ---
 
-Keep your logic safe with `final method`! 🔐🚀
+> 📚 This is part of the Java OOP chapter.
+

@@ -1,6 +1,6 @@
 # Type Checking and Type Casting in Java
 
-## 🔍 Overview
+## Overview
 In Java, **Type Checking** and **Type Casting** are fundamental concepts related to data types and their conversion. Java is a **strongly typed** language, meaning every variable must adhere to its declared type.
 
 - **Type Checking** ensures that variables are used according to their type.
@@ -23,7 +23,7 @@ int number = "Hello"; // Type mismatch: cannot convert from String to int
 ```
 
 ### 2. **Runtime Type Checking**
-🔍 **Purpose:** Checks object types at runtime using `instanceof`.
+**Purpose:** Checks object types at runtime using `instanceof`.
 - Used to ensure an object matches the expected type before casting.
 - Example:
 
@@ -62,7 +62,7 @@ int weightInt = (int) weight; // Explicit casting: double -> int
 System.out.println(weightInt); // Output: 56 (decimal part is lost)
 ```
 
-### 3️⃣ **Object Casting (Reference Type Casting)**
+### 3. **Object Casting (Reference Type Casting)**
 - Uses **Upcasting** and **Downcasting** to convert between a superclass and a subclass.
 
 #### 🔹 **Upcasting (Implicit)**
@@ -120,7 +120,8 @@ if (animal instanceof Cat) {
 
 ---
 
-## Conclusion **Type Checking** prevents type errors before execution.   
+## Conclusion 
+**Type Checking** prevents type errors before execution.   
 **Type Casting** allows type conversion.   **Implicit Casting** happens automatically, while **Explicit Casting** must be done manually.   **Upcasting** occurs automatically, but **Downcasting** requires `instanceof` for safety.   **Overridden methods in Upcasting** will execute the subclass's version instead of the superclass's.  
 
 > 📚 This is part of the Java OOP chapter.

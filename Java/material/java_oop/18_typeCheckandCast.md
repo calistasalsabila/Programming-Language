@@ -120,7 +120,8 @@ if (animal instanceof Cat) {
 
 ---
 
-## Conclusion **Type Checking** prevents type errors before execution.   **Type Casting** allows type conversion.   **Implicit Casting** happens automatically, while **Explicit Casting** must be done manually.   **Upcasting** occurs automatically, but **Downcasting** requires `instanceof` for safety.   **Overridden methods in Upcasting** will execute the subclass's version instead of the superclass's.  
+## Conclusion **Type Checking** prevents type errors before execution.   
+**Type Casting** allows type conversion.   **Implicit Casting** happens automatically, while **Explicit Casting** must be done manually.   **Upcasting** occurs automatically, but **Downcasting** requires `instanceof` for safety.   **Overridden methods in Upcasting** will execute the subclass's version instead of the superclass's.  
 
 > 📚 This is part of the Java OOP chapter.
 

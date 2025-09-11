@@ -1,8 +1,8 @@
-# 📦 Python Modules
+# Python Modules
 
 ---
 
-## 🧩 What is a Module in Python?
+## What is a Module in Python?
 
 > A **module** in Python is a file containing Python definitions and statements. It helps you organize code into reusable components.
 
@@ -13,16 +13,16 @@ There are three main types of modules:
 
 ---
 
-## 📌 Why Use Modules?
+## Why Use Modules?
 
-✅ Code Reusability  
-✅ Better Organization  
-✅ Avoid Code Duplication  
-✅ Easier Debugging & Maintenance
+Code Reusability  
+Better Organization  
+Avoid Code Duplication  
+Easier Debugging & Maintenance
 
 ---
 
-## 🚀 How to Import Modules
+## How to Import Modules
 
 ### Basic Import
 ```python
@@ -45,7 +45,7 @@ print(dt.datetime.now())
 
 ---
 
-## 🧰 Built-in Modules
+## Built-in Modules
 
 Python has many modules available out of the box:
 
@@ -84,7 +84,7 @@ print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
 ---
 
-## 📦 External Modules
+## External Modules
 
 External modules are not included by default. You must install them using `pip`.
 
@@ -102,7 +102,7 @@ print(array * 2)  # Output: [2 4 6]
 
 ---
 
-## 🧪 Creating Your Own Module
+## Creating Your Own Module
 
 Create a Python file named `my_module.py`:
 ```python
@@ -128,7 +128,7 @@ print(greet("Jeha"))  # Output: Hello, Jeha!
 
 ---
 
-## 📚 Module Search Path
+## Module Search Path
 
 When you import a module, Python searches these locations:
 1. Current directory
@@ -143,7 +143,7 @@ print(sys.path)
 
 ---
 
-## 🧵 Packages (Multi-file Modules)
+## Packages (Multi-file Modules)
 
 > A **package** is a collection of modules in a directory containing `__init__.py` file.
 
@@ -163,7 +163,7 @@ from mypackage.module2 import func_name
 
 ---
 
-## ✅ Summary
+## Summary
 
 | Concept       | Description                                   |
 |---------------|-----------------------------------------------|
@@ -175,5 +175,6 @@ from mypackage.module2 import func_name
 
 ---
 
-> 📘 Use modules to keep your code clean, efficient, and organized. Happy coding!
+> 📚 This is part of the Python chapter.
+
 

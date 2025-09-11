@@ -1,14 +1,14 @@
-# 🚨 Raise and Custom Exceptions in Python
+# Raise and Custom Exceptions in Python
 
 Handling built-in exceptions is great—but sometimes, we need to manually trigger an error using the `raise` keyword or even create our own exception types! 🔥
 
 ---
 
-## 📌 What is `raise` in Python?
+## What is `raise` in Python?
 
 The `raise` statement is used to **trigger an exception manually**. You can use it with built-in exceptions or your own custom ones.
 
-### 📎 Syntax:
+### Syntax:
 
 ```python
 raise ExceptionType("Optional error message")
@@ -16,9 +16,9 @@ raise ExceptionType("Optional error message")
 
 ---
 
-## 🔥 Using `raise` with Built-in Exceptions
+## Using `raise` with Built-in Exceptions
 
-### 👀 Example:
+### Example:
 
 ```python
 def divide(x, y):
@@ -29,22 +29,22 @@ def divide(x, y):
 try:
     print(divide(10, 0))
 except ZeroDivisionError as e:
-    print("❌", e)
+    print(" ", e)
 ```
 
-### 🧾 Output:
+### Output:
 
 ```
-❌ You can't divide by zero!
+You can't divide by zero!
 ```
 
 ---
 
-## 🧰 Creating Custom Exceptions
+## Creating Custom Exceptions
 
 Sometimes built-in exceptions aren’t enough. You can define your own by **subclassing `Exception`**.
 
-### 📎 Syntax:
+### Syntax:
 
 ```python
 class MyCustomError(Exception):
@@ -53,9 +53,9 @@ class MyCustomError(Exception):
 
 ---
 
-## 👷 Raise a Custom Exception
+## Raise a Custom Exception
 
-### 👀 Example:
+### Example:
 
 ```python
 class UnderAgeError(Exception):
@@ -71,22 +71,22 @@ def register(age):
 try:
     register(16)  # Hamin tries to register
 except UnderAgeError as e:
-    print("🚫", e)
+    print(" ", e)
 ```
 
-### 🧾 Output:
+### Output:
 
 ```
-🚫 Age 16 is too young to register.
+Age 16 is too young to register.
 ```
 
 ---
 
-## 🔍 Why use parentheses `()` in `super().__init__()`?
+## Why use parentheses `()` in `super().__init__()`?
 
 When calling `super().__init__(self.message)` or `super().__init__(message=self.message)`, you're passing the error message to the parent `Exception` class.
 
-### ✅ Correct Examples:
+### Correct Examples:
 
 ```python
 super().__init__("This is an error")              # Positional
@@ -107,7 +107,7 @@ Because `self.message` only assigns the message to an attribute. To actually **r
 - When you write `ClassName` without parentheses, you're just **referencing the class itself**, not calling or instantiating it.
 - When you write `ClassName()` **with parentheses**, you're creating an **instance** of that class.
 
-📌 **Example:**
+**Example:**
 
 ```python
 class MyClass:
@@ -126,20 +126,23 @@ raise MyError()  # instantiates and raises the exception — ✅ correct
 
 ---
 
-## 📌 Why Use Custom Exceptions?
+## Why Use Custom Exceptions?
 
-✅ Make errors easier to understand.  
-✅ Better debugging and clarity.  
-✅ More control over app logic and flow.
+Make errors easier to understand.  
+Better debugging and clarity.  
+More control over app logic and flow.
 
 ---
 
-## 🧠 Summary
+## Summary
 
 - Use `raise` to trigger errors intentionally.  
 - You can raise both built-in and custom exceptions.  
 - Create custom exceptions by subclassing `Exception`.  
 - Use parentheses `()` in `super().__init__()` to pass messages correctly.  
 - `()` is used to instantiate classes — without it, you're just referencing the class.  
-- Custom exceptions = clean, readable, maintainable code. ✨
+- Custom exceptions = clean, readable, maintainable code. 
+
+> 📚 This is part of the Python chapter.
+
 

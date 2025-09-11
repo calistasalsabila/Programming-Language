@@ -1,8 +1,8 @@
-# 🧠 Python Built-in Modules Overview
+# Python Built-in Modules Overview
 
 ---
 
-## 📦 What Are Built-in Modules?
+## What Are Built-in Modules?
 
 > **Built-in modules** are standard libraries that come pre-installed with Python. They provide essential functionality for a wide range of programming tasks — from math operations to system interaction, file handling, data formatting, and more.
 
@@ -15,16 +15,16 @@ print(math.sqrt(16))  # Output: 4.0
 
 ---
 
-## 📌 Why Use Built-in Modules?
+## Why Use Built-in Modules?
 
-✅ Save development time  
-✅ Well-tested and maintained  
-✅ Cover common programming needs  
-✅ Increase code readability and performance
+Save development time  
+Well-tested and maintained  
+Cover common programming needs  
+Increase code readability and performance
 
 ---
 
-## 🧰 Common Built-in Modules with Example Use
+## Common Built-in Modules with Example Use
 
 | Module         | Purpose                                   | Example Usage                              |
 |----------------|-------------------------------------------|---------------------------------------------|
@@ -46,7 +46,7 @@ print(math.sqrt(16))  # Output: 4.0
 
 ---
 
-## ✅ Summary
+## Summary
 
 - Python's built-in modules provide solutions to common programming problems.
 - You can access them simply with `import <module_name>`.
@@ -54,5 +54,6 @@ print(math.sqrt(16))  # Output: 4.0
 
 ---
 
-> 📘 Next: We'll break down each module in detail in separate files — with theory, functions, and example use cases!
+> 📚 This is part of the Python chapter.
+
 

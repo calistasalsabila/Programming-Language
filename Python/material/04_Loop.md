@@ -1,4 +1,4 @@
-# 📌 Python Loops
+# Python Loops
 
 Loops in Python are used to execute a block of code multiple times.
 
@@ -260,5 +260,6 @@ for i in range(5):
 - **Use `range()` to generate sequences, `enumerate()` to add indices, and `zip()` to combine iterables.**
 
 ---
-📌 *This note will be updated as needed!* 🚀
+> 📚 This is part of the Python chapter.
+
 

@@ -1,9 +1,9 @@
-# 🌎 Global Variables, Scope, Enclosed Scope, and `global` Keyword in Python
+# Global Variables, Scope, Enclosed Scope, and `global` Keyword in Python
 
 ## 🔹 1. What is a Global Variable?
 A **global variable** is a variable declared outside of any function or block, making it accessible from anywhere in the program.
 
-### ✅ Example:
+### Example:
 ```python
 x = 10  # Global variable
 
@@ -25,7 +25,7 @@ Scope defines where a variable can be accessed. Python has four types of scope:
 3. **Global Scope** → A variable declared outside any function.
 4. **Built-in Scope** → Predefined functions and variables in Python (e.g., `print()`, `len()`, etc.).
 
-### 🎯 Example of Local Scope:
+### Example of Local Scope:
 ```python
 def my_function():
     y = 5  # Local variable
@@ -40,7 +40,7 @@ my_function()
 ## 🔹 3. Enclosed Scope (Nonlocal Variables in Nested Functions)
 If a function is **inside another function**, the variable from the outer function is called an **Enclosed Variable** (between Local and Global scope).
 
-### ✅ Example:
+### Example:
 ```python
 def outer():
     a = 10  # Enclosed Variable
@@ -74,7 +74,7 @@ outer()  # Output: 20
 ## 🔹 4. The `global` Keyword (Modifying Global Variables Inside a Function)
 To modify a **global variable** inside a function, use the `global` keyword.
 
-### ❌ Without `global` (Incorrect):
+### Without `global` (Incorrect):
 ```python
 x = 10
 
@@ -85,7 +85,7 @@ change_x()
 print(x)  # Output: 10 (Unchanged)
 ```
 
-### ✅ With `global` (Correct):
+### With `global` (Correct):
 ```python
 x = 10
 
@@ -102,7 +102,7 @@ Using `global` too often can make your code hard to understand and lead to unexp
 
 ---
 
-## 🔹 5. Summary 🎯
+## 🔹 5. Summary 
 | Concept  | Description |
 |----------|-------------|
 | **Global Variable** | A variable declared outside any function, accessible anywhere |
@@ -111,4 +111,5 @@ Using `global` too often can make your code hard to understand and lead to unexp
 | **Built-in Scope** | Predefined functions and variables in Python like `print()`, `len()`, etc. |
 | **Keyword `global`** | Used to modify a global variable inside a function |
 
+> 📚 This is part of the Python chapter.
 

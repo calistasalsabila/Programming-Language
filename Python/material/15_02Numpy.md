@@ -1,10 +1,10 @@
-# 🐍 NumPy & NumPy Array 
+# NumPy & NumPy Array 
 
-Welcome to the world of **NumPy** (Numerical Python)! 🌟 This library is the fundamental package for scientific computing in Python. It's super fast and designed for high-performance operations on arrays and matrices.
+Welcome to the world of **NumPy** (Numerical Python)! This library is the fundamental package for scientific computing in Python. It's super fast and designed for high-performance operations on arrays and matrices.
 
 ---
 
-## 📌 What is NumPy?
+## What is NumPy?
 
 NumPy is a powerful Python library used for numerical computing. It provides support for:
 
@@ -13,7 +13,7 @@ NumPy is a powerful Python library used for numerical computing. It provides sup
 * Tools for integrating with C/C++ and Fortran code
 * Linear algebra, Fourier transforms, and random number capabilities
 
-📚 **Import statement:**
+**Import statement:**
 
 ```python
 import numpy as np
@@ -21,7 +21,7 @@ import numpy as np
 
 ---
 
-## 🧠 Why Use NumPy?
+## Why Use NumPy?
 
 ✨ Advantages over Python lists:
 
@@ -53,13 +53,13 @@ result = array1 + array2
 print("NumPy Time:", time.time() - start)
 ```
 
-Output will show NumPy is much faster 🚀
+Output will show NumPy is much faster 
 
 ---
 
-## 🔢 NumPy Arrays
+## NumPy Arrays
 
-### ➕ Creating Arrays
+### Creating Arrays
 
 ```python
 np.array([1, 2, 3])                  # 1D array
@@ -72,7 +72,7 @@ np.arange(0, 10, 2)                # Range with step
 np.linspace(0, 1, 5)               # Evenly spaced numbers
 ```
 
-### 🧭 Array Attributes
+### Array Attributes
 
 ```python
 arr = np.array([[1, 2, 3], [4, 5, 6]])
@@ -83,7 +83,7 @@ arr.size        # 6 -> total number of elements
 arr.dtype       # data type (e.g., int64)
 ```
 
-### 🔄 Reshaping & Flattening
+### Reshaping & Flattening
 
 ```python
 arr.reshape(3, 2)         # Change shape
@@ -91,7 +91,7 @@ arr.ravel()               # Flatten to 1D
 arr.flatten()             # Also flattens (returns copy)
 ```
 
-### 🔁 Indexing & Slicing
+### Indexing & Slicing
 
 ```python
 arr[0]                    # First row
@@ -100,7 +100,7 @@ arr[1, 2]                 # Element at row 1, column 2
 arr[0:2, 1:3]             # Subarray
 ```
 
-### 🎲 Random Arrays
+### Random Arrays
 
 ```python
 np.random.rand(2, 2)      # Uniform [0,1)
@@ -110,7 +110,7 @@ np.random.randint(0, 10, (2, 3))  # Random integers
 
 ---
 
-## 🧮 Mathematical Operations
+## Mathematical Operations
 
 ```python
 arr = np.array([1, 2, 3])
@@ -126,9 +126,9 @@ np.std(arr)     # 0.816
 
 ---
 
-## 🔗 Array Concatenation & Splitting
+## Array Concatenation & Splitting
 
-### 🔗 Concatenation
+### Concatenation
 
 ```python
 np.concatenate([a, b])
@@ -136,7 +136,7 @@ np.vstack([a, b])   # Vertical stack
 np.hstack([a, b])   # Horizontal stack
 ```
 
-### ✂️ Splitting
+### Splitting
 
 ```python
 np.split(arr, 3)
@@ -146,7 +146,7 @@ np.hsplit(arr2D, 2)
 
 ---
 
-## 🧹 Boolean Indexing & Filtering
+## Boolean Indexing & Filtering
 
 ```python
 arr = np.array([10, 20, 30, 40])
@@ -159,7 +159,7 @@ print(arr[arr > 20])
 
 ---
 
-## 💡 Real-World Example: Vectorized Distance Calculation
+## Real-World Example: Vectorized Distance Calculation
 
 ```python
 points = np.array([[1, 2], [4, 6], [7, 1]])
@@ -171,7 +171,7 @@ print(distances)
 
 ---
 
-## 📚 Resources to Learn More
+## Resources to Learn More
 
 * [NumPy Official Documentation](https://numpy.org/doc/)
 * [NumPy Cheat Sheet (PDF)](https://github.com/numpy/numpy/blob/main/doc/Py3.10/numpy-user.pdf)
@@ -180,7 +180,7 @@ print(distances)
 
 ---
 
-## 🧠 Summary
+## Summary
 
 | Feature         | Description              |
 | --------------- | ------------------------ |
@@ -196,7 +196,4 @@ print(distances)
 | `np.hsplit()`   | Split array horizontally |
 
 ---
-
-Happy coding with NumPy! 🧠💻⚡
-
----
+> 📚 This is part of the Python chapter.

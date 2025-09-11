@@ -1,28 +1,28 @@
-# 📚 Regex (Regular Expression) Cheatsheet with Python 🐍
+# Regex (Regular Expression) Cheatsheet with Python 
 
-Welcome to the complete and beginner-friendly guide to **Regular Expressions (Regex)** in **Python**! 🎉
+Welcome to the complete and beginner-friendly guide to **Regular Expressions (Regex)** in **Python**! 
 
 ---
 
-## 📖 What is Regex?
+##  What is Regex?
 
 Regex stands for **Regular Expression**. It is a powerful way to **search**, **match**, and **manipulate** text using patterns.
 
-> Think of it as a rulebook you write to describe what you want to find or validate inside a string, like matching emails 📧, filtering usernames 👩‍⚖️, or extracting hashtags 🔖.
+> Think of it as a rulebook you write to describe what you want to find or validate inside a string, like matching emails, filtering usernames, or extracting hashtags.
 
 ---
 
-## 🎯 What is Regex used for?
+## What is Regex used for?
 
-* ✅ Pattern matching (e.g., find phone numbers)
-* ✅ Validation (e.g., validate email or password format)
-* ✅ Search and replace (e.g., censoring words)
-* ✅ Parsing text (e.g., extract dates or hashtags)
-* ✅ Data cleaning and preprocessing (especially in NLP & ML)
+* Pattern matching (e.g., find phone numbers)
+* Validation (e.g., validate email or password format)
+* Search and replace (e.g., censoring words)
+* Parsing text (e.g., extract dates or hashtags)
+* Data cleaning and preprocessing (especially in NLP & ML)
 
 ---
 
-## 🧪 Basic Regex Syntax
+## Basic Regex Syntax
 
 | Symbol  | Description                    | Example     | Matches                                  |       |                |
 | ------- | ------------------------------ | ----------- | ---------------------------------------- | ----- | -------------- |
@@ -43,7 +43,7 @@ Regex stands for **Regular Expression**. It is a powerful way to **search**, **m
 
 ---
 
-## 🅤 Character Classes
+## Character Classes
 
 | Class | Description          | Matches                  |
 | ----- | -------------------- | ------------------------ |
@@ -54,7 +54,7 @@ Regex stands for **Regular Expression**. It is a powerful way to **search**, **m
 | `\s`  | Whitespace           | Space, tab, newline      |
 | `\S`  | Not whitespace       | All non-space characters |
 
-### 🌧 Additional Custom Classes
+### Additional Custom Classes
 
 | Class          | Description               | Matches             |
 | -------------- | ------------------------- | ------------------- |
@@ -66,7 +66,7 @@ Regex stands for **Regular Expression**. It is a powerful way to **search**, **m
 
 ---
 
-## 🔏 Quantifiers
+## Quantifiers
 
 Quantifiers determine **how many occurrences of a character or group** you want to match.
 
@@ -79,7 +79,7 @@ Quantifiers determine **how many occurrences of a character or group** you want 
 | `{n,}`     | Minimum **n** times           | `a{2,}`   | `aa`, `aaa`, `aaaa`, ... |
 | `{n,m}`    | Between **n** and **m** times | `a{2,4}`  | `aa`, `aaa`, `aaaa`      |
 
-### 🔍 Example Usage of Quantifiers
+### Example Usage of Quantifiers
 
 ```python
 import re
@@ -95,15 +95,15 @@ re.findall(r"\b\w{3}\b", "Dok Ja is so sly")
 
 ---
 
-## 🐍 Python Regex Basics
+## Python Regex Basics
 
-### ✅ Importing the `re` module
+### Importing the `re` module
 
 ```python
 import re
 ```
 
-### 🔍 Matching a Pattern
+### Matching a Pattern
 
 ```python
 pattern = r"cat"
@@ -113,21 +113,21 @@ if match:
     print("Found!", match.group())
 ```
 
-### 🔁 Finding All Matches
+### Finding All Matches
 
 ```python
 re.findall(r"\d+", "Calista is 19 and Jeha is 21")
 # Output: ['19', '21']
 ```
 
-### 🔄 Substituting Patterns
+### Substituting Patterns
 
 ```python
 re.sub(r"Dokja", "Jeha", "Dokja is awesome!")
 # Output: "Jeha is awesome!"
 ```
 
-### 📦 Compiling Regex for Reuse
+### Compiling Regex for Reuse
 
 ```python
 pattern = re.compile(r"Jeha")
@@ -137,7 +137,7 @@ pattern.findall("Jeha is here. So is Jeha again.")
 
 ---
 
-## 💡 Practical Examples with Explanation
+## Practical Examples with Explanation
 
 ### 1. Validate Email
 
@@ -173,7 +173,7 @@ re.match(pattern, "+628123456789")
 ```python
 pattern = r"^(?=.*[A-Z])(?=.*\d).{8,}$"
 re.match(pattern, "Secure123")
-# ✅ At least 1 uppercase and 1 digit, min length 8
+# At least 1 uppercase and 1 digit, min length 8
 ```
 
 ### 5. Match HTML Tags
@@ -183,14 +183,14 @@ re.findall(r"<\/?\w+>", "<p>Hello</p><div>World</div>")
 # Output: ['<p>', '</p>', '<div>', '</div>']
 ```
 
-### 6. ✅ Positive Lookahead: Must contain certain pattern
+### 6. Positive Lookahead: Must contain certain pattern
 
 ```python
 pattern = r"^(?=.*[A-Z])(?=.*\d).+$"
 re.match(pattern, "A1b2c3")  # Valid: has uppercase & digit
 ```
 
-### 7. ❌ Negative Lookahead: Must NOT contain pattern
+### 7. Negative Lookahead: Must NOT contain pattern
 
 ```python
 pattern = r"^(?!.*badword).+$"
@@ -199,28 +199,28 @@ re.match(pattern, "clean content")  # Valid: no badword
 
 ---
 
-## ⚠️ Common Mistakes in Regex
+## Common Mistakes in Regex
 
-* ❌ Forgetting to escape special characters: `\.` instead of `.`
-* ❌ Using greedy quantifiers without control
-* ❌ Forgetting to use raw strings in Python: `r"pattern"`
-* ❌ Misusing character classes (e.g., `[^a-z]` = NOT lowercase)
-
----
-
-## 🤔 Tips to Master Regex
-
-* 👀 Use **regex101.com** to test and understand patterns interactively.
-* 🔬 Break complex patterns into small chunks.
-* 🧹 Practice real problems like email, password, hashtags, HTML extraction.
-* 🧪 Test with both positive & negative examples.
+* Forgetting to escape special characters: `\.` instead of `.`
+* Using greedy quantifiers without control
+* Forgetting to use raw strings in Python: `r"pattern"`
+* Misusing character classes (e.g., `[^a-z]` = NOT lowercase)
 
 ---
 
-## ✨ Final Thoughts
+## Tips to Master Regex
+
+* Use **regex101.com** to test and understand patterns interactively.
+* Break complex patterns into small chunks.
+* Practice real problems like email, password, hashtags, HTML extraction.
+* Test with both positive & negative examples.
+
+---
+
+## Final Thoughts
 
 Regex is an indispensable tool for string processing, text analysis, data validation, and more. Mastering it empowers you to clean, extract, and transform data efficiently — a must-have skill for developers and data scientists alike.
 
 ---
+> 📚 This is part of the Python chapter.
 
-Feel free to ask if you need further assistance or examples! 🔍✨

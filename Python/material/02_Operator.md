@@ -1,4 +1,4 @@
-# 📌 Python Operators
+# Python Operators
 
 Operators are symbols used to perform operations on variables and values in Python.
 
@@ -143,4 +143,4 @@ print("z" not in text)  # True
 - **Understanding operators is essential for writing efficient Python programs**
 
 ---
-📌 *This note will be updated as needed!* 🚀
+> 📚 This is part of the Python chapter.

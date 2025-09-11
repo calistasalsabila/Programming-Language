@@ -1,16 +1,16 @@
-# 🐍 Python Modules: `os` and `shutil`
+# Python Modules: `os` and `shutil`
 
 Learn two essential Python modules for automating file and folder manipulation. Super useful for automation scripts, backups, or any project involving directories. 💻📂
 
 ---
 
-## 📦 `os` Module
+## `os` Module
 
-### 🎯 Purpose:
+### Purpose:
 
 The `os` module is used to interact with the operating system. It includes functions for accessing environment variables, managing files & directories, and executing shell commands.
 
-### 🔑 Common Functions:
+### Common Functions:
 
 | Function               | Description                                         |
 | ---------------------- | --------------------------------------------------- |
@@ -26,7 +26,7 @@ The `os` module is used to interact with the operating system. It includes funct
 | `os.path.join(a, b)`   | Joins paths properly according to the OS            |
 | `os.walk(path)`        | Generates file names in a directory tree            |
 
-### 📌 Code Example:
+### Code Example:
 
 ```python
 import os
@@ -42,7 +42,7 @@ else:
     print(f"Folder '{folder}' already exists.")
 ```
 
-### 🌀 Example with `os.walk()`:
+### Example with `os.walk()`:
 
 ```python
 import os
@@ -54,7 +54,7 @@ for dirpath, dirnames, filenames in os.walk("."):
     print("---")
 ```
 
-### 📎 Explanation:
+### Explanation:
 
 * `os.name` helps detect the OS (useful for cross-platform support).
 * `os.getcwd()` & `os.chdir()` help navigate directories.
@@ -64,13 +64,13 @@ for dirpath, dirnames, filenames in os.walk("."):
 
 ---
 
-## 📁 `shutil` Module
+## `shutil` Module
 
-### 🎯 Purpose:
+### Purpose:
 
 The `shutil` module is used for high-level file operations like copying, moving, and deleting directories recursively.
 
-### 🔑 Common Functions:
+### Common Functions:
 
 | Function                                           | Description                           |
 | -------------------------------------------------- | ------------------------------------- |
@@ -81,7 +81,7 @@ The `shutil` module is used for high-level file operations like copying, moving,
 | `shutil.make_archive(base_name, format, root_dir)` | Creates a zip/archive                 |
 | `shutil.unpack_archive(filename, extract_dir)`     | Extracts archive files                |
 
-### 📌 Code Example:
+### Code Example:
 
 ```python
 import shutil
@@ -100,7 +100,7 @@ shutil.copy(src_file, dest_file)
 print(f"'{src_file}' successfully copied to '{dest_file}'")
 ```
 
-### 📎 Explanation:
+### Explanation:
 
 * `shutil.copy()` is used to copy files.
 * `shutil.move()` is used to move files/directories.
@@ -108,7 +108,7 @@ print(f"'{src_file}' successfully copied to '{dest_file}'")
 
 ---
 
-## ✅ Pro Tips
+## Pro Tips
 
 * Always check with `os.path.exists()` before performing file/folder operations.
 * Use `os.path.join()` instead of hardcoded paths (for cross-platform compatibility).
@@ -116,7 +116,7 @@ print(f"'{src_file}' successfully copied to '{dest_file}'")
 
 ---
 
-## 🧠 Mini Case Study: Auto Backup Script
+## Mini Case Study: Auto Backup Script
 
 ```python
 import os
@@ -139,6 +139,9 @@ print(f"File '{src}' backed up to folder '{backup_dir}'")
 
 ---
 
-## 🌟 Conclusion
+## Conclusion
 
-With `os` and `shutil`, you can automate scripts, build file organizers, create backup tools, or even a simple recycle bin system. Keep practicing and exploring! 🚀
+With `os` and `shutil`, you can automate scripts, build file organizers, create backup tools, or even a simple recycle bin system. Keep practicing and exploring!
+
+> 📚 This is part of the Python chapter.
+

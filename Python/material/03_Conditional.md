@@ -1,4 +1,4 @@
-# 📌 Python Conditional Statements
+# Python Conditional Statements
 
 Conditional statements allow a program to execute different code blocks based on certain conditions.
 
@@ -168,5 +168,5 @@ Both x and y are greater than 5
 - **Nested `if` allows more complex decision structures.**
 
 ---
-📌 *This note will be updated as needed!* 🚀
+> 📚 This is part of the Python chapter.
 

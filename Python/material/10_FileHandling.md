@@ -1,20 +1,20 @@
-# 📂 File Handling in Python
+# File Handling in Python
 
 Python provides built-in functions to work with files. File handling allows us to **create, read, write, and delete** files — which is essential for storing data persistently.
 
 ---
 
-## 🧠 Why is File Handling Important?
+## Why is File Handling Important?
 
 File handling enables programs to:
-- Save output or logs 📃  
-- Read large datasets 📊  
-- Process text, config, or user data 🔠️  
-- Build data pipelines for ML & apps 💻  
+- Save output or logs   
+- Read large datasets 
+- Process text, config, or user data 
+- Build data pipelines for ML & apps  
 
 ---
 
-## 📄 File Modes in Python
+## File Modes in Python
 
 | Mode | Description |
 |------|-------------|
@@ -27,7 +27,7 @@ File handling enables programs to:
 
 ---
 
-## ✨ Basic Syntax
+## Basic Syntax
 
 ```python
 file = open("filename.txt", "mode")
@@ -39,9 +39,9 @@ Always **close** the file after using it to avoid memory leaks.
 
 ---
 
-## 📅 Reading a File
+## Reading a File
 
-### 🧒 Example 1: Basic Read
+### Example 1: Basic Read
 
 ```python
 file = open("dokja_notes.txt", "r")
@@ -55,7 +55,7 @@ file.close()
 Dokja: The world is cruel but I have a plan.
 ```
 
-### 🧒 Example 2: Read Line by Line
+### Example 2: Read Line by Line
 
 ```python
 file = open("jeha_todo.txt", "r")
@@ -73,9 +73,9 @@ file.close()
 
 ---
 
-## ✍️ Writing to a File
+## Writing to a File
 
-### ✊ Example 1: Overwrite Content (`w` mode)
+### Example 1: Overwrite Content (`w` mode)
 
 ```python
 file = open("hamin_diary.txt", "w")
@@ -85,7 +85,7 @@ file.close()
 
 **Effect:** Replaces all content in the file.
 
-### ✊ Example 2: Append Content (`a` mode)
+### Example 2: Append Content (`a` mode)
 
 ```python
 file = open("hamin_diary.txt", "a")
@@ -97,7 +97,7 @@ file.close()
 
 ---
 
-## ⚖️ Using `with` Statement (Best Practice)
+## Using `with` Statement (Best Practice)
 
 ```python
 with open("dazai_poem.txt", "r") as file:
@@ -108,7 +108,7 @@ This automatically closes the file after exiting the block. Recommended for clea
 
 ---
 
-## ❌ Deleting a File
+## Deleting a File
 
 You can use the `os` module:
 
@@ -123,7 +123,7 @@ else:
 
 ---
 
-## ✨ Extra: Check if File Exists
+## Extra: Check if File Exists
 
 ```python
 import os
@@ -137,11 +137,11 @@ True or False
 
 ---
 
-## ⚛️ Seeking in a File with `file.seek()`
+## Seeking in a File with `file.seek()`
 
 `file.seek(offset)` lets you move the file cursor to a specific position.
 
-### 🔐 Example: Resetting File Pointer
+### Example: Resetting File Pointer
 
 ```python
 file = open("dokja_notes.txt", "r")
@@ -161,7 +161,7 @@ You can use `file.seek(position)` to go to any byte offset.
 
 ---
 
-## 📈 Summary
+## Summary
 
 - Use `open()` to work with files.
 - Modes: `'r'`, `'w'`, `'a'`, `'x'`, `'b'`, `'t'`
@@ -170,6 +170,6 @@ You can use `file.seek(position)` to go to any byte offset.
 - Use `seek()` to move the file pointer.
 
 ---
+> 📚 This is part of the Python chapter.
 
-Happy coding 🚀📝
 

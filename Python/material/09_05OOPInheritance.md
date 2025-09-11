@@ -1,9 +1,9 @@
 # Inheritance in Python
 
-## 🏆 Objective
+## Objective
 Understand the concept of inheritance in Python, how it works, and how to implement it effectively.
 
-## 📖 Theory Explanation
+## Theory Explanation
 Inheritance is a fundamental concept in Object-Oriented Programming (OOP) that allows a class (child class) to inherit attributes and methods from another class (parent class). This promotes code reusability and hierarchy in class design.
 
 ### Key Points:
@@ -13,9 +13,9 @@ Inheritance is a fundamental concept in Object-Oriented Programming (OOP) that a
 - The child class can **override** or **extend** the functionalities of the parent class.
 - Python supports **single inheritance**, **multiple inheritance**, **multilevel inheritance**, and **hierarchical inheritance**.
 
-## 💻 Code Examples and Output
+## Code Examples and Output
 
-### 1️⃣ Basic Inheritance Example
+### 1. Basic Inheritance Example
 ```python
 # Parent Class
 class Person:
@@ -44,7 +44,7 @@ print(dokja.introduce())  # Output: Hello, my name is Dokja and I am 25 years ol
 print(jeha.introduce())   # Output: Hello, my name is Jeha, I am 20 years old, and I study Computer Science.
 ```
 
-### 2️⃣ Multilevel Inheritance
+### 2. Multilevel Inheritance
 ```python
 class Animal:
     def speak(self):
@@ -56,31 +56,31 @@ class Mammal(Animal):
 
 class Dog(Mammal):
     def speak(self):
-        return "Woof! Woof! 🐶"
+        return "Woof! Woof!"
 
-hamin = Dog()
-print(hamin.speak())   # Output: Woof! Woof! 🐶
-print(hamin.has_fur()) # Output: True
+Dam = Dog()
+print(Dam.speak())   # Output: Woof! Woof!
+print(Dam.has_fur()) # Output: True
 ```
 
-### 3️⃣ Multiple Inheritance
+### 3. Multiple Inheritance
 ```python
 class Artist:
     def draw(self):
-        return "Creating art 🎨."
+        return "Creating art."
 
 class Musician:
     def play_music(self):
-        return "Playing music 🎵."
+        return "Playing music."
 
 class MultiTalented(Artist, Musician):
     def perform(self):
-        return "I can do both! 🎭"
+        return "I can do both"
 
 dazai = MultiTalented()
-print(dazai.draw())      # Output: Creating art 🎨.
-print(dazai.play_music()) # Output: Playing music 🎵.
-print(dazai.perform())   # Output: I can do both! 🎭
+print(dazai.draw())      # Output: Creating art.
+print(dazai.play_music()) # Output: Playing music.
+print(dazai.perform())   # Output: I can do both!
 ```
 
 ## 🔍 Conclusion
@@ -89,5 +89,6 @@ print(dazai.perform())   # Output: I can do both! 🎭
 - The `super()` function is used to **call methods from the parent class**.
 - Method overriding enables a child class to **modify behavior** from the parent class.
 
-Inheritance makes code more **efficient, reusable, and organized**. 🚀
+> 📚 This is part of the Python chapter.
+
 

@@ -1,18 +1,18 @@
-# Understanding *args and **kwargs in Python 🚀
+# Understanding *args and **kwargs in Python 
 
-## What are *args and **kwargs? 🤔
+## What are *args and **kwargs? 
 In Python, `*args` and `**kwargs` allow us to pass a variable number of arguments to a function.
 - `*args` allows you to pass multiple positional arguments as a tuple.
 - `**kwargs` allows you to pass multiple keyword arguments as a dictionary.
 
-## Purpose 🎯
+## Purpose 
 - `*args` is used when you want a function to accept any number of positional arguments.
 - `**kwargs` is useful when you want a function to accept any number of keyword arguments.
 - They make functions more flexible and reusable.
 
 ---
 
-## Using *args 📌
+## Using *args 
 ### Syntax:
 ```python
 # Function using *args
@@ -31,14 +31,14 @@ Hello, Jeha!
 Hello, Alice!
 ```
 
-### Explanation 📝
+### Explanation 
 - The function `greet` takes multiple names as arguments.
 - `*names` collects all the passed arguments into a tuple.
 - The function loops through the tuple and prints each name.
 
 ---
 
-## Using **kwargs 📌
+## Using **kwargs 
 ### Syntax:
 ```python
 # Function using **kwargs
@@ -57,14 +57,14 @@ age: 25
 city: Seoul
 ```
 
-### Explanation 📝
+### Explanation 
 - The function `person_info` takes multiple keyword arguments.
 - `**info` collects them into a dictionary.
 - The function iterates over the dictionary and prints key-value pairs.
 
 ---
 
-## Combining *args and **kwargs 🏆
+## Combining *args and **kwargs 
 ### Syntax:
 ```python
 # Function using both *args and **kwargs
@@ -86,17 +86,18 @@ age: 25
 country: Korea
 ```
 
-### Explanation 📝
+### Explanation 
 - `*args` collects positional arguments (names).
 - `**kwargs` collects keyword arguments (details).
 - The function handles both types of arguments dynamically.
 
 ---
 
-## When to Use? 🤷‍♂️
-✅ Use `*args` when the number of positional arguments is unknown.
-✅ Use `**kwargs` when you need to handle multiple keyword arguments dynamically.
-✅ Use both when a function requires maximum flexibility.
+## When to Use? 
+ Use `*args` when the number of positional arguments is unknown.
+ Use `**kwargs` when you need to handle multiple keyword arguments dynamically.
+ Use both when a function requires maximum flexibility.
 
-💡 With `*args` and `**kwargs`, your functions become more dynamic, reusable, and scalable! 🚀
+> 📚 This is part of the Python chapter.
+
 

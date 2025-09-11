@@ -1,15 +1,15 @@
-# 🛡️ Encapsulation in Python
+# Encapsulation in Python
 
-## 🔍 What is Encapsulation?
+## What is Encapsulation?
 Encapsulation is one of the fundamental principles of Object-Oriented Programming (OOP). It refers to **hiding the internal details** of an object and only exposing necessary parts to the outside world. This helps in **data protection** and prevents accidental modification.
 
 ---
 
-## 🎯 Purpose of Encapsulation
-✅ Protect data from accidental modification.
-✅ Restrict direct access to object attributes.
-✅ Improve maintainability and modularity.
-✅ Implement getter & setter methods for controlled access.
+## Purpose of Encapsulation
+ Protect data from accidental modification.
+ Restrict direct access to object attributes.
+ Improve maintainability and modularity.
+ Implement getter & setter methods for controlled access.
 
 ---
 
@@ -36,9 +36,9 @@ class Person:
 
 # Usage
 jeha = Person("Jeha", 25)
-print(jeha.name)       # ✅ Allowed (public)
-# print(jeha.__age)   # ❌ Error! Cannot access private attribute
-print(jeha.get_age())  # ✅ Access via getter method
+print(jeha.name)       #  Allowed (public)
+# print(jeha.__age)   #  Error! Cannot access private attribute
+print(jeha.get_age())  #  Access via getter method
 ```
 
 ### 🔹 Protected Attributes (`_attribute`)
@@ -60,7 +60,7 @@ print(dazai._grade)  # ⚠️ Allowed but discouraged
 
 ---
 
-## 🔄 Getter & Setter Methods
+## Getter & Setter Methods
 To safely access and modify private attributes, we use **getter and setter methods**.
 
 ```python
@@ -80,14 +80,14 @@ class BankAccount:
 
 # Usage
 hamin = BankAccount("Hamin", 1000)
-print(hamin.get_balance())  # ✅ 1000
+print(hamin.get_balance())  #  1000
 hamin.set_balance(2000)
-print(hamin.get_balance())  # ✅ 2000
+print(hamin.get_balance())  #  2000
 ```
 
 ---
 
-## ⚠️ Bypass Private Attributes (Only for Educational Purposes!)
+## Bypass Private Attributes (Only for Educational Purposes!)
 Python uses **name mangling** for private attributes (`__attribute` is internally renamed to `_ClassName__attribute`). Although this is **not recommended**, you can still access private attributes like this:
 
 ```python
@@ -100,20 +100,21 @@ obj = Secret("TopSecret")
 print(obj._Secret__code)  # 😈 Bypassing private attribute!
 ```
 
-🖥 **Output:**
+**Output:**
 ```
 TopSecret
 ```
 
-🚨 **Warning:** Bypassing private attributes defeats the purpose of encapsulation and should be avoided in real-world applications! Always use **getter & setter methods** for proper access. 🔒
+**Warning:** Bypassing private attributes defeats the purpose of encapsulation and should be avoided in real-world applications! Always use **getter & setter methods** for proper access. 🔒
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 Encapsulation helps to **protect data**, **restrict direct access**, and **maintain code integrity**. By using **private and protected attributes**, along with **getter & setter methods**, we can **control how data is accessed and modified**.
 
 🔹 **Use `_attribute` for protected members** (not strictly private, but should be handled with care).  
 🔹 **Use `__attribute` for private members** to enforce data hiding.  
 🔹 **Implement getters & setters** for safe access.  
 
-Encapsulation is key to writing **secure, maintainable, and modular code**! 🚀
+> 📚 This is part of the Python chapter.
+

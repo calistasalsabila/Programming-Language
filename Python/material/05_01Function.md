@@ -1,17 +1,17 @@
-# 🐍 Python Functions
+# Python Functions
 
-## 📌 What is a Function?
+## What is a Function?
 A function in Python is a reusable block of code that performs a specific task. It helps in organizing code, improving readability, and avoiding redundancy.
 
-## 🎯 Benefits of Using Functions
-- ✅ Code reusability
-- ✅ Better readability and maintainability
-- ✅ Reduces redundancy
-- ✅ Makes debugging easier
+## Benefits of Using Functions
+-  Code reusability
+-  Better readability and maintainability
+-  Reduces redundancy
+-  Makes debugging easier
 
 ---
 
-## 🛠️ Basics of Functions
+## Basics of Functions
 A function is defined using the `def` keyword, followed by a function name and parentheses `()` that may contain parameters.
 
 ### 🔹 Defining a Function
@@ -23,14 +23,14 @@ def greet():
 # Function Call
 greet()
 ```
-📝 **Output:**
+**Output:**
 ```
 Hello, World!
 ```
 
 ---
 
-## 🔄 The `return` Statement
+## The `return` Statement
 A function can return a value using the `return` statement.
 
 ### 🔹 Syntax of `return`
@@ -41,14 +41,14 @@ def square(num):
 result = square(4)
 print(result)
 ```
-📝 **Output:**
+ **Output:**
 ```
 16
 ```
 
 ---
 
-## 📜 Using Docstrings (`Shift + Tab` for Documentation)
+## Using Docstrings (`Shift + Tab` for Documentation)
 A **docstring** is a special string used to describe a function. It is written inside triple quotes (`"""` or `'''`).
 
 ### 🔹 Example:
@@ -59,14 +59,14 @@ def add(a, b):
 
 print(add.__doc__)
 ```
-📝 **Output:**
+**Output:**
 ```
 This function adds two numbers and returns the sum.
 ```
 
 ---
 
-## 🏗️ Built-in Function: `help()`
+## Built-in Function: `help()`
 The `help()` function is used to get documentation about functions, modules, or objects.
 
 ### 🔹 Example:
@@ -76,5 +76,5 @@ help(print)
 This will display detailed documentation about the `print()` function.
 
 ---
+> 📚 This is part of the Python chapter.
 
-🚀 Now you're ready to create and use functions efficiently in Python! Happy coding! 🎉

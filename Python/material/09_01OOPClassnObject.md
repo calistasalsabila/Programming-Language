@@ -1,14 +1,14 @@
-# 🐍 Python: Class & Object
+# Python: Class & Object
 
-## 📌 Introduction
+##  Introduction
 In Python, **class** and **object** are fundamental concepts of Object-Oriented Programming (OOP). A class is like a blueprint, while an object is an instance of a class. OOP allows us to structure our code efficiently and reuse it easily.
 
-## 🎯 Why Use Classes & Objects?
+##  Why Use Classes & Objects?
 - **Encapsulation**: Bundle data and functions together.
 - **Reusability**: Create objects from a common template.
 - **Scalability**: Manage large codebases more effectively.
 
-## 📝 Syntax
+## Syntax
 A **class** is defined using the `class` keyword, and an **object** is created by instantiating a class.
 
 ```python
@@ -26,7 +26,7 @@ cat = Animal("Kitty", "Meow")
 print(cat.make_sound())  # Output: Kitty says Meow!
 ```
 
-## 📌 Key Concepts
+##  Key Concepts
 ### 🔹 `__init__` Method
 The `__init__` method is a **constructor** that initializes object attributes when an object is created.
 
@@ -70,11 +70,14 @@ print(p1.introduce())  # Output: Hi, I'm Bob and I'm 30 years old.
 print(p2.introduce())  # Output: Hi, I'm Charlie and I'm 40 years old.
 ```
 
-## 🏆 Summary
+## Summary
 - **Classes** define the blueprint.
 - **Objects** are instances of a class.
 - **Methods** define behaviors of objects.
 - **Attributes** store object data.
 
-## 🚀 Practice Time!
-Try creating a class `Student` with attributes `name` and `grade`. Add a method `get_grade()` that returns the student's grade. Happy coding! 🎉
+
+> 📚 This is part of the Python chapter.
+
+
+

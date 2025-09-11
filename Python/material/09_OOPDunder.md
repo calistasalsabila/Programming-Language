@@ -1,15 +1,15 @@
-# Dunder Methods in Python 🚀
+# Dunder Methods in Python 
 
-## What are Dunder Methods? 🤔
+## What are Dunder Methods?
 Dunder methods (short for **Double UNDERscore methods**) are special methods in Python that have double underscores (`__`) at the beginning and end of their names. These methods allow you to define how objects of a class should behave in different situations, such as string representation, addition, length calculation, etc.
 
 Dunder methods are also called **magic methods** because they enable powerful object-oriented programming features!
 
 ---
 
-## Common Dunder Methods 🔥
+## Common Dunder Methods
 
-### 1. `__init__`: Constructor Method 🏗️
+### 1. `__init__`: Constructor Method
 Defines how an object is initialized.
 
 ```python
@@ -23,7 +23,7 @@ dokja = Person("Dokja", 25)
 print(dokja.name)  # Output: Dokja
 ```
 
-### 2. `__str__`: String Representation 📜
+### 2. `__str__`: String Representation 
 Defines the string representation of an object when `str()` is called.
 
 ```python
@@ -40,7 +40,7 @@ dazai = Person("Dazai", 22)
 print(str(dazai))  # Output: Dazai is 22 years old.
 ```
 
-### 3. `__repr__`: Official String Representation 🧐
+### 3. `__repr__`: Official String Representation 
 Defines how an object should be represented (useful for debugging and logging).
 
 ```python
@@ -57,7 +57,7 @@ jeha = Person("Jeha", 30)
 print(repr(jeha))  # Output: Person(name='Jeha', age=30)
 ```
 
-### 4. `__len__`: Object Length 📏
+### 4. `__len__`: Object Length 
 Defines how `len()` behaves for an object.
 
 ```python
@@ -111,11 +111,11 @@ print(dokja1 == dokja2)  # Output: True
 
 ---
 
-## Why Use Dunder Methods? 🤯
-✅ Make objects behave like built-in data types.  
-✅ Improve code readability and maintainability.  
-✅ Enable operator overloading and custom behaviors.  
-✅ Enhance debugging with meaningful representations.  
+## Why Use Dunder Methods?
+Make objects behave like built-in data types.  
+Improve code readability and maintainability.  
+Enable operator overloading and custom behaviors.  
+Enhance debugging with meaningful representations.  
 
 ---
 
@@ -129,8 +129,7 @@ print(dokja1 == dokja2)  # Output: True
 | `__add__`  | Overload `+` operator |
 | `__eq__`  | Define `==` comparison |
 
-With dunder methods, you can make your Python classes more intuitive and powerful! 🚀🔥
+With dunder methods, you can make your Python classes more intuitive and powerful!
 
 ---
-
-Happy coding! 🐍💡
+> 📚 This is part of the Python chapter.

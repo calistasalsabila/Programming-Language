@@ -1,10 +1,10 @@
-# 🐼 Pandas 
+# Pandas 
 
 > Your friendly guide to mastering `pandas` for data manipulation in Python! 
 
 ---
 
-## 📌 What is Pandas?
+## What is Pandas?
 
 **Pandas** is an open-source Python library used for data analysis and data manipulation. It offers two primary data structures:
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 pip install pandas
@@ -21,7 +21,7 @@ pip install pandas
 
 ---
 
-## 🧠 Importing Pandas
+## Importing Pandas
 
 ```python
 import pandas as pd
@@ -31,9 +31,9 @@ We usually import it as `pd` for convenience.
 
 ---
 
-## 🧪 Series: One-Dimensional Data
+## Series: One-Dimensional Data
 
-### ✅ Creating a Series
+### Creating a Series
 
 ```python
 import pandas as pd
@@ -52,16 +52,16 @@ Dokja    30
 dtype: int64
 ```
 
-### 🧾 Explanation:
+### Explanation:
 
 * `data`: The values.
 * `index`: Labels for each value.
 
 ---
 
-## 🗂️ DataFrame: Two-Dimensional Table
+## DataFrame: Two-Dimensional Table
 
-### ✅ Creating a DataFrame
+### Creating a DataFrame
 
 ```python
 data = {
@@ -81,14 +81,14 @@ print(df)
 2  Dokja     88
 ```
 
-### 🧾 Explanation:
+### Explanation:
 
 * Each column is a `Series`.
 * Rows are automatically indexed from 0.
 
 ---
 
-## 🔍 Data Inspection
+## Data Inspection
 
 ```python
 df.head()       # First 5 rows
@@ -100,7 +100,7 @@ df.columns      # List of column names
 df.dtypes       # Data types of each column
 ```
 
-### 🧾 Explanation:
+### Explanation:
 
 * `df.head(n)` → Returns the first `n` rows of the DataFrame (default is 5).
 * `df.tail(n)` → Returns the last `n` rows of the DataFrame (default is 5).
@@ -112,7 +112,7 @@ df.dtypes       # Data types of each column
 
 ---
 
-## 🔑 Column Access
+## Column Access
 
 ```python
 df['Name']       # Access column
@@ -132,7 +132,7 @@ df[['Name', 'Score']]
 
 ---
 
-## 🔄 Filtering Rows
+## Filtering Rows
 
 ```python
 df[df['Score'] > 85]  # Filter rows with Score > 85
@@ -160,9 +160,9 @@ df[(df['Score'] > 85) & (df['Name'] != 'Jeha')]
 
 ---
 
-## 📊 Exploring Data Further
+## Exploring Data Further
 
-### 📌 Sorting Values
+### Sorting Values
 
 ```python
 df.sort_values(by='Score', ascending=False)
@@ -174,7 +174,7 @@ You can sort by multiple columns:
 df.sort_values(by=['Score', 'Name'], ascending=[False, True])
 ```
 
-### 📌 Value Counts (Count Frequency)
+### Value Counts (Count Frequency)
 
 ```python
 df['Name'].value_counts()
@@ -191,7 +191,7 @@ Name: Name, dtype: int64
 
 This is useful for summarizing categorical data.
 
-### 📌 Unique Values & Count
+### Unique Values & Count
 
 ```python
 df['Name'].unique()       # Unique values
@@ -200,7 +200,7 @@ df['Name'].nunique()      # Number of unique values
 
 ---
 
-## 🧱 Adding Columns
+## Adding Columns
 
 ```python
 df['Passed'] = df['Score'] >= 85
@@ -214,7 +214,7 @@ df['Bonus'] = df['Score'] * 0.1
 
 ---
 
-## ❌ Removing Columns/Rows
+## Removing Columns/Rows
 
 ```python
 df.drop('Passed', axis=1)          # Drop column
@@ -231,7 +231,7 @@ df.drop('Passed', axis=1, inplace=True)
 
 ---
 
-## ✏️ Editing Data
+## Editing Data
 
 ```python
 df.at[0, 'Score'] = 95   # Set specific value by label
@@ -240,16 +240,16 @@ df.iat[0, 1] = 95        # Set by position
 
 ---
 
-## 🔗 Combining DataFrames
+## Combining DataFrames
 
-### 🔼 Append (concat)
+### Append (concat)
 
 ```python
 df2 = pd.DataFrame({'Name': ['Dazai'], 'Score': [92]})
 df = pd.concat([df, df2], ignore_index=True)
 ```
 
-### 🔀 Merge (SQL-like)
+### Merge (SQL-like)
 
 ```python
 grades = pd.DataFrame({
@@ -262,15 +262,15 @@ merged = pd.merge(df, grades, on='Name', how='left')
 
 ---
 
-## 📁 Reading & Writing Files
+## Reading & Writing Files
 
-### 📝 Read CSV
+### Read CSV
 
 ```python
 df = pd.read_csv('data.csv')
 ```
 
-### 💾 Write CSV
+### Write CSV
 
 ```python
 df.to_csv('output.csv', index=False)
@@ -278,7 +278,7 @@ df.to_csv('output.csv', index=False)
 
 ---
 
-## 🧼 Handling Missing Data
+## Handling Missing Data
 
 ```python
 df.isnull()           # Check missing values
@@ -295,18 +295,18 @@ df.fillna(method='bfill')  # Backward fill
 
 ---
 
-## 🔁 Loop through DataFrame
+## Loop through DataFrame
 
 ```python
 for index, row in df.iterrows():
     print(row['Name'], row['Score'])
 ```
 
-> ⚠️ Not recommended for large DataFrames — use vectorized operations.
+> Not recommended for large DataFrames — use vectorized operations.
 
 ---
 
-## 🔄 Apply Function
+## Apply Function
 
 ```python
 df['Score'] = df['Score'].apply(lambda x: x + 5)
@@ -323,7 +323,7 @@ df['Adjusted'] = df['Score'].apply(adjust_score)
 
 ---
 
-## 🧠 Tips & Tricks
+## Tips & Tricks
 
 * Use `copy()` to avoid modifying the original.
 * Use `df.columns` and `df.dtypes` to inspect structure.
@@ -340,7 +340,7 @@ print(df.iloc[0, 0])
 
 ---
 
-## 🎯 Summary Table
+## Summary Table
 
 | Function                | Description        |
 | ----------------------- | ------------------ |
@@ -363,3 +363,5 @@ print(df.iloc[0, 0])
 * [Pandas Documentation](https://pandas.pydata.org/docs/)
 * [Pandas Cheat Sheet by DataCamp](https://www.datacamp.com/community/blog/python-pandas-cheat-sheet)
 * [Kaggle Pandas Tutorials](https://www.kaggle.com/learn/pandas)
+
+> 📚 This is part of the Python chapter.

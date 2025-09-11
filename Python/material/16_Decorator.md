@@ -1,20 +1,20 @@
-# 🐍 Python Decorator Complete Notes
+# Python Decorator Complete Notes
 
-## 📌 What is a Decorator?
+## What is a Decorator?
 
 A **decorator** in Python is a design pattern that allows you to modify the behavior of a function or class method **without changing its source code**. Decorators are often used for **logging**, **access control**, **memoization**, and more.
 
-Think of a decorator like wrapping a gift 🎁 — you're not changing the gift itself, just enhancing it with wrapping paper.
+Think of a decorator like wrapping a gift  — you're not changing the gift itself, just enhancing it with wrapping paper.
 
 ---
 
-## 🎯 Goal
+## Goal
 
 To understand how decorators work, how to define them, and how to use built-in or custom decorators to enhance function behavior.
 
 ---
 
-## 🧱 Syntax
+## Syntax
 
 ```python
 @decorator_name
@@ -33,7 +33,7 @@ function_name = decorator_name(function_name)
 
 ---
 
-## 🧪 Basic Example
+## Basic Example
 
 ### Code:
 
@@ -62,7 +62,7 @@ Function call ended.
 
 ---
 
-## 🔄 Decorators with Parameters
+## Decorators with Parameters
 
 To handle functions with arguments:
 
@@ -89,7 +89,7 @@ Hello, Hamin!
 
 ---
 
-## 🧠 Why Use Decorators?
+## Why Use Decorators?
 
 * **Code reusability**: Add features like logging, timing, or validation in a reusable way.
 * **Cleaner syntax**: You don’t have to clutter the function body.
@@ -97,7 +97,7 @@ Hello, Hamin!
 
 ---
 
-## 🧰 Built-in Decorators
+## Built-in Decorators
 
 * `@staticmethod`
 * `@classmethod`
@@ -117,7 +117,7 @@ Jeha.greet()
 
 ---
 
-## 🛠 Custom Decorator with Arguments
+## Custom Decorator with Arguments
 
 To make a decorator that **accepts its own arguments**, use an extra layer:
 
@@ -147,7 +147,7 @@ Haha!
 
 ---
 
-## 🧵 Chaining Multiple Decorators
+## Chaining Multiple Decorators
 
 ```python
 def deco1(func):
@@ -184,7 +184,7 @@ End deco1
 
 ---
 
-## 📝 Summary
+## Summary
 
 | Concept                       | Description                                  |
 | ----------------------------- | -------------------------------------------- |
@@ -195,7 +195,7 @@ End deco1
 
 ---
 
-## 🌟 Tips
+## Tips
 
 * Use `functools.wraps(func)` to preserve metadata (like `__name__`, `__doc__`):
 
@@ -217,5 +217,5 @@ def my_decorator(func):
 * [PEP 318 – Decorators](https://peps.python.org/pep-0318/)
 
 ---
+> 📚 This is part of the Python chapter.
 
-Happy coding! ✨🧠

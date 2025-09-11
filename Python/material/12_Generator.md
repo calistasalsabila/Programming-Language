@@ -1,16 +1,16 @@
-## 🌀 Python Generator
+## Python Generator
 
-### 📌 Definition
+### Definition
 A **generator** in Python is a **function that yields values one at a time** using the `yield` keyword instead of `return`. Generators allow us to create iterators in a more memory-efficient way since they do not store the entire data in memory.
 
-### 🎯 Purpose
+### Purpose
 - Save memory when working with large datasets
 - Generate values on demand (lazy evaluation)
 - Create iterators with simpler syntax
 
 ---
 
-### 🧠 `return` vs `yield`
+### `return` vs `yield`
 | `return` | `yield` |
 |---------|--------|
 | Terminates the function and returns a value | Saves the function state and continues execution when called again |
@@ -19,7 +19,7 @@ A **generator** in Python is a **function that yields values one at a time** usi
 
 ---
 
-### 🧪 Basic Generator Example
+### Basic Generator Example
 ```python
 def my_generator():
     yield "Hello Dokja"
@@ -32,7 +32,7 @@ for value in gen:
     print(value)
 ```
 
-### 💡 Output
+### Output
 ```
 Hello Dokja
 Hello Jeha
@@ -41,7 +41,7 @@ Hello Hamin
 
 ---
 
-### 🧪 Generator with Loop Example
+### Generator with Loop Example
 ```python
 def count_up_to(n):
     count = 1
@@ -53,7 +53,7 @@ for number in count_up_to(3):
     print(f"Hi Dazai, this is number {number}")
 ```
 
-### 💡 Output
+### Output
 ```
 Hi Dazai, this is number 1
 Hi Dazai, this is number 2
@@ -62,7 +62,7 @@ Hi Dazai, this is number 3
 
 ---
 
-### 🧩 Generator Expression
+### Generator Expression
 Similar to list comprehension, but uses parentheses `()` instead of brackets.
 
 ```python
@@ -82,7 +82,7 @@ for s in squares:
 
 ---
 
-### 📚 When to Use Generators?
+### When to Use Generators?
 Use generators when:
 - The data is too large to load into memory at once
 - You only need one element at a time
@@ -90,7 +90,7 @@ Use generators when:
 
 ---
 
-### 🧠 Extra Tips
+###  Extra Tips
 - Generators are **single-use**: once the iteration is finished, they must be recreated to reuse.
 - You can use the `next()` function to manually fetch the next value.
 
@@ -104,6 +104,9 @@ print(next(g))  # 2
 
 ---
 
-### 🏁 Conclusion
-Generators are a powerful Python feature that make processing large data easier and more efficient. By using `yield`, you can produce data one item at a time without overloading your computer's memory. 🚀
+### Conclusion
+Generators are a powerful Python feature that make processing large data easier and more efficient. By using `yield`, you can produce data one item at a time without overloading your computer's memory. 
+
+> 📚 This is part of the Python chapter.
+
 

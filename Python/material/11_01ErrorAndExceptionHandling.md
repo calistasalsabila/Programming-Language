@@ -1,32 +1,32 @@
-# 🐍 Error & Exception Handling in Python
+# Error & Exception Handling in Python
 
-Understanding how to handle **errors** and **exceptions** in Python is essential to write robust, stable, and user-friendly programs 🚫✅.
+Understanding how to handle **errors** and **exceptions** in Python is essential to write robust, stable, and user-friendly programs.
 
 ---
 
-## 📌 What are Errors and Exceptions?
+## What are Errors and Exceptions?
 
 | Type       | Description                                                                 |
 |------------|-----------------------------------------------------------------------------|
 | **Error**      | Critical issues that usually crash the program (like syntax mistakes).       |
 | **Exception**  | Problems that happen during runtime and **can be handled** by the program.   |
 
-### 🧠 Example:
+### Example:
 ```python
-# ❌ Error (SyntaxError)
+# Error (SyntaxError)
 print("Hello"  # missing closing bracket
 
-# ❌ Exception (ZeroDivisionError)
+# Exception (ZeroDivisionError)
 a = 10 / 0
 ```
 
 ---
 
-## 🔧 try - except Block
+## try - except Block
 
 Used to catch and handle exceptions gracefully.
 
-### 📎 Syntax:
+### Syntax:
 ```python
 try:
     # code that might cause an exception
@@ -34,27 +34,27 @@ except ExceptionType:
     # code that runs if an exception occurs
 ```
 
-### 👀 Example:
+### Example:
 ```python
 try:
     number = int(input("Enter a number: "))  # Jeha inputs: 0
     result = 10 / number
     print("Result:", result)
 except ZeroDivisionError:
-    print("❌ You cannot divide by zero!")
+    print(" You cannot divide by zero!")
 except ValueError:
-    print("❌ Please enter a valid number!")
+    print(" Please enter a valid number!")
 ```
 
-### 🧾 Output:
+### Output:
 ```
 Enter a number: 0
-❌ You cannot divide by zero!
+ You cannot divide by zero!
 ```
 
 ---
 
-## 🪛 try - except - else
+## try - except - else
 
 `else` block will only run **if no exceptions occur** in the `try` block.
 
@@ -68,29 +68,29 @@ else:
     # run if no exception occurred
 ```
 
-### 👀 Example:
+### Example:
 ```python
 try:
     age = int(input("Enter your age: "))  # Dokja inputs: 22
 except ValueError:
-    print("❌ That's not a valid number!")
+    print(" That's not a valid number!")
 else:
-    print("✅ Your age is", age)
+    print("Your age is", age)
 ```
 
-### 🧾 Output:
+### Output:
 ```
 Enter your age: 22
-✅ Your age is 22
+Your age is 22
 ```
 
 ---
 
-## 🧹 finally Block
+## finally Block
 
 The `finally` block is **always executed**, no matter if there was an error or not. Useful for cleanup operations like closing files or releasing resources.
 
-### 📎 Syntax:
+### Syntax:
 ```python
 try:
     # risky code
@@ -100,48 +100,48 @@ finally:
     # always executed
 ```
 
-### 👀 Example:
+### Example:
 ```python
 try:
     file = open("info.txt", "r")  # Hamin tries to read a file
     content = file.read()
     print(content)
 except FileNotFoundError:
-    print("❌ File not found!")
+    print(" File not found!")
 finally:
-    print("📦 Done trying to access the file.")
+    print("Done trying to access the file.")
 ```
 
 ### 🧾 Output:
 ```
-❌ File not found!
-📦 Done trying to access the file.
+ File not found!
+Done trying to access the file.
 ```
 
 ---
 
-## 🌀 Catching All Exceptions (Not Recommended)
+## Catching All Exceptions (Not Recommended)
 
 You can catch all exceptions without specifying the type, but this is **not recommended** since it can hide important bugs.
 
-### 👀 Example:
+### Example:
 ```python
 try:
     print(Dazai)  # Dazai is not defined
 except:
-    print("⚠️ Something went wrong!")
+    print(" Something went wrong!")
 ```
 
 ### 🧾 Output:
 ```
-⚠️ Something went wrong!
+ Something went wrong!
 ```
 
-> ⚠️ **Tip:** Always catch specific exceptions for clarity and better debugging.
+>  **Tip:** Always catch specific exceptions for clarity and better debugging.
 
 ---
 
-## 🧩 Common Exceptions in Python
+## Common Exceptions in Python
 
 Here's a list of common exception types you might encounter:
 
@@ -156,22 +156,22 @@ Here's a list of common exception types you might encounter:
 | `NameError`            | Raised when a variable is not defined. |
 | `AttributeError`       | Raised when an attribute reference or assignment fails. |
 
-### 🔍 Example (ValueError):
+### Example (ValueError):
 ```python
 try:
     number = int("Calista")  # can't convert string to int
 except ValueError:
-    print("❌ You entered an invalid number!")
+    print(" You entered an invalid number!")
 ```
 
-### 🧾 Output:
+### Output:
 ```
-❌ You entered an invalid number!
+ You entered an invalid number!
 ```
 
 ---
 
-## 🧠 Summary
+## Summary
 
 - Use `try - except` to handle runtime issues.
 - Add `else` to run code only when no exception occurs.
@@ -180,7 +180,6 @@ except ValueError:
 - Familiarize yourself with common exception types like `ValueError`, `TypeError`, and `IndexError`.
 
 ---
+> 📚 This is part of the Python chapter.
 
-Keep your code calm even when things go wrong 😎✨
-Exception handling helps your program handle unexpected situations like a pro! 💪
 

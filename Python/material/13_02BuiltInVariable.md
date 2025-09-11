@@ -1,4 +1,4 @@
-# 🏷️ Python Built-in Variables
+# Python Built-in Variables
 
 ---
 
@@ -10,7 +10,7 @@ They are **always available** without needing to import anything.
 
 ---
 
-## 📌 List of Important Built-in Variables
+## List of Important Built-in Variables
 
 | Variable         | Description                                                  |
 |------------------|--------------------------------------------------------------|
@@ -27,10 +27,10 @@ They are **always available** without needing to import anything.
 
 ## 🔹 `__name__`
 
-### 📖 Purpose:
+### Purpose:
 Tells you whether the Python file is being run directly or imported as a module.
 
-### 💡 Usage Example:
+### Usage Example:
 ```python
 # File: test_script.py
 
@@ -47,10 +47,10 @@ if __name__ == "__main__":
 
 ## 🔹 `__file__`
 
-### 📖 Purpose:
+### Purpose:
 Returns the path of the current file. Useful for locating resources.
 
-### 💡 Usage Example:
+### Usage Example:
 ```python
 print(__file__)
 # Output: full path to the current script (only if saved)
@@ -60,10 +60,10 @@ print(__file__)
 
 ## 🔹 `__doc__`
 
-### 📖 Purpose:
+### Purpose:
 Gives access to the docstring (documentation) of an object.
 
-### 💡 Usage Example:
+### Usage Example:
 ```python
 def greet():
     """This function prints a greeting."""
@@ -76,10 +76,10 @@ print(greet.__doc__)  # Output: This function prints a greeting.
 
 ## 🔹 `__builtins__`
 
-### 📖 Purpose:
+### Purpose:
 Contains a module with all built-in functions, exceptions, and types.
 
-### 💡 Usage Example:
+### Usage Example:
 ```python
 print(dir(__builtins__))
 # Output: list of all built-in functions like print, len, range, etc.
@@ -95,7 +95,7 @@ print(ValueError)  # Built-in exception
 
 ## 🔹 `__package__`
 
-### 📖 Purpose:
+### Purpose:
 Indicates the package the module belongs to (used in relative imports).
 
 ```python
@@ -108,7 +108,7 @@ print(__package__)  # Output: None (if it's not part of a package)
 
 These are used internally by Python for module loading. They are more relevant in advanced use cases like custom importers or debugging module behavior.
 
-### 💡 Example:
+### Example:
 ```python
 print(__loader__)
 print(__spec__)
@@ -117,7 +117,7 @@ print(__cached__)
 
 ---
 
-## ✅ Summary
+## Summary
 
 | Variable        | Use Case                                      |
 |-----------------|-----------------------------------------------|
@@ -132,5 +132,6 @@ print(__cached__)
 
 ---
 
-> 📘 Built-in variables are key to understanding Python’s internal behavior and writing smarter code!
+> 📚 This is part of the Python chapter.
+
 

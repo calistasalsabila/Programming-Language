@@ -1,4 +1,4 @@
-# 📌 Python Objects & Data Structures
+#  Python Objects & Data Structures
 
 ## 1. What is an Object?
 In Python, everything is an **object**. An object is an instance of a class, which contains **attributes (variables)** and **methods (functions)**.
@@ -6,7 +6,7 @@ In Python, everything is an **object**. An object is an instance of a class, whi
 ## 2. Python Data Types
 Python has several built-in data types categorized as follows:
 
-### 📌 Basic Data Types
+###  Basic Data Types
 | Type  | Description | Example |
 |-------|------------|---------|
 | `int` | Integer numbers | `x = 10` |
@@ -15,25 +15,25 @@ Python has several built-in data types categorized as follows:
 | `bool` | Boolean values | `is_active = True` |
 | `str` | Text (string) | `name = "Calista"` |
 
-### 📌 Sequence Types
+###  Sequence Types
 | Type | Description | Example |
 |------|------------|---------|
 | `list` | Ordered, mutable collection | `fruits = ["Apple", "Banana"]` |
 | `tuple` | Ordered, immutable collection | `coords = (10, 20)` |
 | `range` | Sequence of numbers | `numbers = range(5)` |
 
-### 📌 Set Types
+###  Set Types
 | Type  | Description | Example |
 |-------|------------|---------|
 | `set` | Unordered collection of unique items | `unique_nums = {1, 2, 3}` |
 | `frozenset` | Immutable set | `fset = frozenset([1, 2, 3])` |
 
-### 📌 Mapping Type
+###  Mapping Type
 | Type | Description | Example |
 |------|------------|---------|
 | `dict` | Key-value pairs | `student = {"name": "Calista", "age": 20}` |
 
-### 📌 Binary Types
+###  Binary Types
 | Type | Description | Example |
 |------|------------|---------|
 | `bytes` | Immutable byte sequences | `b = b"hello"` |
@@ -73,7 +73,7 @@ A class in Python typically consists of:
 ## 5. Data Structures in Python
 Python provides built-in data structures to store and manipulate data efficiently.
 
-### 📌 List
+###  List
 A **list** is an ordered, mutable collection of items.
 ```python
 # Creating a list
@@ -85,7 +85,7 @@ fruits.append("Banana")
 print(fruits)  # Output: ['Apple', 'Orange', 'Mango', 'Banana']
 ```
 
-### 📌 Tuple
+###  Tuple
 A **tuple** is an ordered, immutable collection of items.
 ```python
 # Creating a tuple
@@ -93,7 +93,7 @@ data = (1, 2, 3)
 print(data[1])  # Output: 2
 ```
 
-### 📌 Dictionary
+###  Dictionary
 A **dictionary** stores key-value pairs and allows fast lookups.
 ```python
 # Creating a dictionary
@@ -101,7 +101,7 @@ student = {"name": "Calista", "age": 20, "major": "Informatics"}
 print(student["name"])  # Output: Calista
 ```
 
-### 📌 Set
+###  Set
 A **set** is an unordered collection of unique elements.
 ```python
 # Creating a set
@@ -132,4 +132,5 @@ print(car1.get_info())  # Output: Car: Toyota Supra
 - **Python provides a variety of data types for different use cases**
 
 ---
-📌 *This note will be updated as needed!* 🚀
+
+> 📚 This is part of the Python chapter.

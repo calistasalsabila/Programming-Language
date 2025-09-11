@@ -1,16 +1,16 @@
-# 🧮 Python Modules: `math`, `statistics`, and `random`
+# Python Modules: `math`, `statistics`, and `random`
 
 Explore three powerful standard library modules for numeric operations, data analysis, and randomness in Python. Perfect for solving real-world problems, data science, simulations, and algorithm experiments! 📊🎲
 
 ---
 
-## 📐 `math` Module
+## `math` Module
 
-### 🎯 Purpose:
+### Purpose:
 
 Provides access to mathematical functions like square root, trigonometry, logarithms, constants, and more.
 
-### 🔑 Common Functions & Constants:
+### Common Functions & Constants:
 
 | Function/Constant   | Description                                   |
 | ------------------- | --------------------------------------------- |
@@ -27,7 +27,7 @@ Provides access to mathematical functions like square root, trigonometry, logari
 | `math.radians(deg)` | Converts degrees to radians                   |
 | `math.degrees(rad)` | Converts radians to degrees                   |
 
-### 📌 Code Example:
+### Code Example:
 
 ```python
 import math
@@ -47,13 +47,13 @@ print("Sin(90 degrees):", math.sin(math.radians(90)))
 
 ---
 
-## 📊 `statistics` Module
+## `statistics` Module
 
-### 🎯 Purpose:
+### Purpose:
 
 Provides functions to perform statistical operations on numeric data.
 
-### 🔑 Common Functions:
+### Common Functions:
 
 | Function                    | Description                              |
 | --------------------------- | ---------------------------------------- |
@@ -65,7 +65,7 @@ Provides functions to perform statistical operations on numeric data.
 | `statistics.median_low()`   | Median when two middle values—lower one  |
 | `statistics.median_high()`  | Median when two middle values—higher one |
 
-### 📌 Code Example:
+### Code Example:
 
 ```python
 import statistics
@@ -78,20 +78,20 @@ print("Mode:", statistics.mode(data))
 print("Standard Deviation:", statistics.stdev(data))
 ```
 
-### 📎 Explanation:
+### Explanation:
 
 * `mean()`, `median()`, `mode()` are basic statistical measures.
 * `stdev()` and `variance()` are useful for measuring data spread.
 
 ---
 
-## 🎲 `random` Module
+## `random` Module
 
-### 🎯 Purpose:
+### Purpose:
 
 Used for generating random numbers, shuffling data, making selections, or simulating probabilities.
 
-### 🔑 Common Functions:
+### Common Functions:
 
 | Function                   | Description                           |
 | -------------------------- | ------------------------------------- |
@@ -103,7 +103,7 @@ Used for generating random numbers, shuffling data, making selections, or simula
 | `random.shuffle(seq)`      | Shuffles the sequence in-place        |
 | `random.seed(x)`           | Sets seed for reproducible results    |
 
-### 📌 Code Example:
+### Code Example:
 
 ```python
 import random
@@ -118,7 +118,7 @@ random.shuffle(numbers)
 print("Shuffled:", numbers)
 ```
 
-### 📎 Explanation:
+### Explanation:
 
 * `random.seed()` ensures consistent random results for testing.
 * `random.shuffle()` modifies list order.
@@ -126,7 +126,7 @@ print("Shuffled:", numbers)
 
 ---
 
-## 🧠 Mini Case Study: Roll Dice Simulation
+## Mini Case Study: Roll Dice Simulation
 
 ```python
 import random
@@ -144,6 +144,9 @@ print("Most Frequent Roll:", statistics.mode(results))
 
 ---
 
-## 🌟 Conclusion
+## Conclusion
 
-With `math`, `statistics`, and `random`, you can build anything from a basic calculator to data-driven simulations and probability games. These modules form the foundation for numeric computation in Python! 🔢💡
+With `math`, `statistics`, and `random`, you can build anything from a basic calculator to data-driven simulations and probability games. These modules form the foundation for numeric computation in Python! 
+
+> 📚 This is part of the Python chapter.
+

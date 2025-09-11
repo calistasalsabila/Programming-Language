@@ -1,10 +1,10 @@
-# ⏱️ Time Complexity in Python
+# Time Complexity in Python
 
 Understanding time complexity helps us analyze the performance of our code as the input size grows. It provides a way to evaluate how fast or slow an algorithm is, regardless of machine specifications.
 
 ---
 
-## 🧠 What is Time Complexity?
+## What is Time Complexity?
 
 Time complexity refers to **how the runtime of an algorithm grows** with respect to the input size `n`. It's commonly represented using Big-O notation:
 
@@ -18,9 +18,9 @@ Time complexity refers to **how the runtime of an algorithm grows** with respect
 
 ---
 
-## 🛠️ Time Complexity of Common Python Operations
+## Time Complexity of Common Python Operations
 
-### 📚 Lists
+### Lists
 
 | Operation               | Time Complexity | Example             |
 | ----------------------- | --------------- | ------------------- |
@@ -33,7 +33,7 @@ Time complexity refers to **how the runtime of an algorithm grows** with respect
 | Contains `x in a`       | `O(n)`          | `3 in a`            |
 | Sort `a.sort()`         | `O(n log n)`    | `a.sort()`          |
 
-### 🧾 Dictionaries
+### Dictionaries
 
 | Operation         | Time Complexity | Example                |
 | ----------------- | --------------- | ---------------------- |
@@ -43,7 +43,7 @@ Time complexity refers to **how the runtime of an algorithm grows** with respect
 | Contains `k in d` | `O(1)`          | `'a' in d`             |
 | Iteration         | `O(n)`          | `for k in d:`          |
 
-### 🧵 Sets
+### Sets
 
 | Operation            | Time Complexity | Example       |
 | -------------------- | --------------- | ------------- |
@@ -54,7 +54,7 @@ Time complexity refers to **how the runtime of an algorithm grows** with respect
 
 ---
 
-## 🔁 Examples with Explanation
+## Examples with Explanation
 
 ### Example 1: Constant Time `O(1)`
 
@@ -80,7 +80,7 @@ for i in nums:
 
 ---
 
-## 📌 Tips to Optimize
+## Tips to Optimize
 
 * Use dictionaries and sets for fast lookups.
 * Avoid nested loops when possible.
@@ -95,5 +95,5 @@ for i in nums:
 * Python docs: [Time Complexity](https://wiki.python.org/moin/TimeComplexity)
 
 ---
+> 📚 This is part of the Python chapter.
 
-> Time complexity helps you **write efficient code** and make smart choices about data structures. 🚀

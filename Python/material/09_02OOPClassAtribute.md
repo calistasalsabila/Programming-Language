@@ -1,16 +1,16 @@
-# 🐍 Python: Class Attributes
+# Python: Class Attributes
 
-## 📌 Introduction
+##  Introduction
 
 In Python, **class attributes** are attributes that belong to the class itself and **are shared across all instances** of the class. This differs from **instance attributes**, which are unique to each object.
 
-## 🎯 Why Use Class Attributes?
+##  Why Use Class Attributes?
 
 - **Shared Data**: Useful for storing values that should be the same across all instances.
 - **Memory Efficient**: Avoids redundant data duplication in each instance.
 - **Consistency**: Ensures uniform values across objects.
 
-## 📝 Basic Syntax
+## Basic Syntax
 
 A **class attribute** is defined inside the class but outside any method.
 
@@ -33,12 +33,12 @@ print(cat.species)  # Output: Mammal
 
 | Attribute Type         | Declared In                       | Shared Across Instances? |
 | ---------------------- | --------------------------------- | ------------------------ |
-| **Instance Attribute** | `__init__` using `self`           | ❌ No                     |
-| **Class Attribute**    | Inside the class, outside methods | ✅ Yes                    |
+| **Instance Attribute** | `__init__` using `self`           | No                     |
+| **Class Attribute**    | Inside the class, outside methods | Yes                    |
 
-## 🎯 Modifying Class Attributes
+##  Modifying Class Attributes
 
-### 1️⃣ **Modifying via the Class** (Affects all instances)
+### 1. **Modifying via the Class** (Affects all instances)
 
 ```python
 Animal.species = "Reptile"
@@ -46,7 +46,7 @@ print(dog.species)  # Output: Reptile
 print(cat.species)  # Output: Reptile
 ```
 
-### 2️⃣ **Modifying via an Instance** (Creates a new instance attribute, does NOT affect others)
+### 2. **Modifying via an Instance** (Creates a new instance attribute, does NOT affect others)
 
 ```python
 dog.species = "Bird"
@@ -54,7 +54,7 @@ print(dog.species)  # Output: Bird (Only changes for `dog`)
 print(cat.species)  # Output: Reptile (Remains unchanged)
 ```
 
-## 📌 Example: Using Class Attributes
+##  Example: Using Class Attributes
 
 ```python
 class Counter:
@@ -71,7 +71,7 @@ c3 = Counter()
 print(Counter.count)  # Output: 3 (Shared across instances)
 ```
 
-## 🧐 Why Use `self`?
+## Why Use `self`?
 
 In Python, **`self`**** refers to the instance being created or accessed**. It is important because:
 
@@ -109,9 +109,9 @@ print(p2.name)  # Output: Jega
 
 Each instance has a unique `name` value because we define `self.name` as an instance attribute.
 
-## 🎯 Practical Use Cases of Class Attributes
+##  Practical Use Cases of Class Attributes
 
-### 1️⃣ **Defining Default Values for All Instances**
+### 1. **Defining Default Values for All Instances**
 
 ```python
 class Car:
@@ -128,7 +128,7 @@ print(car1.wheels)  # Output: 4
 print(car2.wheels)  # Output: 4
 ```
 
-### 2️⃣ **Counting the Number of Instances Created**
+### 2. **Counting the Number of Instances Created**
 
 ```python
 class Student:
@@ -145,7 +145,7 @@ s3 = Student("Charlie")
 print(Student.total_students)  # Output: 3
 ```
 
-### 3️⃣ **Using Constants in a Class**
+### 3. **Using Constants in a Class**
 
 ```python
 class Physics:
@@ -154,7 +154,7 @@ class Physics:
 print(Physics.GRAVITY)  # Output: 9.81
 ```
 
-## 🏆 Summary
+## Summary
 
 - **Class attributes** are shared across all instances.
 - **Instance attributes** are unique to each object.
@@ -163,5 +163,6 @@ print(Physics.GRAVITY)  # Output: 9.81
 - **Modifying it via an instance only affects that instance**.
 - **Class attributes are useful for defaults, counters, and constants**.
 
-By mastering this concept, you can write more efficient and structured code! 🚀
+> 📚 This is part of the Python chapter.
+
 

@@ -27,10 +27,12 @@ void main(){
 
   try{
     Validation.validate('dokja', ',');
-  }on ValidationException  catch (exception) {
+  }on ValidationException  catch (exception, stackTrace) {
     print("Validation Error and Error : ${exception.message}");
-  }on Exception catch (exception){
+    print('Stack trace : ${stackTrace.toString()}');
+  }on Exception catch (exception, stackTrace){
     print("${exception.toString()}");
+    print('Stack trace : ${stackTrace.toString()}');
   }finally{
     print("ok");
   }

@@ -190,4 +190,5 @@ Here, `let i` ensures that `i` is scoped only within the loop block.
 * [MDN Web Docs: let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 * [JavaScript Variables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations)
 
+
 > 📚 This is part of the JS basic chapter.

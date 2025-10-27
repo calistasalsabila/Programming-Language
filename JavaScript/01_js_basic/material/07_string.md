@@ -4,7 +4,7 @@ Strings in JavaScript represent textual data and are one of the most commonly us
 
 ---
 
-## 🧩 Basic Syntax
+## Basic Syntax
 
 ```js
 let name1 = 'Dokja';
@@ -16,7 +16,7 @@ All three lines create a string, but **template literals** (backticks) allow emb
 
 ---
 
-## 🔢 String Indexing
+## String Indexing
 
 Strings are **indexed**, meaning each character has a position (starting from `0`).
 
@@ -31,12 +31,12 @@ console.log(word[word.length - 1]); // 'o'
 Strings are **immutable** — you cannot change a character directly:
 
 ```js
-word[0] = 'Y'; // ❌ This does nothing
+word[0] = 'Y'; // This does nothing
 ```
 
 ---
 
-## 🏗️ String Properties
+## String Properties
 
 | Property | Description                    | Example                |
 | -------- | ------------------------------ | ---------------------- |
@@ -44,9 +44,9 @@ word[0] = 'Y'; // ❌ This does nothing
 
 ---
 
-## ⚙️ Common Built-in String Methods
+## Common Built-in String Methods
 
-### 1. **Case Conversion**
+### 1. Case Conversion
 
 ```js
 let text = 'JavaScript';
@@ -54,7 +54,7 @@ text.toUpperCase(); // 'JAVASCRIPT'
 text.toLowerCase(); // 'javascript'
 ```
 
-### 2. **Searching and Finding**
+### 2. Searching and Finding
 
 ```js
 let str = 'Dokja and Jeha';
@@ -66,7 +66,7 @@ str.startsWith('Dokja');  // true
 str.endsWith('Jeha');     // true
 ```
 
-### 3. **Extracting Substrings**
+### 3. Extracting Substrings
 
 ```js
 let s = 'JavaScript';
@@ -76,7 +76,7 @@ s.substring(4, 10); // 'Script'
 s.substr(4, 3);  // 'Scr' (deprecated)
 ```
 
-### 4. **Replacing and Splitting**
+### 4. Replacing and Splitting
 
 ```js
 let sentence = 'I like JavaScript';
@@ -85,7 +85,7 @@ sentence.replace('like', 'love'); // 'I love JavaScript'
 sentence.split(' '); // ['I', 'like', 'JavaScript']
 ```
 
-### 5. **Trimming Whitespace**
+### 5. Trimming Whitespace
 
 ```js
 let text = '   Dokja   ';
@@ -94,7 +94,7 @@ text.trimStart(); // 'Dokja   '
 text.trimEnd();   // '   Dokja'
 ```
 
-### 6. **Concatenation**
+### 6. Concatenation
 
 ```js
 let first = 'Dokja';
@@ -103,7 +103,7 @@ let last = 'Jeha';
 first.concat(' and ', last); // 'Dokja and Jeha'
 ```
 
-### 7. **Character Methods**
+### 7. Character Methods
 
 ```js
 let str = 'Hello';
@@ -112,7 +112,7 @@ str.charAt(1);  // 'e'
 str.charCodeAt(1); // 101 (Unicode value)
 ```
 
-### 8. **Repeat and Padding**
+### 8. Repeat and Padding
 
 ```js
 'Dokja'.repeat(3); // 'DokjaDokjaDokja'
@@ -122,7 +122,7 @@ str.charCodeAt(1); // 101 (Unicode value)
 
 ---
 
-## 🧠 String Methods with Arguments / Parameters
+## String Methods with Arguments / Parameters
 
 | Method                              | Parameters                                                     | Description              | Example                                  |
 | ----------------------------------- | -------------------------------------------------------------- | ------------------------ | ---------------------------------------- |
@@ -135,15 +135,15 @@ str.charCodeAt(1); // 101 (Unicode value)
 
 ---
 
-## 💬 Template Literals
+## Template Literals
 
 Template literals use **backticks (`` ` ``)** and allow:
 
-1. **Variable Interpolation**
-2. **Multiline Strings**
-3. **Expression Evaluation**
+1. Variable Interpolation
+2. Multiline Strings
+3. Expression Evaluation
 
-### 🔹 Example
+### Example
 
 ```js
 let name = 'Dokja';
@@ -153,13 +153,13 @@ let intro = `My name is ${name} and I am ${age} years old.`;
 console.log(intro);
 ```
 
-➡️ Output:
+Output:
 
 ```
 My name is Dokja and I am 21 years old.
 ```
 
-### 🔹 Multiline Example
+### Multiline Example
 
 ```js
 let poem = `Roses are red,
@@ -172,18 +172,18 @@ console.log(poem);
 
 ---
 
-## 📚 Summary
+## Summary
 
-| Concept                  | Description                                                            |
-| ------------------------ | ---------------------------------------------------------------------- |
-| **String Index**         | Each character has a zero-based index.                                 |
-| **Built-in Methods**     | Tools for transforming, searching, trimming, or concatenating strings. |
-| **Arguments/Parameters** | Define how methods behave (e.g., start and end indices).               |
-| **Template Literals**    | Allow embedding variables, expressions, and multiline strings.         |
+| Concept              | Description                                                            |
+| -------------------- | ---------------------------------------------------------------------- |
+| String Index         | Each character has a zero-based index.                                 |
+| Built-in Methods     | Tools for transforming, searching, trimming, or concatenating strings. |
+| Arguments/Parameters | Define how methods behave (e.g., start and end indices).               |
+| Template Literals    | Allow embedding variables, expressions, and multiline strings.         |
 
 ---
 
-## 🔗 Further Reading
+## Further Reading
 
 * [MDN Web Docs: String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 * [W3Schools JavaScript Strings](https://www.w3schools.com/js/js_strings.asp)

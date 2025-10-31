@@ -61,9 +61,9 @@ for (let namaMatkul of matkul){
 }
 
 const studentScore = {
-    cal: 90,
-    ar: 90,
-    ke: 90,
+    hamin: 90,
+    jaemin: 90,
+    somin: 90,
 };
 
 for (let student in studentScore){

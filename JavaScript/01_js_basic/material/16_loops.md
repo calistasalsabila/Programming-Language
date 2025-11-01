@@ -350,3 +350,5 @@ while (true) {
 * [W3Schools: JavaScript Loops](https://www.w3schools.com/js/js_loop_for.asp)
 * [JavaScript.info: Loops - while and for](https://javascript.info/while-for)
 * [Eloquent JavaScript: Chapter 2 - Program Structure](https://eloquentjavascript.net/02_program_structure.html)
+
+> 📚 This is part of the JS basic chapter.

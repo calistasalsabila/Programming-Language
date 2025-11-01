@@ -1,5 +1,3 @@
-// this
-
 const fisikey = {
     nama: 'Iota',
     age: 12,

@@ -45,3 +45,11 @@ angkaRand()();
 
 const result = angkaRand();
 result();
+
+
+const math = { // object
+    perkalian: function(x, y){ // method
+        return x*y;
+    }
+}
+

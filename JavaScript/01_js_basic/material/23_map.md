@@ -181,6 +181,6 @@ console.log(celsius);
 
 * [MDN Web Docs: Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 * [MDN Web Docs: Functional Programming in JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/Functional_programming)
-* [JavaScript Info: Array methods]([https://javascript.info/array-meth](https://javascript.info/array-meth)
+* [JavaScript Info: Array methods](https://javascript.info/array-meth)
 
 > 📚 This is part of the JS basic chapter.

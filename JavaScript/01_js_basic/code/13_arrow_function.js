@@ -6,3 +6,11 @@ const result = function(x){
 const result1 = (x) =>{
     return x*x;
 }
+
+// ga pakai return tapi kurung {} ganti pakai (), 1 baris aja yh
+const random = () => (
+    Math.floor(Math.random()*100)
+);
+
+const add = (a,b) => a+b;
+

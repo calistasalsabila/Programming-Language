@@ -13,3 +13,5 @@ const ROARRRRRRR = {
 
 console.log(ROARRRRRRR.fullname());
 console.log(ROARRRRRRR.panggilNanti());
+
+// check on notes 

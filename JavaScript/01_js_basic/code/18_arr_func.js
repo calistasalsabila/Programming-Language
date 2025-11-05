@@ -1,7 +1,7 @@
 const ROARRRRRRR = {
     firstName: "Dino",
     lastName: "Saurus",
-    fullname: function (){
+    fullname: () => {
         return `${this.firstName}${this.lastName}`;
     },
 };

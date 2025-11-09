@@ -13,3 +13,11 @@ Array.prototype.hm = () => "hmm";
 // bisa
 console.log(arr.hm());
 console.log(arr1.hm());
+
+// ovveride prototype dari object
+Array.prototype.pop = () => {
+    return "pop nya di nonaktifkan"
+}
+
+console.log(arr.pop()); // pop di nonaktifkan
+console.log(arr); // output nya tetep lengkap

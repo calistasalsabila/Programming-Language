@@ -24,5 +24,6 @@ class Color {
 
 const blue = new Color(0,0,255, "blue");
 
+
 console.log(blue.color());
 console.log(blue.rgb());

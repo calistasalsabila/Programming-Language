@@ -1,4 +1,4 @@
-# JavaScript Object Prototype (OOP)
+# JavaScript Object Prototype
 
 ## Introduction
 

@@ -209,4 +209,4 @@ Under the hood, `User` uses the prototype system.
 * [MDN: Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 * [MDN: Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
-> 📚 This is part of the JS basic chapter.
+> 📚 This is part of the JS OOP chapter.

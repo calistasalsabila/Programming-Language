@@ -191,4 +191,4 @@ This shows how factory functions can generate new functions with customized beha
 * [MDN: Object Composition](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS#object_composition)
 * [MDN: Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
-> 📚 This is part of the JS basic chapter.
+> 📚 This is part of the JS OOP chapter.

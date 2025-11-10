@@ -13,6 +13,6 @@ hi().then((result) => {
 
 }).catch((err) => {
 
-    console.log(err);
+    console.log(err)
 
 });

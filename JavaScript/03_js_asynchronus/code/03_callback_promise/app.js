@@ -4,7 +4,7 @@ const requestCallBack = (url, sucess, failure) => {
 
     setTimeout(() => {
         if(delay > 4000){
-            failure("Error : Connection Timeout");
+            failure("Error : Connection Timeout")
         }else {
             sucess(`Success ${url} ${delay}ms`)
         }

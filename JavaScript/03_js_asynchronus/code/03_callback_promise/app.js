@@ -42,3 +42,25 @@ requestPromise('apa.com').then((result) => {
 }).catch((err) => {
     console.log(result);
 });
+
+
+new Promise((resolve, reject) => {
+    resolve(()=> {
+
+    })
+
+    reject(() => {
+
+    })
+})
+
+
+const contohPromise = () => {
+    return new Promise((resolve, reject) => {
+        // resolve
+        
+        reject(()=>{
+            'failed';
+        })
+    })
+}

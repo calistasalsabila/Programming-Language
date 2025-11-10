@@ -1,4 +1,3 @@
-// pura pura aja
 const requestCallBack = (url, sucess, failure) => {
 
     const delay = Math.floor(Math.random() * 4500) + 500;
@@ -30,3 +29,16 @@ const requestPromise = (url) => {
 
 
 requestCallBack('manhwa.com', function(response){console.log(`success ${response}`);}, function(error){console.log(`Error ${error}`);})
+
+requestPromise('manga.com').then((response) => {console.log('success', response)}).catch((error)=>{console.log('error', error)})
+
+
+requestPromise('apa.com').then((result) => {
+    console.log(result + '1');
+    return requestPromise('apa.com');
+}).then((result)=>{ // then dst
+    console.log(result + '2');
+    return requestPromise('apa.com');
+}).catch((err) => {
+    console.log(result);
+});

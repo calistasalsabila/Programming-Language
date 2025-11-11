@@ -459,6 +459,5 @@ ul.addEventListener('keydown', (e) => {
 
 ---
 
-This document is intended to be both a learning resource and a quick reference. If you want the same material split into smaller .md files (for example: selection.md, events.md, performance.md), I can create them separately.
 
 > 📚 This is part of the JS DOM chapter.

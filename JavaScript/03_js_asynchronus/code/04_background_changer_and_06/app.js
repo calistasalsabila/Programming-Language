@@ -22,3 +22,5 @@ async function changeColor() {
 
 
 changeColor().then((res) => {alert(res)});
+
+

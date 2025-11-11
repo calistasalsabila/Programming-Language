@@ -26,8 +26,6 @@ const requestPromise = (url) => {
     })
 }
 
-
-
 requestCallBack('manhwa.com', function(response){console.log(`success ${response}`);}, function(error){console.log(`Error ${error}`);})
 
 requestPromise('manga.com').then((response) => {console.log('success', response)}).catch((error)=>{console.log('error', error)})
@@ -63,4 +61,16 @@ const contohPromise = () => {
             'failed';
         })
     })
+}
+
+
+// 07
+async function requestHandler(){
+
+    try{
+        let result = await requestPromise('apaya.com');
+        console.log('okeeehhh');
+    }catch{
+        console.log('error', error);
+    }
 }

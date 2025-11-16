@@ -23,3 +23,15 @@ for (let link of links) {
 	link.style.textDecorationColor = 'magenta';
 	link.style.textDecorationStyle = 'wavy';
 }
+
+
+const linkss = document.querySelectorAll('p a'); // a yang ada di dalam paragraf
+
+for (let link of linkss) {
+	link.style.color = 'rgb(0, 108, 134)';
+	link.style.textDecorationColor = 'magenta';
+	link.style.textDecorationStyle = 'wavy';
+}
+
+// bisa buat nyari ni
+const cari = document.querySelectorAll('div[lang="en"]')

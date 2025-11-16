@@ -15,6 +15,7 @@ for (let img of squareImages) {
 
 
 
+// all in one cuy
 const links = document.querySelectorAll('a');
 
 for (let link of links) {

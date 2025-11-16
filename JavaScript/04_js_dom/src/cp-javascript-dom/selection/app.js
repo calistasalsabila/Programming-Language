@@ -25,6 +25,7 @@ for (let link of links) {
 }
 
 
+// style
 const linkss = document.querySelectorAll('p a'); // a yang ada di dalam paragraf
 
 for (let link of linkss) {

@@ -104,8 +104,8 @@ btn.removeAttribute("data-info");
 
 ## Further Reading
 
-* MDN – Element.attributes: [https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes](https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes)
-* MDN – getAttribute(): [https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)
-* MDN – setAttribute(): [https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+* [MDN – Element.attributes](https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes)
+* [MDN – getAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)
+* [MDN – setAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
 
 > 📚 This is part of the JS DOM chapter.

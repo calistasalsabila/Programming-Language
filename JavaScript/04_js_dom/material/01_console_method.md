@@ -1,4 +1,4 @@
-# JavaScript DOM: Console Methods, `document.all`, and Text/HTML Manipulation
+# JavaScript DOM: Console Methods, `document.all`, and Text/HTML/TextContent Manipulation
 
 ## 1. `console.dir()`
 
@@ -25,7 +25,7 @@ This exposes all properties and methods of the selected DOM element.
 console.log(document.body);
 ```
 
-This prints the element in an HTML-like format.
+This prints the element in an HTML‑like structure.
 
 ---
 
@@ -39,35 +39,29 @@ This prints the element in an HTML-like format.
 console.log(document.all);
 ```
 
-This shows every element in the DOM in order.
+This prints all elements in the DOM.
 
 ### Accessing an element using index
-
-You can access elements by index, though this practice is outdated.
-
-**Example:**
 
 ```javascript
 console.log(document.all[10]);
 ```
 
-This returns the 11th DOM element.
+Returns the 11th element in the DOM.
 
-### Getting `innerText` from `document.all`
-
-**Example:**
+### Getting `innerText` via index
 
 ```javascript
 console.log(document.all[10].innerText);
 ```
 
-This shows the text content of that element (if it has text).
+Shows the visible text of that element.
 
 ---
 
 ## 4. `innerText`
 
-`innerText` retrieves or sets the **visible text** of an element.
+`innerText` retrieves or sets the **visible** text inside an element.
 
 ### Get text
 
@@ -76,10 +70,9 @@ const title = document.querySelector("h1");
 console.log(title.innerText);
 ```
 
-### Set / manipulate text
+### Set text
 
 ```javascript
-const title = document.querySelector("h1");
 title.innerText = "New Title";
 ```
 
@@ -93,70 +86,121 @@ title.innerText += " (Updated)";
 
 ## 5. `innerHTML`
 
-`innerHTML` retrieves or sets the **HTML markup inside** an element.
+`innerHTML` retrieves or sets the **HTML markup** inside an element.
 
-### Get HTML content
-
-```javascript
-const container = document.querySelector("#box");
-console.log(container.innerHTML);
-```
-
-### Set HTML content
-
-```javascript
-container.innerHTML = "<p>Inserted paragraph</p>";
-```
-
-This replaces all inner content.
-
-### Add new HTML
-
-```javascript
-container.innerHTML += "<span>Additional text</span>";
-```
-
----
-
-## 6. Manipulating Elements with `innerText` vs `innerHTML`
-
-| Property    | Reads Text | Reads HTML | Writes Text   | Writes HTML |
-| ----------- | ---------- | ---------- | ------------- | ----------- |
-| `innerText` | Yes        | No         | Yes (as text) | No          |
-| `innerHTML` | No         | Yes        | Yes           | Yes         |
-
-### Example comparison
+### Get HTML
 
 ```javascript
 const box = document.querySelector("#box");
+console.log(box.innerHTML);
+```
 
-box.innerText = "<p>Hello</p>"; // Displays literally: <p>Hello</p>
-box.innerHTML = "<p>Hello</p>"; // Renders a paragraph
+### Set HTML
+
+```javascript
+box.innerHTML = "<p>Inserted paragraph</p>";
+```
+
+### Append HTML
+
+```javascript
+box.innerHTML += "<span>More content</span>";
 ```
 
 ---
 
-## 7. Simple DOM Manipulation Examples
+## 6. `textContent`
 
-### Create a heading using `innerHTML`
+`textContent` retrieves all text inside an element, including hidden text. It does **not** render HTML.
+
+### Get text
+
+```javascript
+const el = document.querySelector("#box");
+console.log(el.textContent);
+```
+
+### Set text
+
+```javascript
+el.textContent = "Hello World";
+```
+
+### Append text
+
+```javascript
+el.textContent += " - Updated";
+```
+
+### Difference vs `innerText`
+
+* `textContent`: returns **all** text, including hidden text.
+* `innerText`: returns **visible** text only.
+* `innerText` triggers layout reflow; `textContent` does not.
+
+Example:
+
+```javascript
+console.log(el.textContent); // includes hidden
+console.log(el.innerText);   // visible only
+```
+
+---
+
+## 7. `innerText` vs `innerHTML` vs `textContent`
+
+| Property      | Reads Text | Reads HTML | Writes Text | Writes HTML | Includes Hidden Text |
+| ------------- | ---------- | ---------- | ----------- | ----------- | -------------------- |
+| `innerText`   | Yes        | No         | Yes         | No          | No                   |
+| `innerHTML`   | No         | Yes        | Yes         | Yes         | No                   |
+| `textContent` | Yes        | No         | Yes         | No          | Yes                  |
+
+---
+
+## 8. Simple DOM Manipulation Examples
+
+### Using `innerHTML`
 
 ```javascript
 const app = document.querySelector("#app");
 app.innerHTML = "<h2>Welcome</h2>";
 ```
 
-### Update message using `innerText`
+### Using `innerText`
 
 ```javascript
 const msg = document.querySelector("#msg");
 msg.innerText = "Processing...";
 ```
 
-### Mix both appropriately
+### Using `textContent`
+
+```javascript
+msg.textContent = "Loading...";
+```
+
+### Mix appropriately
 
 ```javascript
 msg.innerText = "Done";
 app.innerHTML += "<p>Task completed.</p>";
 ```
+
+---
+
+## 9. Further Reading
+
+* MDN Web Docs: DOM Introduction
+* MDN Web Docs: `innerText`
+* MDN Web Docs: `innerHTML`
+* MDN Web Docs: `textContent`
+* HTML Living Standard
+
+## Further Reading
+
+* MDN Web Docs – DOM Introduction: [https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+* MDN – Selecting DOM Elements: [https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+* MDN – DOM Events Guide: [https://developer.mozilla.org/en-US/docs/Web/API/Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+* JavaScript Info – DOM Basics: [https://javascript.info/dom-nodes](https://javascript.info/dom-nodes)
 
 > 📚 This is part of the JS DOM chapter.

@@ -22,3 +22,16 @@ form.addEventListener('submit', function(e){
 });
 
 
+
+list.addEventListener('click', (e) => {
+    console.log(e);
+    e.target.nodeName ==='LI' && e.target.remove();
+    console.dir(e.target);
+})
+// const lis = document.querySelector('li');
+
+// for(let li in lis){
+//     li.addEventListener('click', function(){
+//         li.remove();
+//     })
+// }

@@ -4,21 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <h1>
-        <span id="p1-display">0</span>
-        vs
-        <span id="p2-display">0</span>
-    </h1>
-    <select name="" id="winPoint">
-        <option value="3">3</option>
-        <option value="5">5</option>
-        <option value="10">10</option>
-    </select>
-    <button id="p1-button">+1 P1</button>
-    <button id="p2-button">+1 P2</button>
-    <button id="reset">reset</button>
+    <div class="scoreboard container d-flex flex-column justify-content-center"> 
+        <div class="row row-cols-1 row-cols-md-2 text-center py-5 justify-content-center"> 
+            <div class="col col-auto py-3 points d-flex flex-column align-items-center"> 
+                <h2>Player 1</h2>
+                <p class="px-3" id="p1-display">0</p>
+                <div class="score-btns">
+                     <button class="btn btn-primary" id="p1-button">+1</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row row-cols-1 row-cols-md-2 text-center py-5 justify-content-center"> 
+            <div class="col col-auto py-3 points d-flex flex-column align-items-center"> 
+                <h2>Player 2</h2>
+                <p class="px-3" id="p2-display">0</p>
+                <div class="score-btns"> 
+                    <button class="btn btn-primary" id="p2-button">+1</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class= "d-grid gap-2 col-2 col-md-4 mx-auto pb-5">
+            <select name="" id="winPoint" class="form-select">
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        
+        <div class="d-grid gap-2 col-2 col-md-4 mx-auto pb-5">
+            <button class="btn btn-danger" id="reset">reset</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
